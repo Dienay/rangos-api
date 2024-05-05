@@ -1,0 +1,301 @@
+[
+  {
+    "_id": "1",
+    "coverPhoto": "image1.jpg",
+    "name": "João's Restaurant",
+    "openingHours": [
+      {
+        "openDays": [ "Monday", "Wednesday", "Friday" ],
+        "hours": [{ "open": "11:00", "close": "15:00" }]
+      },{
+        "openDays": [ "Saturday", "Sunday" ],
+        "hours": [{ "open": "18:00", "close": "22:00" }]
+      }
+    ],
+    "address": [ "mongodb_address_id" ],
+    "category": "Restaurant"
+  },
+  {
+    "_id": "2",
+    "coverPhoto": "image2.jpg",
+    "name": "Starbucks",
+    "openingHours": [
+      {
+        "openDays": [ "Monday", "Tuesday", "Wednesday", "Thursday", "Friday" ],
+        "hours": [{ "open": "08:00", "close": "20:00" }]
+      }
+    ],
+    "address": [ "mongodb_address_id" ],
+    "category": "Cafeteria"
+  },
+  {
+    "_id": "3",
+    "coverPhoto": "image3.jpg",
+    "name": "Central Bakery",
+    "openingHours": [
+      {
+        "openDays": [ "Every day" ],
+        "hours": [{ "open": "06:00", "close": "20:00" }]
+      }
+    ],
+    "address": [ "mongodb_address_id" ],
+    "category": "Bakery"
+  },
+  {
+    "_id": "4",
+    "coverPhoto": "image4.jpg",
+    "name": "Pizza Hut",
+    "openingHours": [
+      {
+        "openDays": [ "Monday", "Tuesday", "Thursday", "Friday", "Saturday" ],
+        "hours": [{ "open": "17:00", "close": "22:00" }]
+      },{
+        "openDays": [ "Sunday" ],
+        "hours": [{ "open": "17:00", "close": "23:00" }]
+      }
+    ],
+    "address": [ "mongodb_address_id" ],
+    "category": "Pizzeria"
+  },
+  {
+    "_id": "5",
+    "coverPhoto": "image5.jpg",
+    "name": "Delight Ice Cream Shop",
+    "openingHours": [
+      {
+        "openDays": [ "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday" ],
+        "hours": [{ "open": "14:00", "close": "22:00" }]
+      },{
+        "openDays": [ "Sunday" ],
+        "hours": [{ "open": "12:00", "close": "20:00" }]
+      }
+    ],
+    "address": [ "mongodb_address_id" ],
+    "category": "Ice Cream Parlor"
+  },
+  {
+    "_id": "6",
+    "coverPhoto": "image6.jpg",
+    "name": "Burger King",
+    "openingHours": [
+      {
+        "openDays": [ "Every day" ],
+        "hours": [{ "open": "11:00", "close": "23:00" }]
+      }
+    ],
+    "address": [ "mongodb_address_id" ],
+    "category": "Fast Food Restaurant"
+  },
+  {
+    "_id": "7",
+    "coverPhoto": "image7.jpg",
+    "name": "Electronics Store",
+    "openingHours": [
+      {
+        "openDays": [ "Monday", "Tuesday", "Wednesday", "Thursday", "Friday" ],
+        "hours": [{ "open": "09:00", "close": "18:00" }]
+      },{
+        "openDays": [ "Saturday" ],
+        "hours": [{ "open": "09:00", "close": "13:00" }]
+      }
+    ],
+    "address": [ "mongodb_address_id" ],
+    "category": "Store"
+  },
+  {
+    "_id": "8",
+    "coverPhoto": "image8.jpg",
+    "name": "The Cheesecake Factory",
+    "openingHours": [
+      {
+        "openDays": [ "Monday", "Tuesday", "Wednesday", "Thursday", "Friday" ],
+        "hours": [{ "open": "11:00", "close": "22:00" }]
+      },{
+        "openDays": [ "Saturday", "Sunday" ],
+        "hours": [{ "open": "10:00", "close": "23:00" }]
+      }
+    ],
+    "address": [ "mongodb_address_id" ],
+    "category": "Restaurant"
+  },
+  {
+    "_id": "9",
+    "coverPhoto": "image9.jpg",
+    "name": "Starbucks Reserve",
+    "openingHours": [
+      {
+        "openDays": [ "Every day" ],
+        "hours": [{ "open": "07:00", "close": "21:00" }]
+      }
+    ],
+    "address": [ "mongodb_address_id" ],
+    "category": "Coffee Shop"
+  },
+  {
+    "_id": "10",
+    "coverPhoto": "image10.jpg",
+    "name": "Le Pain Quotidien",
+    "openingHours": [
+      {
+        "openDays": [ "Monday", "Tuesday", "Wednesday", "Thursday", "Friday" ],
+        "hours": [{ "open": "08:00", "close": "18:00" }]
+      },{
+        "openDays": [ "Saturday", "Sunday" ],
+        "hours": [{ "open": "09:00", "close": "17:00" }]
+      }
+    ],
+    "address": [ "mongodb_address_id" ],
+    "category": "Bakery"
+  },
+  {
+    "_id": "11",
+    "coverPhoto": "image11.jpg",
+    "name": "Domino's Pizza",
+    "openingHours": [
+      {
+        "openDays": [ "Every day" ],
+        "hours": [{ "open": "11:00", "close": "00:00" }]
+      }
+    ],
+    "address": [ "mongodb_address_id" ],
+    "category": "Pizza Place"
+  },
+  {
+    "_id": "12",
+    "coverPhoto": "image12.jpg",
+    "name": "Ben & Jerry's",
+    "openingHours": [
+      {
+        "openDays": [ "Monday", "Tuesday", "Wednesday", "Thursday", "Friday" ],
+        "hours": [{ "open": "12:00", "close": "21:00" }]
+      },{
+        "openDays": [ "Saturday", "Sunday" ],
+        "hours": [{ "open": "11:00", "close": "22:00" }]
+      }
+    ],
+    "address": [ "mongodb_address_id" ],
+    "category": "Ice Cream Shop"
+  },
+  {
+    "_id": "13",
+    "coverPhoto": "image13.jpg",
+    "name": "McDonald's",
+    "openingHours": [
+      {
+        "openDays": [ "Every day" ],
+        "hours": [{ "open": "06:00", "close": "00:00" }]
+      }
+    ],
+    "address": [ "mongodb_address_id" ],
+    "category": "Fast Food Restaurant"
+  },
+  {
+    "_id": "14",
+    "coverPhoto": "image14.jpg",
+    "name": "Apple Store",
+    "openingHours": [
+      {
+        "openDays": [ "Monday", "Tuesday", "Wednesday", "Thursday", "Friday" ],
+        "hours": [{ "open": "10:00", "close": "19:00" }]
+      },{
+        "openDays": [ "Saturday" ],
+        "hours": [{ "open": "10:00", "close": "18:00" }]
+      },{
+        "openDays": [ "Sunday" ],
+        "hours": [{ "open": "11:00", "close": "18:00" }]
+      }
+    ],
+    "address": [ "mongodb_address_id" ],
+    "category": "Electronics Store"
+  },
+  {
+    "_id": "15",
+    "coverPhoto": "image15.jpg",
+    "name": "Subway",
+    "openingHours": [
+      {
+        "openDays": [ "Every day" ],
+        "hours": [{ "open": "10:00", "close": "21:00" }]
+      }
+    ],
+    "address": [ "mongodb_address_id" ],
+    "category": "Sandwich Shop"
+  },
+  {
+    "_id": "16",
+    "coverPhoto": "image16.jpg",
+    "name": "Whole Foods Market",
+    "openingHours": [
+      {
+        "openDays": [ "Every day" ],
+        "hours": [{ "open": "08:00", "close": "22:00" }]
+      }
+    ],
+    "address": [ "mongodb_address_id" ],
+    "category": "Grocery Store"
+  },
+  {
+    "_id": "17",
+    "coverPhoto": "image17.jpg",
+    "name": "Taco Bell",
+    "openingHours": [
+      {
+        "openDays": [ "Every day" ],
+        "hours": [{ "open": "10:00", "close": "00:00" }]
+      }
+    ],
+    "address": [ "mongodb_address_id" ],
+    "category": "Mexican Restaurant"
+  },
+  {
+    "_id": "18",
+    "coverPhoto": "image18.jpg",
+    "name": "Panera Bread",
+    "openingHours": [
+      {
+        "openDays": [ "Monday", "Tuesday", "Wednesday", "Thursday", "Friday" ],
+        "hours": [{ "open": "07:00", "close": "20:00" }]
+      },{
+        "openDays": [ "Saturday", "Sunday" ],
+        "hours": [{ "open": "08:00", "close": "18:00" }]
+      }
+    ],
+    "address": [ "mongodb_address_id" ],
+    "category": "Bakery"
+  },
+  {
+    "_id": "19",
+    "coverPhoto": "image19.jpg",
+    "name": "Chick-fil-A",
+    "openingHours": [
+      {
+        "openDays": [ "Monday", "Tuesday", "Wednesday", "Thursday", "Friday" ],
+        "hours": [{ "open": "06:30", "close": "22:00" }]
+      },{
+        "openDays": [ "Saturday" ],
+        "hours": [{ "open": "06:30", "close": "22:00" }]
+      },{
+        "openDays": [ "Sunday" ],
+        "hours": [{ "open": "Closed", "close": "Closed" }]
+      }
+    ],
+    "address": [ "mongodb_address_id" ],
+    "category": "Fast Food Restaurant"
+  },
+  {
+    "_id": "20",
+    "coverPhoto": "image20.jpg",
+    "name": "Dunkin' Donuts",
+    "openingHours": [
+      {
+        "openDays": [ "Monday", "Tuesday", "Wednesday", "Thursday", "Friday" ],
+        "hours": [{ "open": "05:00", "close": "20:00" }]
+      },{
+        "openDays": [ "Saturday", "Sunday" ],
+        "hours": [{ "open": "06:00", "close": "19:00" }]
+      }
+    ],
+    "address": [ "mongodb_address_id" ],
+    "category": "Bakery"
+  }
+]
