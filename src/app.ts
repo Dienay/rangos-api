@@ -2,6 +2,9 @@ import express from "express";
 import "dotenv/config";
 import routes from "./routes";
 import { AddressInfo } from "net";
+import run from "./config/dbConnect";
+
+run();
 
 const app = express();
 
