@@ -1,8 +1,8 @@
 import mongoose from "mongoose";
 
-const { DB_HOST, DB_PORT, DB_NAME } = process.env
+const { URI_MONGO_COMPASS } = process.env
 
-const uri: string = `mongodb://${DB_HOST}:${DB_PORT}/${DB_NAME}`;
+const uri: string = URI_MONGO_COMPASS || "localhost";
 
 async function run() {
   try {
