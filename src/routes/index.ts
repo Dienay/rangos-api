@@ -5,7 +5,9 @@ import { productsRouter } from "./productRouter";
 
 const routes = (app: Router) => {
   app.route("/").get((req: Request, res: Response) => {
-    res.status(200).json({ message: "Nova Rota principal"});
+    res.status(200).json({
+      message: "Welcome to the Clone Rappi API."
+    });
   });
 
   app.use(express.json(), userRouter);
