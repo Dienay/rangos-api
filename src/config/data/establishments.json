@@ -1,0 +1,857 @@
+[
+  {
+    "_id": "664263e9a61e5ddceac532f1",
+    "coverPhoto": "image1.jpg",
+    "name": "João's Restaurant",
+    "openingHours": [
+      {
+        "openDays": [
+          "Monday",
+          "Wednesday",
+          "Friday"
+        ],
+        "hours": [
+          {
+            "open": "11:00",
+            "close": "15:00"
+          }
+        ]
+      },
+      {
+        "openDays": [
+          "Saturday",
+          "Sunday"
+        ],
+        "hours": [
+          {
+            "open": "18:00",
+            "close": "22:00"
+          }
+        ]
+      }
+    ],
+    "address": [
+      {
+        "description": "Flagship",
+        "street": "333 Oak Ave",
+        "number": "101",
+        "complement": "",
+        "neighborhood": "Downtown",
+        "city": "Cityville",
+        "state": "State"
+      }
+    ],
+    "category": [
+      "Restaurant"
+    ],
+    "__v": 0
+  },
+  {
+    "_id": "664263e9a61e5ddceac532f2",
+    "coverPhoto": "image2.jpg",
+    "name": "Starbucks",
+    "openingHours": [
+      {
+        "openDays": [
+          "Monday",
+          "Tuesday",
+          "Wednesday",
+          "Thursday",
+          "Friday"
+        ],
+        "hours": [
+          {
+            "open": "08:00",
+            "close": "20:00"
+          }
+        ]
+      }
+    ],
+    "address": [
+      {
+        "description": "Flagship",
+        "street": "123 Main St",
+        "number": "202",
+        "complement": "",
+        "neighborhood": "Uptown",
+        "city": "Metropolis",
+        "state": "State"
+      }
+    ],
+    "category": [
+      "Cafeteria"
+    ],
+    "__v": 0
+  },
+  {
+    "_id": "664263e9a61e5ddceac532f3",
+    "coverPhoto": "image3.jpg",
+    "name": "Central Bakery",
+    "openingHours": [
+      {
+        "openDays": [
+          "Every day"
+        ],
+        "hours": [
+          {
+            "open": "06:00",
+            "close": "20:00"
+          }
+        ]
+      }
+    ],
+    "address": [
+      {
+        "description": "Flagship",
+        "street": "333 Oak Ave",
+        "number": "101",
+        "complement": "",
+        "neighborhood": "Downtown",
+        "city": "Cityville",
+        "state": "State"
+      }
+    ],
+    "category": [
+      "Bakery"
+    ],
+    "__v": 0
+  },
+  {
+    "_id": "664263e9a61e5ddceac532f4",
+    "coverPhoto": "image4.jpg",
+    "name": "Pizza Hut",
+    "openingHours": [
+      {
+        "openDays": [
+          "Monday",
+          "Tuesday",
+          "Thursday",
+          "Friday",
+          "Saturday"
+        ],
+        "hours": [
+          {
+            "open": "17:00",
+            "close": "22:00"
+          }
+        ]
+      },
+      {
+        "openDays": [
+          "Sunday"
+        ],
+        "hours": [
+          {
+            "open": "17:00",
+            "close": "23:00"
+          }
+        ]
+      }
+    ],
+    "address": [
+      {
+        "description": "Flagship",
+        "street": "123 Main St",
+        "number": "202",
+        "complement": "",
+        "neighborhood": "Uptown",
+        "city": "Metropolis",
+        "state": "State"
+      }
+    ],
+    "category": [
+      "Pizzeria"
+    ],
+    "__v": 0
+  },
+  {
+    "_id": "664263e9a61e5ddceac532f5",
+    "coverPhoto": "image5.jpg",
+    "name": "Delight Ice Cream Shop",
+    "openingHours": [
+      {
+        "openDays": [
+          "Tuesday",
+          "Wednesday",
+          "Thursday",
+          "Friday",
+          "Saturday"
+        ],
+        "hours": [
+          {
+            "open": "14:00",
+            "close": "22:00"
+          }
+        ]
+      },
+      {
+        "openDays": [
+          "Sunday"
+        ],
+        "hours": [
+          {
+            "open": "12:00",
+            "close": "20:00"
+          }
+        ]
+      }
+    ],
+    "address": [
+      {
+        "description": "Flagship",
+        "street": "456 Elm St",
+        "number": "303",
+        "complement": "",
+        "neighborhood": "Suburbia",
+        "city": "Smalltown",
+        "state": "State"
+      }
+    ],
+    "category": [
+      "Ice Cream Parlor"
+    ],
+    "__v": 0
+  },
+  {
+    "_id": "664263e9a61e5ddceac532f6",
+    "coverPhoto": "image6.jpg",
+    "name": "Burger King",
+    "openingHours": [
+      {
+        "openDays": [
+          "Every day"
+        ],
+        "hours": [
+          {
+            "open": "11:00",
+            "close": "23:00"
+          }
+        ]
+      }
+    ],
+    "address": [
+      {
+        "description": "Flagship",
+        "street": "789 Pine St",
+        "number": "404",
+        "complement": "",
+        "neighborhood": "Outskirts",
+        "city": "Villagetown",
+        "state": "State"
+      }
+    ],
+    "category": [
+      "Fast Food Restaurant"
+    ],
+    "__v": 0
+  },
+  {
+    "_id": "664263e9a61e5ddceac532f7",
+    "coverPhoto": "image7.jpg",
+    "name": "Electronics Store",
+    "openingHours": [
+      {
+        "openDays": [
+          "Monday",
+          "Tuesday",
+          "Wednesday",
+          "Thursday",
+          "Friday"
+        ],
+        "hours": [
+          {
+            "open": "09:00",
+            "close": "18:00"
+          }
+        ]
+      },
+      {
+        "openDays": [
+          "Saturday"
+        ],
+        "hours": [
+          {
+            "open": "09:00",
+            "close": "13:00"
+          }
+        ]
+      }
+    ],
+    "address": [
+      {
+        "description": "Flagship",
+        "street": "101 Cedar St",
+        "number": "505",
+        "complement": "",
+        "neighborhood": "Hillside",
+        "city": "Countryville",
+        "state": "State"
+      }
+    ],
+    "category": [
+      "Store"
+    ],
+    "__v": 0
+  },
+  {
+    "_id": "664263e9a61e5ddceac532f8",
+    "coverPhoto": "image8.jpg",
+    "name": "The Cheesecake Factory",
+    "openingHours": [
+      {
+        "openDays": [
+          "Monday",
+          "Tuesday",
+          "Wednesday",
+          "Thursday",
+          "Friday"
+        ],
+        "hours": [
+          {
+            "open": "11:00",
+            "close": "22:00"
+          }
+        ]
+      },
+      {
+        "openDays": [
+          "Saturday",
+          "Sunday"
+        ],
+        "hours": [
+          {
+            "open": "10:00",
+            "close": "23:00"
+          }
+        ]
+      }
+    ],
+    "address": [
+      {
+        "description": "Flagship",
+        "street": "678 Maple Ave",
+        "number": "606",
+        "complement": "",
+        "neighborhood": "Downtown",
+        "city": "Cityville",
+        "state": "State"
+      }
+    ],
+    "category": [
+      "Restaurant"
+    ],
+    "__v": 0
+  },
+  {
+    "_id": "664263e9a61e5ddceac532f9",
+    "coverPhoto": "image9.jpg",
+    "name": "Starbucks Reserve",
+    "openingHours": [
+      {
+        "openDays": [
+          "Every day"
+        ],
+        "hours": [
+          {
+            "open": "07:00",
+            "close": "21:00"
+          }
+        ]
+      }
+    ],
+    "address": [
+      {
+        "description": "Flagship",
+        "street": "910 Elm St",
+        "number": "707",
+        "complement": "",
+        "neighborhood": "Uptown",
+        "city": "Metropolis",
+        "state": "State"
+      }
+    ],
+    "category": [
+      "Coffee Shop"
+    ],
+    "__v": 0
+  },
+  {
+    "_id": "664263e9a61e5ddceac532fa",
+    "coverPhoto": "image10.jpg",
+    "name": "Le Pain Quotidien",
+    "openingHours": [
+      {
+        "openDays": [
+          "Monday",
+          "Tuesday",
+          "Wednesday",
+          "Thursday",
+          "Friday"
+        ],
+        "hours": [
+          {
+            "open": "08:00",
+            "close": "18:00"
+          }
+        ]
+      },
+      {
+        "openDays": [
+          "Saturday",
+          "Sunday"
+        ],
+        "hours": [
+          {
+            "open": "09:00",
+            "close": "17:00"
+          }
+        ]
+      }
+    ],
+    "address": [
+      {
+        "description": "Flagship",
+        "street": "111 Pine St",
+        "number": "808",
+        "complement": "",
+        "neighborhood": "Suburbia",
+        "city": "Smalltown",
+        "state": "State"
+      }
+    ],
+    "category": [
+      "Bakery"
+    ],
+    "__v": 0
+  },
+  {
+    "_id": "664263e9a61e5ddceac533fb",
+    "coverPhoto": "image11.jpg",
+    "name": "Domino's Pizza",
+    "openingHours": [
+      {
+        "openDays": [
+          "Every day"
+        ],
+        "hours": [
+          {
+            "open": "11:00",
+            "close": "00:00"
+          }
+        ]
+      }
+    ],
+    "address": [
+      {
+        "description": "Flagship",
+        "street": "121 Cedar St",
+        "number": "909",
+        "complement": "",
+        "neighborhood": "Outskirts",
+        "city": "Villagetown",
+        "state": "State"
+      }
+    ],
+    "category": [
+      "Pizza Place"
+    ],
+    "__v": 0
+  },
+  {
+    "_id": "664263e9a61e5ddceac532fc",
+    "coverPhoto": "image12.jpg",
+    "name": "Ben & Jerry's",
+    "openingHours": [
+      {
+        "openDays": [
+          "Monday",
+          "Tuesday",
+          "Wednesday",
+          "Thursday",
+          "Friday"
+        ],
+        "hours": [
+          {
+            "open": "12:00",
+            "close": "21:00"
+          }
+        ]
+      },
+      {
+        "openDays": [
+          "Saturday",
+          "Sunday"
+        ],
+        "hours": [
+          {
+            "open": "11:00",
+            "close": "22:00"
+          }
+        ]
+      }
+    ],
+    "address": [
+      {
+        "description": "Flagship",
+        "street": "131 Oak Ave",
+        "number": "1010",
+        "complement": "",
+        "neighborhood": "Hillside",
+        "city": "Countryville",
+        "state": "State"
+      }
+    ],
+    "category": [
+      "Ice Cream Shop"
+    ],
+    "__v": 0
+  },
+  {
+    "_id": "664263e9a61e5ddceac532fd",
+    "coverPhoto": "image13.jpg",
+    "name": "McDonald's",
+    "openingHours": [
+      {
+        "openDays": [
+          "Every day"
+        ],
+        "hours": [
+          {
+            "open": "06:00",
+            "close": "00:00"
+          }
+        ]
+      }
+    ],
+    "address": [
+      {
+        "description": "Flagship",
+        "street": "141 Maple Ave",
+        "number": "1111",
+        "complement": "Unit 500",
+        "neighborhood": "Downtown",
+        "city": "Cityville",
+        "state": "State"
+      }
+    ],
+    "category": [
+      "Fast Food Restaurant"
+    ],
+    "__v": 0
+  },
+  {
+    "_id": "664263e9a61e5ddceac532fe",
+    "coverPhoto": "image14.jpg",
+    "name": "Apple Store",
+    "openingHours": [
+      {
+        "openDays": [
+          "Monday",
+          "Tuesday",
+          "Wednesday",
+          "Thursday",
+          "Friday"
+        ],
+        "hours": [
+          {
+            "open": "10:00",
+            "close": "19:00"
+          }
+        ]
+      },
+      {
+        "openDays": [
+          "Saturday"
+        ],
+        "hours": [
+          {
+            "open": "10:00",
+            "close": "18:00"
+          }
+        ]
+      },
+      {
+        "openDays": [
+          "Sunday"
+        ],
+        "hours": [
+          {
+            "open": "11:00",
+            "close": "18:00"
+          }
+        ]
+      }
+    ],
+    "address": [
+      {
+        "description": "Flagship",
+        "street": "151 Elm St",
+        "number": "1212",
+        "complement": "",
+        "neighborhood": "Uptown",
+        "city": "Metropolis",
+        "state": "State"
+      }
+    ],
+    "category": [
+      "Electronics Store"
+    ],
+    "__v": 0
+  },
+  {
+    "_id": "664263e9a61e5ddceac532ff",
+    "coverPhoto": "image15.jpg",
+    "name": "Subway",
+    "openingHours": [
+      {
+        "openDays": [
+          "Every day"
+        ],
+        "hours": [
+          {
+            "open": "10:00",
+            "close": "21:00"
+          }
+        ]
+      }
+    ],
+    "address": [
+      {
+        "description": "Flagship",
+        "street": "161 Pine St",
+        "number": "1313",
+        "complement": "Suite 600",
+        "neighborhood": "Suburbia",
+        "city": "Smalltown",
+        "state": "State"
+      }
+    ],
+    "category": [
+      "Sandwich Shop"
+    ],
+    "__v": 0
+  },
+  {
+    "_id": "664263e9a61e5ddceac53300",
+    "coverPhoto": "image16.jpg",
+    "name": "Whole Foods Market",
+    "openingHours": [
+      {
+        "openDays": [
+          "Every day"
+        ],
+        "hours": [
+          {
+            "open": "08:00",
+            "close": "22:00"
+          }
+        ]
+      }
+    ],
+    "address": [
+      {
+        "description": "Flagship",
+        "street": "171 Cedar St",
+        "number": "1414",
+        "complement": "",
+        "neighborhood": "Outskirts",
+        "city": "Villagetown",
+        "state": "State"
+      }
+    ],
+    "category": [
+      "Grocery Store"
+    ],
+    "__v": 0
+  },
+  {
+    "_id": "664263e9a61e5ddceac53301",
+    "coverPhoto": "image17.jpg",
+    "name": "Taco Bell",
+    "openingHours": [
+      {
+        "openDays": [
+          "Every day"
+        ],
+        "hours": [
+          {
+            "open": "10:00",
+            "close": "00:00"
+          }
+        ]
+      }
+    ],
+    "address": [
+      {
+        "description": "Flagship",
+        "street": "181 Oak Ave",
+        "number": "1515",
+        "complement": "Apartment 700",
+        "neighborhood": "Hillside",
+        "city": "Countryville",
+        "state": "State"
+      }
+    ],
+    "category": [
+      "Mexican Restaurant"
+    ],
+    "__v": 0
+  },
+  {
+    "_id": "664263e9a61e5ddceac53302",
+    "coverPhoto": "image18.jpg",
+    "name": "Panera Bread",
+    "openingHours": [
+      {
+        "openDays": [
+          "Monday",
+          "Tuesday",
+          "Wednesday",
+          "Thursday",
+          "Friday"
+        ],
+        "hours": [
+          {
+            "open": "07:00",
+            "close": "20:00"
+          }
+        ]
+      },
+      {
+        "openDays": [
+          "Saturday",
+          "Sunday"
+        ],
+        "hours": [
+          {
+            "open": "08:00",
+            "close": "18:00"
+          }
+        ]
+      }
+    ],
+    "address": [
+      {
+        "description": "Flagship",
+        "street": "191 Maple Ave",
+        "number": "1616",
+        "complement": "",
+        "neighborhood": "Downtown",
+        "city": "Cityville",
+        "state": "State"
+      }
+    ],
+    "category": [
+      "Bakery"
+    ],
+    "__v": 0
+  },
+  {
+    "_id": "664263e9a61e5ddceac53303",
+    "coverPhoto": "image19.jpg",
+    "name": "Chick-fil-A",
+    "openingHours": [
+      {
+        "openDays": [
+          "Monday",
+          "Tuesday",
+          "Wednesday",
+          "Thursday",
+          "Friday"
+        ],
+        "hours": [
+          {
+            "open": "06:30",
+            "close": "22:00"
+          }
+        ]
+      },
+      {
+        "openDays": [
+          "Saturday"
+        ],
+        "hours": [
+          {
+            "open": "06:30",
+            "close": "22:00"
+          }
+        ]
+      },
+      {
+        "openDays": [
+          "Sunday"
+        ],
+        "hours": [
+          {
+            "open": "Closed",
+            "close": "Closed"
+          }
+        ]
+      }
+    ],
+    "address": [
+      {
+        "description": "Flagship",
+        "street": "201 Elm St",
+        "number": "1717",
+        "complement": "Unit 800",
+        "neighborhood": "Uptown",
+        "city": "Metropolis",
+        "state": "State"
+      }
+    ],
+    "category": [
+      "Fast Food Restaurant"
+    ],
+    "__v": 0
+  },
+  {
+    "_id": "664263e9a61e5ddceac53304",
+    "coverPhoto": "image20.jpg",
+    "name": "Dunkin' Donuts",
+    "openingHours": [
+      {
+        "openDays": [
+          "Monday",
+          "Tuesday",
+          "Wednesday",
+          "Thursday",
+          "Friday"
+        ],
+        "hours": [
+          {
+            "open": "05:00",
+            "close": "20:00"
+          }
+        ]
+      },
+      {
+        "openDays": [
+          "Saturday",
+          "Sunday"
+        ],
+        "hours": [
+          {
+            "open": "06:00",
+            "close": "19:00"
+          }
+        ]
+      }
+    ],
+    "address": [
+      {
+        "description": "Flagship",
+        "street": "211 Pine St",
+        "number": "1818",
+        "complement": "",
+        "neighborhood": "Suburbia",
+        "city": "Smalltown",
+        "state": "State"
+      }
+    ],
+    "category": [
+      "Bakery"
+    ],
+    "__v": 0
+  }
+]
