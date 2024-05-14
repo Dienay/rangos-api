@@ -1,5 +1,6 @@
 import express, { Router, Request, Response } from "express";
 import { userRouter } from "./userRouter";
+import { establishmentRouter } from "./establishmentRouter";
 import { productsRouter } from "./productRouter";
 
 const routes = (app: Router) => {
@@ -10,6 +11,7 @@ const routes = (app: Router) => {
   app.use(express.json(), userRouter);
   app.use(
     express.json(),
+    establishmentRouter,
     productsRouter
   );
 };
