@@ -1,20 +1,19 @@
 import mongoose from "mongoose";
-import "dotenv/config";
 
-const url: string = process.env.URL || "";
+const { URI_MONGO_COMPASS } = process.env
 
-const clientOptions: mongoose.ConnectOptions = { serverApi: { version: '1', strict: true, deprecationErrors: true } };
+const uri: string = URI_MONGO_COMPASS || "localhost";
 
 async function run() {
   try {
-    await mongoose.connect(url, clientOptions);
-    await mongoose.connection.db.admin().command({ ping: 1 });
+    await mongoose.connect(uri);
+
     console.log("You successfully connected to MongoDB!");
+
+    return mongoose.connection;
   } catch (error) {
     console.error("Error connecting to MongoDB:", error);
     throw error;
-  } finally {
-    await mongoose.disconnect();
   }
 }
 
