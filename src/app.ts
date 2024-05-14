@@ -12,14 +12,14 @@ app.use(express.json());
 
 routes(app);
 
-const portString: string = process.env.PORT || "3003";
-const port: number = parseInt(portString, 10);
+const portString: string = process.env.SERVER_PORT || "3003";
+const PORT: number = parseInt(portString, 10);
 
-const server = app.listen(port, () => {
+const server = app.listen(PORT, () => {
   if (server) {
     const address = server.address() as AddressInfo;
-    console.log(`Servidor rodando em http://localhost:${address.port}`);
+    console.log(`Server running on http://localhost:${address.port}`);
   } else {
-    console.log("Falha ao iniciar servidor");
+    console.log("Server startup failure");
   }
 });
