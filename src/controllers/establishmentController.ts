@@ -1,78 +1,95 @@
-import { Request, Response } from "express";
-import { establishment } from "../models/index";
+import { Request, Response, NextFunction } from 'express';
+import { IEstablishment } from '@/models/Establishment';
+import { Establishment } from '../models/index';
+import NotFound from '../errors/NotFound';
 
 class EstablishmentController {
-  static async createEstablishment(req: Request, res: Response) {
+  static async createEstablishment(req: Request, res: Response, next: NextFunction) {
     try {
-      const newEstablishment = await establishment.create(req.body);
+      const newEstablishment = await Establishment.create(req.body);
 
       await newEstablishment.save();
 
       res.status(201).json({
-        message: "Establishment created successfully.",
+        message: 'Establishment created successfully.',
         data: newEstablishment
       });
     } catch (error) {
-      res.status(500).json({
-        message: `${(error as Error).message} - Establishment created failed.`
-      })
+      next(error);
     }
   }
 
-  static async getEstablishments(req: Request, res: Response) {
+  static async getEstablishments(req: Request, res: Response, next: NextFunction) {
     try {
-      const establishmentList = await establishment.find({});
+      const establishmentList = await Establishment.find({});
 
       res.status(200).json(establishmentList);
     } catch (error) {
-      res.status(500).json({
-        message: `${(error as Error).message} - Request failed.`
-      })
+      next(error);
     }
   }
 
-  static async getEstablishmentById(req: Request, res: Response) {
+  static async getEstablishmentById(req: Request, res: Response, next: NextFunction) {
     try {
-      const id = req.params.id;
-      const foundEstablishment = await establishment.findById(id);
+      const { id } = req.params;
+      const foundEstablishment = await Establishment.findById(id);
 
-      res.status(200).json(foundEstablishment);
+      if (foundEstablishment !== null) {
+        res.status(200).json(foundEstablishment);
+      } else {
+        next(new NotFound('Establishment Id not found.'));
+      }
     } catch (error) {
-      res.status(404).json({
-        message: `${(error as Error).message} - Establishment not found.`
-      })
+      next(error);
     }
   }
 
-  static async updateEstablishment(req: Request, res: Response) {
-    try {
-      const id = req.params.id;
-      await establishment.findByIdAndUpdate(id, req.body);
+  // static async getEstablishmentFilter(req: Request, res: Response, next: NextFunction) {
 
-      res.status(200).json({
-        message: 'Establishment updated successfully',
-        data: req.body
-      })
+  // }
+
+  static async updateEstablishment(req: Request, res: Response, next: NextFunction): Promise<void> {
+    try {
+      const { id } = req.params;
+      const newData = req.body as Partial<IEstablishment>;
+
+      const validationError = new Establishment(newData).validateSync();
+      if (validationError) {
+        return next(validationError);
+      }
+
+      const foundIdEstablishment = await Establishment.findByIdAndUpdate(id, { $set: newData }, { new: true });
+
+      if (foundIdEstablishment !== null) {
+        res.status(200).send({
+          message: 'Establishment updated successfully',
+          data: newData
+        });
+      } else {
+        throw new NotFound('Establishment Id not found.');
+      }
     } catch (error) {
-      res.status(404).json({
-        message: `${(error as Error).message} - Not possible update Establishment.`
-      })
+      return next(error);
     }
+
+    return undefined;
   }
 
-  static async deleteEstablishment(req: Request, res: Response) {
+  static async deleteEstablishment(req: Request, res: Response, next: NextFunction) {
     try {
-      const id = req.params.id;
-      const deletedEstablishment = await establishment.findByIdAndDelete(id);
+      const { id } = req.params;
+      const deletedEstablishment = await Establishment.findByIdAndDelete(id);
 
-      res.status(200).json({
-        message: 'Establishment deleted successfully',
-        data: deletedEstablishment
-      })
+      if (deletedEstablishment !== null) {
+        res.status(200).json({
+          message: 'Establishment deleted successfully',
+          data: deletedEstablishment
+        });
+      } else {
+        next(new NotFound('Establishment Id not found.'));
+      }
     } catch (error) {
-      res.status(404).json({
-        message: `${(error as Error).message} - Not possible delete Establishment.`
-      })
+      next(error);
     }
   }
 }
