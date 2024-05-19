@@ -1,65 +1,63 @@
+/* eslint-disable no-console */
 import fs from 'fs';
-import { establishment, product } from "../models/index";
 import mongoose from 'mongoose';
 import path from 'path';
-
-interface DataItem<T> {
-  model: mongoose.Model<T>;
-  collectionName: string;
-  collectionData: T[];
-}
+import 'dotenv/config';
+import { IEstablishment } from '@/models/Establishment';
+import { IProduct } from '@/models/Product';
+import { Establishment, Product } from '../models/index';
 
 const getJsonData = <T>(fileName: string): T[] => {
   const filePath = path.join(__dirname, 'data', `${fileName}.json`);
-  const fileData = JSON.parse(fs.readFileSync(filePath, 'utf8'));
+  const fileData: T[] = JSON.parse(fs.readFileSync(filePath, 'utf8')) as T[];
 
   return fileData;
+};
+
+const establishmentsData = getJsonData<IEstablishment>('establishments');
+const productData = getJsonData<IProduct>('products');
+
+async function populateEstablishments(establishments: IEstablishment[]): Promise<void> {
+  try {
+    await Establishment.deleteMany({});
+    const result = await Establishment.insertMany(establishments);
+    console.log(`Establishments populated successfully: ${result.length} establishments inserted.`);
+  } catch (error) {
+    console.error('Error populating establishments:', error);
+    throw error;
+  }
+}
+async function populateProducts(products: IProduct[]): Promise<void> {
+  try {
+    await Product.deleteMany({});
+    const result = await Product.insertMany(products);
+    console.log(`Products populated successfully: ${result.length} products inserted.`);
+  } catch (error) {
+    console.error('Error populating products:', error);
+    throw error;
+  }
 }
 
-const establishmentsData = getJsonData('establishments');
-const productData = getJsonData('products');
-
-async function populateDataBase(data: DataItem<any>[]) {
+async function populateDataBase(establishments: IEstablishment[], products: IProduct[]): Promise<void> {
   try {
-    const { URI } = process.env
-
-    const uri: string = URI || "localhost";
+    const { URI } = process.env;
+    const uri: string = URI || 'localhost';
 
     await mongoose.connect(uri);
-    console.log("You successfully connected to MongoDB!");
+    console.log('You successfully connected to MongoDB!');
 
-    for (const { model, collectionName, collectionData } of data) {
-      const collectionExists = await model.collection.countDocuments();
+    await Promise.all([populateEstablishments(establishments), populateProducts(products)]);
 
-      if (collectionExists === 0) {
-        console.log(`${collectionName} collection does not exist. Creating...`);
-      } else {
-        await model.deleteMany();
-        console.log(`Existing data in ${collectionName} collection cleared.`);
-      }
-
-      await model.insertMany(collectionData);
-      console.log(`${collectionName} collection populated success.`);
-    }
+    console.log('Database population completed successfully.');
   } catch (error) {
-    console.error("Error connecting to MongoDB:", error);
+    console.error('Error: ', error);
+    throw error;
   } finally {
     await mongoose.disconnect();
     console.log('Disconnected from MongoDB.');
   }
 }
 
-const data: DataItem<any>[] = [
-  {
-    model: establishment,
-    collectionName: 'Establishments',
-    collectionData: establishmentsData
-  },
-  {
-    model: product,
-    collectionName: 'Products',
-    collectionData: productData
-  }
-];
-
-populateDataBase(data);
+populateDataBase(establishmentsData, productData).catch((error) => {
+  console.error('Error populating database:', error);
+});
