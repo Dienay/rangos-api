@@ -1,17 +1,16 @@
-import express, { Router, Request, Response } from "express";
-import { userRouter } from "./userRouter";
-import { productsRouter } from "./productRouter";
+import { Router, Request, Response } from 'express';
+import { establishmentRouter } from './establishmentRouter';
+import { productsRouter } from './productRouter';
+import { userRouter } from './userRouter';
 
 const routes = (app: Router) => {
-  app.route("/").get((req: Request, res: Response) => {
-    res.status(200).json({ message: "Nova Rota principal"});
+  app.route('/').get((req: Request, res: Response) => {
+    res.status(200).json({
+      message: 'Welcome to the Clone Rappi API.'
+    });
   });
 
-  app.use(express.json(), userRouter);
-  app.use(
-    express.json(),
-    productsRouter
-  );
+  app.use(establishmentRouter, productsRouter, userRouter);
 };
 
 export default routes;

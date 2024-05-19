@@ -1,4 +1,5 @@
-import establishment from "./Establishment";
-import product from "./Product";
+import './globalValidator';
+import Establishment from './Establishment';
+import Product from './Product';
 
-export { establishment, product };
+export { Establishment, Product };

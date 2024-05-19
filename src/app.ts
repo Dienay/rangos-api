@@ -1,25 +1,22 @@
-import express from "express";
-import "dotenv/config";
-import routes from "./routes";
-import { AddressInfo } from "net";
-import run from "./config/dbConnect";
+import { app, logger, env } from '@/config';
+import './config/module-alias';
+import routes from './routes';
+import run from './config/dbConnect';
+import handlesErrors from './middlewares/handlesErrors';
+import error404 from './middlewares/handlesError404';
 
-run();
+run()
+  .then(() => {
+    routes(app);
 
-const app = express();
+    app.use(error404);
 
-app.use(express.json());
+    app.use(handlesErrors);
 
-routes(app);
-
-const portString: string = process.env.SERVER_PORT || "3003";
-const PORT: number = parseInt(portString, 10);
-
-const server = app.listen(PORT, () => {
-  if (server) {
-    const address = server.address() as AddressInfo;
-    console.log(`Server running on http://localhost:${address.port}`);
-  } else {
-    console.log("Server startup failure");
-  }
-});
+    app.listen(env.port, () => {
+      logger.info(`Server running on http://localhost:${env.port}`);
+    });
+  })
+  .catch((err) => {
+    logger.error('Failed to connect to the database:', err);
+  });

@@ -1,7 +1,7 @@
-import { Router, Request, Response } from "express";
+import { Router, Request, Response } from 'express';
 
 export const userRouter = Router();
 
-userRouter.get("/user", (req: Request, res: Response) => {
-  res.json({ message: "Rota de usuário"});
+userRouter.get('/user', (req: Request, res: Response) => {
+  res.json({ message: 'Rota de usuário' });
 });
