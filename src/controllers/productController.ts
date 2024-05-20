@@ -1,6 +1,7 @@
-import { Product } from '../models/index';
 import { RequestProps, ResponseProps, NextFunctionProps } from '@/config';
 import NotFound from '@/errors/NotFound';
+import { IProduct } from '../models/Product';
+import { Establishment, Product } from '../models/index';
 
 class ProductsController {
   static async createProduct(this: void, req: RequestProps, res: ResponseProps, next: NextFunctionProps) {

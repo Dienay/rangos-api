@@ -35,7 +35,7 @@
         "description": "Flagship",
         "street": "333 Oak Ave",
         "number": "101",
-        "complement": "",
+        "complement": "Downtown",
         "neighborhood": "Downtown",
         "city": "Cityville",
         "state": "State"
@@ -71,7 +71,7 @@
         "description": "Flagship",
         "street": "123 Main St",
         "number": "202",
-        "complement": "",
+        "complement": "a",
         "neighborhood": "Uptown",
         "city": "Metropolis",
         "state": "State"
@@ -103,7 +103,7 @@
         "description": "Flagship",
         "street": "333 Oak Ave",
         "number": "101",
-        "complement": "",
+        "complement": "a",
         "neighborhood": "Downtown",
         "city": "Cityville",
         "state": "State"
@@ -150,7 +150,7 @@
         "description": "Flagship",
         "street": "123 Main St",
         "number": "202",
-        "complement": "",
+        "complement": "a",
         "neighborhood": "Uptown",
         "city": "Metropolis",
         "state": "State"
@@ -197,7 +197,7 @@
         "description": "Flagship",
         "street": "456 Elm St",
         "number": "303",
-        "complement": "",
+        "complement": "a",
         "neighborhood": "Suburbia",
         "city": "Smalltown",
         "state": "State"
@@ -229,7 +229,7 @@
         "description": "Flagship",
         "street": "789 Pine St",
         "number": "404",
-        "complement": "",
+        "complement": "a",
         "neighborhood": "Outskirts",
         "city": "Villagetown",
         "state": "State"
@@ -276,7 +276,7 @@
         "description": "Flagship",
         "street": "101 Cedar St",
         "number": "505",
-        "complement": "",
+        "complement": "a",
         "neighborhood": "Hillside",
         "city": "Countryville",
         "state": "State"
@@ -324,7 +324,7 @@
         "description": "Flagship",
         "street": "678 Maple Ave",
         "number": "606",
-        "complement": "",
+        "complement": "a",
         "neighborhood": "Downtown",
         "city": "Cityville",
         "state": "State"
@@ -356,7 +356,7 @@
         "description": "Flagship",
         "street": "910 Elm St",
         "number": "707",
-        "complement": "",
+        "complement": "a",
         "neighborhood": "Uptown",
         "city": "Metropolis",
         "state": "State"
@@ -404,7 +404,7 @@
         "description": "Flagship",
         "street": "111 Pine St",
         "number": "808",
-        "complement": "",
+        "complement": "a",
         "neighborhood": "Suburbia",
         "city": "Smalltown",
         "state": "State"
@@ -436,7 +436,7 @@
         "description": "Flagship",
         "street": "121 Cedar St",
         "number": "909",
-        "complement": "",
+        "complement": "a",
         "neighborhood": "Outskirts",
         "city": "Villagetown",
         "state": "State"
@@ -484,7 +484,7 @@
         "description": "Flagship",
         "street": "131 Oak Ave",
         "number": "1010",
-        "complement": "",
+        "complement": "a",
         "neighborhood": "Hillside",
         "city": "Countryville",
         "state": "State"
@@ -574,7 +574,7 @@
         "description": "Flagship",
         "street": "151 Elm St",
         "number": "1212",
-        "complement": "",
+        "complement": "a",
         "neighborhood": "Uptown",
         "city": "Metropolis",
         "state": "State"
@@ -638,7 +638,7 @@
         "description": "Flagship",
         "street": "171 Cedar St",
         "number": "1414",
-        "complement": "",
+        "complement": "a",
         "neighborhood": "Outskirts",
         "city": "Villagetown",
         "state": "State"
@@ -718,7 +718,7 @@
         "description": "Flagship",
         "street": "191 Maple Ave",
         "number": "1616",
-        "complement": "",
+        "complement": "a",
         "neighborhood": "Downtown",
         "city": "Cityville",
         "state": "State"
@@ -824,7 +824,7 @@
         "description": "Flagship",
         "street": "211 Pine St",
         "number": "1818",
-        "complement": "",
+        "complement": "a",
         "neighborhood": "Suburbia",
         "city": "Smalltown",
         "state": "State"
