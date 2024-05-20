@@ -1,8 +1,8 @@
-import { Request, Response } from 'express';
 import { Product } from '../models/index';
+import { RequestProps, ResponseProps, NextFunctionProps } from '@/config';
 
 class ProductsController {
-  static async createProduct(req: Request, res: Response) {
+  static async createProduct(this: void, req: RequestProps, res: ResponseProps, next: NextFunctionProps) {
     try {
       const newProduct = await Product.create(req.body);
 
@@ -19,7 +19,7 @@ class ProductsController {
     }
   }
 
-  static async getProducts(req: Request, res: Response) {
+  static async getProducts(this: void, req: RequestProps, res: ResponseProps, next: NextFunctionProps) {
     try {
       const productList = await Product.find({}).populate('establishment').exec();
 
@@ -31,7 +31,7 @@ class ProductsController {
     }
   }
 
-  static async getProductById(req: Request, res: Response) {
+  static async getProductById(this: void, req: RequestProps, res: ResponseProps, next: NextFunctionProps) {
     try {
       const { id } = req.params;
       const foundProduct = await Product.findById(id).populate('establishment').exec();
@@ -44,7 +44,7 @@ class ProductsController {
     }
   }
 
-  static async updateProduct(req: Request, res: Response) {
+  static async updateProduct(this: void, req: RequestProps, res: ResponseProps, next: NextFunctionProps) {
     try {
       const { id } = req.params;
       await Product.findByIdAndUpdate(id, req.body);
@@ -60,7 +60,7 @@ class ProductsController {
     }
   }
 
-  static async deleteProduct(req: Request, res: Response) {
+  static async deleteProduct(this: void, req: RequestProps, res: ResponseProps, next: NextFunctionProps) {
     try {
       const { id } = req.params;
       const deletedProduct = await Product.findByIdAndDelete(id);
@@ -76,7 +76,7 @@ class ProductsController {
     }
   }
 
-  static async getProductsByEstablishment(req: Request, res: Response) {
+  static async getProductsByEstablishment(this: void, req: RequestProps, res: ResponseProps, next: NextFunctionProps) {
     try {
       const { establishmentId } = req.params;
       const productList = await Product.find({ establishment: establishmentId });
