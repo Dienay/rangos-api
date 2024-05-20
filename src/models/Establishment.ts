@@ -25,7 +25,10 @@ enum OpenDay {
   Wednesday = 'Wednesday'
 }
 
-const hourFormat = /^([01]\d|2[0-3]):([0-5]\d)$/;
+function validateHour(value: string) {
+  const hourFormat = /^([01]\d|2[0-3]):([0-5]\d)$/;
+  return hourFormat.test(value) || value.toLowerCase() === 'closed';
+}
 
 interface Hour {
   open: string;
@@ -80,14 +83,14 @@ const establishmentSchema = new mongoose.Schema(
                 open: {
                   type: String,
                   validate: {
-                    validator: (value: string) => hourFormat.test(value),
+                    validator: validateHour,
                     message: `Opening hour must be in ( HH:MM ) format. ( {VALUE} ) is not a valid hour format.`
                   }
                 },
                 close: {
                   type: String,
                   validate: {
-                    validator: (value: string) => hourFormat.test(value),
+                    validator: validateHour,
                     message: `Closing hour must be in ( HH:MM ) format. ( {VALUE} ) is not a valid hour format.`
                   }
                 }
