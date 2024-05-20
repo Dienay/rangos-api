@@ -1,10 +1,10 @@
-import { Request, Response, NextFunction } from 'express';
+import { RequestProps, ResponseProps, NextFunctionProps } from '@/config';
 import { IEstablishment } from '@/models/Establishment';
 import { Establishment } from '../models/index';
 import NotFound from '../errors/NotFound';
 
 class EstablishmentController {
-  static async createEstablishment(req: Request, res: Response, next: NextFunction) {
+  static async createEstablishment(this: void, req: RequestProps, res: ResponseProps, next: NextFunctionProps) {
     try {
       const newEstablishment = await Establishment.create(req.body);
 
@@ -19,7 +19,7 @@ class EstablishmentController {
     }
   }
 
-  static async getEstablishments(req: Request, res: Response, next: NextFunction) {
+  static async getEstablishments(this: void, req: RequestProps, res: ResponseProps, next: NextFunctionProps) {
     try {
       const establishmentList = await Establishment.find({});
 
@@ -29,7 +29,7 @@ class EstablishmentController {
     }
   }
 
-  static async getEstablishmentById(req: Request, res: Response, next: NextFunction) {
+  static async getEstablishmentById(this: void, req: RequestProps, res: ResponseProps, next: NextFunctionProps) {
     try {
       const { id } = req.params;
       const foundEstablishment = await Establishment.findById(id);
@@ -44,11 +44,16 @@ class EstablishmentController {
     }
   }
 
-  // static async getEstablishmentFilter(req: Request, res: Response, next: NextFunction) {
+  // static async getEstablishmentFilter(req: RequestProps, res: ResponseProps, next: NextFunctionProps) {
 
   // }
 
-  static async updateEstablishment(req: Request, res: Response, next: NextFunction): Promise<void> {
+  static async updateEstablishment(
+    this: void,
+    req: RequestProps,
+    res: ResponseProps,
+    next: NextFunctionProps
+  ): Promise<void> {
     try {
       const { id } = req.params;
       const newData = req.body as Partial<IEstablishment>;
@@ -75,7 +80,7 @@ class EstablishmentController {
     return undefined;
   }
 
-  static async deleteEstablishment(req: Request, res: Response, next: NextFunction) {
+  static async deleteEstablishment(this: void, req: RequestProps, res: ResponseProps, next: NextFunctionProps) {
     try {
       const { id } = req.params;
       const deletedEstablishment = await Establishment.findByIdAndDelete(id);
