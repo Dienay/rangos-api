@@ -1,5 +1,6 @@
 import { Product } from '../models/index';
 import { RequestProps, ResponseProps, NextFunctionProps } from '@/config';
+import NotFound from '@/errors/NotFound';
 
 class ProductsController {
   static async createProduct(this: void, req: RequestProps, res: ResponseProps, next: NextFunctionProps) {
@@ -13,9 +14,7 @@ class ProductsController {
         data: newProduct
       });
     } catch (error) {
-      res.status(500).json({
-        message: `${(error as Error).message} - Product created failed.`
-      });
+      next(error);
     }
   }
 
@@ -25,9 +24,7 @@ class ProductsController {
 
       res.status(200).json(productList);
     } catch (error) {
-      res.status(500).json({
-        message: `${(error as Error).message} - Request failed.`
-      });
+      next(error);
     }
   }
 
@@ -36,28 +33,37 @@ class ProductsController {
       const { id } = req.params;
       const foundProduct = await Product.findById(id).populate('establishment').exec();
 
-      res.status(200).json(foundProduct);
+      if (foundProduct !== null) {
+        res.status(200).json(foundProduct);
+      } else {
+        next(new NotFound('Product Id not found.'));
+      }
     } catch (error) {
-      res.status(404).json({
-        message: `${(error as Error).message} - Product not found.`
-      });
+      next(error);
     }
   }
 
   static async updateProduct(this: void, req: RequestProps, res: ResponseProps, next: NextFunctionProps) {
     try {
       const { id } = req.params;
-      await Product.findByIdAndUpdate(id, req.body);
+      const newData = req.body as Partial<IProduct>;
+      const validationError = new Product(newData).validateSync();
+
+      if (validationError) {
+        return next(validationError);
+      }
+
+      await Product.findByIdAndUpdate(id, { $set: newData }, { new: true });
 
       res.status(200).json({
         message: 'Product updated successfully',
-        data: req.body
+        data: newData
       });
     } catch (error) {
-      res.status(404).json({
-        message: `${(error as Error).message} - Not possible update Product.`
-      });
+      return next(error);
     }
+
+    return undefined;
   }
 
   static async deleteProduct(this: void, req: RequestProps, res: ResponseProps, next: NextFunctionProps) {
@@ -65,27 +71,38 @@ class ProductsController {
       const { id } = req.params;
       const deletedProduct = await Product.findByIdAndDelete(id);
 
-      res.status(200).json({
-        message: 'Product deleted successfully',
-        data: deletedProduct
-      });
+      if (deletedProduct !== null) {
+        res.status(200).json({
+          message: 'Product deleted successfully',
+          data: deletedProduct
+        });
+      } else {
+        next(new NotFound('Product Id not found.'));
+      }
     } catch (error) {
-      res.status(404).json({
-        message: `${(error as Error).message} - Not possible delete Product.`
-      });
+      next(error);
     }
   }
 
   static async getProductsByEstablishment(this: void, req: RequestProps, res: ResponseProps, next: NextFunctionProps) {
     try {
       const { establishmentId } = req.params;
-      const productList = await Product.find({ establishment: establishmentId });
 
-      res.status(200).json(productList);
+      const establishment = await Establishment.findById(establishmentId);
+
+      if (establishment !== null) {
+        const productList: IProduct[] = await Product.find({ establishment: establishmentId });
+
+        if (productList.length > 0) {
+          res.status(200).json(productList);
+        } else {
+          next(new NotFound('Product list empty.'));
+        }
+      } else {
+        next(new NotFound('Establishment Id not found.'));
+      }
     } catch (error) {
-      res.status(500).json({
-        message: `${(error as Error).message} - Failed to retrieve products.`
-      });
+      next(error);
     }
   }
 }
