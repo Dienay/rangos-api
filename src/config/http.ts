@@ -8,7 +8,7 @@ type ResponseProps = Response;
 type NextFunctionProps = NextFunction;
 
 const app = express();
-app.use(cors);
+app.use(cors());
 app.use(helmet());
 app.use(compression({ level: 9 }));
 app.use(express.json());
