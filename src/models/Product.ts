@@ -1,4 +1,5 @@
 import mongoose from 'mongoose';
+import autopopulate from 'mongoose-autopopulate';
 
 interface IProduct extends Document {
   id: mongoose.Types.ObjectId;
@@ -16,13 +17,18 @@ const productSchema = new mongoose.Schema(
     name: { type: String, require: true },
     description: { type: String },
     price: { type: Number, require: true },
-    establishment: { type: mongoose.Schema.Types.ObjectId, ref: 'establishment' }
+    establishment: {
+      type: mongoose.Schema.Types.ObjectId,
+      ref: 'establishment',
+      autopopulate: true
+    }
   },
   {
     versionKey: false
   }
 );
 
+productSchema.plugin(autopopulate);
 const Product = mongoose.model<IProduct>('product', productSchema);
 
 export default Product;

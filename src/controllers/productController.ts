@@ -21,7 +21,7 @@ class ProductsController {
 
   static async getProducts(this: void, req: RequestProps, res: ResponseProps, next: NextFunctionProps) {
     try {
-      const productList = await Product.find({}).populate('establishment').exec();
+      const productList = await Product.find({});
 
       res.status(200).json(productList);
     } catch (error) {
@@ -32,7 +32,7 @@ class ProductsController {
   static async getProductById(this: void, req: RequestProps, res: ResponseProps, next: NextFunctionProps) {
     try {
       const { id } = req.params;
-      const foundProduct = await Product.findById(id).populate('establishment').exec();
+      const foundProduct = await Product.findById(id);
 
       if (foundProduct !== null) {
         res.status(200).json(foundProduct);
