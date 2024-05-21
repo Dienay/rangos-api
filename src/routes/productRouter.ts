@@ -4,13 +4,9 @@ import ProductsController from '../controllers/productController';
 // Creating a new router instance
 export const productsRouter = Router();
 
-const { createProduct } = ProductsController;
-const { getProducts } = ProductsController;
-const { getProductById } = ProductsController;
-const { updateProduct } = ProductsController;
-const { deleteProduct } = ProductsController;
-const { getProductsByEstablishment } = ProductsController;
 // Destructuring methods from ProductsController
+const { createProduct, getProducts, getProductById, updateProduct, deleteProduct, getProductsByEstablishment } =
+  ProductsController;
 
 // Defining routes for products
 productsRouter.post('/products', createProduct);
