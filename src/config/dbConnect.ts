@@ -1,10 +1,8 @@
 import mongoose from 'mongoose';
-import 'dotenv/config';
-import logger from './logger';
+import { logger, env } from '@/config';
 
-const { URI } = process.env;
-
-const uri: string = URI || 'localhost';
+// Destructure the URI environment variable from '@/config'
+const { uri } = env;
 
 // Asynchronous function to connect to MongoDB
 async function run() {

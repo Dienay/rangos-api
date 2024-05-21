@@ -1,11 +1,10 @@
-/* eslint-disable no-console */
 // Import required modules
 import fs from 'fs';
 import mongoose from 'mongoose';
 import path from 'path';
-import 'dotenv/config';
 import { IEstablishment } from '@/models/Establishment';
 import { IProduct } from '@/models/Product';
+import { logger, env } from '@/config';
 import { Establishment, Product } from '../models/index';
 
 // Function to read JSON data from a file
@@ -28,9 +27,9 @@ async function populateEstablishments(establishments: IEstablishment[]): Promise
     await Establishment.deleteMany({});
     // Insert new establishments
     const result = await Establishment.insertMany(establishments);
-    console.log(`Establishments populated successfully: ${result.length} establishments inserted.`);
+    logger.info(`Establishments populated successfully: ${result.length} establishments inserted.`);
   } catch (error) {
-    console.error('Error populating establishments:', error);
+    logger.error('Error populating establishments:', error);
     throw error;
   }
 }
@@ -42,9 +41,9 @@ async function populateProducts(products: IProduct[]): Promise<void> {
     await Product.deleteMany({});
     // Insert new products
     const result = await Product.insertMany(products);
-    console.log(`Products populated successfully: ${result.length} products inserted.`);
+    logger.info(`Products populated successfully: ${result.length} products inserted.`);
   } catch (error) {
-    console.error('Error populating products:', error);
+    logger.error('Error populating products:', error);
     throw error;
   }
 }
@@ -52,28 +51,27 @@ async function populateProducts(products: IProduct[]): Promise<void> {
 // Function to populate the database with establishments and products
 async function populateDataBase(establishments: IEstablishment[], products: IProduct[]): Promise<void> {
   try {
-    const { URI } = process.env;
-    const uri: string = URI || 'localhost';
+    const { uri } = env;
 
     // Connect to MongoDB
     await mongoose.connect(uri);
-    console.log('You successfully connected to MongoDB!');
+    logger.info('You successfully connected to MongoDB!');
 
     // Populate database with establishments and products
     await Promise.all([populateEstablishments(establishments), populateProducts(products)]);
 
-    console.log('Database population completed successfully.');
+    logger.info('Database population completed successfully.');
   } catch (error) {
-    console.error('Error: ', error);
+    logger.error('Error:', error);
     throw error;
   } finally {
     // Disconnect from MongoDB
     await mongoose.disconnect();
-    console.log('Disconnected from MongoDB.');
+    logger.info('Disconnected from MongoDB.');
   }
 }
 
 // Call the function to populate the database with data
 populateDataBase(establishmentsData, productData).catch((error) => {
-  console.error('Error populating database:', error);
+  logger.error('Error populating database:', error);
 });
