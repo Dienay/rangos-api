@@ -4,8 +4,8 @@ import { IEstablishment } from '@/models/Establishment';
 import { Establishment } from '../models/index';
 
 class EstablishmentController {
-  static async createEstablishment(this: void, req: RequestProps, res: ResponseProps, next: NextFunctionProps) {
   // Create a new establishment
+  static createEstablishment = async (req: RequestProps, res: ResponseProps, next: NextFunctionProps) => {
     try {
       // Create a new establishment object based on the request body
       const newEstablishment = await Establishment.create(req.body);
@@ -22,10 +22,10 @@ class EstablishmentController {
       // Pass any errors to the error handling middleware
       next(error);
     }
-  }
+  };
 
-  static async getEstablishments(this: void, req: RequestProps, res: ResponseProps, next: NextFunctionProps) {
   // Get a list of all establishments
+  static getEstablishments = async (req: RequestProps, res: ResponseProps, next: NextFunctionProps) => {
     try {
       // Fetch all establishments from the database
       const establishmentList = await Establishment.find({});
@@ -36,10 +36,10 @@ class EstablishmentController {
       // Pass any errors to the error handling middleware
       next(error);
     }
-  }
+  };
 
-  static async getEstablishmentById(this: void, req: RequestProps, res: ResponseProps, next: NextFunctionProps) {
   // Get an establishment by ID
+  static getEstablishmentById = async (req: RequestProps, res: ResponseProps, next: NextFunctionProps) => {
     try {
       // Extract the ID from the request parameters
       const { id } = req.params;
@@ -57,19 +57,10 @@ class EstablishmentController {
       // Pass any errors to the error handling middleware
       next(error);
     }
-  }
+  };
 
-  // static async getEstablishmentFilter(req: RequestProps, res: ResponseProps, next: NextFunctionProps) {
-
-  // }
-
-  static async updateEstablishment(
-    this: void,
-    req: RequestProps,
-    res: ResponseProps,
-    next: NextFunctionProps
-  ): Promise<void> {
   // Update an establishment
+  static updateEstablishment = async (req: RequestProps, res: ResponseProps, next: NextFunctionProps) => {
     try {
       // Extract the ID from the request parameters and new data from the request body
       const { id } = req.params;
@@ -82,28 +73,27 @@ class EstablishmentController {
         return next(validationError);
       }
 
-      const foundIdEstablishment = await Establishment.findByIdAndUpdate(id, { $set: newData }, { new: true });
       // Find and update the establishment by its ID
+      const updatedEstablishment = await Establishment.findByIdAndUpdate(id, { $set: newData }, { new: true });
 
-      if (foundIdEstablishment !== null) {
-        res.status(200).send({
       // If the establishment is updated successfully, respond with it; otherwise, throw a NotFound error
+      if (updatedEstablishment !== null) {
+        res.status(200).json({
           message: 'Establishment updated successfully',
-          data: newData
+          data: updatedEstablishment
         });
       } else {
         throw new NotFound('Establishment Id not found.');
       }
     } catch (error) {
-      return next(error);
       // Pass any errors to the error handling middleware
+      next(error);
     }
-
     return undefined;
-  }
+  };
 
-  static async deleteEstablishment(this: void, req: RequestProps, res: ResponseProps, next: NextFunctionProps) {
   // Delete an establishment
+  static deleteEstablishment = async (req: RequestProps, res: ResponseProps, next: NextFunctionProps) => {
     try {
       // Extract the ID from the request parameters
       const { id } = req.params;
@@ -118,13 +108,13 @@ class EstablishmentController {
           data: deletedEstablishment
         });
       } else {
-        next(new NotFound('Establishment Id not found.'));
+        throw new NotFound('Establishment Id not found.');
       }
     } catch (error) {
       // Pass any errors to the error handling middleware
       next(error);
     }
-  }
+  };
 }
 
 export default EstablishmentController;

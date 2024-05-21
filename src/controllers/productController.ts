@@ -4,8 +4,8 @@ import { IProduct } from '../models/Product';
 import { Establishment, Product } from '../models/index';
 
 class ProductsController {
-  static async createProduct(this: void, req: RequestProps, res: ResponseProps, next: NextFunctionProps) {
   // Method to create a new product
+  static createProduct = async (req: RequestProps, res: ResponseProps, next: NextFunctionProps) => {
     try {
       // Creating a new product with data from request body
       const newProduct = await Product.create(req.body);
@@ -22,10 +22,10 @@ class ProductsController {
       // Passing any error to the error handling middleware
       next(error);
     }
-  }
+  };
 
-  static async getProducts(this: void, req: RequestProps, res: ResponseProps, next: NextFunctionProps) {
   // Method to get all products
+  static getProducts = async (req: RequestProps, res: ResponseProps, next: NextFunctionProps) => {
     try {
       // Finding all products
       const productList = await Product.find({});
@@ -36,10 +36,10 @@ class ProductsController {
       // Passing any error to the error handling middleware
       next(error);
     }
-  }
+  };
 
-  static async getProductById(this: void, req: RequestProps, res: ResponseProps, next: NextFunctionProps) {
   // Method to get a product by its ID
+  static getProductById = async (req: RequestProps, res: ResponseProps, next: NextFunctionProps) => {
     try {
       // Extracting product ID from request parameters
       const { id } = req.params;
@@ -57,10 +57,10 @@ class ProductsController {
       // Passing any error to the error handling middleware
       next(error);
     }
-  }
+  };
 
-  static async updateProduct(this: void, req: RequestProps, res: ResponseProps, next: NextFunctionProps) {
   // Method to update a product
+  static updateProduct = async (req: RequestProps, res: ResponseProps, next: NextFunctionProps) => {
     try {
       // Extracting product ID from request parameters
       const { id } = req.params;
@@ -86,10 +86,10 @@ class ProductsController {
     }
 
     return undefined;
-  }
+  };
 
-  static async deleteProduct(this: void, req: RequestProps, res: ResponseProps, next: NextFunctionProps) {
   // Method to delete a product
+  static deleteProduct = async (req: RequestProps, res: ResponseProps, next: NextFunctionProps) => {
     try {
       // Extracting product ID from request parameters
       const { id } = req.params;
@@ -110,10 +110,10 @@ class ProductsController {
       // Passing any error to the error handling middleware
       next(error);
     }
-  }
+  };
 
-  static async getProductsByEstablishment(this: void, req: RequestProps, res: ResponseProps, next: NextFunctionProps) {
   // Method to get all products by establishment ID
+  static getProductsByEstablishment = async (req: RequestProps, res: ResponseProps, next: NextFunctionProps) => {
     try {
       // Extracting establishment ID from request parameters
       const { establishmentId } = req.params;
@@ -140,7 +140,7 @@ class ProductsController {
       // Passing any error to the error handling middleware
       next(error);
     }
-  }
+  };
 }
 
 export default ProductsController;
