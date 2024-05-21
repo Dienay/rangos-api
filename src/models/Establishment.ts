@@ -1,6 +1,7 @@
 import mongoose from 'mongoose';
 
-interface IEstablishment extends Document {
+// Define the IEstablishment interface extending mongoose.Document, representing an establishment structure
+interface IEstablishment extends mongoose.Document {
   id: mongoose.Types.ObjectId;
   coverPhoto: string;
   name: string;
@@ -9,11 +10,13 @@ interface IEstablishment extends Document {
   category: Category[];
 }
 
+// Define the OpeningHour interface representing the opening hours structure
 interface OpeningHour {
   openDays: OpenDay[];
   hours: Hour[];
 }
 
+// Enum for the days the establishment is open
 enum OpenDay {
   EveryDay = 'Every day',
   Friday = 'Friday',
@@ -25,16 +28,21 @@ enum OpenDay {
   Wednesday = 'Wednesday'
 }
 
+// Function to validate the hour format (HH:MM) or 'closed'
 function validateHour(value: string) {
+  // Regex for HH:MM format
   const hourFormat = /^([01]\d|2[0-3]):([0-5]\d)$/;
+  // Validates if the value matches the format or is 'closed'
   return hourFormat.test(value) || value.toLowerCase() === 'closed';
 }
 
+// Define the Hour interface representing the opening and closing times
 interface Hour {
   open: string;
   close: string;
 }
 
+// Define the Address interface representing the address structure
 interface Address {
   description: string;
   street: string;
@@ -45,6 +53,7 @@ interface Address {
   state: string;
 }
 
+// Enum for the establishment categories
 enum Category {
   Restaurant = 'Restaurant',
   CoffeeShop = 'Coffee Shop',
@@ -62,6 +71,7 @@ enum Category {
   MexicanRestaurant = 'Mexican Restaurant'
 }
 
+// Define the schema for the establishment
 const establishmentSchema = new mongoose.Schema(
   {
     id: { type: mongoose.Schema.Types.ObjectId },
@@ -73,6 +83,7 @@ const establishmentSchema = new mongoose.Schema(
           openDays: {
             type: [String],
             enum: {
+              // Allowed values for open days
               values: Object.values(OpenDay),
               message: `( {VALUE} ) is not a valid open day. Allowed open days are: ${Object.values(OpenDay).join(', ')}`
             }
@@ -83,6 +94,7 @@ const establishmentSchema = new mongoose.Schema(
                 open: {
                   type: String,
                   validate: {
+                    // Validator function for the opening time
                     validator: validateHour,
                     message: `Opening hour must be in ( HH:MM ) format. ( {VALUE} ) is not a valid hour format.`
                   }
@@ -90,6 +102,7 @@ const establishmentSchema = new mongoose.Schema(
                 close: {
                   type: String,
                   validate: {
+                    // Validator function for the closing time
                     validator: validateHour,
                     message: `Closing hour must be in ( HH:MM ) format. ( {VALUE} ) is not a valid hour format.`
                   }
@@ -117,6 +130,7 @@ const establishmentSchema = new mongoose.Schema(
       {
         type: String,
         enum: {
+          // Allowed values for categories
           values: Object.values(Category),
           message: `( {VALUE} ) is not a valid establishment category. Allowed categories are: ${Object.values(Category).join(', ')}`
         }
@@ -124,10 +138,12 @@ const establishmentSchema = new mongoose.Schema(
     ]
   },
   {
+    // Remove the version key (__v) from the documents
     versionKey: false
   }
 );
 
+// Create the Establishment model using the defined schema and IEstablishment interface
 const Establishment = mongoose.model<IEstablishment>('establishment', establishmentSchema);
 
 export default Establishment;
