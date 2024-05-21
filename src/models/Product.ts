@@ -1,8 +1,8 @@
 import mongoose from 'mongoose';
 import autopopulate from 'mongoose-autopopulate';
 
-interface IProduct extends Document {
 // Define the IProduct interface extending mongoose.Document, representing a product structure
+interface IProduct extends mongoose.Document {
   id: mongoose.Types.ObjectId;
   coverPhoto: string;
   name: string;
@@ -16,9 +16,9 @@ const productSchema = new mongoose.Schema(
   {
     id: { type: mongoose.Schema.Types.ObjectId },
     coverPhoto: { type: String },
-    name: { type: String, require: true },
+    name: { type: String, required: true },
     description: { type: String },
-    price: { type: Number, require: true },
+    price: { type: Number, required: true },
     establishment: {
       type: mongoose.Schema.Types.ObjectId,
       // Reference to the 'establishment' model in MongoDB
