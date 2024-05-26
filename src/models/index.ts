@@ -1,5 +1,6 @@
 import './globalValidator';
 import Establishment from './Establishment';
 import Product from './Product';
+import User from './User';
 
-export { Establishment, Product };
+export { Establishment, Product, User };

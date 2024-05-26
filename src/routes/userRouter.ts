@@ -1,7 +1,16 @@
-import { Router, Request, Response } from 'express';
+import { Router } from 'express';
+import UserController from '@/controllers/userController';
+import checkToken from '@/middlewares/checkToken';
 
+// Create a new router instance
 export const userRouter = Router();
 
-userRouter.get('/user', (req: Request, res: Response) => {
-  res.json({ message: 'Rota de usuário' });
-});
+// Destructure the required methods from UserController
+const { signup, login, getUserById, updateUser, deleteUser } = UserController;
+// Define routes
+userRouter.post('/user/signup', signup);
+userRouter.post('/user/login', login);
+// Define routes protected by the checkToken middleware
+userRouter.get('/user/:id', checkToken, getUserById);
+userRouter.put('/user/:id', checkToken, updateUser);
+userRouter.delete('/user/:id', checkToken, deleteUser);

@@ -1,5 +1,5 @@
 import { Router } from 'express';
-import EstablishmentController from '../controllers/establishmentController';
+import EstablishmentController from '@/controllers/establishmentController';
 
 // Creating a new router instance
 export const establishmentRouter = Router();
