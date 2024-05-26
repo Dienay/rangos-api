@@ -2,10 +2,11 @@
 import fs from 'fs';
 import mongoose from 'mongoose';
 import path from 'path';
+import './module-alias';
 import { IEstablishment } from '@/models/Establishment';
 import { IProduct } from '@/models/Product';
 import { logger, env } from '@/config';
-import { Establishment, Product } from '../models/index';
+import { Establishment, Product } from '@/models/index';
 
 // Function to read JSON data from a file
 const getJsonData = <T>(fileName: string): T[] => {

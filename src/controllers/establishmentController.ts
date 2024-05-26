@@ -1,7 +1,7 @@
 import { RequestProps, ResponseProps, NextFunctionProps } from '@/config';
 import NotFound from '@/errors/NotFound';
 import { IEstablishment } from '@/models/Establishment';
-import { Establishment } from '../models/index';
+import { Establishment } from '@/models/index';
 
 class EstablishmentController {
   // Create a new establishment

@@ -1,7 +1,7 @@
 import { RequestProps, ResponseProps, NextFunctionProps } from '@/config';
 import NotFound from '@/errors/NotFound';
-import { IProduct } from '../models/Product';
-import { Establishment, Product } from '../models/index';
+import { IProduct } from '@/models/Product';
+import { Establishment, Product } from '@/models/index';
 
 class ProductsController {
   // Method to create a new product
@@ -75,11 +75,16 @@ class ProductsController {
       }
 
       // Updating product and sending a success response with the updated product data
-      await Product.findByIdAndUpdate(id, { $set: newData }, { new: true });
-      res.status(200).json({
-        message: 'Product updated successfully',
-        data: newData
-      });
+      const updatedProduct = await Product.findByIdAndUpdate(id, { $set: newData }, { new: true });
+
+      if (updatedProduct !== null) {
+        res.status(200).json({
+          message: 'Product updated successfully',
+          data: newData
+        });
+      } else {
+        next(new NotFound('Product Id not found.'));
+      }
     } catch (error) {
       // Passing any error to the error handling middleware
       return next(error);
@@ -130,7 +135,7 @@ class ProductsController {
           res.status(200).json(productList);
         } else {
           // If no products are found, passing a NotFound error to the error handling middleware
-          next(new NotFound('Product list empty.'));
+          res.status(200).json('Product list empty.');
         }
       } else {
         // If establishment is not found, passing a NotFound error to the error handling middleware
@@ -138,6 +143,29 @@ class ProductsController {
       }
     } catch (error) {
       // Passing any error to the error handling middleware
+      next(error);
+    }
+  };
+
+  static filterProduct = async (req: RequestProps, res: ResponseProps, next: NextFunctionProps) => {
+    try {
+      const { name } = req.query;
+
+      const search: { [key: string]: unknown } = {};
+
+      if (typeof name === 'string') {
+        search.name = { $regex: name, $options: 'i' };
+      }
+
+      const products = await Product.find(search);
+
+      if (products.length > 0) {
+        res.status(200).json(products);
+      } else {
+        const productName = typeof name === 'string' ? name : '';
+        res.status(200).json({ message: `Product ( ${productName} ) is not found.` });
+      }
+    } catch (error) {
       next(error);
     }
   };
