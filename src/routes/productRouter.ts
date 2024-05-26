@@ -1,5 +1,5 @@
 import { Router } from 'express';
-import ProductsController from '../controllers/productController';
+import ProductsController from '@/controllers/productController';
 
 // Creating a new router instance
 export const productsRouter = Router();
