@@ -1,0 +1,27 @@
+{
+  "avatar": "string",
+  "name": "Dienay Lima",
+  "email": "dienay@email.com",
+  "phone": "86986868686",
+  "password": "86986868686",
+  "address": [
+    {
+      "description": "Home",
+      "street": "221 Cedar St",
+      "number": "1919",
+      "complement": "Suite 900",
+      "neighborhood": "Outskirts",
+      "city": "Villagetown",
+      "state": "State"
+    },
+    {
+      "description": "Work",
+      "street": "231 Oak Ave",
+      "number": "2020",
+      "complement": "",
+      "neighborhood": "Hillside",
+      "city": "Countryville",
+      "state": "State"
+    }
+  ]
+}
