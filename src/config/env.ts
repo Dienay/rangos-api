@@ -4,7 +4,7 @@ import dotenv from 'dotenv';
 dotenv.config();
 
 // Destructure environment variables from 'process.env'
-const { NODE_ENV, URI, PORT } = process.env;
+const { NODE_ENV, URI, PORT, SECRET } = process.env;
 
 // Define an object 'env' containing the parsed environment variables
 const env = {
@@ -13,7 +13,8 @@ const env = {
   // Convert URI to string
   uri: String(URI) || 'mongodb://localhost:27017',
   // Convert PORT to number
-  port: Number(PORT) || 3003
+  port: Number(PORT) || 3003,
+  secret: String(SECRET)
 };
 
 export default env;
