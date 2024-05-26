@@ -1,4 +1,5 @@
 import mongoose from 'mongoose';
+import { Address } from './Address';
 
 // Define the IEstablishment interface extending mongoose.Document, representing an establishment structure
 interface IEstablishment extends mongoose.Document {
@@ -40,17 +41,6 @@ function validateHour(value: string) {
 interface Hour {
   open: string;
   close: string;
-}
-
-// Define the Address interface representing the address structure
-interface Address {
-  description: string;
-  street: string;
-  number: string;
-  complement: string;
-  neighborhood: string;
-  city: string;
-  state: string;
 }
 
 // Enum for the establishment categories
