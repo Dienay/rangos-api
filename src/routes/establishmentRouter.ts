@@ -1,5 +1,6 @@
 import { Router } from 'express';
 import EstablishmentController from '@/controllers/establishmentController';
+import { establishmentsUpload } from '@/config/multer';
 
 // Creating a new router instance
 export const establishmentRouter = Router();
@@ -9,7 +10,7 @@ const { createEstablishment, getEstablishments, getEstablishmentById, updateEsta
   EstablishmentController;
 
 // Defining routes for establishments
-establishmentRouter.post('/establishments', createEstablishment);
+establishmentRouter.post('/establishments', establishmentsUpload.single('coverPhoto'), createEstablishment);
 establishmentRouter.get('/establishments', getEstablishments);
 establishmentRouter.get('/establishments/:id', getEstablishmentById);
 establishmentRouter.put('/establishments/:id', updateEstablishment);
