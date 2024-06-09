@@ -12,7 +12,7 @@ const storage = (directory: string) =>
   });
 
 const fileFilter = (req: Express.Request, file: Express.Multer.File, cb: multer.FileFilterCallback) => {
-  const mimeType = ['image/png', 'image/jpeg', 'image/gif', 'image/jpg'];
+  const mimeType = ['image/png', 'image/jpeg', 'image/gif', 'image/jpg', 'image/svg+xml'];
 
   if (!mimeType.includes(file.mimetype)) {
     cb(null, false);

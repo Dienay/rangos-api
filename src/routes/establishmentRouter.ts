@@ -13,5 +13,5 @@ const { createEstablishment, getEstablishments, getEstablishmentById, updateEsta
 establishmentRouter.post('/establishments', establishmentsUpload.single('coverPhoto'), createEstablishment);
 establishmentRouter.get('/establishments', getEstablishments);
 establishmentRouter.get('/establishments/:id', getEstablishmentById);
-establishmentRouter.put('/establishments/:id', updateEstablishment);
+establishmentRouter.put('/establishments/:id', establishmentsUpload.single('coverPhoto'), updateEstablishment);
 establishmentRouter.delete('/establishments/:id', deleteEstablishment);
