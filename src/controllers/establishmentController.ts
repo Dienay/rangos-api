@@ -61,6 +61,10 @@ class EstablishmentController {
       // Find the establishment by its ID
       const foundEstablishment = await Establishment.findById(id);
 
+      if (foundEstablishment) {
+        foundEstablishment.coverPhoto = `${req.protocol}://${req.get('host')}/uploads/establishments/${foundEstablishment.coverPhoto}`;
+      }
+
       // If the establishment is found, respond with it; otherwise, throw a NotFound error
       if (foundEstablishment !== null) {
         res.status(200).json(foundEstablishment);
