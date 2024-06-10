@@ -7,6 +7,8 @@ interface IEstablishment extends mongoose.Document {
   coverPhoto?: string;
   name: string;
   openingHours: OpeningHour[];
+  deliveryTime: string;
+  shipping: number;
   address: Address[];
   category: Category[];
 }
@@ -105,6 +107,8 @@ const establishmentSchema = new mongoose.Schema(
       ],
       _id: false
     },
+    deliveryTime: { type: String },
+    shipping: { type: Number },
     address: {
       type: [
         {

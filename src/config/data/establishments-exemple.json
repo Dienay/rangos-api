@@ -28,6 +28,10 @@
       ]
     }
   ],
+  "deliveryTime": [
+    45
+  ],
+  "shipping": 10,
   "address": [
     {
       "description": "Flagship",
