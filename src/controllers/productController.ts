@@ -1,14 +1,22 @@
-import { RequestProps, ResponseProps, NextFunctionProps } from '@/config';
+import { RequestProps, ResponseProps, NextFunctionProps, logger } from '@/config';
 import NotFound from '@/errors/NotFound';
 import { IProduct } from '@/models/Product';
 import { Establishment, Product } from '@/models/index';
+import path from 'path';
+import fs from 'fs';
 
 class ProductsController {
   // Method to create a new product
   static createProduct = async (req: RequestProps, res: ResponseProps, next: NextFunctionProps) => {
     try {
+      const body = req.body as IProduct;
+
+      if (req.file) {
+        body.coverPhoto = req.file.filename;
+      }
+
       // Creating a new product with data from request body
-      const newProduct = await Product.create(req.body);
+      const newProduct = await Product.create(body);
 
       // Saving the new product to the database
       await newProduct.save();
@@ -30,8 +38,13 @@ class ProductsController {
       // Finding all products
       const productList = await Product.find({});
 
+      const productWithCoverPhotoURL = productList.map((product) => ({
+        ...product.toObject(),
+        coverPhoto: `${req.protocol}://${req.get('host')}/uploads/products/${product.coverPhoto}`
+      }));
+
       // Sending a success response with the list of products
-      res.status(200).json(productList);
+      res.status(200).json({ products: productWithCoverPhotoURL });
     } catch (error) {
       // Passing any error to the error handling middleware
       next(error);
@@ -45,6 +58,10 @@ class ProductsController {
       const { id } = req.params;
       // Finding product by ID
       const foundProduct = await Product.findById(id);
+
+      if (foundProduct) {
+        foundProduct.coverPhoto = `${req.protocol}://${req.get('host')}/uploads/products/${foundProduct.coverPhoto}`;
+      }
 
       if (foundProduct !== null) {
         // If product is found, sending a success response with the product data
@@ -67,8 +84,38 @@ class ProductsController {
       // Extracting updated data from request body
       const newData = req.body as Partial<IProduct>;
       // Validating updated data
-      const validationError = new Product(newData).validateSync();
 
+      const foundProduct = await Product.findById(id);
+
+      if (!foundProduct) {
+        throw new NotFound('Product Id not found.');
+      }
+
+      if (req.file) {
+        if (foundProduct.coverPhoto) {
+          const coverPhotoPath = path.join(
+            __dirname,
+            '..',
+            '..',
+            'uploads',
+            'products',
+            path.basename(foundProduct.coverPhoto)
+          );
+
+          if (fs.existsSync(coverPhotoPath)) {
+            try {
+              fs.unlinkSync(coverPhotoPath);
+            } catch (unlinkError) {
+              logger.error(`Error deleting file: ${(unlinkError as Error).message}`);
+              return next(new Error('Error deleting old image file.'));
+            }
+          }
+        }
+
+        newData.coverPhoto = req.file.filename;
+      }
+
+      const validationError = new Product(newData).validateSync();
       if (validationError) {
         // If validation fails, passing the error to the error handling middleware
         return next(validationError);
@@ -80,7 +127,7 @@ class ProductsController {
       if (updatedProduct !== null) {
         res.status(200).json({
           message: 'Product updated successfully',
-          data: newData
+          product: newData
         });
       } else {
         next(new NotFound('Product Id not found.'));
@@ -98,6 +145,29 @@ class ProductsController {
     try {
       // Extracting product ID from request parameters
       const { id } = req.params;
+
+      const foundProduct = await Product.findById(id);
+
+      if (foundProduct?.coverPhoto) {
+        const coverPhotoPath = path.join(
+          __dirname,
+          '..',
+          '..',
+          'uploads',
+          'products',
+          path.basename(foundProduct.coverPhoto)
+        );
+
+        if (fs.existsSync(coverPhotoPath)) {
+          try {
+            fs.unlinkSync(coverPhotoPath);
+          } catch (unlinkError) {
+            logger.error(`Error deleting file: ${(unlinkError as Error).message}`);
+            return next(new Error('Error deleting old image file.'));
+          }
+        }
+      }
+
       // Deleting product by ID
       const deletedProduct = await Product.findByIdAndDelete(id);
 

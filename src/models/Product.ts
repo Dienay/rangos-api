@@ -4,7 +4,7 @@ import autopopulate from 'mongoose-autopopulate';
 // Define the IProduct interface extending mongoose.Document, representing a product structure
 interface IProduct extends mongoose.Document {
   id: mongoose.Types.ObjectId;
-  coverPhoto: string;
+  coverPhoto?: string;
   name: string;
   description: string;
   price: number;
