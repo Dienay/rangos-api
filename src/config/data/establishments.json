@@ -247,54 +247,9 @@
     ],
     "category": [
       "Fast Food Restaurant"
-    ]
-  },
-  {
-    "_id": "664263e9a61e5ddceac532f7",
-    "coverPhoto": "image7.jpg",
-    "name": "Electronics Store",
-    "openingHours": [
-      {
-        "openDays": [
-          "Monday",
-          "Tuesday",
-          "Wednesday",
-          "Thursday",
-          "Friday"
-        ],
-        "hours": [
-          {
-            "open": "09:00",
-            "close": "18:00"
-          }
-        ]
-      },
-      {
-        "openDays": [
-          "Saturday"
-        ],
-        "hours": [
-          {
-            "open": "09:00",
-            "close": "13:00"
-          }
-        ]
-      }
     ],
-    "address": [
-      {
-        "description": "Flagship",
-        "street": "101 Cedar St",
-        "number": "505",
-        "complement": "a",
-        "neighborhood": "Hillside",
-        "city": "Countryville",
-        "state": "State"
-      }
-    ],
-    "category": [
-      "Store"
-    ]
+    "deliveryTime": "30-50",
+    "shipping": 0.00
   },
   {
     "_id": "664263e9a61e5ddceac532f8",
@@ -544,65 +499,9 @@
     ],
     "category": [
       "Fast Food Restaurant"
-    ]
-  },
-  {
-    "_id": "664263e9a61e5ddceac532fe",
-    "coverPhoto": "image14.jpg",
-    "name": "Apple Store",
-    "openingHours": [
-      {
-        "openDays": [
-          "Monday",
-          "Tuesday",
-          "Wednesday",
-          "Thursday",
-          "Friday"
-        ],
-        "hours": [
-          {
-            "open": "10:00",
-            "close": "19:00"
-          }
-        ]
-      },
-      {
-        "openDays": [
-          "Saturday"
-        ],
-        "hours": [
-          {
-            "open": "10:00",
-            "close": "18:00"
-          }
-        ]
-      },
-      {
-        "openDays": [
-          "Sunday"
-        ],
-        "hours": [
-          {
-            "open": "11:00",
-            "close": "18:00"
-          }
-        ]
-      }
     ],
-    "address": [
-      {
-        "description": "Flagship",
-        "street": "151 Elm St",
-        "number": "1212",
-        "complement": "a",
-        "neighborhood": "Uptown",
-        "city": "Metropolis",
-        "state": "State"
-      }
-    ],
-    "category": [
-      "Electronics Store"
-    ]
+    "deliveryTime": "20-40",
+    "shipping": 10.00
   },
   {
     "_id": "664263e9a61e5ddceac532ff",
