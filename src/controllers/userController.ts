@@ -2,7 +2,6 @@ import bcrypt from 'bcrypt';
 import jwt from 'jsonwebtoken';
 import { IUser } from '@/models/User';
 import NotFound from '@/errors/NotFound';
-import { IAddress } from '@/models/Address';
 import { User } from '@/models/index';
 import { RequestProps, ResponseProps, NextFunctionProps, env, logger } from '@/config';
 import path from 'path';
