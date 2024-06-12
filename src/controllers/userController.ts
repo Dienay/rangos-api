@@ -2,9 +2,11 @@ import bcrypt from 'bcrypt';
 import jwt from 'jsonwebtoken';
 import { IUser } from '@/models/User';
 import NotFound from '@/errors/NotFound';
-import { Address } from '@/models/Address';
+import { IAddress } from '@/models/Address';
 import { User } from '@/models/index';
-import { RequestProps, ResponseProps, NextFunctionProps, env } from '@/config';
+import { RequestProps, ResponseProps, NextFunctionProps, env, logger } from '@/config';
+import path from 'path';
+import fs from 'fs';
 
 class UserController {
   // Method for user signup
@@ -14,15 +16,26 @@ class UserController {
     next: NextFunctionProps
   ): Promise<void | ResponseProps> => {
     try {
-      const { name, email, phone, password } = req.body as IUser;
+      const body = req.body as IUser;
 
       // Check if a user with the same email or phone already exists
-      const userExists = await User.findOne({ $or: [{ email }, { phone }] }).select('-password');
+      const emailExists = await User.findOne({ email: body.email }).select('-password');
+      const phoneExists = await User.findOne({ phone: body.phone }).select('-password');
 
-      if (userExists) {
+      if (emailExists) {
         return res.status(409).json({
-          message: 'User already exists.'
+          message: 'Email already exists.'
         });
+      }
+
+      if (phoneExists) {
+        return res.status(409).json({
+          message: 'Phone already exists.'
+        });
+      }
+
+      if (req.file) {
+        body.avatar = req.file.filename;
       }
 
       // Validate the new user data against the schema
@@ -35,27 +48,47 @@ class UserController {
 
       // Generate a salt and hash the password
       const salt = await bcrypt.genSalt(12);
-      const passwordHash = await bcrypt.hash(password, salt);
+      const passwordHash = await bcrypt.hash(body.password, salt);
 
       // Create a new user with the hashed password
       const newUser = await User.create({
-        name,
-        email,
-        phone,
+        avatar: body.avatar,
+        name: body.name,
+        email: body.email,
+        phone: body.phone,
         password: passwordHash
       });
+
+      const { secret } = env;
+
+      // Generate a JWT token for the user
+      const token = jwt.sign(
+        {
+          // eslint-disable-next-line @typescript-eslint/no-unsafe-assignment, no-underscore-dangle
+          id: newUser._id
+        },
+        secret
+      );
 
       const userResponse = {
         // eslint-disable-next-line @typescript-eslint/no-unsafe-assignment, no-underscore-dangle
         _id: newUser._id,
+        avatar: body.avatar,
         name: newUser.name,
         email: newUser.email,
-        phone: newUser.phone
+        phone: newUser.phone,
+        token
       };
 
       return res.status(201).json({
         message: 'User created successfully.',
-        data: userResponse
+        // eslint-disable-next-line @typescript-eslint/no-unsafe-assignment, no-underscore-dangle
+        _id: userResponse._id,
+        avatar: userResponse.avatar,
+        name: userResponse.name,
+        email: userResponse.email,
+        phone: userResponse.phone,
+        token
       });
     } catch (error) {
       // Pass any errors to the error handling middleware
@@ -125,6 +158,10 @@ class UserController {
       // Find the user by ID, excluding the password field
       const user = await User.findById(id).select('-password');
 
+      if (user) {
+        user.avatar = `${req.protocol}://${req.get('host')}/uploads/users/${user.avatar}`;
+      }
+
       if (!user) {
         return res.status(404).json({
           message: 'User not found.'
@@ -132,36 +169,48 @@ class UserController {
       }
 
       return res.status(200).json({
-        data: user
+        // eslint-disable-next-line @typescript-eslint/no-unsafe-assignment, no-underscore-dangle
+        user: { _id: user._id, avatar: user.avatar, name: user.name, email: user.email, phone: user.phone }
       });
     } catch (error) {
       return next(error);
     }
   };
 
+  // Method to update user
   static updateUser = async (req: RequestProps, res: ResponseProps, next: NextFunctionProps) => {
     try {
       const { id } = req.params;
-      const { avatar, name, email, phone, address } = req.body as {
-        avatar: string;
-        name: string;
-        email: string;
-        phone: string;
-        address: Address[];
-      };
+      const newData = req.body as Partial<IUser>;
 
+      // Find the user by ID, excluding the password field
       const userFound = await User.findById(id).select('-password');
 
       if (!userFound) {
-        return res.status(404).json({
-          message: 'User not found.'
-        });
+        throw new NotFound('User not found.');
+      }
+
+      if (req.file) {
+        if (userFound.avatar) {
+          const avatarPath = path.join(__dirname, '..', '..', 'uploads', 'users', path.basename(userFound.avatar));
+
+          if (fs.existsSync(avatarPath)) {
+            try {
+              fs.unlinkSync(avatarPath);
+            } catch (unlinkError) {
+              logger.error(`Error deleting file: ${(unlinkError as Error).message}`);
+              return next(new Error('Error deleting old image file.'));
+            }
+          }
+        }
+
+        newData.avatar = req.file.filename;
       }
 
       // // Update the user with the provided data
       const updatedUser = await User.findByIdAndUpdate(
         id,
-        { $set: { avatar, name, email, phone, address } },
+        { $set: { avatar: newData.avatar, name: newData.name, email: newData.email, phone: newData.phone } },
         { new: true }
       ).select('-password');
 
@@ -171,16 +220,25 @@ class UserController {
 
       return res.status(200).json({
         message: 'User updated already.',
-        data: updatedUser
+        user: {
+          // eslint-disable-next-line @typescript-eslint/no-unsafe-assignment, no-underscore-dangle
+          _id: updatedUser._id,
+          avatar: updatedUser.avatar,
+          name: updatedUser.name,
+          email: updatedUser.email,
+          phone: updatedUser.phone
+        }
       });
     } catch (error) {
       return next(error);
     }
   };
 
+  // Method to delete user
   static deleteUser = async (req: RequestProps, res: ResponseProps, next: NextFunctionProps) => {
     try {
       const { id } = req.params;
+      // Find and delete the user by ID, excluding the password field
       const userFound = await User.findByIdAndDelete(id).select('-password');
 
       if (userFound !== null) {
