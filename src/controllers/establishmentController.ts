@@ -1,6 +1,7 @@
 import { RequestProps, ResponseProps, NextFunctionProps, logger } from '@/config';
 import NotFound from '@/errors/NotFound';
 import { IEstablishment } from '@/models/Establishment';
+import Product from '@/models/Product';
 import { Establishment } from '@/models/index';
 import fs from 'fs';
 import path from 'path';
@@ -73,6 +74,51 @@ class EstablishmentController {
       }
     } catch (error) {
       // Pass any errors to the error handling middleware
+      next(error);
+    }
+  };
+
+  static getEstablishmentWithProducts = async (req: RequestProps, res: ResponseProps, next: NextFunctionProps) => {
+    try {
+      // Extracting establishment ID from request parameters
+      const { id } = req.params;
+
+      // Finding establishment by ID
+      const establishment = await Establishment.findById(id);
+
+      if (establishment) {
+        establishment.coverPhoto = `${req.protocol}://${req.get('host')}/uploads/establishments/${establishment.coverPhoto}`;
+
+        // If establishment is found, finding all products associated with the establishment
+        const productList = await Product.find({ establishment: id }).lean();
+
+        const productWithCoverPhotoURL = productList.map((product) => ({
+          id: product.id,
+          name: product.name,
+          description: product.description,
+          price: product.price,
+          coverPhoto: `${req.protocol}://${req.get('host')}/uploads/products/${product.coverPhoto}`
+        }));
+
+        if (productWithCoverPhotoURL.length > 0) {
+          // If products are found, sending a success response with the list of products
+          res.status(200).json({
+            establishment: { name: establishment.name, coverPhoto: establishment.coverPhoto },
+            products: productWithCoverPhotoURL
+          });
+        } else {
+          // If no products are found, passing a NotFound error to the error handling middleware
+          res.status(200).json({
+            establishment: { name: establishment.name, coverPhoto: establishment.coverPhoto },
+            products: []
+          });
+        }
+      } else {
+        // If establishment is not found, passing a NotFound error to the error handling middleware
+        next(new NotFound('Establishment Id not found.'));
+      }
+    } catch (error) {
+      // Passing any error to the error handling middleware
       next(error);
     }
   };
