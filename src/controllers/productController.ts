@@ -1,7 +1,7 @@
 import { RequestProps, ResponseProps, NextFunctionProps, logger } from '@/config';
 import NotFound from '@/errors/NotFound';
 import { IProduct } from '@/models/Product';
-import { Establishment, Product } from '@/models/index';
+import { Product } from '@/models/index';
 import path from 'path';
 import fs from 'fs';
 
@@ -185,36 +185,7 @@ class ProductsController {
       // Passing any error to the error handling middleware
       next(error);
     }
-  };
-
-  // Method to get all products by establishment ID
-  static getProductsByEstablishment = async (req: RequestProps, res: ResponseProps, next: NextFunctionProps) => {
-    try {
-      // Extracting establishment ID from request parameters
-      const { establishmentId } = req.params;
-
-      // Finding establishment by ID
-      const establishment = await Establishment.findById(establishmentId);
-
-      if (establishment !== null) {
-        // If establishment is found, finding all products associated with the establishment
-        const productList: IProduct[] = await Product.find({ establishment: establishmentId });
-
-        if (productList.length > 0) {
-          // If products are found, sending a success response with the list of products
-          res.status(200).json(productList);
-        } else {
-          // If no products are found, passing a NotFound error to the error handling middleware
-          res.status(200).json('Product list empty.');
-        }
-      } else {
-        // If establishment is not found, passing a NotFound error to the error handling middleware
-        next(new NotFound('Establishment Id not found.'));
-      }
-    } catch (error) {
-      // Passing any error to the error handling middleware
-      next(error);
-    }
+    return undefined;
   };
 
   static filterProduct = async (req: RequestProps, res: ResponseProps, next: NextFunctionProps) => {
