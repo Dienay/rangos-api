@@ -18,7 +18,11 @@ const app = express();
 // Enable Cross-Origin Resource Sharing (CORS)
 app.use(cors());
 // Enhance HTTP headers for better security
-app.use(helmet());
+app.use(
+  helmet({
+    crossOriginResourcePolicy: false
+  })
+);
 // Compress HTTP responses
 app.use(compression({ level: 9 }));
 // Parse incoming JSON payloads

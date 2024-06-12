@@ -1,7 +1,7 @@
 [
   {
     "_id": "66436318bea46df5e1bc8bcf",
-    "coverPhoto": "image2.jpg",
+    "coverPhoto": "cappuccino.jpg",
     "name": "Cappuccino",
     "description": "Smooth and creamy cappuccino made with freshly ground coffee beans and steamed milk.",
     "price": 3.99,
@@ -9,7 +9,7 @@
   },
   {
     "_id": "66436318bea46df5e1bc8bd0",
-    "coverPhoto": "image4.jpg",
+    "coverPhoto": "hawaiian-pizza.jpg",
     "name": "Hawaiian Pizza",
     "description": "Classic Hawaiian pizza topped with ham, pineapple, and mozzarella cheese.",
     "price": 14.99,
@@ -17,7 +17,7 @@
   },
   {
     "_id": "66436318bea46df5e1bc8bd1",
-    "coverPhoto": "image3.jpg",
+    "coverPhoto": "baguette.jpg",
     "name": "Baguette",
     "description": "Freshly baked French baguette with a crispy crust and soft interior.",
     "price": 2.49,
@@ -25,7 +25,7 @@
   },
   {
     "_id": "66436318bea46df5e1bc8bd2",
-    "coverPhoto": "image3.jpg",
+    "coverPhoto": "croissant.jpg",
     "name": "Croissant",
     "description": "Flaky and buttery croissant made with layers of dough, perfect for breakfast.",
     "price": 1.99,
@@ -33,7 +33,7 @@
   },
   {
     "_id": "66436318bea46df5e1bc8bd3",
-    "coverPhoto": "image3.jpg",
+    "coverPhoto": "chocolate-chip-cookie.jpg",
     "name": "Chocolate Chip Cookie",
     "description": "Homemade chocolate chip cookie baked to perfection, chewy on the inside and crispy on the outside.",
     "price": 1.49,
@@ -41,7 +41,7 @@
   },
   {
     "_id": "66436318bea46df5e1bc8bd4",
-    "coverPhoto": "image3.jpg",
+    "coverPhoto": "blueberry-muffin.jpg",
     "name": "Blueberry Muffin",
     "description": "Moist and flavorful blueberry muffin, bursting with juicy blueberries in every bite.",
     "price": 2.99,
@@ -49,7 +49,7 @@
   },
   {
     "_id": "66436318bea46df5e1bc8bd5",
-    "coverPhoto": "image3.jpg",
+    "coverPhoto": "cinnamon-roll.jpg",
     "name": "Cinnamon Roll",
     "description": "Irresistible cinnamon roll swirled with cinnamon sugar and topped with a sweet glaze.",
     "price": 3.49,
@@ -57,7 +57,7 @@
   },
   {
     "_id": "66436318bea46df5e1bc8bd6",
-    "coverPhoto": "image3.jpg",
+    "coverPhoto": "apple-pie.jpg",
     "name": "Apple Pie",
     "description": "Classic apple pie with a flaky crust and tender apples, served warm with a scoop of vanilla ice cream.",
     "price": 4.99,
@@ -65,7 +65,7 @@
   },
   {
     "_id": "66436318bea46df5e1bc8bd7",
-    "coverPhoto": "image3.jpg",
+    "coverPhoto": "chocolate-eclair.jpg",
     "name": "Chocolate Eclair",
     "description": "Decadent chocolate eclair filled with creamy custard and topped with rich chocolate ganache.",
     "price": 3.99,
@@ -73,7 +73,7 @@
   },
   {
     "_id": "66436318bea46df5e1bc8bd8",
-    "coverPhoto": "image3.jpg",
+    "coverPhoto": "sourdough-bread.jpg",
     "name": "Sourdough Bread",
     "description": "Artisanal sourdough bread with a chewy crust and tangy flavor, perfect for sandwiches or toast.",
     "price": 3.79,
@@ -81,7 +81,7 @@
   },
   {
     "_id": "66436318bea46df5e1bc8bd9",
-    "coverPhoto": "image3.jpg",
+    "coverPhoto": "pecan-pie.jpg",
     "name": "Pecan Pie",
     "description": "Southern-style pecan pie with a buttery crust and a gooey, caramelized filling packed with pecans.",
     "price": 5.49,
@@ -89,7 +89,7 @@
   },
   {
     "_id": "66436318bea46df5e1bc8bda",
-    "coverPhoto": "image3.jpg",
+    "coverPhoto": "strawberry-shortcake.jpg",
     "name": "Strawberry Shortcake",
     "description": "Delicious strawberry shortcake layered with fresh strawberries and whipped cream, served with a drizzle of strawberry sauce.",
     "price": 4.49,
@@ -97,7 +97,7 @@
   },
   {
     "_id": "66436318bea46df5e1bc8bdb",
-    "coverPhoto": "image5.jpg",
+    "coverPhoto": "vanilla-ice-cream.jpg",
     "name": "Vanilla Ice Cream",
     "description": "Creamy and smooth vanilla ice cream made with real vanilla beans.",
     "price": 3.49,
@@ -105,7 +105,7 @@
   },
   {
     "_id": "66436318bea46df5e1bc8bdc",
-    "coverPhoto": "image5.jpg",
+    "coverPhoto": "chocolate-ice-cream.jpg",
     "name": "Chocolate Ice Cream",
     "description": "Rich and indulgent chocolate ice cream made with premium cocoa for a deep, chocolatey flavor.",
     "price": 3.99,
@@ -113,7 +113,7 @@
   },
   {
     "_id": "66436318bea46df5e1bc8bdd",
-    "coverPhoto": "image5.jpg",
+    "coverPhoto": "strawberry-sorbet.jpg",
     "name": "Strawberry Sorbet",
     "description": "Refreshing strawberry sorbet made with ripe strawberries for a burst of fruity flavor.",
     "price": 2.99,
@@ -121,7 +121,7 @@
   },
   {
     "_id": "66436318bea46df5e1bc8bde",
-    "coverPhoto": "image5.jpg",
+    "coverPhoto": "mint-chocolate-chip-ice-cream.jpg",
     "name": "Mint Chocolate Chip Ice Cream",
     "description": "Cool and refreshing mint ice cream loaded with rich chocolate chips for the perfect balance of flavors.",
     "price": 4.49,
@@ -129,7 +129,7 @@
   },
   {
     "_id": "66436318bea46df5e1bc8bdf",
-    "coverPhoto": "image6.jpg",
+    "coverPhoto": "",
     "name": "Whopper",
     "description": "Flame-grilled beef patty topped with juicy tomatoes, fresh lettuce, creamy mayonnaise, ketchup, crunchy pickles, and sliced onions on a toasted sesame seed bun.",
     "price": 4.99,
@@ -137,7 +137,7 @@
   },
   {
     "_id": "66436318bea46df5e1bc8be0",
-    "coverPhoto": "image6.jpg",
+    "coverPhoto": "",
     "name": "Chicken Fries",
     "description": "Golden and crispy chicken fries seasoned to perfection, served with your choice of dipping sauce.",
     "price": 3.49,
@@ -145,7 +145,7 @@
   },
   {
     "_id": "66436318bea46df5e1bc8be1",
-    "coverPhoto": "image6.jpg",
+    "coverPhoto": "",
     "name": "BK® Café Mocha",
     "description": "Rich espresso combined with steamed milk and chocolate syrup, topped with whipped cream for a decadent treat.",
     "price": 2.99,
@@ -153,7 +153,7 @@
   },
   {
     "_id": "66436318bea46df5e1bc8be2",
-    "coverPhoto": "image7.jpg",
+    "coverPhoto": "",
     "name": "Smartphone",
     "description": "Cutting-edge smartphone with advanced features such as a high-resolution camera, fast processor, and long-lasting battery.",
     "price": 699.99,
@@ -161,7 +161,7 @@
   },
   {
     "_id": "66436318bea46df5e1bc8be3",
-    "coverPhoto": "image7.jpg",
+    "coverPhoto": "",
     "name": "Laptop",
     "description": "Powerful laptop with a sleek design, vibrant display, and fast performance, perfect for work or entertainment.",
     "price": 999.99,
@@ -169,7 +169,7 @@
   },
   {
     "_id": "66436318bea46df5e1bc8be4",
-    "coverPhoto": "image8.jpg",
+    "coverPhoto": "",
     "name": "Original Cheesecake",
     "description": "Creamy and smooth cheesecake made with a graham cracker crust, perfect for any occasion.",
     "price": 7.99,
@@ -177,7 +177,7 @@
   },
   {
     "_id": "66436318bea46df5e1bc8be5",
-    "coverPhoto": "image8.jpg",
+    "coverPhoto": "",
     "name": "Chocolate Hazelnut Crunch Cheesecake",
     "description": "Decadent chocolate cheesecake with a hazelnut spread and crunchy hazelnut crust, topped with chocolate ganache and whipped cream.",
     "price": 8.99,
@@ -185,7 +185,7 @@
   },
   {
     "_id": "66436318bea46df5e1bc8be6",
-    "coverPhoto": "image8.jpg",
+    "coverPhoto": "",
     "name": "Fresh Strawberry Cheesecake",
     "description": "Delicious cheesecake topped with fresh strawberries and a sweet strawberry glaze, served with whipped cream.",
     "price": 9.99,
@@ -193,7 +193,7 @@
   },
   {
     "_id": "66436318bea46df5e1bc8be7",
-    "coverPhoto": "image8.jpg",
+    "coverPhoto": "",
     "name": "Ultimate Red Velvet Cake Cheesecake™",
     "description": "Layers of red velvet cake and creamy cheesecake, finished with cream cheese frosting and chocolate shavings.",
     "price": 10.99,
@@ -201,7 +201,7 @@
   },
   {
     "_id": "66436318bea46df5e1bc8be8",
-    "coverPhoto": "image8.jpg",
+    "coverPhoto": "",
     "name": "Lemon Raspberry Cream Cheesecake",
     "description": "Tangy lemon cheesecake swirled with raspberry preserves, topped with white chocolate mousse and whipped cream.",
     "price": 11.99,
@@ -209,7 +209,7 @@
   },
   {
     "_id": "66436318bea46df5e1bc8be9",
-    "coverPhoto": "image8.jpg",
+    "coverPhoto": "",
     "name": "Key Lime Cheesecake",
     "description": "Refreshing key lime cheesecake with a graham cracker crust, topped with whipped cream and lime zest.",
     "price": 10.49,
@@ -217,7 +217,7 @@
   },
   {
     "_id": "66436318bea46df5e1bc8bea",
-    "coverPhoto": "image9.jpg",
+    "coverPhoto": "",
     "name": "Cold Brew Coffee",
     "description": "Smooth and refreshing cold brew coffee made with premium coffee beans, served over ice.",
     "price": 4.49,
@@ -225,7 +225,7 @@
   },
   {
     "_id": "66436318bea46df5e1bc8beb",
-    "coverPhoto": "image9.jpg",
+    "coverPhoto": "",
     "name": "Caramel Macchiato",
     "description": "Creamy and indulgent caramel macchiato with espresso, steamed milk, and caramel syrup.",
     "price": 5.49,
@@ -233,7 +233,7 @@
   },
   {
     "_id": "66436318bea46df5e1bc8bec",
-    "coverPhoto": "image9.jpg",
+    "coverPhoto": "",
     "name": "Nitro Cold Brew",
     "description": "Velvety-smooth nitro cold brew coffee infused with nitrogen for a creamy texture and rich flavor.",
     "price": 4.99,
@@ -241,7 +241,7 @@
   },
   {
     "_id": "66436318bea46df5e1bc8bed",
-    "coverPhoto": "image9.jpg",
+    "coverPhoto": "",
     "name": "Matcha Green Tea Latte",
     "description": "Vibrant and earthy matcha green tea latte made with finely ground green tea powder and steamed milk.",
     "price": 5.99,
@@ -249,7 +249,7 @@
   },
   {
     "_id": "66436318bea46df5e1bc8bee",
-    "coverPhoto": "image9.jpg",
+    "coverPhoto": "",
     "name": "Espresso Con Panna",
     "description": "Intense espresso topped with a dollop of whipped cream, perfect for espresso lovers.",
     "price": 3.99,
@@ -257,7 +257,7 @@
   },
   {
     "_id": "66436318bea46df5e1bc8bef",
-    "coverPhoto": "image10.jpg",
+    "coverPhoto": "",
     "name": "Avocado Toast",
     "description": "Sliced avocado served on toasted whole grain bread, topped with cherry tomatoes, feta cheese, and a drizzle of olive oil.",
     "price": 8.99,
@@ -265,7 +265,7 @@
   },
   {
     "_id": "66436318bea46df5e1bc8bf0",
-    "coverPhoto": "image10.jpg",
+    "coverPhoto": "",
     "name": "Quiche Lorraine",
     "description": "Classic quiche filled with bacon, Gruyere cheese, and a savory custard, baked in a buttery pastry crust.",
     "price": 9.49,
@@ -273,7 +273,7 @@
   },
   {
     "_id": "66436318bea46df5e1bc8bf1",
-    "coverPhoto": "image10.jpg",
+    "coverPhoto": "",
     "name": "French Onion Soup",
     "description": "Rich and flavorful French onion soup topped with toasted baguette slices and melted Gruyere cheese.",
     "price": 7.99,
@@ -281,7 +281,7 @@
   },
   {
     "_id": "66436318bea46df5e1bc8bf2",
-    "coverPhoto": "image10.jpg",
+    "coverPhoto": "",
     "name": "Pain au Chocolat",
     "description": "Buttery and flaky croissant pastry filled with rich chocolate, perfect for breakfast or as a snack.",
     "price": 3.99,
@@ -289,7 +289,7 @@
   },
   {
     "_id": "66436318bea46df5e1bc8bf3",
-    "coverPhoto": "image11.jpg",
+    "coverPhoto": "",
     "name": "Pepperoni Pizza",
     "description": "Classic pepperoni pizza topped with melted mozzarella cheese and zesty tomato sauce.",
     "price": 12.99,
@@ -297,7 +297,7 @@
   },
   {
     "_id": "66436318bea46df5e1bc8bf4",
-    "coverPhoto": "image11.jpg",
+    "coverPhoto": "",
     "name": "Margherita Pizza",
     "description": "Traditional margherita pizza topped with fresh mozzarella cheese, ripe tomatoes, and basil leaves.",
     "price": 11.99,
@@ -305,7 +305,7 @@
   },
   {
     "_id": "66436318bea46df5e1bc8bf5",
-    "coverPhoto": "image11.jpg",
+    "coverPhoto": "",
     "name": "Meat Lovers Pizza",
     "description": "Hearty meat lovers pizza loaded with pepperoni, sausage, bacon, and ham, topped with mozzarella cheese.",
     "price": 14.99,
@@ -313,7 +313,7 @@
   },
   {
     "_id": "66436318bea46df5e1bc8bf6",
-    "coverPhoto": "image11.jpg",
+    "coverPhoto": "",
     "name": "Vegetarian Pizza",
     "description": "Delicious vegetarian pizza topped with mushrooms, bell peppers, onions, black olives, and mozzarella cheese.",
     "price": 13.99,
@@ -321,7 +321,7 @@
   },
   {
     "_id": "66436318bea46df5e1bc8bf7",
-    "coverPhoto": "image11.jpg",
+    "coverPhoto": "",
     "name": "BBQ Chicken Pizza",
     "description": "Savory BBQ chicken pizza topped with grilled chicken, red onions, cilantro, and mozzarella cheese.",
     "price": 13.49,
@@ -329,7 +329,7 @@
   },
   {
     "_id": "66436318bea46df5e1bc8bf8",
-    "coverPhoto": "image11.jpg",
+    "coverPhoto": "",
     "name": "Supreme Pizza",
     "description": "Ultimate supreme pizza loaded with pepperoni, sausage, bell peppers, onions, black olives, and mushrooms.",
     "price": 15.49,
@@ -337,7 +337,7 @@
   },
   {
     "_id": "66436318bea46df5e1bc8bf9",
-    "coverPhoto": "image12.jpg",
+    "coverPhoto": "",
     "name": "Chocolate Fudge Brownie Ice Cream",
     "description": "Decadent chocolate fudge brownie ice cream with chunks of chewy brownie mixed in.",
     "price": 6.99,
@@ -345,7 +345,7 @@
   },
   {
     "_id": "66436318bea46df5e1bc8bfa",
-    "coverPhoto": "image12.jpg",
+    "coverPhoto": "",
     "name": "Cookie Dough Ice Cream",
     "description": "Classic cookie dough ice cream loaded with chunks of chocolate chip cookie dough and swirls of fudge.",
     "price": 7.49,
@@ -353,7 +353,7 @@
   },
   {
     "_id": "66436318bea46df5e1bc8bfb",
-    "coverPhoto": "image12.jpg",
+    "coverPhoto": "",
     "name": "Cherry Garcia Ice Cream",
     "description": "Cherry Garcia ice cream with cherries and chunks of dark chocolate, a beloved classic flavor.",
     "price": 6.79,
@@ -361,7 +361,7 @@
   },
   {
     "_id": "66436318bea46df5e1bc8bfc",
-    "coverPhoto": "image13.jpg",
+    "coverPhoto": "",
     "name": "Big Mac",
     "description": "Iconic burger featuring two all-beef patties, special sauce, lettuce, cheese, pickles, onions on a sesame seed bun.",
     "price": 4.99,
@@ -369,7 +369,7 @@
   },
   {
     "_id": "66436318bea46df5e1bc8bfd",
-    "coverPhoto": "image13.jpg",
+    "coverPhoto": "",
     "name": "McChicken",
     "description": "Satisfying chicken sandwich made with a crispy, seasoned chicken patty, mayonnaise, and lettuce on a toasted bun.",
     "price": 3.49,
@@ -377,7 +377,7 @@
   },
   {
     "_id": "66436318bea46df5e1bc8bfe",
-    "coverPhoto": "image13.jpg",
+    "coverPhoto": "",
     "name": "McFlurry",
     "description": "Indulgent dessert featuring creamy vanilla soft serve mixed with your choice of delicious toppings, like M&M's or Oreo cookies.",
     "price": 2.99,
@@ -385,7 +385,7 @@
   },
   {
     "_id": "66436318bea46df5e1bc8bff",
-    "coverPhoto": "image13.jpg",
+    "coverPhoto": "",
     "name": "Egg McMuffin",
     "description": "Classic breakfast sandwich made with a freshly cracked Grade A egg, Canadian bacon, and melted American cheese on a toasted English muffin.",
     "price": 3.79,
@@ -393,7 +393,7 @@
   },
   {
     "_id": "66436318bea46df5e1bc8c00",
-    "coverPhoto": "image13.jpg",
+    "coverPhoto": "",
     "name": "French Fries",
     "description": "Golden, crispy French fries made from premium potatoes, seasoned to perfection and served hot.",
     "price": 1.89,
@@ -401,7 +401,7 @@
   },
   {
     "_id": "66436318bea46df5e1bc8c01",
-    "coverPhoto": "image13.jpg",
+    "coverPhoto": "",
     "name": "Big Mac",
     "description": "Iconic double-decker burger with two beef patties, special sauce, lettuce, cheese, pickles, and onions, served on a sesame seed bun.",
     "price": 4.99,
@@ -409,7 +409,7 @@
   },
   {
     "_id": "66436318bea46df5e1bc8c02",
-    "coverPhoto": "image13.jpg",
+    "coverPhoto": "",
     "name": "McChicken",
     "description": "Delicious crispy chicken sandwich with shredded lettuce and mayonnaise, served on a toasted bun.",
     "price": 3.49,
@@ -417,7 +417,7 @@
   },
   {
     "_id": "66436318bea46df5e1bc8c03",
-    "coverPhoto": "image14.jpg",
+    "coverPhoto": "",
     "name": "iPhone 13 Pro",
     "description": "The latest iPhone model with ProMotion display, A15 Bionic chip, and advanced camera system.",
     "price": 999,
@@ -425,7 +425,7 @@
   },
   {
     "_id": "66436318bea46df5e1bc8c04",
-    "coverPhoto": "image14.jpg",
+    "coverPhoto": "",
     "name": "MacBook Pro",
     "description": "Powerful laptop with M1 Pro or M1 Max chip, stunning Liquid Retina XDR display, and up to 64GB of unified memory.",
     "price": 1999,
@@ -433,7 +433,7 @@
   },
   {
     "_id": "66436318bea46df5e1bc8c05",
-    "coverPhoto": "image14.jpg",
+    "coverPhoto": "",
     "name": "iPad Air",
     "description": "Versatile tablet with stunning 10.9-inch Liquid Retina display, A14 Bionic chip, and support for Apple Pencil 2nd generation.",
     "price": 599,
@@ -441,7 +441,7 @@
   },
   {
     "_id": "66436318bea46df5e1bc8c06",
-    "coverPhoto": "image14.jpg",
+    "coverPhoto": "",
     "name": "Apple Watch Series 7",
     "description": "Advanced smartwatch with larger, always-on Retina display, enhanced durability, and new health features.",
     "price": 399,
@@ -449,7 +449,7 @@
   },
   {
     "_id": "66436318bea46df5e1bc8c07",
-    "coverPhoto": "image14.jpg",
+    "coverPhoto": "",
     "name": "AirPods Pro",
     "description": "Immersive sound and active noise cancellation in a sleek, wireless design, with customizable fit and transparency mode.",
     "price": 249,
@@ -457,7 +457,7 @@
   },
   {
     "_id": "66436318bea46df5e1bc8c08",
-    "coverPhoto": "image14.jpg",
+    "coverPhoto": "",
     "name": "HomePod mini",
     "description": "Compact smart speaker with powerful sound and built-in Siri, perfect for enjoying music and controlling your smart home.",
     "price": 99,
@@ -465,7 +465,7 @@
   },
   {
     "_id": "66436318bea46df5e1bc8c09",
-    "coverPhoto": "image15.jpg",
+    "coverPhoto": "",
     "name": "Turkey Breast Sub",
     "description": "Freshly sliced turkey breast served on freshly baked bread, topped with your choice of vegetables and sauces.",
     "price": 6.49,
@@ -473,7 +473,7 @@
   },
   {
     "_id": "66436318bea46df5e1bc8c0a",
-    "coverPhoto": "image15.jpg",
+    "coverPhoto": "",
     "name": "Italian BMT Sub",
     "description": "Classic Italian sub with Genoa salami, pepperoni, and ham, topped with your choice of vegetables and sauces.",
     "price": 7.49,
@@ -481,7 +481,7 @@
   },
   {
     "_id": "66436318bea46df5e1bc8c0b",
-    "coverPhoto": "image15.jpg",
+    "coverPhoto": "",
     "name": "Veggie Delight Sub",
     "description": "Delicious vegetarian sub with your choice of fresh vegetables and sauces, served on freshly baked bread.",
     "price": 5.99,
@@ -489,7 +489,7 @@
   },
   {
     "_id": "66436318bea46df5e1bc8c0c",
-    "coverPhoto": "image15.jpg",
+    "coverPhoto": "",
     "name": "Meatball Marinara Sub",
     "description": "Savory meatballs in marinara sauce, served on freshly baked bread and topped with melted cheese.",
     "price": 6.99,
@@ -497,7 +497,7 @@
   },
   {
     "_id": "66436318bea46df5e1bc8c0d",
-    "coverPhoto": "image15.jpg",
+    "coverPhoto": "",
     "name": "Chicken Teriyaki Sub",
     "description": "Grilled chicken strips marinated in teriyaki sauce, served on freshly baked bread with your choice of vegetables and sauces.",
     "price": 7.99,
@@ -505,7 +505,7 @@
   },
   {
     "_id": "66436318bea46df5e1bc8c0e",
-    "coverPhoto": "image16.jpg",
+    "coverPhoto": "",
     "name": "Organic Avocado",
     "description": "Fresh organic avocado, rich in healthy fats and nutrients, perfect for salads, sandwiches, and dips.",
     "price": 1.99,
@@ -513,7 +513,7 @@
   },
   {
     "_id": "66436318bea46df5e1bc8c0f",
-    "coverPhoto": "image16.jpg",
+    "coverPhoto": "",
     "name": "Grass-Fed Ribeye Steak",
     "description": "Premium grass-fed ribeye steak, tender and juicy, perfect for grilling or pan-searing.",
     "price": 19.99,
@@ -521,7 +521,7 @@
   },
   {
     "_id": "66436318bea46df5e1bc8c10",
-    "coverPhoto": "image17.jpg",
+    "coverPhoto": "",
     "name": "Crunchy Taco",
     "description": "Classic crunchy taco with seasoned beef, lettuce, and cheddar cheese, all wrapped in a crispy corn shell.",
     "price": 1.19,
@@ -529,7 +529,7 @@
   },
   {
     "_id": "66436318bea46df5e1bc8c11",
-    "coverPhoto": "image17.jpg",
+    "coverPhoto": "",
     "name": "Bean Burrito",
     "description": "Hearty bean burrito filled with seasoned refried beans, cheddar cheese, and tangy red sauce, wrapped in a warm flour tortilla.",
     "price": 1.29,
@@ -537,7 +537,7 @@
   },
   {
     "_id": "66436318bea46df5e1bc8c12",
-    "coverPhoto": "image17.jpg",
+    "coverPhoto": "",
     "name": "Quesarito",
     "description": "Innovative quesarito featuring seasoned beef, rice, nacho cheese, sour cream, and chipotle sauce, all wrapped in a grilled quesadilla.",
     "price": 2.99,
@@ -545,7 +545,7 @@
   },
   {
     "_id": "66436318bea46df5e1bc8c13",
-    "coverPhoto": "image17.jpg",
+    "coverPhoto": "",
     "name": "Cinnamon Twists",
     "description": "Irresistible cinnamon twists, crispy on the outside and soft on the inside, coated with sweet cinnamon sugar.",
     "price": 1.09,
@@ -553,7 +553,7 @@
   },
   {
     "_id": "66436318bea46df5e1bc8c14",
-    "coverPhoto": "image18.jpg",
+    "coverPhoto": "",
     "name": "Broccoli Cheddar Soup",
     "description": "Creamy soup made with tender broccoli florets, rich cheddar cheese, and savory seasonings.",
     "price": 5.99,
@@ -561,7 +561,7 @@
   },
   {
     "_id": "66436318bea46df5e1bc8c15",
-    "coverPhoto": "image18.jpg",
+    "coverPhoto": "",
     "name": "Turkey Avocado BLT Sandwich",
     "description": "Satisfying sandwich with roasted turkey, creamy avocado, crispy bacon, lettuce, tomato, and mayonnaise, served on freshly baked bread.",
     "price": 8.49,
@@ -569,7 +569,7 @@
   },
   {
     "_id": "66436318bea46df5e1bc8c16",
-    "coverPhoto": "image18.jpg",
+    "coverPhoto": "",
     "name": "Classic Grilled Cheese",
     "description": "Comforting grilled cheese sandwich made with melted cheddar and American cheeses on grilled bread.",
     "price": 6.29,
@@ -577,7 +577,7 @@
   },
   {
     "_id": "66436318bea46df5e1bc8c17",
-    "coverPhoto": "image18.jpg",
+    "coverPhoto": "",
     "name": "Caesar Salad",
     "description": "Classic Caesar salad with crisp romaine lettuce, garlic croutons, Parmesan cheese, and Caesar dressing.",
     "price": 7.99,
@@ -585,7 +585,7 @@
   },
   {
     "_id": "66436318bea46df5e1bc8c18",
-    "coverPhoto": "image18.jpg",
+    "coverPhoto": "",
     "name": "Cinnamon Crunch Bagel",
     "description": "Delicious bagel topped with cinnamon sugar and crunchy cinnamon streusel, perfect for breakfast or a snack.",
     "price": 2.49,
@@ -593,7 +593,7 @@
   },
   {
     "_id": "66436318bea46df5e1bc8c19",
-    "coverPhoto": "image18.jpg",
+    "coverPhoto": "",
     "name": "Broccoli Turkey Cheddar Sandwich",
     "description": "Savory sandwich featuring tender broccoli, roasted turkey, and melted cheddar cheese, served on freshly baked bread.",
     "price": 8.99,
@@ -601,7 +601,7 @@
   },
   {
     "_id": "66436318bea46df5e1bc8c1a",
-    "coverPhoto": "image20.jpg",
+    "coverPhoto": "",
     "name": "Glazed Donut",
     "description": "Classic glazed donut, light and fluffy with a sweet, sugary glaze, perfect for a morning treat.",
     "price": 0.99,
@@ -609,7 +609,7 @@
   },
   {
     "_id": "66436318bea46df5e1bc8c1b",
-    "coverPhoto": "image20.jpg",
+    "coverPhoto": "",
     "name": "Iced Coffee",
     "description": "Refreshing iced coffee made with premium roasted beans and served over ice, customizable with your choice of flavors and cream.",
     "price": 2.49,
@@ -617,7 +617,7 @@
   },
   {
     "_id": "66436318bea46df5e1bc8c1c",
-    "coverPhoto": "image19.jpg",
+    "coverPhoto": "",
     "name": "Chick-fil-A Sandwich",
     "description": "Signature chicken sandwich featuring a tender, juicy chicken breast seasoned to perfection and served on a toasted buttered bun with pickles.",
     "price": 4.29,
@@ -625,7 +625,7 @@
   },
   {
     "_id": "66436318bea46df5e1bc8c1d",
-    "coverPhoto": "image19.jpg",
+    "coverPhoto": "",
     "name": "Waffle Potato Fries",
     "description": "Crispy waffle-cut potato fries cooked to golden perfection and seasoned with a touch of sea salt.",
     "price": 2.19,
@@ -633,7 +633,7 @@
   },
   {
     "_id": "66436318bea46df5e1bc8c1e",
-    "coverPhoto": "image19.jpg",
+    "coverPhoto": "",
     "name": "Spicy Chicken Sandwich",
     "description": "Satisfying chicken sandwich with a spicy kick, featuring a hand-breaded chicken breast seasoned with a blend of fiery spices, served on a toasted buttered bun with pickles.",
     "price": 4.69,

@@ -1,14 +1,21 @@
-import { RequestProps, ResponseProps, NextFunctionProps } from '@/config';
+import { RequestProps, ResponseProps, NextFunctionProps, logger } from '@/config';
 import NotFound from '@/errors/NotFound';
 import { IEstablishment } from '@/models/Establishment';
 import { Establishment } from '@/models/index';
+import fs from 'fs';
+import path from 'path';
 
 class EstablishmentController {
   // Create a new establishment
   static createEstablishment = async (req: RequestProps, res: ResponseProps, next: NextFunctionProps) => {
     try {
+      const body = req.body as IEstablishment;
+
+      if (req.file) {
+        body.coverPhoto = req.file.filename;
+      }
       // Create a new establishment object based on the request body
-      const newEstablishment = await Establishment.create(req.body);
+      const newEstablishment = await Establishment.create(body);
 
       // Save the new establishment to the database
       await newEstablishment.save();
@@ -30,8 +37,15 @@ class EstablishmentController {
       // Fetch all establishments from the database
       const establishmentList = await Establishment.find({});
 
+      const establishmentsWithPhotoURL = establishmentList.map((establishment) => ({
+        ...establishment.toObject(),
+        coverPhoto: `${req.protocol}://${req.get('host')}/uploads/establishments/${establishment.coverPhoto}`
+      }));
+
       // Respond with the list of establishments
-      res.status(200).json(establishmentList);
+      res.status(200).json({
+        establishments: establishmentsWithPhotoURL
+      });
     } catch (error) {
       // Pass any errors to the error handling middleware
       next(error);
@@ -46,6 +60,10 @@ class EstablishmentController {
 
       // Find the establishment by its ID
       const foundEstablishment = await Establishment.findById(id);
+
+      if (foundEstablishment) {
+        foundEstablishment.coverPhoto = `${req.protocol}://${req.get('host')}/uploads/establishments/${foundEstablishment.coverPhoto}`;
+      }
 
       // If the establishment is found, respond with it; otherwise, throw a NotFound error
       if (foundEstablishment !== null) {
@@ -65,6 +83,36 @@ class EstablishmentController {
       // Extract the ID from the request parameters and new data from the request body
       const { id } = req.params;
       const newData = req.body as Partial<IEstablishment>;
+
+      const foundEstablishment = await Establishment.findById(id);
+
+      if (!foundEstablishment) {
+        throw new NotFound('Establishment Id not found.');
+      }
+
+      if (req.file) {
+        if (foundEstablishment.coverPhoto) {
+          const coverPhotoPath = path.join(
+            __dirname,
+            '..',
+            '..',
+            'uploads',
+            'establishments',
+            path.basename(foundEstablishment.coverPhoto)
+          );
+
+          if (fs.existsSync(coverPhotoPath)) {
+            try {
+              fs.unlinkSync(coverPhotoPath);
+            } catch (unlinkError) {
+              logger.error(`Error deleting file: ${(unlinkError as Error).message}`);
+              return next(new Error('Error deleting old image file.'));
+            }
+          }
+        }
+
+        newData.coverPhoto = req.file.filename;
+      }
 
       // Validate the new data using Mongoose validation
       const validationError = new Establishment(newData).validateSync();
@@ -98,6 +146,29 @@ class EstablishmentController {
       // Extract the ID from the request parameters
       const { id } = req.params;
 
+      // Find the establishment by its ID
+      const foundEstablishment = await Establishment.findById(id);
+
+      if (foundEstablishment?.coverPhoto) {
+        const coverPhotoPath = path.join(
+          __dirname,
+          '..',
+          '..',
+          'uploads',
+          'establishments',
+          path.basename(foundEstablishment.coverPhoto)
+        );
+
+        if (fs.existsSync(coverPhotoPath)) {
+          try {
+            fs.unlinkSync(coverPhotoPath);
+          } catch (unlinkError) {
+            logger.error(`Error deleting file: ${(unlinkError as Error).message}`);
+            return next(new Error('Error deleting associated image file.'));
+          }
+        }
+      }
+
       // Find and delete the establishment by its ID
       const deletedEstablishment = await Establishment.findByIdAndDelete(id);
 
@@ -114,6 +185,7 @@ class EstablishmentController {
       // Pass any errors to the error handling middleware
       next(error);
     }
+    return undefined;
   };
 }
 

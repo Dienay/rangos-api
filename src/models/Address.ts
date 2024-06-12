@@ -1,5 +1,5 @@
 // Define the Address interface representing the address structure
-export interface Address {
+export interface IAddress {
   description: string;
   street: string;
   number: string;
