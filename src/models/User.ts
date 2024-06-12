@@ -1,5 +1,5 @@
 import mongoose from 'mongoose';
-import { Address } from './Address';
+import { IAddress, addressSchema } from './Address';
 
 // Define the IUser interface extending mongoose.Document to ensure correct typing for Mongoose documents.
 interface IUser extends mongoose.Document {
@@ -9,7 +9,7 @@ interface IUser extends mongoose.Document {
   email: string;
   phone: string;
   password: string;
-  address: Address[];
+  address: IAddress[];
 }
 
 // Define the schema for the User model
@@ -19,22 +19,9 @@ const userSchema = new mongoose.Schema(
     avatar: { type: String },
     name: { type: String, required: [true, 'name is required'] },
     email: { type: String, required: [true, 'email is required'], unique: true },
-    phone: { type: String },
+    phone: { type: String, unique: true },
     password: { type: String, required: [true, 'password is required'] },
-    address: {
-      type: [
-        {
-          description: { type: String },
-          street: { type: String },
-          number: { type: String },
-          complement: { type: String },
-          neighborhood: { type: String },
-          city: { type: String },
-          state: { type: String }
-        }
-      ],
-      _id: false
-    }
+    address: [addressSchema]
   },
   {
     // Remove the version key (__v) from the documents

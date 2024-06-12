@@ -1,5 +1,5 @@
 import mongoose from 'mongoose';
-import { Address } from './Address';
+import { IAddress, addressSchema } from './Address';
 
 // Define the IEstablishment interface extending mongoose.Document, representing an establishment structure
 interface IEstablishment extends mongoose.Document {
@@ -9,7 +9,7 @@ interface IEstablishment extends mongoose.Document {
   openingHours: OpeningHour[];
   deliveryTime: string;
   shipping: number;
-  address: Address[];
+  address: IAddress[];
   category: Category[];
 }
 
@@ -109,20 +109,7 @@ const establishmentSchema = new mongoose.Schema(
     },
     deliveryTime: { type: String },
     shipping: { type: Number },
-    address: {
-      type: [
-        {
-          description: { type: String },
-          street: { type: String },
-          number: { type: String },
-          complement: { type: String },
-          neighborhood: { type: String },
-          city: { type: String },
-          state: { type: String }
-        }
-      ],
-      _id: false
-    },
+    address: [addressSchema],
     category: [
       {
         type: String,
