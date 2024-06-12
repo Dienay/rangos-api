@@ -1,6 +1,7 @@
 import { Router } from 'express';
 import EstablishmentController from '@/controllers/establishmentController';
 import { establishmentsUpload } from '@/config/multer';
+import { addressRouter } from './addressRouter';
 
 // Creating a new router instance
 export const establishmentRouter = Router();
@@ -22,3 +23,6 @@ establishmentRouter.get('/establishments/:id/products', getEstablishmentWithProd
 establishmentRouter.get('/establishments/:id', getEstablishmentById);
 establishmentRouter.put('/establishments/:id', establishmentsUpload.single('coverPhoto'), updateEstablishment);
 establishmentRouter.delete('/establishments/:id', deleteEstablishment);
+
+// Use addressRouter for address-related routes
+establishmentRouter.use('/establishments', addressRouter);
