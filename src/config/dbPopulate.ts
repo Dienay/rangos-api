@@ -1,3 +1,4 @@
+import bcrypt from 'bcrypt';
 // Import required modules
 import fs from 'fs';
 import mongoose from 'mongoose';
@@ -7,6 +8,7 @@ import { IEstablishment } from '@/models/Establishment';
 import { IProduct } from '@/models/Product';
 import { logger, env } from '@/config';
 import { Establishment, Product } from '@/models/index';
+import User, { IUser } from '@/models/User';
 import Order, { IOrder } from '@/models/Order';
 
 // Function to read JSON data from a file
@@ -21,6 +23,7 @@ const getJsonData = <T>(fileName: string): T[] => {
 // Read data from JSON files
 const establishmentsData = getJsonData<IEstablishment>('establishments');
 const productData = getJsonData<IProduct>('products');
+const userData = getJsonData<IUser>('users');
 const orderData = getJsonData<IOrder>('orders');
 
 // Function to populate establishments in the database
@@ -51,6 +54,29 @@ async function populateProducts(products: IProduct[]): Promise<void> {
   }
 }
 
+async function populateUsers(users: IUser[]): Promise<void> {
+  try {
+    // Clear existing users
+    await User.deleteMany({});
+
+    const usersWithHashedPasswords = await Promise.all(
+      users.map(async (user) => {
+        // Generate a salt and hash the password
+        const salt = await bcrypt.genSalt(12);
+        const passwordHash = await bcrypt.hash(user.password, salt);
+        return { ...user, password: passwordHash };
+      })
+    );
+
+    // Insert new users
+    const result = await User.insertMany(usersWithHashedPasswords);
+    logger.info(`Users populated successfully: ${result.length} users inserted.`);
+  } catch (error) {
+    logger.error('Error populating users:', error);
+    throw error;
+  }
+}
+
 // Function to populate orders in the database
 async function populateOrders(orders: IOrder[]): Promise<void> {
   try {
@@ -69,6 +95,7 @@ async function populateOrders(orders: IOrder[]): Promise<void> {
 async function populateDataBase(
   establishments: IEstablishment[],
   products: IProduct[],
+  users: IUser[],
   orders: IOrder[]
 ): Promise<void> {
   try {
@@ -82,6 +109,7 @@ async function populateDataBase(
     await Promise.all([
       populateEstablishments(establishments),
       populateProducts(products),
+      populateUsers(users),
       populateOrders(orders)
     ]);
 
@@ -97,6 +125,6 @@ async function populateDataBase(
 }
 
 // Call the function to populate the database with data
-populateDataBase(establishmentsData, productData, orderData).catch((error) => {
+populateDataBase(establishmentsData, productData, userData, orderData).catch((error) => {
   logger.error('Error populating database:', error);
 });
