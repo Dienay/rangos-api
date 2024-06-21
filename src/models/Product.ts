@@ -1,5 +1,4 @@
 import mongoose from 'mongoose';
-import autopopulate from 'mongoose-autopopulate';
 
 // Define the IProduct interface extending mongoose.Document, representing a product structure
 interface IProduct extends mongoose.Document {
@@ -22,9 +21,7 @@ const productSchema = new mongoose.Schema(
     establishment: {
       type: mongoose.Schema.Types.ObjectId,
       // Reference to the 'establishment' model in MongoDB
-      ref: 'establishment',
-      // Enable autopopulate to automatically populate the establishment field
-      autopopulate: true
+      ref: 'establishment'
     }
   },
   {
@@ -33,11 +30,8 @@ const productSchema = new mongoose.Schema(
   }
 );
 
-// Apply the autopopulate plugin to the schema, enabling automatic population of referenced fields
-productSchema.plugin(autopopulate);
-
 // Create the Product model using the defined schema and IProduct interface
 const Product = mongoose.model<IProduct>('product', productSchema);
 
 export default Product;
-export { IProduct };
+export { IProduct, productSchema };

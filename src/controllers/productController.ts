@@ -36,7 +36,7 @@ class ProductsController {
   static getProducts = async (req: RequestProps, res: ResponseProps, next: NextFunctionProps) => {
     try {
       // Finding all products
-      const productList = await Product.find({});
+      const productList = await Product.find({}).populate({ path: 'establishment', select: 'name' });
 
       const productWithCoverPhotoURL = productList.map((product) => ({
         ...product.toObject(),
