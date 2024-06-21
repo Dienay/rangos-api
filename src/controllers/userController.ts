@@ -69,24 +69,14 @@ class UserController {
         secret
       );
 
-      const userResponse = {
+      return res.status(201).json({
+        message: 'User created successfully.',
         // eslint-disable-next-line @typescript-eslint/no-unsafe-assignment, no-underscore-dangle
         _id: newUser._id,
         avatar: body.avatar,
         name: newUser.name,
         email: newUser.email,
         phone: newUser.phone,
-        token
-      };
-
-      return res.status(201).json({
-        message: 'User created successfully.',
-        // eslint-disable-next-line @typescript-eslint/no-unsafe-assignment, no-underscore-dangle
-        _id: userResponse._id,
-        avatar: userResponse.avatar,
-        name: userResponse.name,
-        email: userResponse.email,
-        phone: userResponse.phone,
         token
       });
     } catch (error) {
