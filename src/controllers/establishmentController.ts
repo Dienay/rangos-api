@@ -233,6 +233,28 @@ class EstablishmentController {
     }
     return undefined;
   };
+
+  static filterEstablishment = async (req: RequestProps, res: ResponseProps, next: NextFunctionProps) => {
+    try {
+      const { name } = req.query;
+      const search: { [key: string]: unknown } = {};
+
+      if (typeof name === 'string') {
+        search.name = { $regex: name, $options: 'i' };
+      }
+
+      const establishments = await Establishment.find(search);
+
+      if (establishments.length > 0) {
+        res.status(200).json({ establishments });
+      } else {
+        const establishmentName = typeof name === 'string' ? name : '';
+        res.status(200).json({ message: `Establishment ( ${establishmentName} ) is not found.` });
+      }
+    } catch (error) {
+      next(error);
+    }
+  };
 }
 
 export default EstablishmentController;
