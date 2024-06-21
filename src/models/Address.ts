@@ -1,8 +1,7 @@
-import mongoose, { ObjectId } from 'mongoose';
+import mongoose from 'mongoose';
 
 // Define the Address interface representing the address structure
-export interface IAddress {
-  _id: ObjectId;
+export interface IAddress extends mongoose.Document {
   description: string;
   street: string;
   number: string;

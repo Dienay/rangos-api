@@ -65,7 +65,7 @@ class ProductsController {
 
       if (foundProduct !== null) {
         // If product is found, sending a success response with the product data
-        res.status(200).json(foundProduct);
+        res.status(200).json({ product: foundProduct });
       } else {
         // If product is not found, passing a NotFound error to the error handling middleware
         next(new NotFound('Product Id not found.'));
@@ -175,7 +175,7 @@ class ProductsController {
         // If product is deleted successfully, sending a success response with deleted product data
         res.status(200).json({
           message: 'Product deleted successfully',
-          data: deletedProduct
+          product: deletedProduct
         });
       } else {
         // If product is not found, passing a NotFound error to the error handling middleware
@@ -192,16 +192,18 @@ class ProductsController {
     try {
       const { name } = req.query;
 
+      // Creating search criteria based on the name
       const search: { [key: string]: unknown } = {};
 
       if (typeof name === 'string') {
         search.name = { $regex: name, $options: 'i' };
       }
 
+      // Finding products matching the search criteria
       const products = await Product.find(search);
 
       if (products.length > 0) {
-        res.status(200).json(products);
+        res.status(200).json({ products });
       } else {
         const productName = typeof name === 'string' ? name : '';
         res.status(200).json({ message: `Product ( ${productName} ) is not found.` });
