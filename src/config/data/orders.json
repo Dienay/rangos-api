@@ -1,0 +1,83 @@
+[
+  {
+    "userId": "667038c8d23b11fd040e86f5",
+    "establishmentId": "664263e9a61e5ddceac532f2",
+    "status": "Cart",
+    "products": [
+      {
+        "productId": "66436318bea46df5e1bc8bcf",
+        "quantity": 1
+      }
+    ],
+    "shipping": 0.00,
+    "totalPrice": 3.99,
+    "deliveryAddress": {
+      "description": "Work",
+      "street": "231 Oak Ave",
+      "number": "2020",
+      "complement": "",
+      "neighborhood": "Hillside",
+      "city": "Countryville",
+      "state": "State"
+    },
+    "paymentMethod": "Credit Card"
+  },
+  {
+    "userId": "667038c8d23b11fd040e86f5",
+    "establishmentId": "664263e9a61e5ddceac532f3",
+    "status": "Ordered",
+    "products": [
+      {
+        "productId": "66436318bea46df5e1bc8bd1",
+        "quantity": 2
+      },
+      {
+        "productId": "66436318bea46df5e1bc8bd2",
+        "quantity": 1
+      }
+    ],
+    "shipping": 8.00,
+    "totalPrice": 14.97,
+    "deliveryAddress": {
+      "description": "Work",
+      "street": "231 Oak Ave",
+      "number": "2020",
+      "complement": "",
+      "neighborhood": "Hillside",
+      "city": "Countryville",
+      "state": "State"
+    },
+    "paymentMethod": "Credit Card"
+  },
+  {
+    "userId": "667038c8d23b11fd040e86f5",
+    "establishmentId": "664263e9a61e5ddceac532f5",
+    "status": "Delivered",
+    "products": [
+      {
+        "productId": "66436318bea46df5e1bc8bdb",
+        "quantity": 2
+      },
+      {
+        "productId": "66436318bea46df5e1bc8bdc",
+        "quantity": 1
+      },
+      {
+        "productId": "66436318bea46df5e1bc8bdd",
+        "quantity": 3
+      }
+    ],
+    "shipping": 7.00,
+    "totalPrice": 26.94,
+    "deliveryAddress": {
+      "description": "Work",
+      "street": "231 Oak Ave",
+      "number": "2020",
+      "complement": "",
+      "neighborhood": "Hillside",
+      "city": "Countryville",
+      "state": "State"
+    },
+    "paymentMethod": "Credit Card"
+  }
+]

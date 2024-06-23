@@ -3,6 +3,7 @@ import UserController from '@/controllers/userController';
 import checkToken from '@/middlewares/checkToken';
 import { usersUpload } from '@/config/multer';
 import { addressRouter } from './addressRouter';
+import { orderRouter } from './OrderRouter';
 
 // Create a new router instance
 export const userRouter = Router();
@@ -19,3 +20,6 @@ userRouter.delete('/user/:id', checkToken, deleteUser);
 
 // Use addressRouter for address-related routes
 userRouter.use('/user', addressRouter);
+
+// Use orderRouter for order-related routes
+userRouter.use('/user', orderRouter);
