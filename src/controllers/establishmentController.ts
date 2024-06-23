@@ -93,7 +93,8 @@ class EstablishmentController {
         const productList = await Product.find({ establishment: id }).lean();
 
         const productWithCoverPhotoURL = productList.map((product) => ({
-          id: product.id,
+          // eslint-disable-next-line @typescript-eslint/no-unsafe-assignment, no-underscore-dangle
+          id: product._id,
           name: product.name,
           description: product.description,
           price: product.price,
@@ -103,7 +104,12 @@ class EstablishmentController {
         if (productWithCoverPhotoURL.length > 0) {
           // If products are found, sending a success response with the list of products
           res.status(200).json({
-            establishment: { name: establishment.name, coverPhoto: establishment.coverPhoto },
+            establishment: {
+              // eslint-disable-next-line @typescript-eslint/no-unsafe-assignment, no-underscore-dangle
+              id: establishment._id,
+              name: establishment.name,
+              coverPhoto: establishment.coverPhoto
+            },
             products: productWithCoverPhotoURL
           });
         } else {
@@ -232,6 +238,28 @@ class EstablishmentController {
       next(error);
     }
     return undefined;
+  };
+
+  static filterEstablishment = async (req: RequestProps, res: ResponseProps, next: NextFunctionProps) => {
+    try {
+      const { name } = req.query;
+      const search: { [key: string]: unknown } = {};
+
+      if (typeof name === 'string') {
+        search.name = { $regex: name, $options: 'i' };
+      }
+
+      const establishments = await Establishment.find(search);
+
+      if (establishments.length > 0) {
+        res.status(200).json({ establishments });
+      } else {
+        const establishmentName = typeof name === 'string' ? name : '';
+        res.status(200).json({ message: `Establishment ( ${establishmentName} ) is not found.` });
+      }
+    } catch (error) {
+      next(error);
+    }
   };
 }
 

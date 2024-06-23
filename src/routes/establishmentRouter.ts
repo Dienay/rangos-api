@@ -15,11 +15,13 @@ const {
   getEstablishmentWithProducts,
   updateEstablishment,
   deleteEstablishment,
+  filterEstablishment
 } = EstablishmentController;
 
 // Defining routes for establishments
 establishmentRouter.post('/establishments', establishmentsUpload.single('coverPhoto'), createEstablishment);
 establishmentRouter.get('/establishments', getEstablishments);
+establishmentRouter.get('/establishments/search', filterEstablishment);
 establishmentRouter.get('/establishments/:id/products', getEstablishmentWithProducts);
 establishmentRouter.get('/establishments/:id', getEstablishmentById);
 establishmentRouter.put('/establishments/:id', establishmentsUpload.single('coverPhoto'), updateEstablishment);
