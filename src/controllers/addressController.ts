@@ -92,8 +92,8 @@ class AddressController {
         });
       }
 
-      // eslint-disable-next-line no-underscore-dangle, @typescript-eslint/no-unsafe-member-access
-      const address = entity.address.find((addr: IAddress) => addr._id.toString() === addressId);
+      // eslint-disable-next-line @typescript-eslint/no-unsafe-member-access
+      const address = entity.address.find((addr: IAddress) => addr.id.toString() === addressId);
 
       if (!address) {
         return res.status(404).json({
@@ -125,8 +125,8 @@ class AddressController {
         });
       }
 
-      // eslint-disable-next-line no-underscore-dangle, @typescript-eslint/no-unsafe-member-access
-      const address = entity.address.findIndex((addr: IAddress) => addr._id.toString() === addressId);
+      // eslint-disable-next-line @typescript-eslint/no-unsafe-member-access
+      const address = entity.address.findIndex((addr: IAddress) => addr.id.toString() === addressId);
 
       if (address === -1) {
         return res.status(404).json({

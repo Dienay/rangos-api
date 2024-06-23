@@ -1,7 +1,8 @@
 import jwt from 'jsonwebtoken';
 import { RequestProps, ResponseProps, NextFunctionProps, env } from '@/config';
+import { User } from '@/models';
 
-const checkToken = (req: RequestProps, res: ResponseProps, next: NextFunctionProps) => {
+const checkToken = async (req: RequestProps, res: ResponseProps, next: NextFunctionProps) => {
   const authHeader = req.headers.authorization;
   const token = authHeader && authHeader.split(' ')[1];
 
@@ -13,7 +14,12 @@ const checkToken = (req: RequestProps, res: ResponseProps, next: NextFunctionPro
   try {
     const { secret } = env;
 
-    jwt.verify(token, secret);
+    const decoded = jwt.verify(token, secret) as { id: string };
+    const user = await User.findById(decoded.id);
+
+    if (!user) {
+      return res.status(404).json({ message: 'User not found.' });
+    }
 
     next();
   } catch (error) {
