@@ -80,7 +80,7 @@ Liste e descreva as principais funcionalidades e como usá-las. Exemplos de coma
 
 ### Autenticação
 
-#### POST /api/auth/login
+#### POST /login
 
 - **Descrição:** Autentica um usuário e retorna um token JWT.
 - **Request Body:**
@@ -100,7 +100,7 @@ Liste e descreva as principais funcionalidades e como usá-las. Exemplos de coma
 
 ### Usuários
 
-#### GET /api/users/:userId
+#### GET /users/:userId
 
 - **Descrição:** Retorna informações do usuário.
 - **Parâmetros:**
@@ -116,7 +116,7 @@ Liste e descreva as principais funcionalidades e como usá-las. Exemplos de coma
 
 ### Endereços
 
-#### POST /api/entities/:entityId/addresses
+#### POST /entities/:entityId/addresses
 
 - **Descrição:** Adiciona um novo endereço à entidade especificada.
 - **Parâmetros:**
@@ -146,7 +146,7 @@ Liste e descreva as principais funcionalidades e como usá-las. Exemplos de coma
   }
   ```
 
-#### PUT /api/entities/:entityId/addresses/:addressId
+#### PUT /entities/:entityId/addresses/:addressId
 
 - **Descrição:** Edita um endereço existente.
 - **Parâmetros:**
@@ -167,7 +167,7 @@ Liste e descreva as principais funcionalidades e como usá-las. Exemplos de coma
   }
   ```
 
-#### DELETE /api/entities/:entityId/addresses/:addressId
+#### DELETE /entities/:entityId/addresses/:addressId
 
 - **Descrição:** Deleta um endereço.
 - **Parâmetros:**
