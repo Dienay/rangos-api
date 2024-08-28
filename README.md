@@ -19,7 +19,7 @@ Além disso, nossa plataforma é construída com as melhores práticas de segura
 
 O Rangos é uma plataforma de delivery back-end desenvolvida com Node.js e Express.js, que fornece uma API RESTful para gerenciamento de estabelecimentos, usuários e pedidos. Com ela, é possível criar e gerenciar estabelecimentos, com suas características próprias, bem como permitir que os usuários criem contas e gerenciem suas informações pessoais.
 
-A aplicação permite que os estabelecimentos adicionem, editem, visualizem e excluam produtos, além de permitir que os usuários criem pedidos a partir desses produtos. Os pedidos têm características diferentes para cada tipo de usuário, com o cliente podendo criar e editar pedidos, desde que ainda não tenham sido enviados para o estabelecimento, e visualizar seu histórico de pedidos. Já o estabelecimento pode visualizar o pedido após o cliente enviá-lo, e mudar o estado do pedido conforme o ciclo de preparação e encaminhamento do pedido, podendo ser: recebido, preparando, enviado ou cancelado.
+A aplicação permite que os estabelecimentos adicionem, editem, visualizem e excluam produtos, além de permitir que os usuários criem pedidos a partir desses produtos. Os pedidos têm características diferentes para cada tipo de usuário, com o cliente podendo criar e editar pedidos, desde que ainda não tenham sido enviados para o estabelecimento, e visualizar seu histórico de pedidos. Já o estabelecimento pode visualizar o pedido após o cliente enviá-lo, e mudar o estado do pedido conforme o ciclo de preparação e encaminhamento do pedido.
 
 O projeto utiliza o MongoDB como banco de dados, com o Mongoose como ODM (Object Document Mapping) para facilitar o acesso e manipulação dos dados. Além disso, a aplicação conta com autenticação e autorização por meio de JSON Web Token (JWT), garantindo a segurança e integridade dos dados.
 
@@ -27,7 +27,7 @@ A API foi desenvolvida seguindo os princípios REST, com recursos bem definidos 
 
 Para garantir a qualidade e a consistência do código, o projeto utiliza o ESLint e o Prettier para padronização e formatação do código.
 
-O objetivo do Nome do Projeto é fornecer uma solução back-end robusta e escalável para plataformas de delivery, permitindo a integração com outros sistemas e aplicativos por meio de uma API RESTful bem definida e segura. Com ele, é possível gerenciar estabelecimentos, usuários e pedidos de forma eficiente e organizada, melhorando a produtividade e a experiência do usuário.
+O objetivo da API Rangos é fornecer uma solução back-end robusta e escalável para plataformas de delivery, permitindo a integração com outros sistemas e aplicativos por meio de uma API RESTful bem definida e segura. Com ele, é possível gerenciar estabelecimentos, usuários e pedidos de forma eficiente e organizada, melhorando a produtividade e a experiência do usuário.
 
 ## Instalação
 
@@ -37,6 +37,7 @@ Liste as ferramentas e versões necessárias para executar o projeto.
 
 - [Node.js](https://nodejs.org/en/) v16+
 - [npm](https://www.npmjs.com/) v8+
+- [Mongodb](https://www.mongodb.com/docs/manual/) Podendo usar o [MongoDB Atlas](https://www.mongodb.com/cloud/atlas) ou uma instância local.
 
 ### Passos para instalação
 
@@ -66,7 +67,9 @@ Liste as ferramentas e versões necessárias para executar o projeto.
 
 ### Executando localmente
 
-Instruções sobre como executar o projeto localmente, incluindo comandos úteis.
+```sh
+npm run populate  # Insere dados de exemplo no banco de dados
+```
 
 ```sh
 npm run start:dev  # Inicia o servidor em modo de desenvolvimento
@@ -74,111 +77,12 @@ npm run start:dev  # Inicia o servidor em modo de desenvolvimento
 
 ### Rotas e funcionalidades principais
 
-Liste e descreva as principais funcionalidades e como usá-las. Exemplos de comandos de curl ou URLs para acessar a aplicação podem ser úteis aqui.
-
 ## Endpoints da API
 
-### Autenticação
-
-#### POST /login
-
-- **Descrição:** Autentica um usuário e retorna um token JWT.
-- **Request Body:**
-  ```json
-  {
-    "email": "user@example.com",
-    "password": "password"
-  }
-  ```
-- **Response:**
-  ```json
-  {
-    "message": "User logged in successfully.",
-    "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9..."
-  }
-  ```
-
-### Usuários
-
-#### GET /users/:userId
-
-- **Descrição:** Retorna informações do usuário.
-- **Parâmetros:**
-  - `userId` (path): ID do usuário.
-- **Response:**
-  ```json
-  {
-    "_id": "60d0fe4f5311236168a109ca",
-    "name": "John Doe",
-    "email": "john@example.com"
-  }
-  ```
-
-### Endereços
-
-#### POST /entities/:entityId/addresses
-
-- **Descrição:** Adiciona um novo endereço à entidade especificada.
-- **Parâmetros:**
-  - `entityId` (path): ID da entidade (usuário ou estabelecimento).
-- **Request Body:**
-  ```json
-  {
-    "street": "123 Main St",
-    "number": "456",
-    "city": "City",
-    "state": "State"
-  }
-  ```
-- **Response:**
-  ```json
-  {
-    "message": "Address added successfully",
-    "address": [
-      {
-        "_id": "60d0fe4f5311236168a109cb",
-        "street": "123 Main St",
-        "number": "456",
-        "city": "City",
-        "state": "State"
-      }
-    ]
-  }
-  ```
-
-#### PUT /entities/:entityId/addresses/:addressId
-
-- **Descrição:** Edita um endereço existente.
-- **Parâmetros:**
-  - `entityId` (path): ID da entidade.
-  - `addressId` (path): ID do endereço.
-- **Request Body:** Campos a serem atualizados.
-- **Response:**
-  ```json
-  {
-    "message": "Address updated successfully",
-    "address": {
-      "_id": "60d0fe4f5311236168a109cb",
-      "street": "123 Main St",
-      "number": "789",
-      "city": "New City",
-      "state": "New State"
-    }
-  }
-  ```
-
-#### DELETE /entities/:entityId/addresses/:addressId
-
-- **Descrição:** Deleta um endereço.
-- **Parâmetros:**
-  - `entityId` (path): ID da entidade.
-  - `addressId` (path): ID do endereço.
-- **Response:**
-  ```json
-  {
-    "message": "Address deleted successfully"
-  }
-  ```
+- #### [Usuários](./Users.md)
+- #### [Estabelecimentos](./Establishments.md)
+- #### [Produtos](./Products.md)
+- #### [Pedidos](./Orders.md)
 
 ## Contribuição
 

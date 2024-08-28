@@ -10,7 +10,7 @@ interface IEstablishment extends mongoose.Document {
   deliveryTime: string;
   shipping: number;
   address: IAddress[];
-  category: Category[];
+  category: Category;
 }
 
 // Define the OpeningHour interface representing the opening hours structure
@@ -110,16 +110,14 @@ const establishmentSchema = new mongoose.Schema(
     deliveryTime: { type: String },
     shipping: { type: Number },
     address: [addressSchema],
-    category: [
-      {
-        type: String,
-        enum: {
-          // Allowed values for categories
-          values: Object.values(Category),
-          message: `( {VALUE} ) is not a valid establishment category. Allowed categories are: ${Object.values(Category).join(', ')}`
-        }
+    category: {
+      type: String,
+      enum: {
+        // Allowed values for categories
+        values: Object.values(Category),
+        message: `( {VALUE} ) is not a valid establishment category. Allowed categories are: ${Object.values(Category).join(', ')}`
       }
-    ]
+    }
   },
   {
     // Remove the version key (__v) from the documents

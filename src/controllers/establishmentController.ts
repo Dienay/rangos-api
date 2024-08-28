@@ -12,23 +12,33 @@ class EstablishmentController {
     try {
       const body = req.body as IEstablishment;
 
+      // Check if a establishment with the same name already exists
+      const establishmentExists = await Establishment.findOne({ name: body.name });
+
+      if (establishmentExists) {
+        return res.status(409).json({
+          message: 'Establishment with the same name already exists.'
+        });
+      }
+
+      // If a cover photo is provided, save it to the uploads directory
       if (req.file) {
         body.coverPhoto = req.file.filename;
       }
       // Create a new establishment object based on the request body
       const newEstablishment = await Establishment.create(body);
 
-      // Save the new establishment to the database
-      await newEstablishment.save();
+      // // Save the new establishment to the database
+      // await newEstablishment.save();
 
       // Respond with a success message and the created establishment data
-      res.status(201).json({
+      return res.status(201).json({
         message: 'Establishment created successfully.',
         data: newEstablishment
       });
     } catch (error) {
       // Pass any errors to the error handling middleware
-      next(error);
+      return next(error);
     }
   };
 
@@ -108,7 +118,11 @@ class EstablishmentController {
               // eslint-disable-next-line @typescript-eslint/no-unsafe-assignment, no-underscore-dangle
               id: establishment._id,
               name: establishment.name,
-              coverPhoto: establishment.coverPhoto
+              coverPhoto: establishment.coverPhoto,
+              category: establishment.category,
+              deliveryTime: establishment.deliveryTime,
+              shipping: establishment.shipping,
+              address: establishment.address
             },
             products: productWithCoverPhotoURL
           });
