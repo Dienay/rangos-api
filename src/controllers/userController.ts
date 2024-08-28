@@ -9,11 +9,7 @@ import fs from 'fs';
 
 class UserController {
   // Method for user signup
-  static signup = async (
-    req: RequestProps,
-    res: ResponseProps,
-    next: NextFunctionProps
-  ): Promise<void | ResponseProps> => {
+  static signup = async (req: RequestProps, res: ResponseProps, next: NextFunctionProps) => {
     try {
       const body = req.body as IUser;
 
@@ -33,6 +29,7 @@ class UserController {
         });
       }
 
+      // If a cover photo is provided, save it to the uploads directory
       if (req.file) {
         body.avatar = req.file.filename;
       }
@@ -55,6 +52,7 @@ class UserController {
         name: body.name,
         email: body.email,
         phone: body.phone,
+        typeUser: body.typeUser,
         password: passwordHash
       });
 
@@ -73,10 +71,11 @@ class UserController {
         message: 'User created successfully.',
         // eslint-disable-next-line @typescript-eslint/no-unsafe-assignment, no-underscore-dangle
         _id: newUser._id,
-        avatar: body.avatar,
+        avatar: newUser.avatar,
         name: newUser.name,
         email: newUser.email,
         phone: newUser.phone,
+        typeUser: newUser.typeUser,
         token
       });
     } catch (error) {

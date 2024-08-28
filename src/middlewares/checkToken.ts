@@ -1,6 +1,6 @@
 import jwt from 'jsonwebtoken';
 import { RequestProps, ResponseProps, NextFunctionProps, env } from '@/config';
-import { User } from '@/models';
+import { Establishment, User } from '@/models';
 
 const checkToken = async (req: RequestProps, res: ResponseProps, next: NextFunctionProps) => {
   const authHeader = req.headers.authorization;
@@ -15,10 +15,10 @@ const checkToken = async (req: RequestProps, res: ResponseProps, next: NextFunct
     const { secret } = env;
 
     const decoded = jwt.verify(token, secret) as { id: string };
-    const user = await User.findById(decoded.id);
+    const entity = (await User.findById(decoded.id)) || (await Establishment.findById(decoded.id));
 
-    if (!user) {
-      return res.status(404).json({ message: 'User not found.' });
+    if (!entity) {
+      return res.status(404).json({ message: 'Entity token error.' });
     }
 
     next();

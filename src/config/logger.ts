@@ -1,7 +1,7 @@
 import bunyan from 'bunyan';
 import bunyanFormat from 'bunyan-format';
 
-// Create a logger instance with the name 'clone-rappi-api'
+// Create a logger instance with the name 'rangos-api'
 const logger = bunyan.createLogger({
   name: 'rangos-api',
   // Define the log streams for the logger
