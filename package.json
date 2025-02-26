@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "start:dev": "ts-node-dev --watch --respawn --transpile-only --ignore-watch node_modules -r tsconfig-paths/register ./src/app.ts",
+    "dev:docker": "docker-compose up --build --force-recreate",
     "start": "node -r module-alias/register dist/app.js",
     "build": "tsc",
     "lint": "eslint .",
