@@ -130,7 +130,7 @@ Documentação interativa disponível em:
 erDiagram
   USUARIO ||--o{ PEDIDO : faz
   ESTABELECIMENTO ||--o{ PRODUTO : oferece
-  PEDIDO ||--o{ ITEM-PEDIDO : contém
+  PEDIDO ||--o{ ITEM-PEDIDO : contem
 ```
 
 ### Principais Entidades
