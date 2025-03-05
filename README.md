@@ -1,108 +1,241 @@
-# Rangos API
+# 🚀 Rangos API - Documentação Completa
 
-O Rangos é uma plataforma de delivery online que conecta clientes a estabelecimentos locais, oferecendo uma experiência de compra fácil e conveniente. Com o Rangos, os clientes podem navegar pelos menus de seus restaurantes favoritos, fazer pedidos personalizados e rastrear o progresso de entrega em tempo real. Os estabelecimentos, por sua vez, podem gerenciar seus pedidos, atualizar seus menus e monitorar o desempenho de entrega através de um painel de controle intuitivo.
+<img src="https://img.shields.io/badge/Node.js-18.x-green?logo=node.js" alt="Node.js">
+<img src="https://img.shields.io/badge/TypeScript-5.x-blue?logo=typescript" alt="TypeScript">
+<img src="https://img.shields.io/badge/MongoDB-7.x-brightgreen?logo=mongodb" alt="MongoDB">
 
-Nossa plataforma é projetada para atender às necessidades de clientes e estabelecimentos de todos os tamanhos e segmentos, desde pequenos food trucks até grandes redes de restaurantes. Com o Rangos, os clientes podem economizar tempo e esforço ao fazer pedidos online, enquanto os estabelecimentos podem ampliar seu alcance e aumentar suas vendas.
-
-Além disso, nossa plataforma é construída com as melhores práticas de segurança e privacidade, garantindo que os dados dos nossos usuários estejam sempre protegidos. Com o Rangos, você pode ter certeza de que sua experiência de delivery será rápida, confiável e segura.
+Plataforma de delivery online que conecta clientes a estabelecimentos locais, oferecendo gestão completa de pedidos, cardápios e entregas.
 
 ## Sumário
 
-- [Descrição](#descrição)
+- [Visão Geral](#visão-geral)
+- [Pré-requisitos](#pré-requisitos)
 - [Instalação](#instalação)
-- [Uso](#uso)
-- [Endpoints da API](#endpoints-da-api)
+- [Configuração](#configuração)
+- [Estrutura do Projeto](#estrutura-do-projeto)
+- [Documentação da API](#documentação-da-api)
+- [Modelos de Dados](#modelos-de-dados)
+- [Autenticação](#autenticação)
+- [Uploads de Arquivos](#uploads-de-arquivos)
+- [Tratamento de Erros](#tratamento-de-erros)
+- [Testes](#testes)
+- [Deploy](#deploy)
 - [Contribuição](#contribuição)
 - [Licença](#licença)
 
-## Descrição
+---
 
-O Rangos é uma plataforma de delivery back-end desenvolvida com Node.js e Express.js, que fornece uma API RESTful para gerenciamento de estabelecimentos, usuários e pedidos. Com ela, é possível criar e gerenciar estabelecimentos, com suas características próprias, bem como permitir que os usuários criem contas e gerenciem suas informações pessoais.
+## Visão Geral
+Sistema back-end para plataforma de delivery com:
+- Gestão de estabelecimentos e produtos
+- Fluxo completo de pedidos
+- Autenticação JWT
+- Upload de imagens
+- Endereços múltiplos
 
-A aplicação permite que os estabelecimentos adicionem, editem, visualizem e excluam produtos, além de permitir que os usuários criem pedidos a partir desses produtos. Os pedidos têm características diferentes para cada tipo de usuário, com o cliente podendo criar e editar pedidos, desde que ainda não tenham sido enviados para o estabelecimento, e visualizar seu histórico de pedidos. Já o estabelecimento pode visualizar o pedido após o cliente enviá-lo, e mudar o estado do pedido conforme o ciclo de preparação e encaminhamento do pedido.
-
-O projeto utiliza o MongoDB como banco de dados, com o Mongoose como ODM (Object Document Mapping) para facilitar o acesso e manipulação dos dados. Além disso, a aplicação conta com autenticação e autorização por meio de JSON Web Token (JWT), garantindo a segurança e integridade dos dados.
-
-A API foi desenvolvida seguindo os princípios REST, com recursos bem definidos e uma estrutura de URLs clara e intuitiva. Ela suporta os verbos HTTP GET, POST, PUT e DELETE, permitindo a interação completa com os recursos da aplicação.
-
-Para garantir a qualidade e a consistência do código, o projeto utiliza o ESLint e o Prettier para padronização e formatação do código.
-
-O objetivo da API Rangos é fornecer uma solução back-end robusta e escalável para plataformas de delivery, permitindo a integração com outros sistemas e aplicativos por meio de uma API RESTful bem definida e segura. Com ele, é possível gerenciar estabelecimentos, usuários e pedidos de forma eficiente e organizada, melhorando a produtividade e a experiência do usuário.
-
-## Instalação
-
-### Pré-requisitos
-
-Liste as ferramentas e versões necessárias para executar o projeto.
-
-- [Node.js](https://nodejs.org/en/) v16+
-- [npm](https://www.npmjs.com/) v8+
-- [Mongodb](https://www.mongodb.com/docs/manual/) Podendo usar o [MongoDB Atlas](https://www.mongodb.com/cloud/atlas) ou uma instância local.
-
-### Passos para instalação
-
-1. Clone o repositório:
-
-   ```sh
-   git clone https://github.com/Dienay/rangos-backend.git
-   cd rangos-backend
-   ```
-
-2. Instale as dependências:
-
-   ```sh
-   npm install
-   ```
-
-3. Configure as variáveis de ambiente:
-
-   - Crie um arquivo `.env` na raiz do projeto e defina as variáveis de ambiente necessárias.
-
-4. Inicie o servidor:
-   ```sh
-   npm start
-   ```
-
-## Uso
-
-### Executando localmente
-
-```sh
-npm run populate  # Insere dados de exemplo no banco de dados
-```
-
-```sh
-npm run start:dev  # Inicia o servidor em modo de desenvolvimento
-```
-
-### Rotas e funcionalidades principais
-
-## Endpoints da API
-
-- #### [Usuários](./Users.md)
-- #### [Estabelecimentos](./Establishments.md)
-- #### [Produtos](./Products.md)
-- #### [Pedidos](./Orders.md)
-
-## Contribuição
-
-### Como Contribuir
-
-1. Faça um fork do projeto.
-2. Crie um branch para sua feature/bugfix (`git checkout -b feature/nova-feature`).
-3. Faça commit das suas alterações (`git commit -m 'Adiciona nova feature'`).
-4. Faça push para o branch (`git push origin feature/nova-feature`).
-5. Abra um Pull Request.
-
-### Padrões de Código
-
-- Siga as convenções de codificação do projeto (Airbnb style guide, ESLint, Prettier, etc).
-- Certifique-se de que todas as alterações passam nos testes existentes e adicione novos testes para cobrir suas alterações.
-
-## Licença
-
-Este projeto está licenciado sob a [MIT License](LICENSE).
+**Funcionalidades Principais:**
+- 🛍️ Criação de pedidos com múltiplos produtos
+- 📦 Rastreamento de status de pedidos
+- 📷 Upload de imagens para produtos e estabelecimentos
+- 🔐 Autenticação segura com JWT
 
 ---
 
-Você pode ajustar esse esboço de acordo com as necessidades específicas do seu projeto.
+## Pré-requisitos
+- [Node.js 18.x+](https://nodejs.org/en/)
+- [npm v8+](https://www.npmjs.com/)
+- [Mongodb 6.x+](https://www.mongodb.com/docs/manual/) (local ou [Atlas](https://www.mongodb.com/cloud/atlas))
+- [Git](https://git-scm.com/downloads)
+
+---
+
+## Instalação
+```bash
+# Clone o repositório
+git clone https://github.com/Dienay/rangos-backend.git
+cd rangos-backend
+
+# Instale as dependências
+npm i
+
+# Configure o ambiente (baseado no .env.example)
+cp .env.example .env
+```
+
+---
+
+## Configuração
+### Variáveis de Ambiente (`.env`)
+```ini
+NODE_ENV=development
+PORT=3000
+MONGO_URI=mongodb://usuario:senha@localhost:27017/rangos
+JWT_SECRET=segredo_super_secreto
+UPLOAD_DIR=./uploads
+```
+
+### Comandos Úteis
+```json
+{
+  "scripts": {
+    "dev": "ts-node-dev --watch --respawn --transpile-only --ignore-watch node_modules -r tsconfig-paths/register ./src/app.ts",
+    "dev:docker": "docker-compose up --build --force-recreate",
+    "start": "node -r module-alias/register dist/app.js",
+    "build": "tsc",
+    "lint": "eslint .",
+    "lint-fix": "eslint . --fix",
+    "populate": "ts-node ./src/config/dbPopulate.ts",
+    "prettier-format": "prettier --config .prettierrc 'src/**/*.ts' --write"
+  }
+}
+```
+
+---
+
+## Estrutura do Projeto
+```
+src/
+├── config/          # Configurações globais
+├── controllers/     # Lógica das rotas
+├── errors/          # Erros personalizados
+├── middlewares/     # Autenticação e validações
+├── models/          # Schemas do MongoDB
+├── routes/          # Definição de rotas
+├── uploads/         # Arquivos enviados
+└── app.ts           # Ponto de entrada
+```
+
+---
+
+## Documentação da API
+Documentação interativa disponível em:
+`http://localhost:3000/api-docs`
+
+### Rotas Principais
+| Método | Endpoint                  | Descrição               |
+|--------|---------------------------|-------------------------|
+| POST   | /signup                   | Criação de usuário      |
+| POST   | /login                    | Autenticação            |
+| GET    | /establishments           | Lista estabelecimentos |
+| POST   | /products                 | Cria produto            |
+| GET    | /user/:id/orders          | Pedidos do usuário      |
+
+**[Documentação Completa da API](API_REFERENCE.md)**
+
+---
+
+## Modelos de Dados
+### Diagrama de Entidades
+```mermaid
+erDiagram
+  USUARIO ||--o{ PEDIDO : faz
+  ESTABELECIMENTO ||--o{ PRODUTO : oferece
+  PEDIDO ||--o{ ITEM-PEDIDO : contém
+```
+
+### Principais Entidades
+- **Usuário**: `nome, email, senha, tipo`
+- **Produto**: `nome, preço, estabelecimento`
+- **Pedido**: `status, produtos, valor total`
+- **Endereço**: `rua, cidade, estado`
+
+**[Documentação Detalhada dos Models](MODELS.md)**
+
+---
+
+## Autenticação
+```http
+POST /login
+Content-Type: application/json
+
+{
+  "email": "usuario@exemplo.com",
+  "password": "senha123"
+}
+```
+
+**Resposta:**
+```json
+{
+  "token": "eyJhbGciOiJIUzI1NiIs...",
+  "usuario": {
+    "id": "507f1f77bcf86cd799439011",
+    "nome": "João Silva"
+  }
+}
+```
+
+**[Guia de Autenticação](AUTH_GUIDE.md)**
+
+---
+
+## Uploads de Arquivos
+### Endpoints
+```http
+POST /uploads/usuarios           # Avatar do usuário
+POST /uploads/produtos           # Imagem do produto
+POST /uploads/estabelecimentos   # Foto do estabelecimento
+```
+
+**Especificações:**
+- Formatos permitidos: `image/jpeg, image/png`
+- Tamanho máximo: `8MB`
+- Nome do campo: `file`
+
+---
+
+## Tratamento de Erros
+### Códigos Comuns
+| Código | Tipo                | Exemplo                      |
+|--------|---------------------|------------------------------|
+| 400    | Requisição Inválida | Dados faltando ou formato incorreto |
+| 401    | Não Autorizado      | Token inválido ou ausente    |
+| 404    | Não Encontrado      | Recurso inexistente          |
+| 413    | Arquivo Grande      | Imagem maior que 8MB         |
+
+**[Lista Completa de Erros](ERRORS.md)**
+
+---
+
+## Deploy
+### Recomendações para Produção
+1. Usar MongoDB Atlas para banco de dados
+2. Configurar variáveis de ambiente adequadas
+3. Utilizar PM2 para gerenciamento de processos
+4. Habilitar HTTPS
+5. Configurar CORS para domínios específicos
+
+---
+
+## Contribuição
+### Diretrizes
+1. Siga o [Guia de Estilo](CONTRIBUTING.md)
+2. Use Conventional Commits
+3. Mantenha testes atualizados
+4. Documente novas funcionalidades
+
+**Fluxo de Desenvolvimento:**
+```bash
+git checkout -b feat/nova-funcionalidade
+git commit -m "feat: adiciona endpoint de pedidos"
+git push origin feat/nova-funcionalidade
+```
+
+---
+
+## Licença
+Este projeto está licenciado sob a [Licença MIT](LICENSE).
+
+---
+
+# Arquivos Complementares
+
+1. [Referência da API](API_REFERENCE.md) - Documentação detalhada de todos os endpoints
+2. [Modelos de Dados](MODELS.md) - Esquemas e relações do MongoDB
+3. [Guia de Autenticação](AUTH_GUIDE.md) - Fluxo completo de JWT e permissões
+5. [Contribuição](CONTRIBUTING.md) - Padrões de código e diretrizes para contribuidores
+
+---
+
+**Repositório Oficial:** [github.com/Dienay/rangos-backend](https://github.com/Dienay/rangos-backend)
+**Suporte:** suporte@rangos.com
