@@ -1,9 +1,9 @@
-import { RequestProps, ResponseProps, NextFunctionProps, logger } from '@/config';
-import NotFound from '@/errors/NotFound';
-import { IProduct } from '@/models/Product';
-import { Product } from '@/models/index';
 import path from 'path';
 import fs from 'fs';
+import { RequestProps, ResponseProps, NextFunctionProps, logger } from '../config';
+import NotFound from '../errors/NotFound';
+import { IProduct } from '../models/Product';
+import { Product } from '../models/index';
 
 class ProductsController {
   // Method to create a new product

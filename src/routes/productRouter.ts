@@ -1,6 +1,6 @@
 import { Router } from 'express';
-import ProductsController from '@/controllers/productController';
-import { productsUpload } from '@/config/multer';
+import ProductsController from '../controllers/productController';
+import { productsUpload } from '../config/multer';
 
 // Creating a new router instance
 export const productsRouter = Router();

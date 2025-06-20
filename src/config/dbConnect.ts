@@ -1,5 +1,6 @@
 import mongoose from 'mongoose';
-import { logger, env } from '@/config';
+import env from './env';
+import logger from './logger';
 
 // Destructure the URI environment variable from '@/config'
 const { uri } = env;

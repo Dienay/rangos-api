@@ -1,6 +1,5 @@
 // Importing necessary modules and configurations
-import { app, logger, env } from '@/config';
-import './config/module-alias';
+import { app, logger, env } from './config';
 import routes from './routes';
 import run from './config/dbConnect';
 import handlesErrors from './middlewares/handlesErrors';

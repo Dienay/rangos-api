@@ -3,13 +3,13 @@ import bcrypt from 'bcrypt';
 import fs from 'fs';
 import mongoose from 'mongoose';
 import path from 'path';
-import './module-alias';
-import { IEstablishment } from '@/models/Establishment';
-import { IProduct } from '@/models/Product';
-import { logger, env } from '@/config';
-import { Establishment, Product } from '@/models/index';
-import User, { IUser } from '@/models/User';
-import Order, { IOrder } from '@/models/Order';
+import env from './env';
+import logger from './logger';
+import { IEstablishment } from '../models/Establishment';
+import { IProduct } from '../models/Product';
+import { Establishment, Product } from '../models/index';
+import User, { IUser } from '../models/User';
+import Order, { IOrder } from '../models/Order';
 
 // Function to read JSON data from a file
 const getJsonData = <T>(fileName: string): T[] => {

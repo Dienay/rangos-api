@@ -1,8 +1,8 @@
 import { Request, Response, NextFunction } from 'express';
 import mongoose from 'mongoose';
-import BaseError from '@/errors/BaseError';
-import BadRequest from '@/errors/BadRequest';
-import ValidateError from '@/errors/ValidateError';
+import BaseError from '../errors/BaseError';
+import BadRequest from '../errors/BadRequest';
+import ValidateError from '../errors/ValidateError';
 
 // Error handling middleware function
 // eslint-disable-next-line @typescript-eslint/no-unused-vars

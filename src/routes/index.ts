@@ -1,6 +1,6 @@
 import express from 'express';
 import path from 'path';
-import { RouterProps, RequestProps, ResponseProps } from '@/config';
+import { RouterProps, RequestProps, ResponseProps } from '../config';
 import { establishmentRouter } from './establishmentRouter';
 import { productsRouter } from './productRouter';
 import { userRouter } from './userRouter';

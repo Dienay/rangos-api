@@ -1,6 +1,6 @@
-import { NextFunctionProps, RequestProps, ResponseProps } from '@/config';
-import { User, Establishment } from '@/models';
-import { IAddress } from '@/models/Address';
+import { NextFunctionProps, RequestProps, ResponseProps } from '../config';
+import { User, Establishment } from '../models';
+import { IAddress } from '../models/Address';
 
 class AddressController {
   static addAddress = async (req: RequestProps, res: ResponseProps, next: NextFunctionProps) => {

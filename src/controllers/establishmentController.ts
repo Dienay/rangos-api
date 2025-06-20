@@ -1,10 +1,10 @@
-import { RequestProps, ResponseProps, NextFunctionProps, logger } from '@/config';
-import NotFound from '@/errors/NotFound';
-import { IEstablishment } from '@/models/Establishment';
-import Product from '@/models/Product';
-import { Establishment } from '@/models/index';
 import fs from 'fs';
 import path from 'path';
+import { RequestProps, ResponseProps, NextFunctionProps, logger } from '../config';
+import NotFound from '../errors/NotFound';
+import { IEstablishment } from '../models/Establishment';
+import Product from '../models/Product';
+import { Establishment } from '../models/index';
 
 class EstablishmentController {
   // Create a new establishment

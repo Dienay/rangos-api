@@ -1,7 +1,7 @@
 import { Router } from 'express';
-import UserController from '@/controllers/userController';
-import checkToken from '@/middlewares/checkToken';
-import { usersUpload } from '@/config/multer';
+import checkToken from '../middlewares/checkToken';
+import { usersUpload } from '../config/multer';
+import UserController from '../controllers/userController';
 import { addressRouter } from './addressRouter';
 import { orderRouter } from './OrderRouter';
 
