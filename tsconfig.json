@@ -20,7 +20,7 @@
     "sourceMap": true,
     "resolveJsonModule": true,
     "target": "es2021",
-    "types": ["node"],
+    "types": ["node"]
   },
   "exclude": ["node_modules", "dist", "tests"],
   "include": ["src/**/*"]
