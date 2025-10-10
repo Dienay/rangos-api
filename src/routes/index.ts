@@ -4,6 +4,7 @@ import { RouterProps, RequestProps, ResponseProps } from '../config';
 import { establishmentRouter } from './establishmentRouter';
 import { productsRouter } from './productRouter';
 import { userRouter } from './userRouter';
+import { orderRouter } from './OrderRouter';
 
 // Function to define API routes
 const routes = (app: RouterProps) => {
@@ -16,7 +17,7 @@ const routes = (app: RouterProps) => {
   });
 
   // Using the imported routers
-  app.use(establishmentRouter, productsRouter, userRouter);
+  app.use(establishmentRouter, productsRouter, userRouter, orderRouter);
   // Serve static files from the uploads directory
   app.use('/uploads', express.static(path.join(__dirname, '..', '..', 'uploads')));
 };
