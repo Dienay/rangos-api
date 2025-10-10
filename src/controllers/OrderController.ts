@@ -28,6 +28,19 @@ class OrderController {
     return undefined;
   };
 
+  static getAllOrders = async (req: RequestProps, res: ResponseProps, next: NextFunctionProps) => {
+    try {
+      const orders = await Order.find({});
+
+      if (orders.length === 0) {
+        return res.status(404).json({ message: 'Orders list empty.', orders: [] });
+      }
+      return res.status(200).json({ message: 'Orders fetched successfully', orders });
+    } catch (error) {
+      return next(error);
+    }
+  };
+
   static getOrders = async (req: RequestProps, res: ResponseProps, next: NextFunctionProps) => {
     try {
       const { entityId } = req.params;

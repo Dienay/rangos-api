@@ -1,16 +1,3723 @@
 [
   {
     "userId": "667038c8d23b11fd040e86f5",
+    "establishmentId": "664263e9a61e5ddceac532fd",
+    "status": "Sent",
+    "products": [
+      {
+        "productId": "66436318bea46df5e1bc8c02",
+        "quantity": 3
+      },
+      {
+        "productId": "66436318bea46df5e1bc8bfc",
+        "quantity": 4
+      },
+      {
+        "productId": "66436318bea46df5e1bc8bff",
+        "quantity": 3
+      },
+      {
+        "productId": "66436318bea46df5e1bc8c00",
+        "quantity": 2
+      }
+    ],
+    "shipping": 13.88,
+    "totalPrice": 59.46,
+    "deliveryAddress": {
+      "description": "Home",
+      "street": "221 Cedar St",
+      "number": "1919",
+      "complement": "Suite 900",
+      "neighborhood": "Outskirts",
+      "city": "Villagetown",
+      "state": "State"
+    },
+    "paymentMethod": "Pix"
+  },
+  {
+    "userId": "6686f04e5427613adfa46891",
+    "establishmentId": "664263e9a61e5ddceac532f7",
+    "status": "Cart",
+    "products": [
+      {
+        "productId": "66436318bea46df5e1bc8be3",
+        "quantity": 5
+      }
+    ],
+    "shipping": 3.43,
+    "totalPrice": 5003.38,
+    "deliveryAddress": {
+      "description": "Work",
+      "street": "231 Oak Ave",
+      "number": "2020",
+      "complement": "",
+      "neighborhood": "Hillside",
+      "city": "Countryville",
+      "state": "State"
+    },
+    "paymentMethod": "Credit Card"
+  },
+  {
+    "userId": "667038c8d23b11fd040e86f5",
+    "establishmentId": "664263e9a61e5ddceac533fb",
+    "status": "Cart",
+    "products": [
+      {
+        "productId": "66436318bea46df5e1bc8bf3",
+        "quantity": 4
+      },
+      {
+        "productId": "66436318bea46df5e1bc8bf7",
+        "quantity": 5
+      },
+      {
+        "productId": "66436318bea46df5e1bc8bf5",
+        "quantity": 4
+      },
+      {
+        "productId": "66436318bea46df5e1bc8bf4",
+        "quantity": 3
+      }
+    ],
+    "shipping": 14.6,
+    "totalPrice": 229.94,
+    "deliveryAddress": {
+      "description": "Home",
+      "street": "221 Cedar St",
+      "number": "1919",
+      "complement": "Suite 900",
+      "neighborhood": "Outskirts",
+      "city": "Villagetown",
+      "state": "State"
+    },
+    "paymentMethod": "Cash"
+  },
+  {
+    "userId": "6686f04e5427613adfa46891",
+    "establishmentId": "664263e9a61e5ddceac532ff",
+    "status": "Delivered",
+    "products": [
+      {
+        "productId": "66436318bea46df5e1bc8c0d",
+        "quantity": 3
+      },
+      {
+        "productId": "66436318bea46df5e1bc8c0c",
+        "quantity": 1
+      },
+      {
+        "productId": "66436318bea46df5e1bc8c0a",
+        "quantity": 3
+      }
+    ],
+    "shipping": 1.55,
+    "totalPrice": 54.98,
+    "deliveryAddress": {
+      "description": "Work",
+      "street": "231 Oak Ave",
+      "number": "2020",
+      "complement": "",
+      "neighborhood": "Hillside",
+      "city": "Countryville",
+      "state": "State"
+    },
+    "paymentMethod": "Credit Card"
+  },
+  {
+    "userId": "6686f04e5427613adfa46891",
+    "establishmentId": "664263e9a61e5ddceac532f7",
+    "status": "Delivered",
+    "products": [
+      {
+        "productId": "66436318bea46df5e1bc8be3",
+        "quantity": 3
+      },
+      {
+        "productId": "66436318bea46df5e1bc8be2",
+        "quantity": 2
+      }
+    ],
+    "shipping": 9.41,
+    "totalPrice": 4409.36,
+    "deliveryAddress": {
+      "description": "Work",
+      "street": "231 Oak Ave",
+      "number": "2020",
+      "complement": "",
+      "neighborhood": "Hillside",
+      "city": "Countryville",
+      "state": "State"
+    },
+    "paymentMethod": "Credit Card"
+  },
+  {
+    "userId": "667038c8d23b11fd040e86f5",
+    "establishmentId": "664263e9a61e5ddceac53300",
+    "status": "Ordered",
+    "products": [
+      {
+        "productId": "66436318bea46df5e1bc8c0f",
+        "quantity": 3
+      },
+      {
+        "productId": "66436318bea46df5e1bc8c0e",
+        "quantity": 4
+      }
+    ],
+    "shipping": 12.58,
+    "totalPrice": 80.51,
+    "deliveryAddress": {
+      "description": "Work",
+      "street": "231 Oak Ave",
+      "number": "2020",
+      "complement": "",
+      "neighborhood": "Hillside",
+      "city": "Countryville",
+      "state": "State"
+    },
+    "paymentMethod": "Cash"
+  },
+  {
+    "userId": "667038c8d23b11fd040e86f5",
+    "establishmentId": "664263e9a61e5ddceac53303",
+    "status": "Cart",
+    "products": [
+      {
+        "productId": "66436318bea46df5e1bc8c1c",
+        "quantity": 5
+      },
+      {
+        "productId": "66436318bea46df5e1bc8c1d",
+        "quantity": 1
+      }
+    ],
+    "shipping": 13.23,
+    "totalPrice": 36.87,
+    "deliveryAddress": {
+      "description": "Work",
+      "street": "231 Oak Ave",
+      "number": "2020",
+      "complement": "",
+      "neighborhood": "Hillside",
+      "city": "Countryville",
+      "state": "State"
+    },
+    "paymentMethod": "Cash"
+  },
+  {
+    "userId": "6686f04e5427613adfa46891",
+    "establishmentId": "664263e9a61e5ddceac53301",
+    "status": "Preparing",
+    "products": [
+      {
+        "productId": "66436318bea46df5e1bc8c12",
+        "quantity": 1
+      },
+      {
+        "productId": "66436318bea46df5e1bc8c11",
+        "quantity": 4
+      },
+      {
+        "productId": "66436318bea46df5e1bc8c10",
+        "quantity": 3
+      },
+      {
+        "productId": "66436318bea46df5e1bc8c13",
+        "quantity": 2
+      }
+    ],
+    "shipping": 12.07,
+    "totalPrice": 25.97,
+    "deliveryAddress": {
+      "description": "Home",
+      "street": "221 Cedar St",
+      "number": "1919",
+      "complement": "Suite 900",
+      "neighborhood": "Outskirts",
+      "city": "Villagetown",
+      "state": "State"
+    },
+    "paymentMethod": "Credit Card"
+  },
+  {
+    "userId": "6686f04e5427613adfa46891",
+    "establishmentId": "664263e9a61e5ddceac532fe",
+    "status": "Cart",
+    "products": [
+      {
+        "productId": "66436318bea46df5e1bc8c03",
+        "quantity": 2
+      },
+      {
+        "productId": "66436318bea46df5e1bc8c06",
+        "quantity": 2
+      },
+      {
+        "productId": "66436318bea46df5e1bc8c04",
+        "quantity": 5
+      },
+      {
+        "productId": "66436318bea46df5e1bc8c05",
+        "quantity": 1
+      }
+    ],
+    "shipping": 5.52,
+    "totalPrice": 13395.52,
+    "deliveryAddress": {
+      "description": "Work",
+      "street": "231 Oak Ave",
+      "number": "2020",
+      "complement": "",
+      "neighborhood": "Hillside",
+      "city": "Countryville",
+      "state": "State"
+    },
+    "paymentMethod": "Pix"
+  },
+  {
+    "userId": "6686f04e5427613adfa46891",
+    "establishmentId": "664263e9a61e5ddceac532fc",
+    "status": "Preparing",
+    "products": [
+      {
+        "productId": "66436318bea46df5e1bc8bf9",
+        "quantity": 2
+      },
+      {
+        "productId": "66436318bea46df5e1bc8bfb",
+        "quantity": 4
+      },
+      {
+        "productId": "66436318bea46df5e1bc8bfa",
+        "quantity": 1
+      }
+    ],
+    "shipping": 12.21,
+    "totalPrice": 60.84,
+    "deliveryAddress": {
+      "description": "Work",
+      "street": "231 Oak Ave",
+      "number": "2020",
+      "complement": "",
+      "neighborhood": "Hillside",
+      "city": "Countryville",
+      "state": "State"
+    },
+    "paymentMethod": "Cash"
+  },
+  {
+    "userId": "667038c8d23b11fd040e86f5",
+    "establishmentId": "664263e9a61e5ddceac532ff",
+    "status": "Delivered",
+    "products": [
+      {
+        "productId": "66436318bea46df5e1bc8c0a",
+        "quantity": 1
+      },
+      {
+        "productId": "66436318bea46df5e1bc8c09",
+        "quantity": 2
+      }
+    ],
+    "shipping": 6.85,
+    "totalPrice": 27.32,
+    "deliveryAddress": {
+      "description": "Work",
+      "street": "231 Oak Ave",
+      "number": "2020",
+      "complement": "",
+      "neighborhood": "Hillside",
+      "city": "Countryville",
+      "state": "State"
+    },
+    "paymentMethod": "Pix"
+  },
+  {
+    "userId": "667038c8d23b11fd040e86f5",
+    "establishmentId": "664263e9a61e5ddceac532ff",
+    "status": "Cart",
+    "products": [
+      {
+        "productId": "66436318bea46df5e1bc8c0a",
+        "quantity": 2
+      },
+      {
+        "productId": "66436318bea46df5e1bc8c09",
+        "quantity": 4
+      },
+      {
+        "productId": "66436318bea46df5e1bc8c0d",
+        "quantity": 2
+      },
+      {
+        "productId": "66436318bea46df5e1bc8c0b",
+        "quantity": 5
+      }
+    ],
+    "shipping": 4.17,
+    "totalPrice": 91.04,
+    "deliveryAddress": {
+      "description": "Work",
+      "street": "231 Oak Ave",
+      "number": "2020",
+      "complement": "",
+      "neighborhood": "Hillside",
+      "city": "Countryville",
+      "state": "State"
+    },
+    "paymentMethod": "Credit Card"
+  },
+  {
+    "userId": "6686f04e5427613adfa46891",
+    "establishmentId": "664263e9a61e5ddceac532f9",
+    "status": "Received",
+    "products": [
+      {
+        "productId": "66436318bea46df5e1bc8bee",
+        "quantity": 5
+      },
+      {
+        "productId": "66436318bea46df5e1bc8bed",
+        "quantity": 4
+      },
+      {
+        "productId": "66436318bea46df5e1bc8bea",
+        "quantity": 4
+      }
+    ],
+    "shipping": 12.28,
+    "totalPrice": 74.15,
+    "deliveryAddress": {
+      "description": "Work",
+      "street": "231 Oak Ave",
+      "number": "2020",
+      "complement": "",
+      "neighborhood": "Hillside",
+      "city": "Countryville",
+      "state": "State"
+    },
+    "paymentMethod": "Pix"
+  },
+  {
+    "userId": "667038c8d23b11fd040e86f5",
+    "establishmentId": "664263e9a61e5ddceac532f5",
+    "status": "Sent",
+    "products": [
+      {
+        "productId": "66436318bea46df5e1bc8bdc",
+        "quantity": 1
+      },
+      {
+        "productId": "66436318bea46df5e1bc8bdb",
+        "quantity": 5
+      }
+    ],
+    "shipping": 5.22,
+    "totalPrice": 26.66,
+    "deliveryAddress": {
+      "description": "Home",
+      "street": "221 Cedar St",
+      "number": "1919",
+      "complement": "Suite 900",
+      "neighborhood": "Outskirts",
+      "city": "Villagetown",
+      "state": "State"
+    },
+    "paymentMethod": "Credit Card"
+  },
+  {
+    "userId": "6686f04e5427613adfa46891",
+    "establishmentId": "664263e9a61e5ddceac532fa",
+    "status": "Delivered",
+    "products": [
+      {
+        "productId": "66436318bea46df5e1bc8bef",
+        "quantity": 3
+      }
+    ],
+    "shipping": 14.27,
+    "totalPrice": 41.24,
+    "deliveryAddress": {
+      "description": "Home",
+      "street": "221 Cedar St",
+      "number": "1919",
+      "complement": "Suite 900",
+      "neighborhood": "Outskirts",
+      "city": "Villagetown",
+      "state": "State"
+    },
+    "paymentMethod": "Cash"
+  },
+  {
+    "userId": "6686f04e5427613adfa46891",
+    "establishmentId": "664263e9a61e5ddceac532f7",
+    "status": "Ordered",
+    "products": [
+      {
+        "productId": "66436318bea46df5e1bc8be2",
+        "quantity": 1
+      },
+      {
+        "productId": "66436318bea46df5e1bc8be3",
+        "quantity": 1
+      }
+    ],
+    "shipping": 8.24,
+    "totalPrice": 1708.22,
+    "deliveryAddress": {
+      "description": "Work",
+      "street": "231 Oak Ave",
+      "number": "2020",
+      "complement": "",
+      "neighborhood": "Hillside",
+      "city": "Countryville",
+      "state": "State"
+    },
+    "paymentMethod": "Cash"
+  },
+  {
+    "userId": "667038c8d23b11fd040e86f5",
+    "establishmentId": "664263e9a61e5ddceac53303",
+    "status": "Ordered",
+    "products": [
+      {
+        "productId": "66436318bea46df5e1bc8c1e",
+        "quantity": 5
+      },
+      {
+        "productId": "66436318bea46df5e1bc8c1d",
+        "quantity": 4
+      },
+      {
+        "productId": "66436318bea46df5e1bc8c1c",
+        "quantity": 3
+      }
+    ],
+    "shipping": 4.97,
+    "totalPrice": 50.05,
+    "deliveryAddress": {
+      "description": "Work",
+      "street": "231 Oak Ave",
+      "number": "2020",
+      "complement": "",
+      "neighborhood": "Hillside",
+      "city": "Countryville",
+      "state": "State"
+    },
+    "paymentMethod": "Debit Card"
+  },
+  {
+    "userId": "667038c8d23b11fd040e86f5",
+    "establishmentId": "664263e9a61e5ddceac532f3",
+    "status": "Preparing",
+    "products": [
+      {
+        "productId": "66436318bea46df5e1bc8bd4",
+        "quantity": 1
+      },
+      {
+        "productId": "66436318bea46df5e1bc8bd6",
+        "quantity": 1
+      },
+      {
+        "productId": "66436318bea46df5e1bc8bda",
+        "quantity": 3
+      }
+    ],
+    "shipping": 12.61,
+    "totalPrice": 34.06,
+    "deliveryAddress": {
+      "description": "Home",
+      "street": "221 Cedar St",
+      "number": "1919",
+      "complement": "Suite 900",
+      "neighborhood": "Outskirts",
+      "city": "Villagetown",
+      "state": "State"
+    },
+    "paymentMethod": "Debit Card"
+  },
+  {
+    "userId": "6686f04e5427613adfa46891",
+    "establishmentId": "664263e9a61e5ddceac532fc",
+    "status": "Ordered",
+    "products": [
+      {
+        "productId": "66436318bea46df5e1bc8bfa",
+        "quantity": 2
+      }
+    ],
+    "shipping": 7.49,
+    "totalPrice": 22.47,
+    "deliveryAddress": {
+      "description": "Home",
+      "street": "221 Cedar St",
+      "number": "1919",
+      "complement": "Suite 900",
+      "neighborhood": "Outskirts",
+      "city": "Villagetown",
+      "state": "State"
+    },
+    "paymentMethod": "Cash"
+  },
+  {
+    "userId": "6686f04e5427613adfa46891",
+    "establishmentId": "664263e9a61e5ddceac53304",
+    "status": "Ordered",
+    "products": [
+      {
+        "productId": "66436318bea46df5e1bc8c1b",
+        "quantity": 2
+      }
+    ],
+    "shipping": 2.44,
+    "totalPrice": 7.42,
+    "deliveryAddress": {
+      "description": "Work",
+      "street": "231 Oak Ave",
+      "number": "2020",
+      "complement": "",
+      "neighborhood": "Hillside",
+      "city": "Countryville",
+      "state": "State"
+    },
+    "paymentMethod": "Credit Card"
+  },
+  {
+    "userId": "667038c8d23b11fd040e86f5",
+    "establishmentId": "664263e9a61e5ddceac532f7",
+    "status": "Received",
+    "products": [
+      {
+        "productId": "66436318bea46df5e1bc8be3",
+        "quantity": 4
+      },
+      {
+        "productId": "66436318bea46df5e1bc8be2",
+        "quantity": 4
+      }
+    ],
+    "shipping": 6.93,
+    "totalPrice": 6806.85,
+    "deliveryAddress": {
+      "description": "Home",
+      "street": "221 Cedar St",
+      "number": "1919",
+      "complement": "Suite 900",
+      "neighborhood": "Outskirts",
+      "city": "Villagetown",
+      "state": "State"
+    },
+    "paymentMethod": "Pix"
+  },
+  {
+    "userId": "6686f04e5427613adfa46891",
+    "establishmentId": "664263e9a61e5ddceac532fa",
+    "status": "Cart",
+    "products": [
+      {
+        "productId": "66436318bea46df5e1bc8bf1",
+        "quantity": 1
+      },
+      {
+        "productId": "66436318bea46df5e1bc8bef",
+        "quantity": 3
+      },
+      {
+        "productId": "66436318bea46df5e1bc8bf2",
+        "quantity": 1
+      },
+      {
+        "productId": "66436318bea46df5e1bc8bf0",
+        "quantity": 5
+      }
+    ],
+    "shipping": 2.94,
+    "totalPrice": 89.34,
+    "deliveryAddress": {
+      "description": "Work",
+      "street": "231 Oak Ave",
+      "number": "2020",
+      "complement": "",
+      "neighborhood": "Hillside",
+      "city": "Countryville",
+      "state": "State"
+    },
+    "paymentMethod": "Pix"
+  },
+  {
+    "userId": "6686f04e5427613adfa46891",
+    "establishmentId": "664263e9a61e5ddceac532fa",
+    "status": "Ordered",
+    "products": [
+      {
+        "productId": "66436318bea46df5e1bc8bf2",
+        "quantity": 3
+      },
+      {
+        "productId": "66436318bea46df5e1bc8bf1",
+        "quantity": 3
+      }
+    ],
+    "shipping": 7.87,
+    "totalPrice": 43.81,
+    "deliveryAddress": {
+      "description": "Work",
+      "street": "231 Oak Ave",
+      "number": "2020",
+      "complement": "",
+      "neighborhood": "Hillside",
+      "city": "Countryville",
+      "state": "State"
+    },
+    "paymentMethod": "Pix"
+  },
+  {
+    "userId": "667038c8d23b11fd040e86f5",
+    "establishmentId": "664263e9a61e5ddceac532f4",
+    "status": "Cart",
+    "products": [
+      {
+        "productId": "66436318bea46df5e1bc8bd0",
+        "quantity": 1
+      }
+    ],
+    "shipping": 8.92,
+    "totalPrice": 23.91,
+    "deliveryAddress": {
+      "description": "Work",
+      "street": "231 Oak Ave",
+      "number": "2020",
+      "complement": "",
+      "neighborhood": "Hillside",
+      "city": "Countryville",
+      "state": "State"
+    },
+    "paymentMethod": "Debit Card"
+  },
+  {
+    "userId": "667038c8d23b11fd040e86f5",
+    "establishmentId": "664263e9a61e5ddceac532f6",
+    "status": "Ordered",
+    "products": [
+      {
+        "productId": "66436318bea46df5e1bc8be1",
+        "quantity": 1
+      },
+      {
+        "productId": "66436318bea46df5e1bc8bdf",
+        "quantity": 2
+      },
+      {
+        "productId": "66436318bea46df5e1bc8be0",
+        "quantity": 2
+      }
+    ],
+    "shipping": 6.01,
+    "totalPrice": 25.96,
+    "deliveryAddress": {
+      "description": "Work",
+      "street": "231 Oak Ave",
+      "number": "2020",
+      "complement": "",
+      "neighborhood": "Hillside",
+      "city": "Countryville",
+      "state": "State"
+    },
+    "paymentMethod": "Credit Card"
+  },
+  {
+    "userId": "6686f04e5427613adfa46891",
+    "establishmentId": "664263e9a61e5ddceac532ff",
+    "status": "Canceled",
+    "products": [
+      {
+        "productId": "66436318bea46df5e1bc8c0c",
+        "quantity": 1
+      },
+      {
+        "productId": "66436318bea46df5e1bc8c0b",
+        "quantity": 5
+      }
+    ],
+    "shipping": 2.79,
+    "totalPrice": 39.73,
+    "deliveryAddress": {
+      "description": "Home",
+      "street": "221 Cedar St",
+      "number": "1919",
+      "complement": "Suite 900",
+      "neighborhood": "Outskirts",
+      "city": "Villagetown",
+      "state": "State"
+    },
+    "paymentMethod": "Cash"
+  },
+  {
+    "userId": "6686f04e5427613adfa46891",
+    "establishmentId": "664263e9a61e5ddceac53303",
+    "status": "Cart",
+    "products": [
+      {
+        "productId": "66436318bea46df5e1bc8c1c",
+        "quantity": 3
+      },
+      {
+        "productId": "66436318bea46df5e1bc8c1e",
+        "quantity": 4
+      },
+      {
+        "productId": "66436318bea46df5e1bc8c1d",
+        "quantity": 3
+      }
+    ],
+    "shipping": 9.13,
+    "totalPrice": 47.33,
+    "deliveryAddress": {
+      "description": "Home",
+      "street": "221 Cedar St",
+      "number": "1919",
+      "complement": "Suite 900",
+      "neighborhood": "Outskirts",
+      "city": "Villagetown",
+      "state": "State"
+    },
+    "paymentMethod": "Pix"
+  },
+  {
+    "userId": "667038c8d23b11fd040e86f5",
+    "establishmentId": "664263e9a61e5ddceac532f8",
+    "status": "Ordered",
+    "products": [
+      {
+        "productId": "66436318bea46df5e1bc8be5",
+        "quantity": 4
+      }
+    ],
+    "shipping": 5.14,
+    "totalPrice": 41.1,
+    "deliveryAddress": {
+      "description": "Home",
+      "street": "221 Cedar St",
+      "number": "1919",
+      "complement": "Suite 900",
+      "neighborhood": "Outskirts",
+      "city": "Villagetown",
+      "state": "State"
+    },
+    "paymentMethod": "Cash"
+  },
+  {
+    "userId": "6686f04e5427613adfa46891",
+    "establishmentId": "664263e9a61e5ddceac53301",
+    "status": "Cart",
+    "products": [
+      {
+        "productId": "66436318bea46df5e1bc8c10",
+        "quantity": 1
+      },
+      {
+        "productId": "66436318bea46df5e1bc8c13",
+        "quantity": 4
+      },
+      {
+        "productId": "66436318bea46df5e1bc8c12",
+        "quantity": 5
+      },
+      {
+        "productId": "66436318bea46df5e1bc8c11",
+        "quantity": 2
+      }
+    ],
+    "shipping": 2.69,
+    "totalPrice": 25.77,
+    "deliveryAddress": {
+      "description": "Home",
+      "street": "221 Cedar St",
+      "number": "1919",
+      "complement": "Suite 900",
+      "neighborhood": "Outskirts",
+      "city": "Villagetown",
+      "state": "State"
+    },
+    "paymentMethod": "Credit Card"
+  },
+  {
+    "userId": "6686f04e5427613adfa46891",
     "establishmentId": "664263e9a61e5ddceac532f2",
     "status": "Cart",
+    "products": [
+      {
+        "productId": "66436318bea46df5e1bc8bcf",
+        "quantity": 2
+      }
+    ],
+    "shipping": 3.18,
+    "totalPrice": 11.16,
+    "deliveryAddress": {
+      "description": "Home",
+      "street": "221 Cedar St",
+      "number": "1919",
+      "complement": "Suite 900",
+      "neighborhood": "Outskirts",
+      "city": "Villagetown",
+      "state": "State"
+    },
+    "paymentMethod": "Credit Card"
+  },
+  {
+    "userId": "6686f04e5427613adfa46891",
+    "establishmentId": "664263e9a61e5ddceac53301",
+    "status": "Cart",
+    "products": [
+      {
+        "productId": "66436318bea46df5e1bc8c11",
+        "quantity": 1
+      },
+      {
+        "productId": "66436318bea46df5e1bc8c10",
+        "quantity": 5
+      },
+      {
+        "productId": "66436318bea46df5e1bc8c12",
+        "quantity": 1
+      },
+      {
+        "productId": "66436318bea46df5e1bc8c13",
+        "quantity": 2
+      }
+    ],
+    "shipping": 1.03,
+    "totalPrice": 13.44,
+    "deliveryAddress": {
+      "description": "Work",
+      "street": "231 Oak Ave",
+      "number": "2020",
+      "complement": "",
+      "neighborhood": "Hillside",
+      "city": "Countryville",
+      "state": "State"
+    },
+    "paymentMethod": "Pix"
+  },
+  {
+    "userId": "6686f04e5427613adfa46891",
+    "establishmentId": "664263e9a61e5ddceac532fe",
+    "status": "Ordered",
+    "products": [
+      {
+        "productId": "66436318bea46df5e1bc8c03",
+        "quantity": 3
+      },
+      {
+        "productId": "66436318bea46df5e1bc8c05",
+        "quantity": 2
+      },
+      {
+        "productId": "66436318bea46df5e1bc8c07",
+        "quantity": 5
+      }
+    ],
+    "shipping": 10.62,
+    "totalPrice": 5450.62,
+    "deliveryAddress": {
+      "description": "Home",
+      "street": "221 Cedar St",
+      "number": "1919",
+      "complement": "Suite 900",
+      "neighborhood": "Outskirts",
+      "city": "Villagetown",
+      "state": "State"
+    },
+    "paymentMethod": "Credit Card"
+  },
+  {
+    "userId": "667038c8d23b11fd040e86f5",
+    "establishmentId": "664263e9a61e5ddceac533fb",
+    "status": "Delivered",
+    "products": [
+      {
+        "productId": "66436318bea46df5e1bc8bf4",
+        "quantity": 1
+      },
+      {
+        "productId": "66436318bea46df5e1bc8bf3",
+        "quantity": 3
+      }
+    ],
+    "shipping": 7.01,
+    "totalPrice": 57.97,
+    "deliveryAddress": {
+      "description": "Work",
+      "street": "231 Oak Ave",
+      "number": "2020",
+      "complement": "",
+      "neighborhood": "Hillside",
+      "city": "Countryville",
+      "state": "State"
+    },
+    "paymentMethod": "Debit Card"
+  },
+  {
+    "userId": "6686f04e5427613adfa46891",
+    "establishmentId": "664263e9a61e5ddceac532f6",
+    "status": "Cart",
+    "products": [
+      {
+        "productId": "66436318bea46df5e1bc8be0",
+        "quantity": 5
+      },
+      {
+        "productId": "66436318bea46df5e1bc8be1",
+        "quantity": 1
+      }
+    ],
+    "shipping": 3.22,
+    "totalPrice": 23.66,
+    "deliveryAddress": {
+      "description": "Home",
+      "street": "221 Cedar St",
+      "number": "1919",
+      "complement": "Suite 900",
+      "neighborhood": "Outskirts",
+      "city": "Villagetown",
+      "state": "State"
+    },
+    "paymentMethod": "Pix"
+  },
+  {
+    "userId": "667038c8d23b11fd040e86f5",
+    "establishmentId": "664263e9a61e5ddceac532f6",
+    "status": "Delivered",
+    "products": [
+      {
+        "productId": "66436318bea46df5e1bc8be0",
+        "quantity": 1
+      },
+      {
+        "productId": "66436318bea46df5e1bc8bdf",
+        "quantity": 5
+      },
+      {
+        "productId": "66436318bea46df5e1bc8be1",
+        "quantity": 3
+      }
+    ],
+    "shipping": 5.55,
+    "totalPrice": 42.96,
+    "deliveryAddress": {
+      "description": "Work",
+      "street": "231 Oak Ave",
+      "number": "2020",
+      "complement": "",
+      "neighborhood": "Hillside",
+      "city": "Countryville",
+      "state": "State"
+    },
+    "paymentMethod": "Cash"
+  },
+  {
+    "userId": "667038c8d23b11fd040e86f5",
+    "establishmentId": "664263e9a61e5ddceac532f3",
+    "status": "Received",
+    "products": [
+      {
+        "productId": "66436318bea46df5e1bc8bd6",
+        "quantity": 4
+      },
+      {
+        "productId": "66436318bea46df5e1bc8bd9",
+        "quantity": 3
+      }
+    ],
+    "shipping": 3.23,
+    "totalPrice": 39.66,
+    "deliveryAddress": {
+      "description": "Home",
+      "street": "221 Cedar St",
+      "number": "1919",
+      "complement": "Suite 900",
+      "neighborhood": "Outskirts",
+      "city": "Villagetown",
+      "state": "State"
+    },
+    "paymentMethod": "Credit Card"
+  },
+  {
+    "userId": "667038c8d23b11fd040e86f5",
+    "establishmentId": "664263e9a61e5ddceac532f9",
+    "status": "Delivered",
+    "products": [
+      {
+        "productId": "66436318bea46df5e1bc8bea",
+        "quantity": 1
+      },
+      {
+        "productId": "66436318bea46df5e1bc8bed",
+        "quantity": 4
+      },
+      {
+        "productId": "66436318bea46df5e1bc8bee",
+        "quantity": 2
+      },
+      {
+        "productId": "66436318bea46df5e1bc8bec",
+        "quantity": 3
+      }
+    ],
+    "shipping": 8.78,
+    "totalPrice": 60.18,
+    "deliveryAddress": {
+      "description": "Work",
+      "street": "231 Oak Ave",
+      "number": "2020",
+      "complement": "",
+      "neighborhood": "Hillside",
+      "city": "Countryville",
+      "state": "State"
+    },
+    "paymentMethod": "Cash"
+  },
+  {
+    "userId": "667038c8d23b11fd040e86f5",
+    "establishmentId": "664263e9a61e5ddceac53304",
+    "status": "Delivered",
+    "products": [
+      {
+        "productId": "66436318bea46df5e1bc8c1a",
+        "quantity": 5
+      }
+    ],
+    "shipping": 3.73,
+    "totalPrice": 8.68,
+    "deliveryAddress": {
+      "description": "Work",
+      "street": "231 Oak Ave",
+      "number": "2020",
+      "complement": "",
+      "neighborhood": "Hillside",
+      "city": "Countryville",
+      "state": "State"
+    },
+    "paymentMethod": "Pix"
+  },
+  {
+    "userId": "6686f04e5427613adfa46891",
+    "establishmentId": "664263e9a61e5ddceac532f4",
+    "status": "Cart",
+    "products": [
+      {
+        "productId": "66436318bea46df5e1bc8bd0",
+        "quantity": 2
+      }
+    ],
+    "shipping": 0.91,
+    "totalPrice": 30.89,
+    "deliveryAddress": {
+      "description": "Home",
+      "street": "221 Cedar St",
+      "number": "1919",
+      "complement": "Suite 900",
+      "neighborhood": "Outskirts",
+      "city": "Villagetown",
+      "state": "State"
+    },
+    "paymentMethod": "Cash"
+  },
+  {
+    "userId": "667038c8d23b11fd040e86f5",
+    "establishmentId": "664263e9a61e5ddceac532f9",
+    "status": "Ordered",
+    "products": [
+      {
+        "productId": "66436318bea46df5e1bc8bed",
+        "quantity": 1
+      },
+      {
+        "productId": "66436318bea46df5e1bc8bee",
+        "quantity": 4
+      }
+    ],
+    "shipping": 10.66,
+    "totalPrice": 32.61,
+    "deliveryAddress": {
+      "description": "Work",
+      "street": "231 Oak Ave",
+      "number": "2020",
+      "complement": "",
+      "neighborhood": "Hillside",
+      "city": "Countryville",
+      "state": "State"
+    },
+    "paymentMethod": "Debit Card"
+  },
+  {
+    "userId": "667038c8d23b11fd040e86f5",
+    "establishmentId": "664263e9a61e5ddceac532f5",
+    "status": "Ordered",
+    "products": [
+      {
+        "productId": "66436318bea46df5e1bc8bdb",
+        "quantity": 2
+      }
+    ],
+    "shipping": 3.96,
+    "totalPrice": 10.94,
+    "deliveryAddress": {
+      "description": "Home",
+      "street": "221 Cedar St",
+      "number": "1919",
+      "complement": "Suite 900",
+      "neighborhood": "Outskirts",
+      "city": "Villagetown",
+      "state": "State"
+    },
+    "paymentMethod": "Pix"
+  },
+  {
+    "userId": "6686f04e5427613adfa46891",
+    "establishmentId": "664263e9a61e5ddceac532f9",
+    "status": "Ordered",
+    "products": [
+      {
+        "productId": "66436318bea46df5e1bc8bed",
+        "quantity": 2
+      },
+      {
+        "productId": "66436318bea46df5e1bc8bea",
+        "quantity": 1
+      },
+      {
+        "productId": "66436318bea46df5e1bc8beb",
+        "quantity": 2
+      },
+      {
+        "productId": "66436318bea46df5e1bc8bec",
+        "quantity": 3
+      }
+    ],
+    "shipping": 1.37,
+    "totalPrice": 43.79,
+    "deliveryAddress": {
+      "description": "Home",
+      "street": "221 Cedar St",
+      "number": "1919",
+      "complement": "Suite 900",
+      "neighborhood": "Outskirts",
+      "city": "Villagetown",
+      "state": "State"
+    },
+    "paymentMethod": "Cash"
+  },
+  {
+    "userId": "6686f04e5427613adfa46891",
+    "establishmentId": "664263e9a61e5ddceac532f2",
+    "status": "Delivered",
+    "products": [
+      {
+        "productId": "66436318bea46df5e1bc8bcf",
+        "quantity": 2
+      }
+    ],
+    "shipping": 8.5,
+    "totalPrice": 16.48,
+    "deliveryAddress": {
+      "description": "Work",
+      "street": "231 Oak Ave",
+      "number": "2020",
+      "complement": "",
+      "neighborhood": "Hillside",
+      "city": "Countryville",
+      "state": "State"
+    },
+    "paymentMethod": "Credit Card"
+  },
+  {
+    "userId": "6686f04e5427613adfa46891",
+    "establishmentId": "664263e9a61e5ddceac532f5",
+    "status": "Cart",
+    "products": [
+      {
+        "productId": "66436318bea46df5e1bc8bde",
+        "quantity": 1
+      },
+      {
+        "productId": "66436318bea46df5e1bc8bdd",
+        "quantity": 4
+      },
+      {
+        "productId": "66436318bea46df5e1bc8bdb",
+        "quantity": 1
+      },
+      {
+        "productId": "66436318bea46df5e1bc8bdc",
+        "quantity": 2
+      }
+    ],
+    "shipping": 14.96,
+    "totalPrice": 42.88,
+    "deliveryAddress": {
+      "description": "Work",
+      "street": "231 Oak Ave",
+      "number": "2020",
+      "complement": "",
+      "neighborhood": "Hillside",
+      "city": "Countryville",
+      "state": "State"
+    },
+    "paymentMethod": "Debit Card"
+  },
+  {
+    "userId": "6686f04e5427613adfa46891",
+    "establishmentId": "664263e9a61e5ddceac532fe",
+    "status": "Preparing",
+    "products": [
+      {
+        "productId": "66436318bea46df5e1bc8c03",
+        "quantity": 1
+      },
+      {
+        "productId": "66436318bea46df5e1bc8c05",
+        "quantity": 4
+      },
+      {
+        "productId": "66436318bea46df5e1bc8c08",
+        "quantity": 4
+      }
+    ],
+    "shipping": 2.74,
+    "totalPrice": 3793.74,
+    "deliveryAddress": {
+      "description": "Home",
+      "street": "221 Cedar St",
+      "number": "1919",
+      "complement": "Suite 900",
+      "neighborhood": "Outskirts",
+      "city": "Villagetown",
+      "state": "State"
+    },
+    "paymentMethod": "Pix"
+  },
+  {
+    "userId": "6686f04e5427613adfa46891",
+    "establishmentId": "664263e9a61e5ddceac53302",
+    "status": "Ordered",
+    "products": [
+      {
+        "productId": "66436318bea46df5e1bc8c14",
+        "quantity": 4
+      }
+    ],
+    "shipping": 7.37,
+    "totalPrice": 31.33,
+    "deliveryAddress": {
+      "description": "Home",
+      "street": "221 Cedar St",
+      "number": "1919",
+      "complement": "Suite 900",
+      "neighborhood": "Outskirts",
+      "city": "Villagetown",
+      "state": "State"
+    },
+    "paymentMethod": "Debit Card"
+  },
+  {
+    "userId": "6686f04e5427613adfa46891",
+    "establishmentId": "664263e9a61e5ddceac532f7",
+    "status": "Ordered",
+    "products": [
+      {
+        "productId": "66436318bea46df5e1bc8be3",
+        "quantity": 1
+      },
+      {
+        "productId": "66436318bea46df5e1bc8be2",
+        "quantity": 2
+      }
+    ],
+    "shipping": 4.97,
+    "totalPrice": 2404.94,
+    "deliveryAddress": {
+      "description": "Home",
+      "street": "221 Cedar St",
+      "number": "1919",
+      "complement": "Suite 900",
+      "neighborhood": "Outskirts",
+      "city": "Villagetown",
+      "state": "State"
+    },
+    "paymentMethod": "Cash"
+  },
+  {
+    "userId": "6686f04e5427613adfa46891",
+    "establishmentId": "664263e9a61e5ddceac532f8",
+    "status": "Ordered",
+    "products": [
+      {
+        "productId": "66436318bea46df5e1bc8be8",
+        "quantity": 1
+      },
+      {
+        "productId": "66436318bea46df5e1bc8be9",
+        "quantity": 3
+      },
+      {
+        "productId": "66436318bea46df5e1bc8be6",
+        "quantity": 3
+      },
+      {
+        "productId": "66436318bea46df5e1bc8be5",
+        "quantity": 3
+      }
+    ],
+    "shipping": 12.48,
+    "totalPrice": 112.88,
+    "deliveryAddress": {
+      "description": "Home",
+      "street": "221 Cedar St",
+      "number": "1919",
+      "complement": "Suite 900",
+      "neighborhood": "Outskirts",
+      "city": "Villagetown",
+      "state": "State"
+    },
+    "paymentMethod": "Debit Card"
+  },
+  {
+    "userId": "6686f04e5427613adfa46891",
+    "establishmentId": "664263e9a61e5ddceac53302",
+    "status": "Ordered",
+    "products": [
+      {
+        "productId": "66436318bea46df5e1bc8c18",
+        "quantity": 1
+      },
+      {
+        "productId": "66436318bea46df5e1bc8c14",
+        "quantity": 1
+      }
+    ],
+    "shipping": 6.72,
+    "totalPrice": 15.2,
+    "deliveryAddress": {
+      "description": "Work",
+      "street": "231 Oak Ave",
+      "number": "2020",
+      "complement": "",
+      "neighborhood": "Hillside",
+      "city": "Countryville",
+      "state": "State"
+    },
+    "paymentMethod": "Debit Card"
+  },
+  {
+    "userId": "6686f04e5427613adfa46891",
+    "establishmentId": "664263e9a61e5ddceac533fb",
+    "status": "Delivered",
+    "products": [
+      {
+        "productId": "66436318bea46df5e1bc8bf5",
+        "quantity": 3
+      }
+    ],
+    "shipping": 12.77,
+    "totalPrice": 57.74,
+    "deliveryAddress": {
+      "description": "Home",
+      "street": "221 Cedar St",
+      "number": "1919",
+      "complement": "Suite 900",
+      "neighborhood": "Outskirts",
+      "city": "Villagetown",
+      "state": "State"
+    },
+    "paymentMethod": "Debit Card"
+  },
+  {
+    "userId": "667038c8d23b11fd040e86f5",
+    "establishmentId": "664263e9a61e5ddceac532f9",
+    "status": "Cart",
+    "products": [
+      {
+        "productId": "66436318bea46df5e1bc8bec",
+        "quantity": 2
+      },
+      {
+        "productId": "66436318bea46df5e1bc8bee",
+        "quantity": 4
+      }
+    ],
+    "shipping": 2.78,
+    "totalPrice": 28.72,
+    "deliveryAddress": {
+      "description": "Home",
+      "street": "221 Cedar St",
+      "number": "1919",
+      "complement": "Suite 900",
+      "neighborhood": "Outskirts",
+      "city": "Villagetown",
+      "state": "State"
+    },
+    "paymentMethod": "Pix"
+  },
+  {
+    "userId": "6686f04e5427613adfa46891",
+    "establishmentId": "664263e9a61e5ddceac532ff",
+    "status": "Ordered",
+    "products": [
+      {
+        "productId": "66436318bea46df5e1bc8c0a",
+        "quantity": 1
+      },
+      {
+        "productId": "66436318bea46df5e1bc8c0b",
+        "quantity": 5
+      },
+      {
+        "productId": "66436318bea46df5e1bc8c09",
+        "quantity": 4
+      }
+    ],
+    "shipping": 0.39,
+    "totalPrice": 63.79,
+    "deliveryAddress": {
+      "description": "Work",
+      "street": "231 Oak Ave",
+      "number": "2020",
+      "complement": "",
+      "neighborhood": "Hillside",
+      "city": "Countryville",
+      "state": "State"
+    },
+    "paymentMethod": "Credit Card"
+  },
+  {
+    "userId": "6686f04e5427613adfa46891",
+    "establishmentId": "664263e9a61e5ddceac53304",
+    "status": "Cart",
+    "products": [
+      {
+        "productId": "66436318bea46df5e1bc8c1a",
+        "quantity": 4
+      }
+    ],
+    "shipping": 5.87,
+    "totalPrice": 9.83,
+    "deliveryAddress": {
+      "description": "Home",
+      "street": "221 Cedar St",
+      "number": "1919",
+      "complement": "Suite 900",
+      "neighborhood": "Outskirts",
+      "city": "Villagetown",
+      "state": "State"
+    },
+    "paymentMethod": "Debit Card"
+  },
+  {
+    "userId": "6686f04e5427613adfa46891",
+    "establishmentId": "664263e9a61e5ddceac532fd",
+    "status": "Canceled",
+    "products": [
+      {
+        "productId": "66436318bea46df5e1bc8bfc",
+        "quantity": 3
+      },
+      {
+        "productId": "66436318bea46df5e1bc8c00",
+        "quantity": 2
+      },
+      {
+        "productId": "66436318bea46df5e1bc8bfd",
+        "quantity": 5
+      }
+    ],
+    "shipping": 12.24,
+    "totalPrice": 48.44,
+    "deliveryAddress": {
+      "description": "Home",
+      "street": "221 Cedar St",
+      "number": "1919",
+      "complement": "Suite 900",
+      "neighborhood": "Outskirts",
+      "city": "Villagetown",
+      "state": "State"
+    },
+    "paymentMethod": "Cash"
+  },
+  {
+    "userId": "667038c8d23b11fd040e86f5",
+    "establishmentId": "664263e9a61e5ddceac532fa",
+    "status": "Received",
+    "products": [
+      {
+        "productId": "66436318bea46df5e1bc8bf1",
+        "quantity": 5
+      },
+      {
+        "productId": "66436318bea46df5e1bc8bf0",
+        "quantity": 3
+      },
+      {
+        "productId": "66436318bea46df5e1bc8bef",
+        "quantity": 5
+      }
+    ],
+    "shipping": 7.88,
+    "totalPrice": 121.25,
+    "deliveryAddress": {
+      "description": "Home",
+      "street": "221 Cedar St",
+      "number": "1919",
+      "complement": "Suite 900",
+      "neighborhood": "Outskirts",
+      "city": "Villagetown",
+      "state": "State"
+    },
+    "paymentMethod": "Pix"
+  },
+  {
+    "userId": "667038c8d23b11fd040e86f5",
+    "establishmentId": "664263e9a61e5ddceac53303",
+    "status": "Delivered",
+    "products": [
+      {
+        "productId": "66436318bea46df5e1bc8c1d",
+        "quantity": 4
+      },
+      {
+        "productId": "66436318bea46df5e1bc8c1c",
+        "quantity": 3
+      }
+    ],
+    "shipping": 7.96,
+    "totalPrice": 29.59,
+    "deliveryAddress": {
+      "description": "Work",
+      "street": "231 Oak Ave",
+      "number": "2020",
+      "complement": "",
+      "neighborhood": "Hillside",
+      "city": "Countryville",
+      "state": "State"
+    },
+    "paymentMethod": "Debit Card"
+  },
+  {
+    "userId": "6686f04e5427613adfa46891",
+    "establishmentId": "664263e9a61e5ddceac532f3",
+    "status": "Delivered",
+    "products": [
+      {
+        "productId": "66436318bea46df5e1bc8bd9",
+        "quantity": 3
+      },
+      {
+        "productId": "66436318bea46df5e1bc8bd2",
+        "quantity": 2
+      }
+    ],
+    "shipping": 4.29,
+    "totalPrice": 24.74,
+    "deliveryAddress": {
+      "description": "Work",
+      "street": "231 Oak Ave",
+      "number": "2020",
+      "complement": "",
+      "neighborhood": "Hillside",
+      "city": "Countryville",
+      "state": "State"
+    },
+    "paymentMethod": "Debit Card"
+  },
+  {
+    "userId": "6686f04e5427613adfa46891",
+    "establishmentId": "664263e9a61e5ddceac53302",
+    "status": "Ordered",
+    "products": [
+      {
+        "productId": "66436318bea46df5e1bc8c16",
+        "quantity": 4
+      },
+      {
+        "productId": "66436318bea46df5e1bc8c18",
+        "quantity": 3
+      },
+      {
+        "productId": "66436318bea46df5e1bc8c15",
+        "quantity": 1
+      },
+      {
+        "productId": "66436318bea46df5e1bc8c14",
+        "quantity": 1
+      }
+    ],
+    "shipping": 10.3,
+    "totalPrice": 57.41,
+    "deliveryAddress": {
+      "description": "Home",
+      "street": "221 Cedar St",
+      "number": "1919",
+      "complement": "Suite 900",
+      "neighborhood": "Outskirts",
+      "city": "Villagetown",
+      "state": "State"
+    },
+    "paymentMethod": "Credit Card"
+  },
+  {
+    "userId": "6686f04e5427613adfa46891",
+    "establishmentId": "664263e9a61e5ddceac532fc",
+    "status": "Delivered",
+    "products": [
+      {
+        "productId": "66436318bea46df5e1bc8bfa",
+        "quantity": 2
+      }
+    ],
+    "shipping": 2.63,
+    "totalPrice": 17.61,
+    "deliveryAddress": {
+      "description": "Home",
+      "street": "221 Cedar St",
+      "number": "1919",
+      "complement": "Suite 900",
+      "neighborhood": "Outskirts",
+      "city": "Villagetown",
+      "state": "State"
+    },
+    "paymentMethod": "Credit Card"
+  },
+  {
+    "userId": "667038c8d23b11fd040e86f5",
+    "establishmentId": "664263e9a61e5ddceac532ff",
+    "status": "Delivered",
+    "products": [
+      {
+        "productId": "66436318bea46df5e1bc8c09",
+        "quantity": 1
+      },
+      {
+        "productId": "66436318bea46df5e1bc8c0c",
+        "quantity": 2
+      },
+      {
+        "productId": "66436318bea46df5e1bc8c0d",
+        "quantity": 4
+      },
+      {
+        "productId": "66436318bea46df5e1bc8c0a",
+        "quantity": 2
+      }
+    ],
+    "shipping": 0.97,
+    "totalPrice": 68.38,
+    "deliveryAddress": {
+      "description": "Work",
+      "street": "231 Oak Ave",
+      "number": "2020",
+      "complement": "",
+      "neighborhood": "Hillside",
+      "city": "Countryville",
+      "state": "State"
+    },
+    "paymentMethod": "Credit Card"
+  },
+  {
+    "userId": "667038c8d23b11fd040e86f5",
+    "establishmentId": "664263e9a61e5ddceac53304",
+    "status": "Cart",
+    "products": [
+      {
+        "productId": "66436318bea46df5e1bc8c1b",
+        "quantity": 1
+      },
+      {
+        "productId": "66436318bea46df5e1bc8c1a",
+        "quantity": 3
+      }
+    ],
+    "shipping": 7.93,
+    "totalPrice": 13.39,
+    "deliveryAddress": {
+      "description": "Home",
+      "street": "221 Cedar St",
+      "number": "1919",
+      "complement": "Suite 900",
+      "neighborhood": "Outskirts",
+      "city": "Villagetown",
+      "state": "State"
+    },
+    "paymentMethod": "Debit Card"
+  },
+  {
+    "userId": "6686f04e5427613adfa46891",
+    "establishmentId": "664263e9a61e5ddceac532fc",
+    "status": "Delivered",
+    "products": [
+      {
+        "productId": "66436318bea46df5e1bc8bf9",
+        "quantity": 4
+      },
+      {
+        "productId": "66436318bea46df5e1bc8bfb",
+        "quantity": 2
+      }
+    ],
+    "shipping": 14.52,
+    "totalPrice": 56.06,
+    "deliveryAddress": {
+      "description": "Home",
+      "street": "221 Cedar St",
+      "number": "1919",
+      "complement": "Suite 900",
+      "neighborhood": "Outskirts",
+      "city": "Villagetown",
+      "state": "State"
+    },
+    "paymentMethod": "Debit Card"
+  },
+  {
+    "userId": "6686f04e5427613adfa46891",
+    "establishmentId": "664263e9a61e5ddceac532fc",
+    "status": "Ordered",
+    "products": [
+      {
+        "productId": "66436318bea46df5e1bc8bf9",
+        "quantity": 1
+      },
+      {
+        "productId": "66436318bea46df5e1bc8bfb",
+        "quantity": 2
+      }
+    ],
+    "shipping": 4.29,
+    "totalPrice": 24.86,
+    "deliveryAddress": {
+      "description": "Work",
+      "street": "231 Oak Ave",
+      "number": "2020",
+      "complement": "",
+      "neighborhood": "Hillside",
+      "city": "Countryville",
+      "state": "State"
+    },
+    "paymentMethod": "Credit Card"
+  },
+  {
+    "userId": "6686f04e5427613adfa46891",
+    "establishmentId": "664263e9a61e5ddceac53301",
+    "status": "Cart",
+    "products": [
+      {
+        "productId": "66436318bea46df5e1bc8c10",
+        "quantity": 4
+      },
+      {
+        "productId": "66436318bea46df5e1bc8c11",
+        "quantity": 1
+      },
+      {
+        "productId": "66436318bea46df5e1bc8c12",
+        "quantity": 4
+      }
+    ],
+    "shipping": 7.09,
+    "totalPrice": 25.1,
+    "deliveryAddress": {
+      "description": "Home",
+      "street": "221 Cedar St",
+      "number": "1919",
+      "complement": "Suite 900",
+      "neighborhood": "Outskirts",
+      "city": "Villagetown",
+      "state": "State"
+    },
+    "paymentMethod": "Cash"
+  },
+  {
+    "userId": "667038c8d23b11fd040e86f5",
+    "establishmentId": "664263e9a61e5ddceac532ff",
+    "status": "Delivered",
+    "products": [
+      {
+        "productId": "66436318bea46df5e1bc8c0b",
+        "quantity": 4
+      },
+      {
+        "productId": "66436318bea46df5e1bc8c0d",
+        "quantity": 4
+      },
+      {
+        "productId": "66436318bea46df5e1bc8c09",
+        "quantity": 2
+      }
+    ],
+    "shipping": 3.72,
+    "totalPrice": 72.62,
+    "deliveryAddress": {
+      "description": "Home",
+      "street": "221 Cedar St",
+      "number": "1919",
+      "complement": "Suite 900",
+      "neighborhood": "Outskirts",
+      "city": "Villagetown",
+      "state": "State"
+    },
+    "paymentMethod": "Pix"
+  },
+  {
+    "userId": "667038c8d23b11fd040e86f5",
+    "establishmentId": "664263e9a61e5ddceac532f5",
+    "status": "Cart",
+    "products": [
+      {
+        "productId": "66436318bea46df5e1bc8bdb",
+        "quantity": 3
+      }
+    ],
+    "shipping": 14.42,
+    "totalPrice": 24.89,
+    "deliveryAddress": {
+      "description": "Home",
+      "street": "221 Cedar St",
+      "number": "1919",
+      "complement": "Suite 900",
+      "neighborhood": "Outskirts",
+      "city": "Villagetown",
+      "state": "State"
+    },
+    "paymentMethod": "Credit Card"
+  },
+  {
+    "userId": "6686f04e5427613adfa46891",
+    "establishmentId": "664263e9a61e5ddceac532f6",
+    "status": "Sent",
+    "products": [
+      {
+        "productId": "66436318bea46df5e1bc8be1",
+        "quantity": 3
+      },
+      {
+        "productId": "66436318bea46df5e1bc8bdf",
+        "quantity": 1
+      },
+      {
+        "productId": "66436318bea46df5e1bc8be0",
+        "quantity": 2
+      }
+    ],
+    "shipping": 4.76,
+    "totalPrice": 25.7,
+    "deliveryAddress": {
+      "description": "Work",
+      "street": "231 Oak Ave",
+      "number": "2020",
+      "complement": "",
+      "neighborhood": "Hillside",
+      "city": "Countryville",
+      "state": "State"
+    },
+    "paymentMethod": "Pix"
+  },
+  {
+    "userId": "667038c8d23b11fd040e86f5",
+    "establishmentId": "664263e9a61e5ddceac53304",
+    "status": "Delivered",
+    "products": [
+      {
+        "productId": "66436318bea46df5e1bc8c1a",
+        "quantity": 5
+      },
+      {
+        "productId": "66436318bea46df5e1bc8c1b",
+        "quantity": 2
+      }
+    ],
+    "shipping": 13.59,
+    "totalPrice": 23.52,
+    "deliveryAddress": {
+      "description": "Home",
+      "street": "221 Cedar St",
+      "number": "1919",
+      "complement": "Suite 900",
+      "neighborhood": "Outskirts",
+      "city": "Villagetown",
+      "state": "State"
+    },
+    "paymentMethod": "Debit Card"
+  },
+  {
+    "userId": "667038c8d23b11fd040e86f5",
+    "establishmentId": "664263e9a61e5ddceac532f2",
+    "status": "Ordered",
+    "products": [
+      {
+        "productId": "66436318bea46df5e1bc8bcf",
+        "quantity": 2
+      }
+    ],
+    "shipping": 10.14,
+    "totalPrice": 18.12,
+    "deliveryAddress": {
+      "description": "Home",
+      "street": "221 Cedar St",
+      "number": "1919",
+      "complement": "Suite 900",
+      "neighborhood": "Outskirts",
+      "city": "Villagetown",
+      "state": "State"
+    },
+    "paymentMethod": "Credit Card"
+  },
+  {
+    "userId": "667038c8d23b11fd040e86f5",
+    "establishmentId": "664263e9a61e5ddceac532f2",
+    "status": "Delivered",
+    "products": [
+      {
+        "productId": "66436318bea46df5e1bc8bcf",
+        "quantity": 3
+      }
+    ],
+    "shipping": 3.16,
+    "totalPrice": 15.13,
+    "deliveryAddress": {
+      "description": "Home",
+      "street": "221 Cedar St",
+      "number": "1919",
+      "complement": "Suite 900",
+      "neighborhood": "Outskirts",
+      "city": "Villagetown",
+      "state": "State"
+    },
+    "paymentMethod": "Credit Card"
+  },
+  {
+    "userId": "6686f04e5427613adfa46891",
+    "establishmentId": "664263e9a61e5ddceac532fd",
+    "status": "Cart",
+    "products": [
+      {
+        "productId": "66436318bea46df5e1bc8c00",
+        "quantity": 4
+      }
+    ],
+    "shipping": 13.32,
+    "totalPrice": 20.88,
+    "deliveryAddress": {
+      "description": "Home",
+      "street": "221 Cedar St",
+      "number": "1919",
+      "complement": "Suite 900",
+      "neighborhood": "Outskirts",
+      "city": "Villagetown",
+      "state": "State"
+    },
+    "paymentMethod": "Debit Card"
+  },
+  {
+    "userId": "6686f04e5427613adfa46891",
+    "establishmentId": "664263e9a61e5ddceac532fd",
+    "status": "Delivered",
+    "products": [
+      {
+        "productId": "66436318bea46df5e1bc8bff",
+        "quantity": 1
+      },
+      {
+        "productId": "66436318bea46df5e1bc8c01",
+        "quantity": 5
+      },
+      {
+        "productId": "66436318bea46df5e1bc8bfd",
+        "quantity": 5
+      },
+      {
+        "productId": "66436318bea46df5e1bc8c02",
+        "quantity": 1
+      }
+    ],
+    "shipping": 8.7,
+    "totalPrice": 58.38,
+    "deliveryAddress": {
+      "description": "Home",
+      "street": "221 Cedar St",
+      "number": "1919",
+      "complement": "Suite 900",
+      "neighborhood": "Outskirts",
+      "city": "Villagetown",
+      "state": "State"
+    },
+    "paymentMethod": "Pix"
+  },
+  {
+    "userId": "6686f04e5427613adfa46891",
+    "establishmentId": "664263e9a61e5ddceac533fb",
+    "status": "Delivered",
+    "products": [
+      {
+        "productId": "66436318bea46df5e1bc8bf4",
+        "quantity": 1
+      }
+    ],
+    "shipping": 6.42,
+    "totalPrice": 18.41,
+    "deliveryAddress": {
+      "description": "Home",
+      "street": "221 Cedar St",
+      "number": "1919",
+      "complement": "Suite 900",
+      "neighborhood": "Outskirts",
+      "city": "Villagetown",
+      "state": "State"
+    },
+    "paymentMethod": "Pix"
+  },
+  {
+    "userId": "667038c8d23b11fd040e86f5",
+    "establishmentId": "664263e9a61e5ddceac532f5",
+    "status": "Received",
+    "products": [
+      {
+        "productId": "66436318bea46df5e1bc8bdd",
+        "quantity": 2
+      },
+      {
+        "productId": "66436318bea46df5e1bc8bde",
+        "quantity": 3
+      },
+      {
+        "productId": "66436318bea46df5e1bc8bdc",
+        "quantity": 2
+      },
+      {
+        "productId": "66436318bea46df5e1bc8bdb",
+        "quantity": 2
+      }
+    ],
+    "shipping": 3.35,
+    "totalPrice": 37.76,
+    "deliveryAddress": {
+      "description": "Home",
+      "street": "221 Cedar St",
+      "number": "1919",
+      "complement": "Suite 900",
+      "neighborhood": "Outskirts",
+      "city": "Villagetown",
+      "state": "State"
+    },
+    "paymentMethod": "Debit Card"
+  },
+  {
+    "userId": "667038c8d23b11fd040e86f5",
+    "establishmentId": "664263e9a61e5ddceac53300",
+    "status": "Ordered",
+    "products": [
+      {
+        "productId": "66436318bea46df5e1bc8c0f",
+        "quantity": 2
+      }
+    ],
+    "shipping": 12.9,
+    "totalPrice": 52.88,
+    "deliveryAddress": {
+      "description": "Home",
+      "street": "221 Cedar St",
+      "number": "1919",
+      "complement": "Suite 900",
+      "neighborhood": "Outskirts",
+      "city": "Villagetown",
+      "state": "State"
+    },
+    "paymentMethod": "Pix"
+  },
+  {
+    "userId": "667038c8d23b11fd040e86f5",
+    "establishmentId": "664263e9a61e5ddceac532fd",
+    "status": "Preparing",
+    "products": [
+      {
+        "productId": "66436318bea46df5e1bc8bfe",
+        "quantity": 1
+      }
+    ],
+    "shipping": 6.29,
+    "totalPrice": 9.28,
+    "deliveryAddress": {
+      "description": "Home",
+      "street": "221 Cedar St",
+      "number": "1919",
+      "complement": "Suite 900",
+      "neighborhood": "Outskirts",
+      "city": "Villagetown",
+      "state": "State"
+    },
+    "paymentMethod": "Debit Card"
+  },
+  {
+    "userId": "667038c8d23b11fd040e86f5",
+    "establishmentId": "664263e9a61e5ddceac532fe",
+    "status": "Ordered",
+    "products": [
+      {
+        "productId": "66436318bea46df5e1bc8c08",
+        "quantity": 2
+      },
+      {
+        "productId": "66436318bea46df5e1bc8c04",
+        "quantity": 4
+      }
+    ],
+    "shipping": 9.76,
+    "totalPrice": 8203.76,
+    "deliveryAddress": {
+      "description": "Work",
+      "street": "231 Oak Ave",
+      "number": "2020",
+      "complement": "",
+      "neighborhood": "Hillside",
+      "city": "Countryville",
+      "state": "State"
+    },
+    "paymentMethod": "Debit Card"
+  },
+  {
+    "userId": "6686f04e5427613adfa46891",
+    "establishmentId": "664263e9a61e5ddceac532f2",
+    "status": "Cart",
+    "products": [
+      {
+        "productId": "66436318bea46df5e1bc8bcf",
+        "quantity": 2
+      }
+    ],
+    "shipping": 5.95,
+    "totalPrice": 13.93,
+    "deliveryAddress": {
+      "description": "Work",
+      "street": "231 Oak Ave",
+      "number": "2020",
+      "complement": "",
+      "neighborhood": "Hillside",
+      "city": "Countryville",
+      "state": "State"
+    },
+    "paymentMethod": "Debit Card"
+  },
+  {
+    "userId": "667038c8d23b11fd040e86f5",
+    "establishmentId": "664263e9a61e5ddceac532f8",
+    "status": "Ordered",
+    "products": [
+      {
+        "productId": "66436318bea46df5e1bc8be5",
+        "quantity": 1
+      },
+      {
+        "productId": "66436318bea46df5e1bc8be4",
+        "quantity": 2
+      }
+    ],
+    "shipping": 7.09,
+    "totalPrice": 32.06,
+    "deliveryAddress": {
+      "description": "Home",
+      "street": "221 Cedar St",
+      "number": "1919",
+      "complement": "Suite 900",
+      "neighborhood": "Outskirts",
+      "city": "Villagetown",
+      "state": "State"
+    },
+    "paymentMethod": "Cash"
+  },
+  {
+    "userId": "6686f04e5427613adfa46891",
+    "establishmentId": "664263e9a61e5ddceac53304",
+    "status": "Delivered",
+    "products": [
+      {
+        "productId": "66436318bea46df5e1bc8c1a",
+        "quantity": 4
+      },
+      {
+        "productId": "66436318bea46df5e1bc8c1b",
+        "quantity": 4
+      }
+    ],
+    "shipping": 4.87,
+    "totalPrice": 18.79,
+    "deliveryAddress": {
+      "description": "Home",
+      "street": "221 Cedar St",
+      "number": "1919",
+      "complement": "Suite 900",
+      "neighborhood": "Outskirts",
+      "city": "Villagetown",
+      "state": "State"
+    },
+    "paymentMethod": "Debit Card"
+  },
+  {
+    "userId": "667038c8d23b11fd040e86f5",
+    "establishmentId": "664263e9a61e5ddceac53302",
+    "status": "Cart",
+    "products": [
+      {
+        "productId": "66436318bea46df5e1bc8c19",
+        "quantity": 3
+      },
+      {
+        "productId": "66436318bea46df5e1bc8c17",
+        "quantity": 4
+      }
+    ],
+    "shipping": 7.73,
+    "totalPrice": 66.66,
+    "deliveryAddress": {
+      "description": "Home",
+      "street": "221 Cedar St",
+      "number": "1919",
+      "complement": "Suite 900",
+      "neighborhood": "Outskirts",
+      "city": "Villagetown",
+      "state": "State"
+    },
+    "paymentMethod": "Pix"
+  },
+  {
+    "userId": "667038c8d23b11fd040e86f5",
+    "establishmentId": "664263e9a61e5ddceac532f6",
+    "status": "Delivered",
+    "products": [
+      {
+        "productId": "66436318bea46df5e1bc8bdf",
+        "quantity": 5
+      }
+    ],
+    "shipping": 6.17,
+    "totalPrice": 31.12,
+    "deliveryAddress": {
+      "description": "Home",
+      "street": "221 Cedar St",
+      "number": "1919",
+      "complement": "Suite 900",
+      "neighborhood": "Outskirts",
+      "city": "Villagetown",
+      "state": "State"
+    },
+    "paymentMethod": "Credit Card"
+  },
+  {
+    "userId": "667038c8d23b11fd040e86f5",
+    "establishmentId": "664263e9a61e5ddceac532f6",
+    "status": "Cart",
+    "products": [
+      {
+        "productId": "66436318bea46df5e1bc8be1",
+        "quantity": 3
+      }
+    ],
+    "shipping": 7.21,
+    "totalPrice": 16.18,
+    "deliveryAddress": {
+      "description": "Home",
+      "street": "221 Cedar St",
+      "number": "1919",
+      "complement": "Suite 900",
+      "neighborhood": "Outskirts",
+      "city": "Villagetown",
+      "state": "State"
+    },
+    "paymentMethod": "Credit Card"
+  },
+  {
+    "userId": "6686f04e5427613adfa46891",
+    "establishmentId": "664263e9a61e5ddceac532fe",
+    "status": "Cart",
+    "products": [
+      {
+        "productId": "66436318bea46df5e1bc8c03",
+        "quantity": 5
+      }
+    ],
+    "shipping": 11.22,
+    "totalPrice": 5006.22,
+    "deliveryAddress": {
+      "description": "Home",
+      "street": "221 Cedar St",
+      "number": "1919",
+      "complement": "Suite 900",
+      "neighborhood": "Outskirts",
+      "city": "Villagetown",
+      "state": "State"
+    },
+    "paymentMethod": "Credit Card"
+  },
+  {
+    "userId": "667038c8d23b11fd040e86f5",
+    "establishmentId": "664263e9a61e5ddceac532fe",
+    "status": "Ordered",
+    "products": [
+      {
+        "productId": "66436318bea46df5e1bc8c08",
+        "quantity": 5
+      },
+      {
+        "productId": "66436318bea46df5e1bc8c04",
+        "quantity": 3
+      },
+      {
+        "productId": "66436318bea46df5e1bc8c05",
+        "quantity": 1
+      },
+      {
+        "productId": "66436318bea46df5e1bc8c07",
+        "quantity": 1
+      }
+    ],
+    "shipping": 11.0,
+    "totalPrice": 7351.0,
+    "deliveryAddress": {
+      "description": "Home",
+      "street": "221 Cedar St",
+      "number": "1919",
+      "complement": "Suite 900",
+      "neighborhood": "Outskirts",
+      "city": "Villagetown",
+      "state": "State"
+    },
+    "paymentMethod": "Cash"
+  },
+  {
+    "userId": "6686f04e5427613adfa46891",
+    "establishmentId": "664263e9a61e5ddceac532f4",
+    "status": "Cart",
+    "products": [
+      {
+        "productId": "66436318bea46df5e1bc8bd0",
+        "quantity": 5
+      }
+    ],
+    "shipping": 6.3,
+    "totalPrice": 81.25,
+    "deliveryAddress": {
+      "description": "Home",
+      "street": "221 Cedar St",
+      "number": "1919",
+      "complement": "Suite 900",
+      "neighborhood": "Outskirts",
+      "city": "Villagetown",
+      "state": "State"
+    },
+    "paymentMethod": "Cash"
+  },
+  {
+    "userId": "667038c8d23b11fd040e86f5",
+    "establishmentId": "664263e9a61e5ddceac532f7",
+    "status": "Delivered",
+    "products": [
+      {
+        "productId": "66436318bea46df5e1bc8be2",
+        "quantity": 1
+      }
+    ],
+    "shipping": 0.97,
+    "totalPrice": 700.96,
+    "deliveryAddress": {
+      "description": "Work",
+      "street": "231 Oak Ave",
+      "number": "2020",
+      "complement": "",
+      "neighborhood": "Hillside",
+      "city": "Countryville",
+      "state": "State"
+    },
+    "paymentMethod": "Pix"
+  },
+  {
+    "userId": "6686f04e5427613adfa46891",
+    "establishmentId": "664263e9a61e5ddceac532fc",
+    "status": "Ordered",
+    "products": [
+      {
+        "productId": "66436318bea46df5e1bc8bf9",
+        "quantity": 3
+      }
+    ],
+    "shipping": 5.92,
+    "totalPrice": 26.89,
+    "deliveryAddress": {
+      "description": "Home",
+      "street": "221 Cedar St",
+      "number": "1919",
+      "complement": "Suite 900",
+      "neighborhood": "Outskirts",
+      "city": "Villagetown",
+      "state": "State"
+    },
+    "paymentMethod": "Pix"
+  },
+  {
+    "userId": "6686f04e5427613adfa46891",
+    "establishmentId": "664263e9a61e5ddceac53303",
+    "status": "Delivered",
+    "products": [
+      {
+        "productId": "66436318bea46df5e1bc8c1e",
+        "quantity": 5
+      },
+      {
+        "productId": "66436318bea46df5e1bc8c1d",
+        "quantity": 3
+      },
+      {
+        "productId": "66436318bea46df5e1bc8c1c",
+        "quantity": 2
+      }
+    ],
+    "shipping": 0.35,
+    "totalPrice": 38.95,
+    "deliveryAddress": {
+      "description": "Work",
+      "street": "231 Oak Ave",
+      "number": "2020",
+      "complement": "",
+      "neighborhood": "Hillside",
+      "city": "Countryville",
+      "state": "State"
+    },
+    "paymentMethod": "Debit Card"
+  },
+  {
+    "userId": "667038c8d23b11fd040e86f5",
+    "establishmentId": "664263e9a61e5ddceac532f4",
+    "status": "Preparing",
+    "products": [
+      {
+        "productId": "66436318bea46df5e1bc8bd0",
+        "quantity": 5
+      }
+    ],
+    "shipping": 2.37,
+    "totalPrice": 77.32,
+    "deliveryAddress": {
+      "description": "Work",
+      "street": "231 Oak Ave",
+      "number": "2020",
+      "complement": "",
+      "neighborhood": "Hillside",
+      "city": "Countryville",
+      "state": "State"
+    },
+    "paymentMethod": "Debit Card"
+  },
+  {
+    "userId": "6686f04e5427613adfa46891",
+    "establishmentId": "664263e9a61e5ddceac532f8",
+    "status": "Ordered",
+    "products": [
+      {
+        "productId": "66436318bea46df5e1bc8be6",
+        "quantity": 5
+      }
+    ],
+    "shipping": 13.94,
+    "totalPrice": 63.89,
+    "deliveryAddress": {
+      "description": "Work",
+      "street": "231 Oak Ave",
+      "number": "2020",
+      "complement": "",
+      "neighborhood": "Hillside",
+      "city": "Countryville",
+      "state": "State"
+    },
+    "paymentMethod": "Cash"
+  },
+  {
+    "userId": "667038c8d23b11fd040e86f5",
+    "establishmentId": "664263e9a61e5ddceac532f8",
+    "status": "Delivered",
+    "products": [
+      {
+        "productId": "66436318bea46df5e1bc8be6",
+        "quantity": 5
+      }
+    ],
+    "shipping": 12.35,
+    "totalPrice": 62.3,
+    "deliveryAddress": {
+      "description": "Home",
+      "street": "221 Cedar St",
+      "number": "1919",
+      "complement": "Suite 900",
+      "neighborhood": "Outskirts",
+      "city": "Villagetown",
+      "state": "State"
+    },
+    "paymentMethod": "Cash"
+  },
+  {
+    "userId": "667038c8d23b11fd040e86f5",
+    "establishmentId": "664263e9a61e5ddceac532ff",
+    "status": "Ordered",
+    "products": [
+      {
+        "productId": "66436318bea46df5e1bc8c0c",
+        "quantity": 5
+      },
+      {
+        "productId": "66436318bea46df5e1bc8c0b",
+        "quantity": 5
+      }
+    ],
+    "shipping": 14.45,
+    "totalPrice": 79.35,
+    "deliveryAddress": {
+      "description": "Work",
+      "street": "231 Oak Ave",
+      "number": "2020",
+      "complement": "",
+      "neighborhood": "Hillside",
+      "city": "Countryville",
+      "state": "State"
+    },
+    "paymentMethod": "Debit Card"
+  },
+  {
+    "userId": "667038c8d23b11fd040e86f5",
+    "establishmentId": "664263e9a61e5ddceac53300",
+    "status": "Cart",
+    "products": [
+      {
+        "productId": "66436318bea46df5e1bc8c0f",
+        "quantity": 5
+      },
+      {
+        "productId": "66436318bea46df5e1bc8c0e",
+        "quantity": 5
+      }
+    ],
+    "shipping": 0.18,
+    "totalPrice": 110.08,
+    "deliveryAddress": {
+      "description": "Home",
+      "street": "221 Cedar St",
+      "number": "1919",
+      "complement": "Suite 900",
+      "neighborhood": "Outskirts",
+      "city": "Villagetown",
+      "state": "State"
+    },
+    "paymentMethod": "Cash"
+  },
+  {
+    "userId": "6686f04e5427613adfa46891",
+    "establishmentId": "664263e9a61e5ddceac532fa",
+    "status": "Canceled",
+    "products": [
+      {
+        "productId": "66436318bea46df5e1bc8bf0",
+        "quantity": 2
+      }
+    ],
+    "shipping": 13.16,
+    "totalPrice": 32.14,
+    "deliveryAddress": {
+      "description": "Home",
+      "street": "221 Cedar St",
+      "number": "1919",
+      "complement": "Suite 900",
+      "neighborhood": "Outskirts",
+      "city": "Villagetown",
+      "state": "State"
+    },
+    "paymentMethod": "Debit Card"
+  },
+  {
+    "userId": "6686f04e5427613adfa46891",
+    "establishmentId": "664263e9a61e5ddceac53300",
+    "status": "Delivered",
+    "products": [
+      {
+        "productId": "66436318bea46df5e1bc8c0e",
+        "quantity": 1
+      }
+    ],
+    "shipping": 2.33,
+    "totalPrice": 4.32,
+    "deliveryAddress": {
+      "description": "Home",
+      "street": "221 Cedar St",
+      "number": "1919",
+      "complement": "Suite 900",
+      "neighborhood": "Outskirts",
+      "city": "Villagetown",
+      "state": "State"
+    },
+    "paymentMethod": "Credit Card"
+  },
+  {
+    "userId": "6686f04e5427613adfa46891",
+    "establishmentId": "664263e9a61e5ddceac532f4",
+    "status": "Ordered",
+    "products": [
+      {
+        "productId": "66436318bea46df5e1bc8bd0",
+        "quantity": 5
+      }
+    ],
+    "shipping": 6.03,
+    "totalPrice": 80.98,
+    "deliveryAddress": {
+      "description": "Home",
+      "street": "221 Cedar St",
+      "number": "1919",
+      "complement": "Suite 900",
+      "neighborhood": "Outskirts",
+      "city": "Villagetown",
+      "state": "State"
+    },
+    "paymentMethod": "Credit Card"
+  },
+  {
+    "userId": "667038c8d23b11fd040e86f5",
+    "establishmentId": "664263e9a61e5ddceac533fb",
+    "status": "Delivered",
+    "products": [
+      {
+        "productId": "66436318bea46df5e1bc8bf3",
+        "quantity": 3
+      },
+      {
+        "productId": "66436318bea46df5e1bc8bf5",
+        "quantity": 5
+      },
+      {
+        "productId": "66436318bea46df5e1bc8bf7",
+        "quantity": 3
+      },
+      {
+        "productId": "66436318bea46df5e1bc8bf8",
+        "quantity": 3
+      }
+    ],
+    "shipping": 14.3,
+    "totalPrice": 215.16,
+    "deliveryAddress": {
+      "description": "Work",
+      "street": "231 Oak Ave",
+      "number": "2020",
+      "complement": "",
+      "neighborhood": "Hillside",
+      "city": "Countryville",
+      "state": "State"
+    },
+    "paymentMethod": "Pix"
+  },
+  {
+    "userId": "667038c8d23b11fd040e86f5",
+    "establishmentId": "664263e9a61e5ddceac532fc",
+    "status": "Ordered",
+    "products": [
+      {
+        "productId": "66436318bea46df5e1bc8bf9",
+        "quantity": 2
+      }
+    ],
+    "shipping": 13.51,
+    "totalPrice": 27.49,
+    "deliveryAddress": {
+      "description": "Home",
+      "street": "221 Cedar St",
+      "number": "1919",
+      "complement": "Suite 900",
+      "neighborhood": "Outskirts",
+      "city": "Villagetown",
+      "state": "State"
+    },
+    "paymentMethod": "Pix"
+  },
+  {
+    "userId": "6686f04e5427613adfa46891",
+    "establishmentId": "664263e9a61e5ddceac532f6",
+    "status": "Delivered",
+    "products": [
+      {
+        "productId": "66436318bea46df5e1bc8bdf",
+        "quantity": 4
+      },
+      {
+        "productId": "66436318bea46df5e1bc8be1",
+        "quantity": 3
+      },
+      {
+        "productId": "66436318bea46df5e1bc8be0",
+        "quantity": 3
+      }
+    ],
+    "shipping": 5.65,
+    "totalPrice": 45.05,
+    "deliveryAddress": {
+      "description": "Home",
+      "street": "221 Cedar St",
+      "number": "1919",
+      "complement": "Suite 900",
+      "neighborhood": "Outskirts",
+      "city": "Villagetown",
+      "state": "State"
+    },
+    "paymentMethod": "Credit Card"
+  },
+  {
+    "userId": "6686f04e5427613adfa46891",
+    "establishmentId": "664263e9a61e5ddceac532f6",
+    "status": "Cart",
+    "products": [
+      {
+        "productId": "66436318bea46df5e1bc8bdf",
+        "quantity": 3
+      },
+      {
+        "productId": "66436318bea46df5e1bc8be0",
+        "quantity": 4
+      },
+      {
+        "productId": "66436318bea46df5e1bc8be1",
+        "quantity": 2
+      }
+    ],
+    "shipping": 2.94,
+    "totalPrice": 37.85,
+    "deliveryAddress": {
+      "description": "Home",
+      "street": "221 Cedar St",
+      "number": "1919",
+      "complement": "Suite 900",
+      "neighborhood": "Outskirts",
+      "city": "Villagetown",
+      "state": "State"
+    },
+    "paymentMethod": "Pix"
+  },
+  {
+    "userId": "6686f04e5427613adfa46891",
+    "establishmentId": "664263e9a61e5ddceac532fe",
+    "status": "Cart",
+    "products": [
+      {
+        "productId": "66436318bea46df5e1bc8c07",
+        "quantity": 1
+      },
+      {
+        "productId": "66436318bea46df5e1bc8c03",
+        "quantity": 3
+      },
+      {
+        "productId": "66436318bea46df5e1bc8c05",
+        "quantity": 2
+      }
+    ],
+    "shipping": 5.55,
+    "totalPrice": 4449.55,
+    "deliveryAddress": {
+      "description": "Home",
+      "street": "221 Cedar St",
+      "number": "1919",
+      "complement": "Suite 900",
+      "neighborhood": "Outskirts",
+      "city": "Villagetown",
+      "state": "State"
+    },
+    "paymentMethod": "Debit Card"
+  },
+  {
+    "userId": "6686f04e5427613adfa46891",
+    "establishmentId": "664263e9a61e5ddceac53304",
+    "status": "Delivered",
+    "products": [
+      {
+        "productId": "66436318bea46df5e1bc8c1b",
+        "quantity": 1
+      },
+      {
+        "productId": "66436318bea46df5e1bc8c1a",
+        "quantity": 3
+      }
+    ],
+    "shipping": 9.28,
+    "totalPrice": 14.74,
+    "deliveryAddress": {
+      "description": "Home",
+      "street": "221 Cedar St",
+      "number": "1919",
+      "complement": "Suite 900",
+      "neighborhood": "Outskirts",
+      "city": "Villagetown",
+      "state": "State"
+    },
+    "paymentMethod": "Pix"
+  },
+  {
+    "userId": "6686f04e5427613adfa46891",
+    "establishmentId": "664263e9a61e5ddceac532fc",
+    "status": "Ordered",
+    "products": [
+      {
+        "productId": "66436318bea46df5e1bc8bfa",
+        "quantity": 5
+      },
+      {
+        "productId": "66436318bea46df5e1bc8bf9",
+        "quantity": 5
+      }
+    ],
+    "shipping": 8.37,
+    "totalPrice": 80.77,
+    "deliveryAddress": {
+      "description": "Home",
+      "street": "221 Cedar St",
+      "number": "1919",
+      "complement": "Suite 900",
+      "neighborhood": "Outskirts",
+      "city": "Villagetown",
+      "state": "State"
+    },
+    "paymentMethod": "Debit Card"
+  },
+  {
+    "userId": "667038c8d23b11fd040e86f5",
+    "establishmentId": "664263e9a61e5ddceac532f7",
+    "status": "Cart",
+    "products": [
+      {
+        "productId": "66436318bea46df5e1bc8be3",
+        "quantity": 5
+      },
+      {
+        "productId": "66436318bea46df5e1bc8be2",
+        "quantity": 1
+      }
+    ],
+    "shipping": 12.4,
+    "totalPrice": 5712.34,
+    "deliveryAddress": {
+      "description": "Work",
+      "street": "231 Oak Ave",
+      "number": "2020",
+      "complement": "",
+      "neighborhood": "Hillside",
+      "city": "Countryville",
+      "state": "State"
+    },
+    "paymentMethod": "Debit Card"
+  },
+  {
+    "userId": "667038c8d23b11fd040e86f5",
+    "establishmentId": "664263e9a61e5ddceac53304",
+    "status": "Cart",
+    "products": [
+      {
+        "productId": "66436318bea46df5e1bc8c1a",
+        "quantity": 2
+      },
+      {
+        "productId": "66436318bea46df5e1bc8c1b",
+        "quantity": 5
+      }
+    ],
+    "shipping": 10.94,
+    "totalPrice": 25.37,
+    "deliveryAddress": {
+      "description": "Work",
+      "street": "231 Oak Ave",
+      "number": "2020",
+      "complement": "",
+      "neighborhood": "Hillside",
+      "city": "Countryville",
+      "state": "State"
+    },
+    "paymentMethod": "Debit Card"
+  },
+  {
+    "userId": "667038c8d23b11fd040e86f5",
+    "establishmentId": "664263e9a61e5ddceac532f4",
+    "status": "Received",
+    "products": [
+      {
+        "productId": "66436318bea46df5e1bc8bd0",
+        "quantity": 1
+      }
+    ],
+    "shipping": 3.17,
+    "totalPrice": 18.16,
+    "deliveryAddress": {
+      "description": "Home",
+      "street": "221 Cedar St",
+      "number": "1919",
+      "complement": "Suite 900",
+      "neighborhood": "Outskirts",
+      "city": "Villagetown",
+      "state": "State"
+    },
+    "paymentMethod": "Pix"
+  },
+  {
+    "userId": "6686f04e5427613adfa46891",
+    "establishmentId": "664263e9a61e5ddceac532f6",
+    "status": "Delivered",
+    "products": [
+      {
+        "productId": "66436318bea46df5e1bc8bdf",
+        "quantity": 5
+      },
+      {
+        "productId": "66436318bea46df5e1bc8be1",
+        "quantity": 1
+      },
+      {
+        "productId": "66436318bea46df5e1bc8be0",
+        "quantity": 3
+      }
+    ],
+    "shipping": 7.55,
+    "totalPrice": 45.96,
+    "deliveryAddress": {
+      "description": "Home",
+      "street": "221 Cedar St",
+      "number": "1919",
+      "complement": "Suite 900",
+      "neighborhood": "Outskirts",
+      "city": "Villagetown",
+      "state": "State"
+    },
+    "paymentMethod": "Pix"
+  },
+  {
+    "userId": "667038c8d23b11fd040e86f5",
+    "establishmentId": "664263e9a61e5ddceac532fe",
+    "status": "Ordered",
+    "products": [
+      {
+        "productId": "66436318bea46df5e1bc8c07",
+        "quantity": 4
+      },
+      {
+        "productId": "66436318bea46df5e1bc8c08",
+        "quantity": 1
+      },
+      {
+        "productId": "66436318bea46df5e1bc8c05",
+        "quantity": 4
+      },
+      {
+        "productId": "66436318bea46df5e1bc8c03",
+        "quantity": 4
+      }
+    ],
+    "shipping": 6.57,
+    "totalPrice": 7493.57,
+    "deliveryAddress": {
+      "description": "Home",
+      "street": "221 Cedar St",
+      "number": "1919",
+      "complement": "Suite 900",
+      "neighborhood": "Outskirts",
+      "city": "Villagetown",
+      "state": "State"
+    },
+    "paymentMethod": "Pix"
+  },
+  {
+    "userId": "6686f04e5427613adfa46891",
+    "establishmentId": "664263e9a61e5ddceac532f9",
+    "status": "Delivered",
+    "products": [
+      {
+        "productId": "66436318bea46df5e1bc8beb",
+        "quantity": 4
+      },
+      {
+        "productId": "66436318bea46df5e1bc8bec",
+        "quantity": 2
+      },
+      {
+        "productId": "66436318bea46df5e1bc8bea",
+        "quantity": 5
+      }
+    ],
+    "shipping": 9.44,
+    "totalPrice": 63.83,
+    "deliveryAddress": {
+      "description": "Work",
+      "street": "231 Oak Ave",
+      "number": "2020",
+      "complement": "",
+      "neighborhood": "Hillside",
+      "city": "Countryville",
+      "state": "State"
+    },
+    "paymentMethod": "Pix"
+  },
+  {
+    "userId": "667038c8d23b11fd040e86f5",
+    "establishmentId": "664263e9a61e5ddceac532f9",
+    "status": "Sent",
+    "products": [
+      {
+        "productId": "66436318bea46df5e1bc8bec",
+        "quantity": 1
+      },
+      {
+        "productId": "66436318bea46df5e1bc8bea",
+        "quantity": 5
+      },
+      {
+        "productId": "66436318bea46df5e1bc8bee",
+        "quantity": 2
+      }
+    ],
+    "shipping": 11.37,
+    "totalPrice": 46.79,
+    "deliveryAddress": {
+      "description": "Home",
+      "street": "221 Cedar St",
+      "number": "1919",
+      "complement": "Suite 900",
+      "neighborhood": "Outskirts",
+      "city": "Villagetown",
+      "state": "State"
+    },
+    "paymentMethod": "Pix"
+  },
+  {
+    "userId": "6686f04e5427613adfa46891",
+    "establishmentId": "664263e9a61e5ddceac532f3",
+    "status": "Delivered",
+    "products": [
+      {
+        "productId": "66436318bea46df5e1bc8bd3",
+        "quantity": 3
+      }
+    ],
+    "shipping": 5.46,
+    "totalPrice": 9.93,
+    "deliveryAddress": {
+      "description": "Home",
+      "street": "221 Cedar St",
+      "number": "1919",
+      "complement": "Suite 900",
+      "neighborhood": "Outskirts",
+      "city": "Villagetown",
+      "state": "State"
+    },
+    "paymentMethod": "Debit Card"
+  },
+  {
+    "userId": "6686f04e5427613adfa46891",
+    "establishmentId": "664263e9a61e5ddceac532f9",
+    "status": "Delivered",
+    "products": [
+      {
+        "productId": "66436318bea46df5e1bc8bec",
+        "quantity": 4
+      },
+      {
+        "productId": "66436318bea46df5e1bc8bee",
+        "quantity": 5
+      }
+    ],
+    "shipping": 6.8,
+    "totalPrice": 46.71,
+    "deliveryAddress": {
+      "description": "Home",
+      "street": "221 Cedar St",
+      "number": "1919",
+      "complement": "Suite 900",
+      "neighborhood": "Outskirts",
+      "city": "Villagetown",
+      "state": "State"
+    },
+    "paymentMethod": "Pix"
+  },
+  {
+    "userId": "667038c8d23b11fd040e86f5",
+    "establishmentId": "664263e9a61e5ddceac53302",
+    "status": "Cart",
+    "products": [
+      {
+        "productId": "66436318bea46df5e1bc8c17",
+        "quantity": 1
+      }
+    ],
+    "shipping": 3.35,
+    "totalPrice": 11.34,
+    "deliveryAddress": {
+      "description": "Home",
+      "street": "221 Cedar St",
+      "number": "1919",
+      "complement": "Suite 900",
+      "neighborhood": "Outskirts",
+      "city": "Villagetown",
+      "state": "State"
+    },
+    "paymentMethod": "Cash"
+  },
+  {
+    "userId": "667038c8d23b11fd040e86f5",
+    "establishmentId": "664263e9a61e5ddceac532f9",
+    "status": "Delivered",
+    "products": [
+      {
+        "productId": "66436318bea46df5e1bc8bea",
+        "quantity": 2
+      }
+    ],
+    "shipping": 14.21,
+    "totalPrice": 23.19,
+    "deliveryAddress": {
+      "description": "Work",
+      "street": "231 Oak Ave",
+      "number": "2020",
+      "complement": "",
+      "neighborhood": "Hillside",
+      "city": "Countryville",
+      "state": "State"
+    },
+    "paymentMethod": "Debit Card"
+  },
+  {
+    "userId": "667038c8d23b11fd040e86f5",
+    "establishmentId": "664263e9a61e5ddceac53304",
+    "status": "Ordered",
+    "products": [
+      {
+        "productId": "66436318bea46df5e1bc8c1a",
+        "quantity": 1
+      },
+      {
+        "productId": "66436318bea46df5e1bc8c1b",
+        "quantity": 2
+      }
+    ],
+    "shipping": 9.79,
+    "totalPrice": 15.76,
+    "deliveryAddress": {
+      "description": "Work",
+      "street": "231 Oak Ave",
+      "number": "2020",
+      "complement": "",
+      "neighborhood": "Hillside",
+      "city": "Countryville",
+      "state": "State"
+    },
+    "paymentMethod": "Debit Card"
+  },
+  {
+    "userId": "6686f04e5427613adfa46891",
+    "establishmentId": "664263e9a61e5ddceac532f3",
+    "status": "Canceled",
+    "products": [
+      {
+        "productId": "66436318bea46df5e1bc8bd4",
+        "quantity": 4
+      }
+    ],
+    "shipping": 13.19,
+    "totalPrice": 25.15,
+    "deliveryAddress": {
+      "description": "Work",
+      "street": "231 Oak Ave",
+      "number": "2020",
+      "complement": "",
+      "neighborhood": "Hillside",
+      "city": "Countryville",
+      "state": "State"
+    },
+    "paymentMethod": "Pix"
+  },
+  {
+    "userId": "6686f04e5427613adfa46891",
+    "establishmentId": "664263e9a61e5ddceac53303",
+    "status": "Sent",
+    "products": [
+      {
+        "productId": "66436318bea46df5e1bc8c1e",
+        "quantity": 4
+      },
+      {
+        "productId": "66436318bea46df5e1bc8c1c",
+        "quantity": 4
+      },
+      {
+        "productId": "66436318bea46df5e1bc8c1d",
+        "quantity": 4
+      }
+    ],
+    "shipping": 6.52,
+    "totalPrice": 51.2,
+    "deliveryAddress": {
+      "description": "Home",
+      "street": "221 Cedar St",
+      "number": "1919",
+      "complement": "Suite 900",
+      "neighborhood": "Outskirts",
+      "city": "Villagetown",
+      "state": "State"
+    },
+    "paymentMethod": "Pix"
+  },
+  {
+    "userId": "6686f04e5427613adfa46891",
+    "establishmentId": "664263e9a61e5ddceac532fc",
+    "status": "Preparing",
+    "products": [
+      {
+        "productId": "66436318bea46df5e1bc8bfb",
+        "quantity": 3
+      }
+    ],
+    "shipping": 8.93,
+    "totalPrice": 29.3,
+    "deliveryAddress": {
+      "description": "Work",
+      "street": "231 Oak Ave",
+      "number": "2020",
+      "complement": "",
+      "neighborhood": "Hillside",
+      "city": "Countryville",
+      "state": "State"
+    },
+    "paymentMethod": "Cash"
+  },
+  {
+    "userId": "667038c8d23b11fd040e86f5",
+    "establishmentId": "664263e9a61e5ddceac53301",
+    "status": "Cart",
+    "products": [
+      {
+        "productId": "66436318bea46df5e1bc8c13",
+        "quantity": 2
+      },
+      {
+        "productId": "66436318bea46df5e1bc8c11",
+        "quantity": 4
+      },
+      {
+        "productId": "66436318bea46df5e1bc8c12",
+        "quantity": 5
+      }
+    ],
+    "shipping": 13.77,
+    "totalPrice": 36.06,
+    "deliveryAddress": {
+      "description": "Home",
+      "street": "221 Cedar St",
+      "number": "1919",
+      "complement": "Suite 900",
+      "neighborhood": "Outskirts",
+      "city": "Villagetown",
+      "state": "State"
+    },
+    "paymentMethod": "Credit Card"
+  },
+  {
+    "userId": "667038c8d23b11fd040e86f5",
+    "establishmentId": "664263e9a61e5ddceac53301",
+    "status": "Cart",
+    "products": [
+      {
+        "productId": "66436318bea46df5e1bc8c12",
+        "quantity": 1
+      },
+      {
+        "productId": "66436318bea46df5e1bc8c13",
+        "quantity": 1
+      }
+    ],
+    "shipping": 11.17,
+    "totalPrice": 15.25,
+    "deliveryAddress": {
+      "description": "Home",
+      "street": "221 Cedar St",
+      "number": "1919",
+      "complement": "Suite 900",
+      "neighborhood": "Outskirts",
+      "city": "Villagetown",
+      "state": "State"
+    },
+    "paymentMethod": "Cash"
+  },
+  {
+    "userId": "6686f04e5427613adfa46891",
+    "establishmentId": "664263e9a61e5ddceac53302",
+    "status": "Ordered",
+    "products": [
+      {
+        "productId": "66436318bea46df5e1bc8c14",
+        "quantity": 1
+      },
+      {
+        "productId": "66436318bea46df5e1bc8c15",
+        "quantity": 2
+      },
+      {
+        "productId": "66436318bea46df5e1bc8c18",
+        "quantity": 4
+      }
+    ],
+    "shipping": 11.68,
+    "totalPrice": 44.61,
+    "deliveryAddress": {
+      "description": "Home",
+      "street": "221 Cedar St",
+      "number": "1919",
+      "complement": "Suite 900",
+      "neighborhood": "Outskirts",
+      "city": "Villagetown",
+      "state": "State"
+    },
+    "paymentMethod": "Cash"
+  },
+  {
+    "userId": "6686f04e5427613adfa46891",
+    "establishmentId": "664263e9a61e5ddceac532f5",
+    "status": "Ordered",
+    "products": [
+      {
+        "productId": "66436318bea46df5e1bc8bdd",
+        "quantity": 4
+      },
+      {
+        "productId": "66436318bea46df5e1bc8bde",
+        "quantity": 3
+      },
+      {
+        "productId": "66436318bea46df5e1bc8bdb",
+        "quantity": 1
+      },
+      {
+        "productId": "66436318bea46df5e1bc8bdc",
+        "quantity": 4
+      }
+    ],
+    "shipping": 11.6,
+    "totalPrice": 56.48,
+    "deliveryAddress": {
+      "description": "Home",
+      "street": "221 Cedar St",
+      "number": "1919",
+      "complement": "Suite 900",
+      "neighborhood": "Outskirts",
+      "city": "Villagetown",
+      "state": "State"
+    },
+    "paymentMethod": "Pix"
+  },
+  {
+    "userId": "667038c8d23b11fd040e86f5",
+    "establishmentId": "664263e9a61e5ddceac532f2",
+    "status": "Delivered",
+    "products": [
+      {
+        "productId": "66436318bea46df5e1bc8bcf",
+        "quantity": 3
+      }
+    ],
+    "shipping": 7.8,
+    "totalPrice": 19.77,
+    "deliveryAddress": {
+      "description": "Work",
+      "street": "231 Oak Ave",
+      "number": "2020",
+      "complement": "",
+      "neighborhood": "Hillside",
+      "city": "Countryville",
+      "state": "State"
+    },
+    "paymentMethod": "Debit Card"
+  },
+  {
+    "userId": "667038c8d23b11fd040e86f5",
+    "establishmentId": "664263e9a61e5ddceac532f5",
+    "status": "Sent",
+    "products": [
+      {
+        "productId": "66436318bea46df5e1bc8bde",
+        "quantity": 1
+      },
+      {
+        "productId": "66436318bea46df5e1bc8bdc",
+        "quantity": 5
+      },
+      {
+        "productId": "66436318bea46df5e1bc8bdb",
+        "quantity": 3
+      },
+      {
+        "productId": "66436318bea46df5e1bc8bdd",
+        "quantity": 5
+      }
+    ],
+    "shipping": 11.82,
+    "totalPrice": 61.68,
+    "deliveryAddress": {
+      "description": "Work",
+      "street": "231 Oak Ave",
+      "number": "2020",
+      "complement": "",
+      "neighborhood": "Hillside",
+      "city": "Countryville",
+      "state": "State"
+    },
+    "paymentMethod": "Cash"
+  },
+  {
+    "userId": "6686f04e5427613adfa46891",
+    "establishmentId": "664263e9a61e5ddceac532f2",
+    "status": "Delivered",
     "products": [
       {
         "productId": "66436318bea46df5e1bc8bcf",
         "quantity": 1
       }
     ],
-    "shipping": 0.00,
-    "totalPrice": 3.99,
+    "shipping": 7.09,
+    "totalPrice": 11.08,
+    "deliveryAddress": {
+      "description": "Work",
+      "street": "231 Oak Ave",
+      "number": "2020",
+      "complement": "",
+      "neighborhood": "Hillside",
+      "city": "Countryville",
+      "state": "State"
+    },
+    "paymentMethod": "Cash"
+  },
+  {
+    "userId": "667038c8d23b11fd040e86f5",
+    "establishmentId": "664263e9a61e5ddceac532fc",
+    "status": "Cart",
+    "products": [
+      {
+        "productId": "66436318bea46df5e1bc8bfb",
+        "quantity": 5
+      },
+      {
+        "productId": "66436318bea46df5e1bc8bf9",
+        "quantity": 4
+      }
+    ],
+    "shipping": 2.29,
+    "totalPrice": 64.2,
+    "deliveryAddress": {
+      "description": "Home",
+      "street": "221 Cedar St",
+      "number": "1919",
+      "complement": "Suite 900",
+      "neighborhood": "Outskirts",
+      "city": "Villagetown",
+      "state": "State"
+    },
+    "paymentMethod": "Pix"
+  },
+  {
+    "userId": "667038c8d23b11fd040e86f5",
+    "establishmentId": "664263e9a61e5ddceac532f3",
+    "status": "Delivered",
+    "products": [
+      {
+        "productId": "66436318bea46df5e1bc8bd8",
+        "quantity": 4
+      },
+      {
+        "productId": "66436318bea46df5e1bc8bd4",
+        "quantity": 1
+      },
+      {
+        "productId": "66436318bea46df5e1bc8bd9",
+        "quantity": 2
+      },
+      {
+        "productId": "66436318bea46df5e1bc8bd1",
+        "quantity": 2
+      }
+    ],
+    "shipping": 1.97,
+    "totalPrice": 36.08,
+    "deliveryAddress": {
+      "description": "Home",
+      "street": "221 Cedar St",
+      "number": "1919",
+      "complement": "Suite 900",
+      "neighborhood": "Outskirts",
+      "city": "Villagetown",
+      "state": "State"
+    },
+    "paymentMethod": "Cash"
+  },
+  {
+    "userId": "667038c8d23b11fd040e86f5",
+    "establishmentId": "664263e9a61e5ddceac532fc",
+    "status": "Ordered",
+    "products": [
+      {
+        "productId": "66436318bea46df5e1bc8bfb",
+        "quantity": 4
+      },
+      {
+        "productId": "66436318bea46df5e1bc8bf9",
+        "quantity": 1
+      }
+    ],
+    "shipping": 1.24,
+    "totalPrice": 35.39,
+    "deliveryAddress": {
+      "description": "Home",
+      "street": "221 Cedar St",
+      "number": "1919",
+      "complement": "Suite 900",
+      "neighborhood": "Outskirts",
+      "city": "Villagetown",
+      "state": "State"
+    },
+    "paymentMethod": "Cash"
+  },
+  {
+    "userId": "667038c8d23b11fd040e86f5",
+    "establishmentId": "664263e9a61e5ddceac532f7",
+    "status": "Canceled",
+    "products": [
+      {
+        "productId": "66436318bea46df5e1bc8be3",
+        "quantity": 2
+      },
+      {
+        "productId": "66436318bea46df5e1bc8be2",
+        "quantity": 4
+      }
+    ],
+    "shipping": 9.8,
+    "totalPrice": 4809.74,
+    "deliveryAddress": {
+      "description": "Work",
+      "street": "231 Oak Ave",
+      "number": "2020",
+      "complement": "",
+      "neighborhood": "Hillside",
+      "city": "Countryville",
+      "state": "State"
+    },
+    "paymentMethod": "Debit Card"
+  },
+  {
+    "userId": "6686f04e5427613adfa46891",
+    "establishmentId": "664263e9a61e5ddceac532fc",
+    "status": "Cart",
+    "products": [
+      {
+        "productId": "66436318bea46df5e1bc8bfb",
+        "quantity": 1
+      },
+      {
+        "productId": "66436318bea46df5e1bc8bfa",
+        "quantity": 3
+      }
+    ],
+    "shipping": 10.3,
+    "totalPrice": 39.56,
+    "deliveryAddress": {
+      "description": "Home",
+      "street": "221 Cedar St",
+      "number": "1919",
+      "complement": "Suite 900",
+      "neighborhood": "Outskirts",
+      "city": "Villagetown",
+      "state": "State"
+    },
+    "paymentMethod": "Cash"
+  },
+  {
+    "userId": "667038c8d23b11fd040e86f5",
+    "establishmentId": "664263e9a61e5ddceac532fc",
+    "status": "Delivered",
+    "products": [
+      {
+        "productId": "66436318bea46df5e1bc8bfb",
+        "quantity": 3
+      },
+      {
+        "productId": "66436318bea46df5e1bc8bfa",
+        "quantity": 5
+      },
+      {
+        "productId": "66436318bea46df5e1bc8bf9",
+        "quantity": 2
+      }
+    ],
+    "shipping": 0.58,
+    "totalPrice": 72.38,
+    "deliveryAddress": {
+      "description": "Home",
+      "street": "221 Cedar St",
+      "number": "1919",
+      "complement": "Suite 900",
+      "neighborhood": "Outskirts",
+      "city": "Villagetown",
+      "state": "State"
+    },
+    "paymentMethod": "Debit Card"
+  },
+  {
+    "userId": "667038c8d23b11fd040e86f5",
+    "establishmentId": "664263e9a61e5ddceac532f8",
+    "status": "Delivered",
+    "products": [
+      {
+        "productId": "66436318bea46df5e1bc8be7",
+        "quantity": 3
+      },
+      {
+        "productId": "66436318bea46df5e1bc8be6",
+        "quantity": 4
+      },
+      {
+        "productId": "66436318bea46df5e1bc8be5",
+        "quantity": 1
+      },
+      {
+        "productId": "66436318bea46df5e1bc8be9",
+        "quantity": 5
+      }
+    ],
+    "shipping": 2.89,
+    "totalPrice": 137.26,
+    "deliveryAddress": {
+      "description": "Work",
+      "street": "231 Oak Ave",
+      "number": "2020",
+      "complement": "",
+      "neighborhood": "Hillside",
+      "city": "Countryville",
+      "state": "State"
+    },
+    "paymentMethod": "Pix"
+  },
+  {
+    "userId": "6686f04e5427613adfa46891",
+    "establishmentId": "664263e9a61e5ddceac532fe",
+    "status": "Delivered",
+    "products": [
+      {
+        "productId": "66436318bea46df5e1bc8c05",
+        "quantity": 1
+      }
+    ],
+    "shipping": 2.43,
+    "totalPrice": 601.43,
     "deliveryAddress": {
       "description": "Work",
       "street": "231 Oak Ave",
@@ -25,19 +3732,1139 @@
   {
     "userId": "667038c8d23b11fd040e86f5",
     "establishmentId": "664263e9a61e5ddceac532f3",
-    "status": "Ordered",
+    "status": "Canceled",
     "products": [
       {
-        "productId": "66436318bea46df5e1bc8bd1",
-        "quantity": 2
+        "productId": "66436318bea46df5e1bc8bd9",
+        "quantity": 5
+      },
+      {
+        "productId": "66436318bea46df5e1bc8bd6",
+        "quantity": 5
       },
       {
         "productId": "66436318bea46df5e1bc8bd2",
+        "quantity": 2
+      },
+      {
+        "productId": "66436318bea46df5e1bc8bd5",
+        "quantity": 5
+      }
+    ],
+    "shipping": 6.54,
+    "totalPrice": 80.37,
+    "deliveryAddress": {
+      "description": "Home",
+      "street": "221 Cedar St",
+      "number": "1919",
+      "complement": "Suite 900",
+      "neighborhood": "Outskirts",
+      "city": "Villagetown",
+      "state": "State"
+    },
+    "paymentMethod": "Pix"
+  },
+  {
+    "userId": "6686f04e5427613adfa46891",
+    "establishmentId": "664263e9a61e5ddceac532fa",
+    "status": "Delivered",
+    "products": [
+      {
+        "productId": "66436318bea46df5e1bc8bef",
+        "quantity": 1
+      },
+      {
+        "productId": "66436318bea46df5e1bc8bf2",
+        "quantity": 1
+      },
+      {
+        "productId": "66436318bea46df5e1bc8bf1",
+        "quantity": 2
+      }
+    ],
+    "shipping": 10.01,
+    "totalPrice": 38.97,
+    "deliveryAddress": {
+      "description": "Work",
+      "street": "231 Oak Ave",
+      "number": "2020",
+      "complement": "",
+      "neighborhood": "Hillside",
+      "city": "Countryville",
+      "state": "State"
+    },
+    "paymentMethod": "Credit Card"
+  },
+  {
+    "userId": "6686f04e5427613adfa46891",
+    "establishmentId": "664263e9a61e5ddceac53303",
+    "status": "Cart",
+    "products": [
+      {
+        "productId": "66436318bea46df5e1bc8c1d",
+        "quantity": 1
+      },
+      {
+        "productId": "66436318bea46df5e1bc8c1e",
+        "quantity": 1
+      },
+      {
+        "productId": "66436318bea46df5e1bc8c1c",
         "quantity": 1
       }
     ],
-    "shipping": 8.00,
-    "totalPrice": 14.97,
+    "shipping": 11.05,
+    "totalPrice": 22.22,
+    "deliveryAddress": {
+      "description": "Work",
+      "street": "231 Oak Ave",
+      "number": "2020",
+      "complement": "",
+      "neighborhood": "Hillside",
+      "city": "Countryville",
+      "state": "State"
+    },
+    "paymentMethod": "Cash"
+  },
+  {
+    "userId": "6686f04e5427613adfa46891",
+    "establishmentId": "664263e9a61e5ddceac53301",
+    "status": "Ordered",
+    "products": [
+      {
+        "productId": "66436318bea46df5e1bc8c13",
+        "quantity": 1
+      },
+      {
+        "productId": "66436318bea46df5e1bc8c11",
+        "quantity": 5
+      },
+      {
+        "productId": "66436318bea46df5e1bc8c12",
+        "quantity": 3
+      },
+      {
+        "productId": "66436318bea46df5e1bc8c10",
+        "quantity": 1
+      }
+    ],
+    "shipping": 4.68,
+    "totalPrice": 22.38,
+    "deliveryAddress": {
+      "description": "Home",
+      "street": "221 Cedar St",
+      "number": "1919",
+      "complement": "Suite 900",
+      "neighborhood": "Outskirts",
+      "city": "Villagetown",
+      "state": "State"
+    },
+    "paymentMethod": "Credit Card"
+  },
+  {
+    "userId": "667038c8d23b11fd040e86f5",
+    "establishmentId": "664263e9a61e5ddceac53302",
+    "status": "Ordered",
+    "products": [
+      {
+        "productId": "66436318bea46df5e1bc8c18",
+        "quantity": 2
+      }
+    ],
+    "shipping": 4.67,
+    "totalPrice": 9.65,
+    "deliveryAddress": {
+      "description": "Home",
+      "street": "221 Cedar St",
+      "number": "1919",
+      "complement": "Suite 900",
+      "neighborhood": "Outskirts",
+      "city": "Villagetown",
+      "state": "State"
+    },
+    "paymentMethod": "Credit Card"
+  },
+  {
+    "userId": "6686f04e5427613adfa46891",
+    "establishmentId": "664263e9a61e5ddceac532f4",
+    "status": "Received",
+    "products": [
+      {
+        "productId": "66436318bea46df5e1bc8bd0",
+        "quantity": 1
+      }
+    ],
+    "shipping": 10.43,
+    "totalPrice": 25.42,
+    "deliveryAddress": {
+      "description": "Work",
+      "street": "231 Oak Ave",
+      "number": "2020",
+      "complement": "",
+      "neighborhood": "Hillside",
+      "city": "Countryville",
+      "state": "State"
+    },
+    "paymentMethod": "Debit Card"
+  },
+  {
+    "userId": "667038c8d23b11fd040e86f5",
+    "establishmentId": "664263e9a61e5ddceac532f9",
+    "status": "Received",
+    "products": [
+      {
+        "productId": "66436318bea46df5e1bc8bea",
+        "quantity": 2
+      },
+      {
+        "productId": "66436318bea46df5e1bc8beb",
+        "quantity": 2
+      },
+      {
+        "productId": "66436318bea46df5e1bc8bec",
+        "quantity": 4
+      }
+    ],
+    "shipping": 9.44,
+    "totalPrice": 49.36,
+    "deliveryAddress": {
+      "description": "Home",
+      "street": "221 Cedar St",
+      "number": "1919",
+      "complement": "Suite 900",
+      "neighborhood": "Outskirts",
+      "city": "Villagetown",
+      "state": "State"
+    },
+    "paymentMethod": "Pix"
+  },
+  {
+    "userId": "667038c8d23b11fd040e86f5",
+    "establishmentId": "664263e9a61e5ddceac532fd",
+    "status": "Cart",
+    "products": [
+      {
+        "productId": "66436318bea46df5e1bc8bfe",
+        "quantity": 2
+      }
+    ],
+    "shipping": 9.0,
+    "totalPrice": 14.98,
+    "deliveryAddress": {
+      "description": "Home",
+      "street": "221 Cedar St",
+      "number": "1919",
+      "complement": "Suite 900",
+      "neighborhood": "Outskirts",
+      "city": "Villagetown",
+      "state": "State"
+    },
+    "paymentMethod": "Pix"
+  },
+  {
+    "userId": "6686f04e5427613adfa46891",
+    "establishmentId": "664263e9a61e5ddceac532f6",
+    "status": "Cart",
+    "products": [
+      {
+        "productId": "66436318bea46df5e1bc8be1",
+        "quantity": 3
+      },
+      {
+        "productId": "66436318bea46df5e1bc8be0",
+        "quantity": 2
+      },
+      {
+        "productId": "66436318bea46df5e1bc8bdf",
+        "quantity": 4
+      }
+    ],
+    "shipping": 10.03,
+    "totalPrice": 45.94,
+    "deliveryAddress": {
+      "description": "Home",
+      "street": "221 Cedar St",
+      "number": "1919",
+      "complement": "Suite 900",
+      "neighborhood": "Outskirts",
+      "city": "Villagetown",
+      "state": "State"
+    },
+    "paymentMethod": "Credit Card"
+  },
+  {
+    "userId": "667038c8d23b11fd040e86f5",
+    "establishmentId": "664263e9a61e5ddceac532fc",
+    "status": "Ordered",
+    "products": [
+      {
+        "productId": "66436318bea46df5e1bc8bfa",
+        "quantity": 4
+      },
+      {
+        "productId": "66436318bea46df5e1bc8bf9",
+        "quantity": 3
+      },
+      {
+        "productId": "66436318bea46df5e1bc8bfb",
+        "quantity": 5
+      }
+    ],
+    "shipping": 2.46,
+    "totalPrice": 87.34,
+    "deliveryAddress": {
+      "description": "Home",
+      "street": "221 Cedar St",
+      "number": "1919",
+      "complement": "Suite 900",
+      "neighborhood": "Outskirts",
+      "city": "Villagetown",
+      "state": "State"
+    },
+    "paymentMethod": "Credit Card"
+  },
+  {
+    "userId": "667038c8d23b11fd040e86f5",
+    "establishmentId": "664263e9a61e5ddceac532f9",
+    "status": "Ordered",
+    "products": [
+      {
+        "productId": "66436318bea46df5e1bc8bee",
+        "quantity": 2
+      },
+      {
+        "productId": "66436318bea46df5e1bc8bea",
+        "quantity": 4
+      },
+      {
+        "productId": "66436318bea46df5e1bc8bed",
+        "quantity": 4
+      }
+    ],
+    "shipping": 2.04,
+    "totalPrice": 51.94,
+    "deliveryAddress": {
+      "description": "Work",
+      "street": "231 Oak Ave",
+      "number": "2020",
+      "complement": "",
+      "neighborhood": "Hillside",
+      "city": "Countryville",
+      "state": "State"
+    },
+    "paymentMethod": "Cash"
+  },
+  {
+    "userId": "667038c8d23b11fd040e86f5",
+    "establishmentId": "664263e9a61e5ddceac532f6",
+    "status": "Cart",
+    "products": [
+      {
+        "productId": "66436318bea46df5e1bc8be0",
+        "quantity": 4
+      },
+      {
+        "productId": "66436318bea46df5e1bc8be1",
+        "quantity": 4
+      },
+      {
+        "productId": "66436318bea46df5e1bc8bdf",
+        "quantity": 3
+      }
+    ],
+    "shipping": 5.45,
+    "totalPrice": 46.34,
+    "deliveryAddress": {
+      "description": "Home",
+      "street": "221 Cedar St",
+      "number": "1919",
+      "complement": "Suite 900",
+      "neighborhood": "Outskirts",
+      "city": "Villagetown",
+      "state": "State"
+    },
+    "paymentMethod": "Credit Card"
+  },
+  {
+    "userId": "6686f04e5427613adfa46891",
+    "establishmentId": "664263e9a61e5ddceac532f8",
+    "status": "Received",
+    "products": [
+      {
+        "productId": "66436318bea46df5e1bc8be5",
+        "quantity": 5
+      },
+      {
+        "productId": "66436318bea46df5e1bc8be8",
+        "quantity": 5
+      }
+    ],
+    "shipping": 11.31,
+    "totalPrice": 116.21,
+    "deliveryAddress": {
+      "description": "Work",
+      "street": "231 Oak Ave",
+      "number": "2020",
+      "complement": "",
+      "neighborhood": "Hillside",
+      "city": "Countryville",
+      "state": "State"
+    },
+    "paymentMethod": "Pix"
+  },
+  {
+    "userId": "6686f04e5427613adfa46891",
+    "establishmentId": "664263e9a61e5ddceac532f5",
+    "status": "Ordered",
+    "products": [
+      {
+        "productId": "66436318bea46df5e1bc8bdc",
+        "quantity": 4
+      },
+      {
+        "productId": "66436318bea46df5e1bc8bdd",
+        "quantity": 1
+      },
+      {
+        "productId": "66436318bea46df5e1bc8bde",
+        "quantity": 5
+      }
+    ],
+    "shipping": 10.01,
+    "totalPrice": 51.41,
+    "deliveryAddress": {
+      "description": "Home",
+      "street": "221 Cedar St",
+      "number": "1919",
+      "complement": "Suite 900",
+      "neighborhood": "Outskirts",
+      "city": "Villagetown",
+      "state": "State"
+    },
+    "paymentMethod": "Cash"
+  },
+  {
+    "userId": "667038c8d23b11fd040e86f5",
+    "establishmentId": "664263e9a61e5ddceac532fa",
+    "status": "Delivered",
+    "products": [
+      {
+        "productId": "66436318bea46df5e1bc8bf1",
+        "quantity": 1
+      }
+    ],
+    "shipping": 1.49,
+    "totalPrice": 9.48,
+    "deliveryAddress": {
+      "description": "Work",
+      "street": "231 Oak Ave",
+      "number": "2020",
+      "complement": "",
+      "neighborhood": "Hillside",
+      "city": "Countryville",
+      "state": "State"
+    },
+    "paymentMethod": "Debit Card"
+  },
+  {
+    "userId": "667038c8d23b11fd040e86f5",
+    "establishmentId": "664263e9a61e5ddceac53300",
+    "status": "Delivered",
+    "products": [
+      {
+        "productId": "66436318bea46df5e1bc8c0e",
+        "quantity": 3
+      },
+      {
+        "productId": "66436318bea46df5e1bc8c0f",
+        "quantity": 3
+      }
+    ],
+    "shipping": 10.93,
+    "totalPrice": 76.87,
+    "deliveryAddress": {
+      "description": "Work",
+      "street": "231 Oak Ave",
+      "number": "2020",
+      "complement": "",
+      "neighborhood": "Hillside",
+      "city": "Countryville",
+      "state": "State"
+    },
+    "paymentMethod": "Cash"
+  },
+  {
+    "userId": "6686f04e5427613adfa46891",
+    "establishmentId": "664263e9a61e5ddceac532fe",
+    "status": "Sent",
+    "products": [
+      {
+        "productId": "66436318bea46df5e1bc8c07",
+        "quantity": 3
+      },
+      {
+        "productId": "66436318bea46df5e1bc8c05",
+        "quantity": 5
+      },
+      {
+        "productId": "66436318bea46df5e1bc8c08",
+        "quantity": 2
+      }
+    ],
+    "shipping": 9.96,
+    "totalPrice": 3949.96,
+    "deliveryAddress": {
+      "description": "Work",
+      "street": "231 Oak Ave",
+      "number": "2020",
+      "complement": "",
+      "neighborhood": "Hillside",
+      "city": "Countryville",
+      "state": "State"
+    },
+    "paymentMethod": "Debit Card"
+  },
+  {
+    "userId": "667038c8d23b11fd040e86f5",
+    "establishmentId": "664263e9a61e5ddceac53301",
+    "status": "Delivered",
+    "products": [
+      {
+        "productId": "66436318bea46df5e1bc8c13",
+        "quantity": 4
+      }
+    ],
+    "shipping": 13.54,
+    "totalPrice": 17.9,
+    "deliveryAddress": {
+      "description": "Work",
+      "street": "231 Oak Ave",
+      "number": "2020",
+      "complement": "",
+      "neighborhood": "Hillside",
+      "city": "Countryville",
+      "state": "State"
+    },
+    "paymentMethod": "Pix"
+  },
+  {
+    "userId": "667038c8d23b11fd040e86f5",
+    "establishmentId": "664263e9a61e5ddceac532f5",
+    "status": "Delivered",
+    "products": [
+      {
+        "productId": "66436318bea46df5e1bc8bde",
+        "quantity": 2
+      },
+      {
+        "productId": "66436318bea46df5e1bc8bdc",
+        "quantity": 1
+      }
+    ],
+    "shipping": 8.21,
+    "totalPrice": 21.18,
+    "deliveryAddress": {
+      "description": "Home",
+      "street": "221 Cedar St",
+      "number": "1919",
+      "complement": "Suite 900",
+      "neighborhood": "Outskirts",
+      "city": "Villagetown",
+      "state": "State"
+    },
+    "paymentMethod": "Pix"
+  },
+  {
+    "userId": "667038c8d23b11fd040e86f5",
+    "establishmentId": "664263e9a61e5ddceac53302",
+    "status": "Delivered",
+    "products": [
+      {
+        "productId": "66436318bea46df5e1bc8c18",
+        "quantity": 4
+      },
+      {
+        "productId": "66436318bea46df5e1bc8c14",
+        "quantity": 2
+      },
+      {
+        "productId": "66436318bea46df5e1bc8c19",
+        "quantity": 1
+      }
+    ],
+    "shipping": 6.34,
+    "totalPrice": 37.27,
+    "deliveryAddress": {
+      "description": "Home",
+      "street": "221 Cedar St",
+      "number": "1919",
+      "complement": "Suite 900",
+      "neighborhood": "Outskirts",
+      "city": "Villagetown",
+      "state": "State"
+    },
+    "paymentMethod": "Pix"
+  },
+  {
+    "userId": "667038c8d23b11fd040e86f5",
+    "establishmentId": "664263e9a61e5ddceac532f8",
+    "status": "Preparing",
+    "products": [
+      {
+        "productId": "66436318bea46df5e1bc8be4",
+        "quantity": 4
+      }
+    ],
+    "shipping": 5.89,
+    "totalPrice": 37.85,
+    "deliveryAddress": {
+      "description": "Home",
+      "street": "221 Cedar St",
+      "number": "1919",
+      "complement": "Suite 900",
+      "neighborhood": "Outskirts",
+      "city": "Villagetown",
+      "state": "State"
+    },
+    "paymentMethod": "Debit Card"
+  },
+  {
+    "userId": "6686f04e5427613adfa46891",
+    "establishmentId": "664263e9a61e5ddceac532f8",
+    "status": "Ordered",
+    "products": [
+      {
+        "productId": "66436318bea46df5e1bc8be5",
+        "quantity": 3
+      },
+      {
+        "productId": "66436318bea46df5e1bc8be8",
+        "quantity": 2
+      },
+      {
+        "productId": "66436318bea46df5e1bc8be4",
+        "quantity": 4
+      },
+      {
+        "productId": "66436318bea46df5e1bc8be9",
+        "quantity": 4
+      }
+    ],
+    "shipping": 8.83,
+    "totalPrice": 133.7,
+    "deliveryAddress": {
+      "description": "Work",
+      "street": "231 Oak Ave",
+      "number": "2020",
+      "complement": "",
+      "neighborhood": "Hillside",
+      "city": "Countryville",
+      "state": "State"
+    },
+    "paymentMethod": "Credit Card"
+  },
+  {
+    "userId": "6686f04e5427613adfa46891",
+    "establishmentId": "664263e9a61e5ddceac532f5",
+    "status": "Ordered",
+    "products": [
+      {
+        "productId": "66436318bea46df5e1bc8bdb",
+        "quantity": 3
+      }
+    ],
+    "shipping": 6.01,
+    "totalPrice": 16.48,
+    "deliveryAddress": {
+      "description": "Home",
+      "street": "221 Cedar St",
+      "number": "1919",
+      "complement": "Suite 900",
+      "neighborhood": "Outskirts",
+      "city": "Villagetown",
+      "state": "State"
+    },
+    "paymentMethod": "Cash"
+  },
+  {
+    "userId": "6686f04e5427613adfa46891",
+    "establishmentId": "664263e9a61e5ddceac532fd",
+    "status": "Ordered",
+    "products": [
+      {
+        "productId": "66436318bea46df5e1bc8c01",
+        "quantity": 3
+      },
+      {
+        "productId": "66436318bea46df5e1bc8bff",
+        "quantity": 4
+      }
+    ],
+    "shipping": 2.1,
+    "totalPrice": 32.23,
+    "deliveryAddress": {
+      "description": "Work",
+      "street": "231 Oak Ave",
+      "number": "2020",
+      "complement": "",
+      "neighborhood": "Hillside",
+      "city": "Countryville",
+      "state": "State"
+    },
+    "paymentMethod": "Pix"
+  },
+  {
+    "userId": "667038c8d23b11fd040e86f5",
+    "establishmentId": "664263e9a61e5ddceac532fe",
+    "status": "Preparing",
+    "products": [
+      {
+        "productId": "66436318bea46df5e1bc8c06",
+        "quantity": 2
+      }
+    ],
+    "shipping": 12.26,
+    "totalPrice": 810.26,
+    "deliveryAddress": {
+      "description": "Home",
+      "street": "221 Cedar St",
+      "number": "1919",
+      "complement": "Suite 900",
+      "neighborhood": "Outskirts",
+      "city": "Villagetown",
+      "state": "State"
+    },
+    "paymentMethod": "Credit Card"
+  },
+  {
+    "userId": "667038c8d23b11fd040e86f5",
+    "establishmentId": "664263e9a61e5ddceac53302",
+    "status": "Delivered",
+    "products": [
+      {
+        "productId": "66436318bea46df5e1bc8c19",
+        "quantity": 2
+      }
+    ],
+    "shipping": 1.67,
+    "totalPrice": 19.65,
+    "deliveryAddress": {
+      "description": "Home",
+      "street": "221 Cedar St",
+      "number": "1919",
+      "complement": "Suite 900",
+      "neighborhood": "Outskirts",
+      "city": "Villagetown",
+      "state": "State"
+    },
+    "paymentMethod": "Debit Card"
+  },
+  {
+    "userId": "6686f04e5427613adfa46891",
+    "establishmentId": "664263e9a61e5ddceac532fa",
+    "status": "Delivered",
+    "products": [
+      {
+        "productId": "66436318bea46df5e1bc8bf1",
+        "quantity": 4
+      }
+    ],
+    "shipping": 7.84,
+    "totalPrice": 39.8,
+    "deliveryAddress": {
+      "description": "Home",
+      "street": "221 Cedar St",
+      "number": "1919",
+      "complement": "Suite 900",
+      "neighborhood": "Outskirts",
+      "city": "Villagetown",
+      "state": "State"
+    },
+    "paymentMethod": "Cash"
+  },
+  {
+    "userId": "667038c8d23b11fd040e86f5",
+    "establishmentId": "664263e9a61e5ddceac532fe",
+    "status": "Sent",
+    "products": [
+      {
+        "productId": "66436318bea46df5e1bc8c04",
+        "quantity": 2
+      },
+      {
+        "productId": "66436318bea46df5e1bc8c06",
+        "quantity": 3
+      }
+    ],
+    "shipping": 2.68,
+    "totalPrice": 5197.68,
+    "deliveryAddress": {
+      "description": "Work",
+      "street": "231 Oak Ave",
+      "number": "2020",
+      "complement": "",
+      "neighborhood": "Hillside",
+      "city": "Countryville",
+      "state": "State"
+    },
+    "paymentMethod": "Cash"
+  },
+  {
+    "userId": "6686f04e5427613adfa46891",
+    "establishmentId": "664263e9a61e5ddceac532fc",
+    "status": "Delivered",
+    "products": [
+      {
+        "productId": "66436318bea46df5e1bc8bfb",
+        "quantity": 2
+      },
+      {
+        "productId": "66436318bea46df5e1bc8bf9",
+        "quantity": 2
+      }
+    ],
+    "shipping": 9.0,
+    "totalPrice": 36.56,
+    "deliveryAddress": {
+      "description": "Work",
+      "street": "231 Oak Ave",
+      "number": "2020",
+      "complement": "",
+      "neighborhood": "Hillside",
+      "city": "Countryville",
+      "state": "State"
+    },
+    "paymentMethod": "Cash"
+  },
+  {
+    "userId": "667038c8d23b11fd040e86f5",
+    "establishmentId": "664263e9a61e5ddceac532f7",
+    "status": "Ordered",
+    "products": [
+      {
+        "productId": "66436318bea46df5e1bc8be2",
+        "quantity": 3
+      },
+      {
+        "productId": "66436318bea46df5e1bc8be3",
+        "quantity": 2
+      }
+    ],
+    "shipping": 10.66,
+    "totalPrice": 4110.61,
+    "deliveryAddress": {
+      "description": "Home",
+      "street": "221 Cedar St",
+      "number": "1919",
+      "complement": "Suite 900",
+      "neighborhood": "Outskirts",
+      "city": "Villagetown",
+      "state": "State"
+    },
+    "paymentMethod": "Credit Card"
+  },
+  {
+    "userId": "667038c8d23b11fd040e86f5",
+    "establishmentId": "664263e9a61e5ddceac532f6",
+    "status": "Ordered",
+    "products": [
+      {
+        "productId": "66436318bea46df5e1bc8be0",
+        "quantity": 2
+      },
+      {
+        "productId": "66436318bea46df5e1bc8bdf",
+        "quantity": 3
+      },
+      {
+        "productId": "66436318bea46df5e1bc8be1",
+        "quantity": 2
+      }
+    ],
+    "shipping": 2.77,
+    "totalPrice": 30.7,
+    "deliveryAddress": {
+      "description": "Home",
+      "street": "221 Cedar St",
+      "number": "1919",
+      "complement": "Suite 900",
+      "neighborhood": "Outskirts",
+      "city": "Villagetown",
+      "state": "State"
+    },
+    "paymentMethod": "Debit Card"
+  },
+  {
+    "userId": "667038c8d23b11fd040e86f5",
+    "establishmentId": "664263e9a61e5ddceac532fe",
+    "status": "Ordered",
+    "products": [
+      {
+        "productId": "66436318bea46df5e1bc8c03",
+        "quantity": 4
+      },
+      {
+        "productId": "66436318bea46df5e1bc8c07",
+        "quantity": 5
+      },
+      {
+        "productId": "66436318bea46df5e1bc8c06",
+        "quantity": 4
+      }
+    ],
+    "shipping": 6.01,
+    "totalPrice": 6843.01,
+    "deliveryAddress": {
+      "description": "Work",
+      "street": "231 Oak Ave",
+      "number": "2020",
+      "complement": "",
+      "neighborhood": "Hillside",
+      "city": "Countryville",
+      "state": "State"
+    },
+    "paymentMethod": "Pix"
+  },
+  {
+    "userId": "667038c8d23b11fd040e86f5",
+    "establishmentId": "664263e9a61e5ddceac53302",
+    "status": "Cart",
+    "products": [
+      {
+        "productId": "66436318bea46df5e1bc8c14",
+        "quantity": 3
+      },
+      {
+        "productId": "66436318bea46df5e1bc8c16",
+        "quantity": 5
+      },
+      {
+        "productId": "66436318bea46df5e1bc8c18",
+        "quantity": 2
+      }
+    ],
+    "shipping": 4.13,
+    "totalPrice": 58.53,
+    "deliveryAddress": {
+      "description": "Home",
+      "street": "221 Cedar St",
+      "number": "1919",
+      "complement": "Suite 900",
+      "neighborhood": "Outskirts",
+      "city": "Villagetown",
+      "state": "State"
+    },
+    "paymentMethod": "Credit Card"
+  },
+  {
+    "userId": "6686f04e5427613adfa46891",
+    "establishmentId": "664263e9a61e5ddceac532f7",
+    "status": "Ordered",
+    "products": [
+      {
+        "productId": "66436318bea46df5e1bc8be2",
+        "quantity": 2
+      },
+      {
+        "productId": "66436318bea46df5e1bc8be3",
+        "quantity": 4
+      }
+    ],
+    "shipping": 4.16,
+    "totalPrice": 5404.1,
+    "deliveryAddress": {
+      "description": "Work",
+      "street": "231 Oak Ave",
+      "number": "2020",
+      "complement": "",
+      "neighborhood": "Hillside",
+      "city": "Countryville",
+      "state": "State"
+    },
+    "paymentMethod": "Debit Card"
+  },
+  {
+    "userId": "667038c8d23b11fd040e86f5",
+    "establishmentId": "664263e9a61e5ddceac532f3",
+    "status": "Ordered",
+    "products": [
+      {
+        "productId": "66436318bea46df5e1bc8bd4",
+        "quantity": 3
+      }
+    ],
+    "shipping": 4.07,
+    "totalPrice": 13.04,
+    "deliveryAddress": {
+      "description": "Work",
+      "street": "231 Oak Ave",
+      "number": "2020",
+      "complement": "",
+      "neighborhood": "Hillside",
+      "city": "Countryville",
+      "state": "State"
+    },
+    "paymentMethod": "Pix"
+  },
+  {
+    "userId": "6686f04e5427613adfa46891",
+    "establishmentId": "664263e9a61e5ddceac53301",
+    "status": "Preparing",
+    "products": [
+      {
+        "productId": "66436318bea46df5e1bc8c11",
+        "quantity": 4
+      }
+    ],
+    "shipping": 14.0,
+    "totalPrice": 19.16,
+    "deliveryAddress": {
+      "description": "Work",
+      "street": "231 Oak Ave",
+      "number": "2020",
+      "complement": "",
+      "neighborhood": "Hillside",
+      "city": "Countryville",
+      "state": "State"
+    },
+    "paymentMethod": "Debit Card"
+  },
+  {
+    "userId": "6686f04e5427613adfa46891",
+    "establishmentId": "664263e9a61e5ddceac532f8",
+    "status": "Cart",
+    "products": [
+      {
+        "productId": "66436318bea46df5e1bc8be7",
+        "quantity": 4
+      },
+      {
+        "productId": "66436318bea46df5e1bc8be6",
+        "quantity": 3
+      },
+      {
+        "productId": "66436318bea46df5e1bc8be8",
+        "quantity": 3
+      }
+    ],
+    "shipping": 2.02,
+    "totalPrice": 111.92,
+    "deliveryAddress": {
+      "description": "Home",
+      "street": "221 Cedar St",
+      "number": "1919",
+      "complement": "Suite 900",
+      "neighborhood": "Outskirts",
+      "city": "Villagetown",
+      "state": "State"
+    },
+    "paymentMethod": "Credit Card"
+  },
+  {
+    "userId": "667038c8d23b11fd040e86f5",
+    "establishmentId": "664263e9a61e5ddceac53302",
+    "status": "Ordered",
+    "products": [
+      {
+        "productId": "66436318bea46df5e1bc8c17",
+        "quantity": 3
+      },
+      {
+        "productId": "66436318bea46df5e1bc8c18",
+        "quantity": 5
+      },
+      {
+        "productId": "66436318bea46df5e1bc8c14",
+        "quantity": 5
+      }
+    ],
+    "shipping": 9.68,
+    "totalPrice": 76.05,
+    "deliveryAddress": {
+      "description": "Work",
+      "street": "231 Oak Ave",
+      "number": "2020",
+      "complement": "",
+      "neighborhood": "Hillside",
+      "city": "Countryville",
+      "state": "State"
+    },
+    "paymentMethod": "Pix"
+  },
+  {
+    "userId": "667038c8d23b11fd040e86f5",
+    "establishmentId": "664263e9a61e5ddceac532f6",
+    "status": "Canceled",
+    "products": [
+      {
+        "productId": "66436318bea46df5e1bc8be1",
+        "quantity": 1
+      },
+      {
+        "productId": "66436318bea46df5e1bc8bdf",
+        "quantity": 3
+      },
+      {
+        "productId": "66436318bea46df5e1bc8be0",
+        "quantity": 1
+      }
+    ],
+    "shipping": 0.83,
+    "totalPrice": 22.28,
+    "deliveryAddress": {
+      "description": "Work",
+      "street": "231 Oak Ave",
+      "number": "2020",
+      "complement": "",
+      "neighborhood": "Hillside",
+      "city": "Countryville",
+      "state": "State"
+    },
+    "paymentMethod": "Pix"
+  },
+  {
+    "userId": "6686f04e5427613adfa46891",
+    "establishmentId": "664263e9a61e5ddceac53303",
+    "status": "Cart",
+    "products": [
+      {
+        "productId": "66436318bea46df5e1bc8c1d",
+        "quantity": 3
+      },
+      {
+        "productId": "66436318bea46df5e1bc8c1c",
+        "quantity": 1
+      },
+      {
+        "productId": "66436318bea46df5e1bc8c1e",
+        "quantity": 5
+      }
+    ],
+    "shipping": 1.37,
+    "totalPrice": 35.68,
+    "deliveryAddress": {
+      "description": "Work",
+      "street": "231 Oak Ave",
+      "number": "2020",
+      "complement": "",
+      "neighborhood": "Hillside",
+      "city": "Countryville",
+      "state": "State"
+    },
+    "paymentMethod": "Debit Card"
+  },
+  {
+    "userId": "667038c8d23b11fd040e86f5",
+    "establishmentId": "664263e9a61e5ddceac532f6",
+    "status": "Canceled",
+    "products": [
+      {
+        "productId": "66436318bea46df5e1bc8be1",
+        "quantity": 5
+      }
+    ],
+    "shipping": 14.84,
+    "totalPrice": 29.79,
     "deliveryAddress": {
       "description": "Work",
       "street": "231 Oak Ave",
@@ -51,24 +4878,109 @@
   },
   {
     "userId": "667038c8d23b11fd040e86f5",
-    "establishmentId": "664263e9a61e5ddceac532f5",
-    "status": "Delivered",
+    "establishmentId": "664263e9a61e5ddceac532fe",
+    "status": "Cart",
     "products": [
       {
+        "productId": "66436318bea46df5e1bc8c07",
+        "quantity": 3
+      },
+      {
+        "productId": "66436318bea46df5e1bc8c06",
+        "quantity": 1
+      },
+      {
+        "productId": "66436318bea46df5e1bc8c04",
+        "quantity": 4
+      }
+    ],
+    "shipping": 10.46,
+    "totalPrice": 9152.46,
+    "deliveryAddress": {
+      "description": "Home",
+      "street": "221 Cedar St",
+      "number": "1919",
+      "complement": "Suite 900",
+      "neighborhood": "Outskirts",
+      "city": "Villagetown",
+      "state": "State"
+    },
+    "paymentMethod": "Credit Card"
+  },
+  {
+    "userId": "667038c8d23b11fd040e86f5",
+    "establishmentId": "664263e9a61e5ddceac532f5",
+    "status": "Canceled",
+    "products": [
+      {
+        "productId": "66436318bea46df5e1bc8bde",
+        "quantity": 4
+      },
+      {
         "productId": "66436318bea46df5e1bc8bdb",
-        "quantity": 2
+        "quantity": 5
       },
       {
         "productId": "66436318bea46df5e1bc8bdc",
         "quantity": 1
+      }
+    ],
+    "shipping": 14.12,
+    "totalPrice": 53.52,
+    "deliveryAddress": {
+      "description": "Home",
+      "street": "221 Cedar St",
+      "number": "1919",
+      "complement": "Suite 900",
+      "neighborhood": "Outskirts",
+      "city": "Villagetown",
+      "state": "State"
+    },
+    "paymentMethod": "Cash"
+  },
+  {
+    "userId": "667038c8d23b11fd040e86f5",
+    "establishmentId": "664263e9a61e5ddceac533fb",
+    "status": "Ordered",
+    "products": [
+      {
+        "productId": "66436318bea46df5e1bc8bf7",
+        "quantity": 1
       },
       {
-        "productId": "66436318bea46df5e1bc8bdd",
+        "productId": "66436318bea46df5e1bc8bf5",
+        "quantity": 5
+      }
+    ],
+    "shipping": 0.93,
+    "totalPrice": 89.37,
+    "deliveryAddress": {
+      "description": "Home",
+      "street": "221 Cedar St",
+      "number": "1919",
+      "complement": "Suite 900",
+      "neighborhood": "Outskirts",
+      "city": "Villagetown",
+      "state": "State"
+    },
+    "paymentMethod": "Credit Card"
+  },
+  {
+    "userId": "6686f04e5427613adfa46891",
+    "establishmentId": "664263e9a61e5ddceac532fc",
+    "status": "Ordered",
+    "products": [
+      {
+        "productId": "66436318bea46df5e1bc8bf9",
+        "quantity": 4
+      },
+      {
+        "productId": "66436318bea46df5e1bc8bfb",
         "quantity": 3
       }
     ],
-    "shipping": 7.00,
-    "totalPrice": 26.94,
+    "shipping": 12.26,
+    "totalPrice": 60.59,
     "deliveryAddress": {
       "description": "Work",
       "street": "231 Oak Ave",
@@ -79,5 +4991,536 @@
       "state": "State"
     },
     "paymentMethod": "Credit Card"
+  },
+  {
+    "userId": "6686f04e5427613adfa46891",
+    "establishmentId": "664263e9a61e5ddceac532f7",
+    "status": "Ordered",
+    "products": [
+      {
+        "productId": "66436318bea46df5e1bc8be2",
+        "quantity": 3
+      }
+    ],
+    "shipping": 13.37,
+    "totalPrice": 2113.34,
+    "deliveryAddress": {
+      "description": "Home",
+      "street": "221 Cedar St",
+      "number": "1919",
+      "complement": "Suite 900",
+      "neighborhood": "Outskirts",
+      "city": "Villagetown",
+      "state": "State"
+    },
+    "paymentMethod": "Debit Card"
+  },
+  {
+    "userId": "667038c8d23b11fd040e86f5",
+    "establishmentId": "664263e9a61e5ddceac53303",
+    "status": "Ordered",
+    "products": [
+      {
+        "productId": "66436318bea46df5e1bc8c1e",
+        "quantity": 3
+      }
+    ],
+    "shipping": 2.02,
+    "totalPrice": 16.09,
+    "deliveryAddress": {
+      "description": "Home",
+      "street": "221 Cedar St",
+      "number": "1919",
+      "complement": "Suite 900",
+      "neighborhood": "Outskirts",
+      "city": "Villagetown",
+      "state": "State"
+    },
+    "paymentMethod": "Pix"
+  },
+  {
+    "userId": "667038c8d23b11fd040e86f5",
+    "establishmentId": "664263e9a61e5ddceac532f7",
+    "status": "Ordered",
+    "products": [
+      {
+        "productId": "66436318bea46df5e1bc8be2",
+        "quantity": 5
+      }
+    ],
+    "shipping": 3.33,
+    "totalPrice": 3503.28,
+    "deliveryAddress": {
+      "description": "Home",
+      "street": "221 Cedar St",
+      "number": "1919",
+      "complement": "Suite 900",
+      "neighborhood": "Outskirts",
+      "city": "Villagetown",
+      "state": "State"
+    },
+    "paymentMethod": "Debit Card"
+  },
+  {
+    "userId": "6686f04e5427613adfa46891",
+    "establishmentId": "664263e9a61e5ddceac532f2",
+    "status": "Cart",
+    "products": [
+      {
+        "productId": "66436318bea46df5e1bc8bcf",
+        "quantity": 2
+      }
+    ],
+    "shipping": 1.68,
+    "totalPrice": 9.66,
+    "deliveryAddress": {
+      "description": "Work",
+      "street": "231 Oak Ave",
+      "number": "2020",
+      "complement": "",
+      "neighborhood": "Hillside",
+      "city": "Countryville",
+      "state": "State"
+    },
+    "paymentMethod": "Debit Card"
+  },
+  {
+    "userId": "6686f04e5427613adfa46891",
+    "establishmentId": "664263e9a61e5ddceac532f5",
+    "status": "Ordered",
+    "products": [
+      {
+        "productId": "66436318bea46df5e1bc8bde",
+        "quantity": 2
+      },
+      {
+        "productId": "66436318bea46df5e1bc8bdc",
+        "quantity": 2
+      },
+      {
+        "productId": "66436318bea46df5e1bc8bdd",
+        "quantity": 5
+      }
+    ],
+    "shipping": 12.79,
+    "totalPrice": 44.7,
+    "deliveryAddress": {
+      "description": "Home",
+      "street": "221 Cedar St",
+      "number": "1919",
+      "complement": "Suite 900",
+      "neighborhood": "Outskirts",
+      "city": "Villagetown",
+      "state": "State"
+    },
+    "paymentMethod": "Pix"
+  },
+  {
+    "userId": "667038c8d23b11fd040e86f5",
+    "establishmentId": "664263e9a61e5ddceac532f2",
+    "status": "Delivered",
+    "products": [
+      {
+        "productId": "66436318bea46df5e1bc8bcf",
+        "quantity": 3
+      }
+    ],
+    "shipping": 3.83,
+    "totalPrice": 15.8,
+    "deliveryAddress": {
+      "description": "Work",
+      "street": "231 Oak Ave",
+      "number": "2020",
+      "complement": "",
+      "neighborhood": "Hillside",
+      "city": "Countryville",
+      "state": "State"
+    },
+    "paymentMethod": "Debit Card"
+  },
+  {
+    "userId": "6686f04e5427613adfa46891",
+    "establishmentId": "664263e9a61e5ddceac532f4",
+    "status": "Canceled",
+    "products": [
+      {
+        "productId": "66436318bea46df5e1bc8bd0",
+        "quantity": 2
+      }
+    ],
+    "shipping": 10.07,
+    "totalPrice": 40.05,
+    "deliveryAddress": {
+      "description": "Home",
+      "street": "221 Cedar St",
+      "number": "1919",
+      "complement": "Suite 900",
+      "neighborhood": "Outskirts",
+      "city": "Villagetown",
+      "state": "State"
+    },
+    "paymentMethod": "Cash"
+  },
+  {
+    "userId": "667038c8d23b11fd040e86f5",
+    "establishmentId": "664263e9a61e5ddceac532f7",
+    "status": "Ordered",
+    "products": [
+      {
+        "productId": "66436318bea46df5e1bc8be2",
+        "quantity": 2
+      }
+    ],
+    "shipping": 0.16,
+    "totalPrice": 1400.14,
+    "deliveryAddress": {
+      "description": "Work",
+      "street": "231 Oak Ave",
+      "number": "2020",
+      "complement": "",
+      "neighborhood": "Hillside",
+      "city": "Countryville",
+      "state": "State"
+    },
+    "paymentMethod": "Pix"
+  },
+  {
+    "userId": "667038c8d23b11fd040e86f5",
+    "establishmentId": "664263e9a61e5ddceac53304",
+    "status": "Canceled",
+    "products": [
+      {
+        "productId": "66436318bea46df5e1bc8c1b",
+        "quantity": 5
+      },
+      {
+        "productId": "66436318bea46df5e1bc8c1a",
+        "quantity": 4
+      }
+    ],
+    "shipping": 0.89,
+    "totalPrice": 17.3,
+    "deliveryAddress": {
+      "description": "Work",
+      "street": "231 Oak Ave",
+      "number": "2020",
+      "complement": "",
+      "neighborhood": "Hillside",
+      "city": "Countryville",
+      "state": "State"
+    },
+    "paymentMethod": "Debit Card"
+  },
+  {
+    "userId": "6686f04e5427613adfa46891",
+    "establishmentId": "664263e9a61e5ddceac532fc",
+    "status": "Ordered",
+    "products": [
+      {
+        "productId": "66436318bea46df5e1bc8bf9",
+        "quantity": 3
+      },
+      {
+        "productId": "66436318bea46df5e1bc8bfb",
+        "quantity": 2
+      }
+    ],
+    "shipping": 12.21,
+    "totalPrice": 46.76,
+    "deliveryAddress": {
+      "description": "Home",
+      "street": "221 Cedar St",
+      "number": "1919",
+      "complement": "Suite 900",
+      "neighborhood": "Outskirts",
+      "city": "Villagetown",
+      "state": "State"
+    },
+    "paymentMethod": "Debit Card"
+  },
+  {
+    "userId": "667038c8d23b11fd040e86f5",
+    "establishmentId": "664263e9a61e5ddceac53301",
+    "status": "Ordered",
+    "products": [
+      {
+        "productId": "66436318bea46df5e1bc8c13",
+        "quantity": 3
+      },
+      {
+        "productId": "66436318bea46df5e1bc8c10",
+        "quantity": 1
+      }
+    ],
+    "shipping": 10.46,
+    "totalPrice": 14.92,
+    "deliveryAddress": {
+      "description": "Home",
+      "street": "221 Cedar St",
+      "number": "1919",
+      "complement": "Suite 900",
+      "neighborhood": "Outskirts",
+      "city": "Villagetown",
+      "state": "State"
+    },
+    "paymentMethod": "Pix"
+  },
+  {
+    "userId": "667038c8d23b11fd040e86f5",
+    "establishmentId": "664263e9a61e5ddceac532f8",
+    "status": "Delivered",
+    "products": [
+      {
+        "productId": "66436318bea46df5e1bc8be8",
+        "quantity": 1
+      }
+    ],
+    "shipping": 7.33,
+    "totalPrice": 19.32,
+    "deliveryAddress": {
+      "description": "Home",
+      "street": "221 Cedar St",
+      "number": "1919",
+      "complement": "Suite 900",
+      "neighborhood": "Outskirts",
+      "city": "Villagetown",
+      "state": "State"
+    },
+    "paymentMethod": "Credit Card"
+  },
+  {
+    "userId": "667038c8d23b11fd040e86f5",
+    "establishmentId": "664263e9a61e5ddceac53300",
+    "status": "Sent",
+    "products": [
+      {
+        "productId": "66436318bea46df5e1bc8c0f",
+        "quantity": 3
+      },
+      {
+        "productId": "66436318bea46df5e1bc8c0e",
+        "quantity": 5
+      }
+    ],
+    "shipping": 1.58,
+    "totalPrice": 71.5,
+    "deliveryAddress": {
+      "description": "Home",
+      "street": "221 Cedar St",
+      "number": "1919",
+      "complement": "Suite 900",
+      "neighborhood": "Outskirts",
+      "city": "Villagetown",
+      "state": "State"
+    },
+    "paymentMethod": "Debit Card"
+  },
+  {
+    "userId": "667038c8d23b11fd040e86f5",
+    "establishmentId": "664263e9a61e5ddceac532ff",
+    "status": "Received",
+    "products": [
+      {
+        "productId": "66436318bea46df5e1bc8c0b",
+        "quantity": 4
+      }
+    ],
+    "shipping": 2.77,
+    "totalPrice": 26.73,
+    "deliveryAddress": {
+      "description": "Work",
+      "street": "231 Oak Ave",
+      "number": "2020",
+      "complement": "",
+      "neighborhood": "Hillside",
+      "city": "Countryville",
+      "state": "State"
+    },
+    "paymentMethod": "Debit Card"
+  },
+  {
+    "userId": "6686f04e5427613adfa46891",
+    "establishmentId": "664263e9a61e5ddceac53300",
+    "status": "Ordered",
+    "products": [
+      {
+        "productId": "66436318bea46df5e1bc8c0e",
+        "quantity": 4
+      },
+      {
+        "productId": "66436318bea46df5e1bc8c0f",
+        "quantity": 2
+      }
+    ],
+    "shipping": 5.73,
+    "totalPrice": 53.67,
+    "deliveryAddress": {
+      "description": "Home",
+      "street": "221 Cedar St",
+      "number": "1919",
+      "complement": "Suite 900",
+      "neighborhood": "Outskirts",
+      "city": "Villagetown",
+      "state": "State"
+    },
+    "paymentMethod": "Pix"
+  },
+  {
+    "userId": "6686f04e5427613adfa46891",
+    "establishmentId": "664263e9a61e5ddceac532fe",
+    "status": "Sent",
+    "products": [
+      {
+        "productId": "66436318bea46df5e1bc8c06",
+        "quantity": 2
+      }
+    ],
+    "shipping": 13.07,
+    "totalPrice": 811.07,
+    "deliveryAddress": {
+      "description": "Work",
+      "street": "231 Oak Ave",
+      "number": "2020",
+      "complement": "",
+      "neighborhood": "Hillside",
+      "city": "Countryville",
+      "state": "State"
+    },
+    "paymentMethod": "Credit Card"
+  },
+  {
+    "userId": "6686f04e5427613adfa46891",
+    "establishmentId": "664263e9a61e5ddceac532fe",
+    "status": "Ordered",
+    "products": [
+      {
+        "productId": "66436318bea46df5e1bc8c08",
+        "quantity": 2
+      },
+      {
+        "productId": "66436318bea46df5e1bc8c07",
+        "quantity": 3
+      },
+      {
+        "productId": "66436318bea46df5e1bc8c05",
+        "quantity": 5
+      },
+      {
+        "productId": "66436318bea46df5e1bc8c06",
+        "quantity": 5
+      }
+    ],
+    "shipping": 2.84,
+    "totalPrice": 5937.84,
+    "deliveryAddress": {
+      "description": "Work",
+      "street": "231 Oak Ave",
+      "number": "2020",
+      "complement": "",
+      "neighborhood": "Hillside",
+      "city": "Countryville",
+      "state": "State"
+    },
+    "paymentMethod": "Cash"
+  },
+  {
+    "userId": "6686f04e5427613adfa46891",
+    "establishmentId": "664263e9a61e5ddceac53301",
+    "status": "Ordered",
+    "products": [
+      {
+        "productId": "66436318bea46df5e1bc8c11",
+        "quantity": 5
+      },
+      {
+        "productId": "66436318bea46df5e1bc8c10",
+        "quantity": 2
+      }
+    ],
+    "shipping": 1.22,
+    "totalPrice": 10.05,
+    "deliveryAddress": {
+      "description": "Work",
+      "street": "231 Oak Ave",
+      "number": "2020",
+      "complement": "",
+      "neighborhood": "Hillside",
+      "city": "Countryville",
+      "state": "State"
+    },
+    "paymentMethod": "Cash"
+  },
+  {
+    "userId": "6686f04e5427613adfa46891",
+    "establishmentId": "664263e9a61e5ddceac53300",
+    "status": "Delivered",
+    "products": [
+      {
+        "productId": "66436318bea46df5e1bc8c0e",
+        "quantity": 2
+      }
+    ],
+    "shipping": 4.19,
+    "totalPrice": 8.17,
+    "deliveryAddress": {
+      "description": "Work",
+      "street": "231 Oak Ave",
+      "number": "2020",
+      "complement": "",
+      "neighborhood": "Hillside",
+      "city": "Countryville",
+      "state": "State"
+    },
+    "paymentMethod": "Credit Card"
+  },
+  {
+    "userId": "6686f04e5427613adfa46891",
+    "establishmentId": "664263e9a61e5ddceac532fd",
+    "status": "Ordered",
+    "products": [
+      {
+        "productId": "66436318bea46df5e1bc8c01",
+        "quantity": 5
+      }
+    ],
+    "shipping": 7.76,
+    "totalPrice": 32.71,
+    "deliveryAddress": {
+      "description": "Work",
+      "street": "231 Oak Ave",
+      "number": "2020",
+      "complement": "",
+      "neighborhood": "Hillside",
+      "city": "Countryville",
+      "state": "State"
+    },
+    "paymentMethod": "Pix"
+  },
+  {
+    "userId": "6686f04e5427613adfa46891",
+    "establishmentId": "664263e9a61e5ddceac53304",
+    "status": "Delivered",
+    "products": [
+      {
+        "productId": "66436318bea46df5e1bc8c1b",
+        "quantity": 3
+      },
+      {
+        "productId": "66436318bea46df5e1bc8c1a",
+        "quantity": 5
+      }
+    ],
+    "shipping": 0.04,
+    "totalPrice": 12.46,
+    "deliveryAddress": {
+      "description": "Work",
+      "street": "231 Oak Ave",
+      "number": "2020",
+      "complement": "",
+      "neighborhood": "Hillside",
+      "city": "Countryville",
+      "state": "State"
+    },
+    "paymentMethod": "Debit Card"
   }
 ]
