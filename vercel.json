@@ -3,10 +3,10 @@
   "buildCommand": "npm run build",
   "installCommand": "npm install",
   "outputDirectory": "dist",
-  "functions": {
-    "api/*.js": {
-      "runtime": "nodejs18.x"
+  "routes": [
+    {
+      "src": "/(.*)",
+      "dest": "/dist/app.js"
     }
-  },
-  "routes": [{ "src": "/(.*)", "dest": "/dist/app.js" }]
+  ]
 }
