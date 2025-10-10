@@ -1,4 +1,4 @@
-import { NextFunctionProps, RequestProps, ResponseProps } from '@/config';
+import { NextFunctionProps, RequestProps, ResponseProps } from '../config';
 
 interface ParsedRequestBody {
   openingHours?: unknown;

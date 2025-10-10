@@ -1,11 +1,11 @@
 import bcrypt from 'bcrypt';
 import jwt from 'jsonwebtoken';
-import { IUser } from '@/models/User';
-import NotFound from '@/errors/NotFound';
-import { User } from '@/models/index';
-import { RequestProps, ResponseProps, NextFunctionProps, env, logger } from '@/config';
 import path from 'path';
 import fs from 'fs';
+import { RequestProps, ResponseProps, NextFunctionProps, env, logger } from '../config';
+import { IUser } from '../models/User';
+import NotFound from '../errors/NotFound';
+import { User } from '../models/index';
 
 class UserController {
   // Method for user signup

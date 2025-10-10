@@ -108,9 +108,6 @@ src/
 ---
 
 ## Documentação da API
-Documentação interativa disponível em:
-`http://localhost:3000/api-docs`
-
 ### Rotas Principais
 | Método | Endpoint                  | Descrição               |
 |--------|---------------------------|-------------------------|
@@ -233,6 +230,7 @@ Este projeto está licenciado sob a [Licença MIT](LICENSE).
 1. [Referência da API](API_REFERENCE.md) - Documentação detalhada de todos os endpoints
 2. [Modelos de Dados](MODELS.md) - Esquemas e relações do MongoDB
 3. [Guia de Autenticação](AUTH_GUIDE.md) - Fluxo completo de JWT e permissões
+4. [Tratamento de Erros](ERRORS.md) - Lista completa de códigos e mensagens
 5. [Contribuição](CONTRIBUTING.md) - Padrões de código e diretrizes para contribuidores
 
 ---

@@ -1,6 +1,6 @@
 import { Router } from 'express';
-import checkToken from '@/middlewares/checkToken';
-import AddressController from '@/controllers/addressController';
+import checkToken from '../middlewares/checkToken';
+import AddressController from '../controllers/addressController';
 
 // Create a new router instance
 export const addressRouter = Router();

@@ -1,6 +1,6 @@
-import { NextFunctionProps, RequestProps, ResponseProps } from '@/config';
-import { Establishment, User } from '@/models';
-import Order, { IOrder, IProductOrder, OrderStatus } from '@/models/Order';
+import { NextFunctionProps, RequestProps, ResponseProps } from '../config';
+import { Establishment, User } from '../models';
+import Order, { IOrder, IProductOrder, OrderStatus } from '../models/Order';
 
 class OrderController {
   static createOrder = async (req: RequestProps, res: ResponseProps, next: NextFunctionProps) => {

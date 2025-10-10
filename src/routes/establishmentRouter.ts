@@ -1,7 +1,6 @@
 import { Router } from 'express';
-import EstablishmentController from '@/controllers/establishmentController';
-import { establishmentsUpload } from '@/config/multer';
-import parseJsonFields from '@/middlewares/parseJsonFields';
+import EstablishmentController from '../controllers/establishmentController';
+import { establishmentsUpload } from '../config/multer';
 import { addressRouter } from './addressRouter';
 import { orderRouter } from './OrderRouter';
 
