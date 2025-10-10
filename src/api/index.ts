@@ -4,16 +4,21 @@ import run from '../config/dbConnect';
 import handlesErrors from '../middlewares/handlesErrors';
 import error404 from '../middlewares/handlesError404';
 
-// Inicializa o banco apenas uma vez
+// Registra as rotas imediatamente
+routes(app);
+
+// Middlewares globais
+app.use(error404);
+app.use(handlesErrors);
+
+// Conecta ao banco em background
 run()
   .then(() => {
-    routes(app);
-    app.use(error404);
-    app.use(handlesErrors);
+    logger.info('✅ Database connected successfully');
   })
   .catch((err) => {
-    logger.error('Database connection error:', err);
+    logger.error('❌ Database connection error:', err);
   });
 
-// Exporta o app para que o Vercel saiba lidar
+// Exporta o app (sem .listen)
 export default app;
