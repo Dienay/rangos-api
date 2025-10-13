@@ -1,4 +1,4 @@
-import { initRedis } from 'src/config/redis';
+import { initRedis } from '../config/redis';
 import { app, logger } from '../config';
 import routes from '../routes';
 import run from '../config/dbConnect';
