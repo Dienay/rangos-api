@@ -5,11 +5,12 @@ import run from '../config/dbConnect';
 import handlesErrors from '../middlewares/handlesErrors';
 import error404 from '../middlewares/handlesError404';
 
+routes(app);
+
 async function start() {
   try {
     await initRedis();
     await run();
-    routes(app);
     app.use(error404);
     app.use(handlesErrors);
   } catch (error) {
@@ -17,8 +18,8 @@ async function start() {
   }
 }
 
-start().catch((error) => {
-  logger.error('Error starting app:', error);
-});
+(async () => {
+  await start();
+})().catch((error) => logger.error('Error starting app:', error));
 
 export default app;
