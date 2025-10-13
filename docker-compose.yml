@@ -2,17 +2,25 @@ services:
   api:
     build: .
     container_name: rangos-api
-    restart: always
     ports:
       - '3000:3000'
     env_file:
       - .env
-    depends_on:
-      mongo:
-        condition: service_healthy
     volumes:
       - .:/app
       - node_modules:/app/node_modules
+    depends_on:
+      mongo:
+        condition: service_healthy
+    restart: always
+
+  populate:
+    build: .
+    env_file:
+      - .env
+    depends_on:
+      - mongo
+    command: npm run populate
 
   mongo:
     image: mongo:5
@@ -28,6 +36,13 @@ services:
       interval: 10s
       timeout: 5s
       retries: 5
+
+  redis:
+    image: redis:latest
+    container_name: rangos-redis-server
+    ports:
+      - '6379:6379'
+    restart: always
 
 volumes:
   mongo_data:

@@ -99,10 +99,10 @@ async function populateDataBase(
   orders: IOrder[]
 ): Promise<void> {
   try {
-    const { uri } = env;
+    const { url } = env;
 
     // Connect to MongoDB
-    await mongoose.connect(uri);
+    await mongoose.connect(url);
     logger.info('You successfully connected to MongoDB!');
 
     // Populate database with establishments and products
