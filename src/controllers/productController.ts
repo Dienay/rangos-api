@@ -1,9 +1,11 @@
 import path from 'path';
 import fs from 'fs';
+import redisClient from 'src/config/redis';
 import { RequestProps, ResponseProps, NextFunctionProps, logger } from '../config';
 import NotFound from '../errors/NotFound';
 import { IProduct } from '../models/Product';
 import { Product } from '../models/index';
+import Order, { TopProduct } from '../models/Order';
 
 class ProductsController {
   // Method to create a new product
@@ -73,6 +75,56 @@ class ProductsController {
     } catch (error) {
       // Passing any error to the error handling middleware
       next(error);
+    }
+  };
+
+  static getTopProducts = async (req: RequestProps, res: ResponseProps, next: NextFunctionProps) => {
+    try {
+      const cacheKey = 'top_products';
+      const cached = await redisClient.get(cacheKey);
+
+      if (cached) {
+        const topProducts = JSON.parse(cached) as TopProduct[];
+        return res.status(200).json({ topProducts });
+      }
+
+      const pipeline = [
+        { $unwind: { path: '$products' } },
+        {
+          $group: {
+            _id: '$products.productId',
+            totalSales: { $sum: '$products.quantity' }
+          }
+        },
+        { $sort: { totalSales: -1 as 1 | -1 } },
+        { $limit: 10 },
+        {
+          $lookup: {
+            from: 'products',
+            localField: '_id',
+            foreignField: '_id',
+            as: 'product'
+          }
+        },
+        { $unwind: { path: '$product' } },
+        {
+          $project: {
+            _id: '$product._id',
+            name: '$product.name',
+            price: '$product.price',
+            coverPhoto: '$product.coverPhoto',
+            totalSales: 1
+          }
+        }
+      ];
+
+      const topProducts = await Order.aggregate(pipeline);
+
+      await redisClient.setEx(cacheKey, 600, JSON.stringify(topProducts));
+
+      return res.status(200).json({ topProducts });
+    } catch (error) {
+      return next(error);
     }
   };
 
