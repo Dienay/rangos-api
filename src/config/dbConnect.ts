@@ -3,13 +3,13 @@ import env from './env';
 import logger from './logger';
 
 // Destructure the URI environment variable from '@/config'
-const { uri } = env;
+const { url } = env;
 
 // Asynchronous function to connect to MongoDB
 async function run() {
   try {
     // Attempt to connect to MongoDB using the URI
-    await mongoose.connect(uri);
+    await mongoose.connect(url);
 
     // Log a success message upon successful connection
     logger.info('You successfully connected to MongoDB!');
