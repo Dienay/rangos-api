@@ -12,14 +12,17 @@ export interface IAddress extends mongoose.Document {
 }
 
 // Definindo o esquema para o endereço
-const addressSchema = new mongoose.Schema({
-  description: { type: String },
-  street: { type: String, required: true },
-  number: { type: String, required: true },
-  complement: { type: String },
-  neighborhood: { type: String, required: true },
-  city: { type: String, required: true },
-  state: { type: String, required: true }
-});
+const addressSchema = new mongoose.Schema(
+  {
+    description: { type: String },
+    street: { type: String, required: true },
+    number: { type: String, required: true },
+    complement: { type: String },
+    neighborhood: { type: String, required: true },
+    city: { type: String, required: true },
+    state: { type: String, required: true }
+  },
+  { _id: false }
+);
 
 export { addressSchema };
