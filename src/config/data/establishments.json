@@ -67,8 +67,10 @@
       "max": 55
     },
     "shippingCost": 10,
-    "phone": "+55 (21) 96561-2361",
-    "email": "contato@joãosrestaurant.com.br",
+    "contact": {
+      "phone": "+55 (21) 96561-2361",
+      "email": "contato@joãosrestaurant.com.br"
+    },
     "rating": {
       "average": 3.6,
       "count": 301
@@ -144,8 +146,10 @@
       "max": 45
     },
     "shippingCost": 7,
-    "phone": "+55 (41) 91762-3886",
-    "email": "contato@starbucks.com",
+    "contact": {
+      "phone": "+55 (41) 91762-3886",
+      "email": "contato@starbucks.com"
+    },
     "rating": {
       "average": 3.5,
       "count": 1176
@@ -239,8 +243,10 @@
       "max": 60
     },
     "shippingCost": 8,
-    "phone": "+55 (11) 98788-2042",
-    "email": "contato@centralbakery.com",
+    "contact": {
+      "phone": "+55 (11) 98788-2042",
+      "email": "contato@centralbakery.com"
+    },
     "rating": {
       "average": 4.2,
       "count": 513
@@ -325,8 +331,10 @@
       "max": 60
     },
     "shippingCost": 12,
-    "phone": "+55 (51) 90801-1618",
-    "email": "contato@pizzahut.com",
+    "contact": {
+      "phone": "+55 (51) 90801-1618",
+      "email": "contato@pizzahut.com"
+    },
     "rating": {
       "average": 4.1,
       "count": 1249
@@ -411,8 +419,10 @@
       "max": 55
     },
     "shippingCost": 7,
-    "phone": "+55 (11) 97030-5304",
-    "email": "contato@delighticecreamshop.com",
+    "contact": {
+      "phone": "+55 (11) 97030-5304",
+      "email": "contato@delighticecreamshop.com"
+    },
     "rating": {
       "average": 4.4,
       "count": 1364
@@ -506,8 +516,10 @@
       "max": 40
     },
     "shippingCost": 9,
-    "phone": "+55 (41) 98422-9652",
-    "email": "contato@burgerking.com",
+    "contact": {
+      "phone": "+55 (41) 98422-9652",
+      "email": "contato@burgerking.com"
+    },
     "rating": {
       "average": 4.5,
       "count": 193
@@ -601,8 +613,10 @@
       "max": 30
     },
     "shippingCost": 9,
-    "phone": "+55 (11) 92998-4682",
-    "email": "contato@thecheesecakefactory.com",
+    "contact": {
+      "phone": "+55 (11) 92998-4682",
+      "email": "contato@thecheesecakefactory.com"
+    },
     "rating": {
       "average": 3.9,
       "count": 630
@@ -696,8 +710,10 @@
       "max": 45
     },
     "shippingCost": 0,
-    "phone": "+55 (41) 96612-2954",
-    "email": "contato@starbucksreserve.com",
+    "contact": {
+      "phone": "+55 (41) 96612-2954",
+      "email": "contato@starbucksreserve.com"
+    },
     "rating": {
       "average": 4.6,
       "count": 820
@@ -791,8 +807,10 @@
       "max": 55
     },
     "shippingCost": 8,
-    "phone": "+55 (11) 91592-9383",
-    "email": "contato@lepainquotidien.com.br",
+    "contact": {
+      "phone": "+55 (11) 91592-9383",
+      "email": "contato@lepainquotidien.com.br"
+    },
     "rating": {
       "average": 4.6,
       "count": 1978
@@ -886,8 +904,10 @@
       "max": 30
     },
     "shippingCost": 10,
-    "phone": "+55 (21) 98984-5406",
-    "email": "contato@dominospizza.com",
+    "contact": {
+      "phone": "+55 (21) 98984-5406",
+      "email": "contato@dominospizza.com"
+    },
     "rating": {
       "average": 3.7,
       "count": 654
@@ -981,8 +1001,10 @@
       "max": 45
     },
     "shippingCost": 5,
-    "phone": "+55 (21) 95213-3540",
-    "email": "contato@benejerrys.com",
+    "contact": {
+      "phone": "+55 (21) 95213-3540",
+      "email": "contato@benejerrys.com"
+    },
     "rating": {
       "average": 4.5,
       "count": 1857
@@ -1076,8 +1098,10 @@
       "max": 50
     },
     "shippingCost": 0,
-    "phone": "+55 (31) 95782-3098",
-    "email": "contato@mcdonalds.com",
+    "contact": {
+      "phone": "+55 (31) 95782-3098",
+      "email": "contato@mcdonalds.com"
+    },
     "rating": {
       "average": 4.1,
       "count": 280
@@ -1171,8 +1195,10 @@
       "max": 45
     },
     "shippingCost": 7,
-    "phone": "+55 (41) 98183-4736",
-    "email": "contato@subway.com",
+    "contact": {
+      "phone": "+55 (41) 98183-4736",
+      "email": "contato@subway.com"
+    },
     "rating": {
       "average": 4.6,
       "count": 360
@@ -1266,8 +1292,10 @@
       "max": 45
     },
     "shippingCost": 7,
-    "phone": "+55 (41) 92061-8024",
-    "email": "contato@wholefoodsmarket.com.br",
+    "contact": {
+      "phone": "+55 (41) 92061-8024",
+      "email": "contato@wholefoodsmarket.com.br"
+    },
     "rating": {
       "average": 3.9,
       "count": 1328
@@ -1361,8 +1389,10 @@
       "max": 40
     },
     "shippingCost": 12,
-    "phone": "+55 (41) 93098-8075",
-    "email": "contato@tacobell.com.br",
+    "contact": {
+      "phone": "+55 (41) 93098-8075",
+      "email": "contato@tacobell.com.br"
+    },
     "rating": {
       "average": 4.7,
       "count": 1071
@@ -1456,8 +1486,10 @@
       "max": 35
     },
     "shippingCost": 7,
-    "phone": "+55 (51) 92989-8890",
-    "email": "contato@panerabread.com.br",
+    "contact": {
+      "phone": "+55 (51) 92989-8890",
+      "email": "contato@panerabread.com.br"
+    },
     "rating": {
       "average": 4.8,
       "count": 839
@@ -1551,8 +1583,10 @@
       "max": 40
     },
     "shippingCost": 0,
-    "phone": "+55 (31) 91192-9474",
-    "email": "contato@chick-fil-a.com",
+    "contact": {
+      "phone": "+55 (31) 91192-9474",
+      "email": "contato@chick-fil-a.com"
+    },
     "rating": {
       "average": 4.1,
       "count": 119
@@ -1646,8 +1680,10 @@
       "max": 55
     },
     "shippingCost": 5,
-    "phone": "+55 (21) 91611-3922",
-    "email": "contato@dunkindonuts.com",
+    "contact": {
+      "phone": "+55 (21) 91611-3922",
+      "email": "contato@dunkindonuts.com"
+    },
     "rating": {
       "average": 4.7,
       "count": 469
@@ -1741,8 +1777,10 @@
       "max": 45
     },
     "shippingCost": 5,
-    "phone": "+55 (21) 93321-7743",
-    "email": "contato@lacrème.com.br",
+    "contact": {
+      "phone": "+55 (21) 93321-7743",
+      "email": "contato@lacrème.com.br"
+    },
     "rating": {
       "average": 3.8,
       "count": 1704
@@ -1836,8 +1874,10 @@
       "max": 50
     },
     "shippingCost": 5,
-    "phone": "+55 (21) 95439-4217",
-    "email": "contato@oceanviewseafood.com.br",
+    "contact": {
+      "phone": "+55 (21) 95439-4217",
+      "email": "contato@oceanviewseafood.com.br"
+    },
     "rating": {
       "average": 4.2,
       "count": 1067
@@ -1931,8 +1971,10 @@
       "max": 30
     },
     "shippingCost": 10,
-    "phone": "+55 (21) 96782-4304",
-    "email": "contato@juiceplanet.com.br",
+    "contact": {
+      "phone": "+55 (21) 96782-4304",
+      "email": "contato@juiceplanet.com.br"
+    },
     "rating": {
       "average": 3.8,
       "count": 1039
@@ -2026,8 +2068,10 @@
       "max": 45
     },
     "shippingCost": 8,
-    "phone": "+55 (31) 90898-6423",
-    "email": "contato@oceanviewseafood.com.br",
+    "contact": {
+      "phone": "+55 (31) 90898-6423",
+      "email": "contato@oceanviewseafood.com.br"
+    },
     "rating": {
       "average": 4.8,
       "count": 741
@@ -2121,8 +2165,10 @@
       "max": 45
     },
     "shippingCost": 7,
-    "phone": "+55 (21) 94825-6437",
-    "email": "contato@goldensteak.com.br",
+    "contact": {
+      "phone": "+55 (21) 94825-6437",
+      "email": "contato@goldensteak.com.br"
+    },
     "rating": {
       "average": 4.3,
       "count": 647
@@ -2216,8 +2262,10 @@
       "max": 35
     },
     "shippingCost": 8,
-    "phone": "+55 (41) 95221-1842",
-    "email": "contato@theveganspot.com.br",
+    "contact": {
+      "phone": "+55 (41) 95221-1842",
+      "email": "contato@theveganspot.com.br"
+    },
     "rating": {
       "average": 3.7,
       "count": 439
@@ -2311,8 +2359,10 @@
       "max": 30
     },
     "shippingCost": 9,
-    "phone": "+55 (21) 99053-1077",
-    "email": "contato@casadosabor.com",
+    "contact": {
+      "phone": "+55 (21) 99053-1077",
+      "email": "contato@casadosabor.com"
+    },
     "rating": {
       "average": 4.8,
       "count": 223
@@ -2406,8 +2456,10 @@
       "max": 40
     },
     "shippingCost": 0,
-    "phone": "+55 (11) 91477-3324",
-    "email": "contato@saborbrasil.com.br",
+    "contact": {
+      "phone": "+55 (11) 91477-3324",
+      "email": "contato@saborbrasil.com.br"
+    },
     "rating": {
       "average": 4.1,
       "count": 1922
@@ -2501,8 +2553,10 @@
       "max": 45
     },
     "shippingCost": 12,
-    "phone": "+55 (21) 99693-5545",
-    "email": "contato@juiceplanet.com",
+    "contact": {
+      "phone": "+55 (21) 99693-5545",
+      "email": "contato@juiceplanet.com"
+    },
     "rating": {
       "average": 4.3,
       "count": 353
@@ -2596,8 +2650,10 @@
       "max": 40
     },
     "shippingCost": 7,
-    "phone": "+55 (41) 98972-1075",
-    "email": "contato@burgerpoint.com",
+    "contact": {
+      "phone": "+55 (41) 98972-1075",
+      "email": "contato@burgerpoint.com"
+    },
     "rating": {
       "average": 4.2,
       "count": 1490
@@ -2691,8 +2747,10 @@
       "max": 50
     },
     "shippingCost": 9,
-    "phone": "+55 (21) 92865-7746",
-    "email": "contato@sunrisebakery.com.br",
+    "contact": {
+      "phone": "+55 (21) 92865-7746",
+      "email": "contato@sunrisebakery.com.br"
+    },
     "rating": {
       "average": 4.8,
       "count": 1710
@@ -2786,8 +2844,10 @@
       "max": 35
     },
     "shippingCost": 12,
-    "phone": "+55 (51) 94836-3691",
-    "email": "contato@espressocorner.com",
+    "contact": {
+      "phone": "+55 (51) 94836-3691",
+      "email": "contato@espressocorner.com"
+    },
     "rating": {
       "average": 3.7,
       "count": 98
@@ -2881,8 +2941,10 @@
       "max": 50
     },
     "shippingCost": 6,
-    "phone": "+55 (11) 97288-5472",
-    "email": "contato@thefishhouse.com.br",
+    "contact": {
+      "phone": "+55 (11) 97288-5472",
+      "email": "contato@thefishhouse.com.br"
+    },
     "rating": {
       "average": 4,
       "count": 1735
@@ -2976,8 +3038,10 @@
       "max": 55
     },
     "shippingCost": 5,
-    "phone": "+55 (11) 94813-6379",
-    "email": "contato@juiceplanet.com.br",
+    "contact": {
+      "phone": "+55 (11) 94813-6379",
+      "email": "contato@juiceplanet.com.br"
+    },
     "rating": {
       "average": 4,
       "count": 369
@@ -3071,8 +3135,10 @@
       "max": 55
     },
     "shippingCost": 5,
-    "phone": "+55 (41) 99321-3761",
-    "email": "contato@mamamiapizzeria.com",
+    "contact": {
+      "phone": "+55 (41) 99321-3761",
+      "email": "contato@mamamiapizzeria.com"
+    },
     "rating": {
       "average": 4.7,
       "count": 1457
@@ -3166,8 +3232,10 @@
       "max": 30
     },
     "shippingCost": 5,
-    "phone": "+55 (41) 98496-8972",
-    "email": "contato@chillbar.com.br",
+    "contact": {
+      "phone": "+55 (41) 98496-8972",
+      "email": "contato@chillbar.com.br"
+    },
     "rating": {
       "average": 4.1,
       "count": 828
@@ -3261,8 +3329,10 @@
       "max": 25
     },
     "shippingCost": 7,
-    "phone": "+55 (41) 92620-2532",
-    "email": "contato@downtownpub.com",
+    "contact": {
+      "phone": "+55 (41) 92620-2532",
+      "email": "contato@downtownpub.com"
+    },
     "rating": {
       "average": 4.3,
       "count": 1522
@@ -3356,8 +3426,10 @@
       "max": 30
     },
     "shippingCost": 12,
-    "phone": "+55 (31) 90478-7958",
-    "email": "contato@tropicalgrill.com",
+    "contact": {
+      "phone": "+55 (31) 90478-7958",
+      "email": "contato@tropicalgrill.com"
+    },
     "rating": {
       "average": 4.2,
       "count": 1304
@@ -3451,8 +3523,10 @@
       "max": 45
     },
     "shippingCost": 6,
-    "phone": "+55 (11) 94608-6891",
-    "email": "contato@tropicalgrill.com",
+    "contact": {
+      "phone": "+55 (11) 94608-6891",
+      "email": "contato@tropicalgrill.com"
+    },
     "rating": {
       "average": 4.3,
       "count": 960
@@ -3546,8 +3620,10 @@
       "max": 35
     },
     "shippingCost": 8,
-    "phone": "+55 (31) 94643-8457",
-    "email": "contato@downtownpub.com.br",
+    "contact": {
+      "phone": "+55 (31) 94643-8457",
+      "email": "contato@downtownpub.com.br"
+    },
     "rating": {
       "average": 4.2,
       "count": 1884
@@ -3641,8 +3717,10 @@
       "max": 35
     },
     "shippingCost": 0,
-    "phone": "+55 (21) 90303-2734",
-    "email": "contato@casadosabor.com.br",
+    "contact": {
+      "phone": "+55 (21) 90303-2734",
+      "email": "contato@casadosabor.com.br"
+    },
     "rating": {
       "average": 4.1,
       "count": 924
@@ -3736,8 +3814,10 @@
       "max": 40
     },
     "shippingCost": 9,
-    "phone": "+55 (21) 91535-7929",
-    "email": "contato@greenbowl.com.br",
+    "contact": {
+      "phone": "+55 (21) 91535-7929",
+      "email": "contato@greenbowl.com.br"
+    },
     "rating": {
       "average": 4.1,
       "count": 878
@@ -3831,8 +3911,10 @@
       "max": 45
     },
     "shippingCost": 6,
-    "phone": "+55 (51) 99842-5215",
-    "email": "contato@tropicalgrill.com",
+    "contact": {
+      "phone": "+55 (51) 99842-5215",
+      "email": "contato@tropicalgrill.com"
+    },
     "rating": {
       "average": 3.8,
       "count": 1043
@@ -3926,8 +4008,10 @@
       "max": 45
     },
     "shippingCost": 0,
-    "phone": "+55 (11) 97007-6795",
-    "email": "contato@tropicalgrill.com.br",
+    "contact": {
+      "phone": "+55 (11) 97007-6795",
+      "email": "contato@tropicalgrill.com.br"
+    },
     "rating": {
       "average": 3.9,
       "count": 151
@@ -4021,8 +4105,10 @@
       "max": 35
     },
     "shippingCost": 12,
-    "phone": "+55 (51) 97959-1729",
-    "email": "contato@sunrisebakery.com.br",
+    "contact": {
+      "phone": "+55 (51) 97959-1729",
+      "email": "contato@sunrisebakery.com.br"
+    },
     "rating": {
       "average": 3.9,
       "count": 166
@@ -4116,8 +4202,10 @@
       "max": 55
     },
     "shippingCost": 12,
-    "phone": "+55 (11) 93731-4036",
-    "email": "contato@espressocorner.com",
+    "contact": {
+      "phone": "+55 (11) 93731-4036",
+      "email": "contato@espressocorner.com"
+    },
     "rating": {
       "average": 3.9,
       "count": 1532
@@ -4211,8 +4299,10 @@
       "max": 45
     },
     "shippingCost": 8,
-    "phone": "+55 (11) 95485-5575",
-    "email": "contato@saborbrasil.com",
+    "contact": {
+      "phone": "+55 (11) 95485-5575",
+      "email": "contato@saborbrasil.com"
+    },
     "rating": {
       "average": 4,
       "count": 92
@@ -4306,8 +4396,10 @@
       "max": 35
     },
     "shippingCost": 0,
-    "phone": "+55 (21) 91235-6580",
-    "email": "contato@greenbowl.com",
+    "contact": {
+      "phone": "+55 (21) 91235-6580",
+      "email": "contato@greenbowl.com"
+    },
     "rating": {
       "average": 4.7,
       "count": 493
@@ -4401,8 +4493,10 @@
       "max": 40
     },
     "shippingCost": 10,
-    "phone": "+55 (31) 93501-9785",
-    "email": "contato@thefishhouse.com",
+    "contact": {
+      "phone": "+55 (31) 93501-9785",
+      "email": "contato@thefishhouse.com"
+    },
     "rating": {
       "average": 3.6,
       "count": 1064
@@ -4496,8 +4590,10 @@
       "max": 50
     },
     "shippingCost": 5,
-    "phone": "+55 (41) 99474-6554",
-    "email": "contato@downtownpub.com",
+    "contact": {
+      "phone": "+55 (41) 99474-6554",
+      "email": "contato@downtownpub.com"
+    },
     "rating": {
       "average": 4.1,
       "count": 911
@@ -4591,8 +4687,10 @@
       "max": 45
     },
     "shippingCost": 7,
-    "phone": "+55 (51) 96010-9120",
-    "email": "contato@tropicalgrill.com.br",
+    "contact": {
+      "phone": "+55 (51) 96010-9120",
+      "email": "contato@tropicalgrill.com.br"
+    },
     "rating": {
       "average": 4.9,
       "count": 715
@@ -4686,8 +4784,10 @@
       "max": 55
     },
     "shippingCost": 0,
-    "phone": "+55 (21) 90714-2567",
-    "email": "contato@streetbites.com",
+    "contact": {
+      "phone": "+55 (21) 90714-2567",
+      "email": "contato@streetbites.com"
+    },
     "rating": {
       "average": 4.5,
       "count": 1405

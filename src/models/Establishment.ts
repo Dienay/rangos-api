@@ -183,6 +183,19 @@ const deliveryTimeSchema = new mongoose.Schema(
 );
 
 /**
+ * Sub-schema for contact fields.
+ * Example:
+ * { phone: "+55 (21) 96561-2361", email: "contato@joaosrestaurant.com.br" }
+ */
+const contactSchema = new mongoose.Schema(
+  {
+    phone: { type: String },
+    email: { type: String }
+  },
+  { _id: false }
+);
+
+/**
  * Sub-schema for customer ratings.
  * Example:
  * { average: 4.6, count: 120 }
@@ -224,7 +237,7 @@ const establishmentSchema = new mongoose.Schema(
     },
     deliveryTime: { type: deliveryTimeSchema },
     shippingCost: { type: Number, min: 0 },
-    phone: { type: String, default: '' },
+    contact: { type: contactSchema, default: '' },
     email: { type: String, default: '' },
     rating: { type: ratingSchema, default: { average: 0, count: 0 } },
     paymentMethods: { type: [String], default: [] },
