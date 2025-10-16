@@ -5,12 +5,8 @@
     "name": "João's Restaurant",
     "openingHours": [
       {
-        "openDays": [
-          "Monday",
-          "Wednesday",
-          "Friday"
-        ],
-        "hours": [
+        "day": "Monday",
+        "periods": [
           {
             "open": "11:00",
             "close": "15:00"
@@ -18,11 +14,35 @@
         ]
       },
       {
-        "openDays": [
-          "Saturday",
-          "Sunday"
-        ],
-        "hours": [
+        "day": "Wednesday",
+        "periods": [
+          {
+            "open": "11:00",
+            "close": "15:00"
+          }
+        ]
+      },
+      {
+        "day": "Friday",
+        "periods": [
+          {
+            "open": "11:00",
+            "close": "15:00"
+          }
+        ]
+      },
+      {
+        "day": "Saturday",
+        "periods": [
+          {
+            "open": "18:00",
+            "close": "22:00"
+          }
+        ]
+      },
+      {
+        "day": "Sunday",
+        "periods": [
           {
             "open": "18:00",
             "close": "22:00"
@@ -42,8 +62,21 @@
       }
     ],
     "category": "Restaurant",
-    "deliveryTime": "20-40",
-    "shipping": 8.00
+    "deliveryTime": {
+      "min": 35,
+      "max": 55
+    },
+    "shippingCost": 10,
+    "contact": {
+      "phone": "+55 (21) 96561-2361",
+      "email": "contato@joãosrestaurant.com.br"
+    },
+    "rating": {
+      "average": 3.6,
+      "count": 301
+    },
+    "paymentMethods": ["Dinheiro", "Crédito", "Pix"],
+    "services": ["Entrega", "Retirada"]
   },
   {
     "_id": "664263e9a61e5ddceac532f2",
@@ -51,14 +84,44 @@
     "name": "Starbucks",
     "openingHours": [
       {
-        "openDays": [
-          "Monday",
-          "Tuesday",
-          "Wednesday",
-          "Thursday",
-          "Friday"
-        ],
-        "hours": [
+        "day": "Monday",
+        "periods": [
+          {
+            "open": "08:00",
+            "close": "20:00"
+          }
+        ]
+      },
+      {
+        "day": "Tuesday",
+        "periods": [
+          {
+            "open": "08:00",
+            "close": "20:00"
+          }
+        ]
+      },
+      {
+        "day": "Wednesday",
+        "periods": [
+          {
+            "open": "08:00",
+            "close": "20:00"
+          }
+        ]
+      },
+      {
+        "day": "Thursday",
+        "periods": [
+          {
+            "open": "08:00",
+            "close": "20:00"
+          }
+        ]
+      },
+      {
+        "day": "Friday",
+        "periods": [
           {
             "open": "08:00",
             "close": "20:00"
@@ -78,8 +141,21 @@
       }
     ],
     "category": "Cafeteria",
-    "deliveryTime": "40-60",
-    "shipping": 0.00
+    "deliveryTime": {
+      "min": 30,
+      "max": 45
+    },
+    "shippingCost": 7,
+    "contact": {
+      "phone": "+55 (41) 91762-3886",
+      "email": "contato@starbucks.com"
+    },
+    "rating": {
+      "average": 3.5,
+      "count": 1176
+    },
+    "paymentMethods": ["Crédito", "Débito", "Dinheiro"],
+    "services": ["Entrega", "Retirada"]
   },
   {
     "_id": "664263e9a61e5ddceac532f3",
@@ -87,10 +163,62 @@
     "name": "Central Bakery",
     "openingHours": [
       {
-        "openDays": [
-          "Every day"
-        ],
-        "hours": [
+        "day": "Monday",
+        "periods": [
+          {
+            "open": "06:00",
+            "close": "20:00"
+          }
+        ]
+      },
+      {
+        "day": "Tuesday",
+        "periods": [
+          {
+            "open": "06:00",
+            "close": "20:00"
+          }
+        ]
+      },
+      {
+        "day": "Wednesday",
+        "periods": [
+          {
+            "open": "06:00",
+            "close": "20:00"
+          }
+        ]
+      },
+      {
+        "day": "Thursday",
+        "periods": [
+          {
+            "open": "06:00",
+            "close": "20:00"
+          }
+        ]
+      },
+      {
+        "day": "Friday",
+        "periods": [
+          {
+            "open": "06:00",
+            "close": "20:00"
+          }
+        ]
+      },
+      {
+        "day": "Saturday",
+        "periods": [
+          {
+            "open": "06:00",
+            "close": "20:00"
+          }
+        ]
+      },
+      {
+        "day": "Sunday",
+        "periods": [
           {
             "open": "06:00",
             "close": "20:00"
@@ -110,8 +238,21 @@
       }
     ],
     "category": "Bakery",
-    "deliveryTime": "40-60",
-    "shipping": 8.00
+    "deliveryTime": {
+      "min": 40,
+      "max": 60
+    },
+    "shippingCost": 8,
+    "contact": {
+      "phone": "+55 (11) 98788-2042",
+      "email": "contato@centralbakery.com"
+    },
+    "rating": {
+      "average": 4.2,
+      "count": 513
+    },
+    "paymentMethods": ["Dinheiro", "Crédito", "Débito", "Pix"],
+    "services": ["Entrega", "Retirada"]
   },
   {
     "_id": "664263e9a61e5ddceac532f4",
@@ -119,14 +260,8 @@
     "name": "Pizza Hut",
     "openingHours": [
       {
-        "openDays": [
-          "Monday",
-          "Tuesday",
-          "Thursday",
-          "Friday",
-          "Saturday"
-        ],
-        "hours": [
+        "day": "Monday",
+        "periods": [
           {
             "open": "17:00",
             "close": "22:00"
@@ -134,10 +269,44 @@
         ]
       },
       {
-        "openDays": [
-          "Sunday"
-        ],
-        "hours": [
+        "day": "Tuesday",
+        "periods": [
+          {
+            "open": "17:00",
+            "close": "22:00"
+          }
+        ]
+      },
+      {
+        "day": "Thursday",
+        "periods": [
+          {
+            "open": "17:00",
+            "close": "22:00"
+          }
+        ]
+      },
+      {
+        "day": "Friday",
+        "periods": [
+          {
+            "open": "17:00",
+            "close": "22:00"
+          }
+        ]
+      },
+      {
+        "day": "Saturday",
+        "periods": [
+          {
+            "open": "17:00",
+            "close": "22:00"
+          }
+        ]
+      },
+      {
+        "day": "Sunday",
+        "periods": [
           {
             "open": "17:00",
             "close": "23:00"
@@ -157,8 +326,21 @@
       }
     ],
     "category": "Pizzeria",
-    "deliveryTime": "20-40",
-    "shipping": 8.00
+    "deliveryTime": {
+      "min": 40,
+      "max": 60
+    },
+    "shippingCost": 12,
+    "contact": {
+      "phone": "+55 (51) 90801-1618",
+      "email": "contato@pizzahut.com"
+    },
+    "rating": {
+      "average": 4.1,
+      "count": 1249
+    },
+    "paymentMethods": ["Débito", "Pix"],
+    "services": ["Entrega", "Retirada"]
   },
   {
     "_id": "664263e9a61e5ddceac532f5",
@@ -166,14 +348,8 @@
     "name": "Delight Ice Cream Shop",
     "openingHours": [
       {
-        "openDays": [
-          "Tuesday",
-          "Wednesday",
-          "Thursday",
-          "Friday",
-          "Saturday"
-        ],
-        "hours": [
+        "day": "Tuesday",
+        "periods": [
           {
             "open": "14:00",
             "close": "22:00"
@@ -181,10 +357,44 @@
         ]
       },
       {
-        "openDays": [
-          "Sunday"
-        ],
-        "hours": [
+        "day": "Wednesday",
+        "periods": [
+          {
+            "open": "14:00",
+            "close": "22:00"
+          }
+        ]
+      },
+      {
+        "day": "Thursday",
+        "periods": [
+          {
+            "open": "14:00",
+            "close": "22:00"
+          }
+        ]
+      },
+      {
+        "day": "Friday",
+        "periods": [
+          {
+            "open": "14:00",
+            "close": "22:00"
+          }
+        ]
+      },
+      {
+        "day": "Saturday",
+        "periods": [
+          {
+            "open": "14:00",
+            "close": "22:00"
+          }
+        ]
+      },
+      {
+        "day": "Sunday",
+        "periods": [
           {
             "open": "12:00",
             "close": "20:00"
@@ -204,8 +414,21 @@
       }
     ],
     "category": "Ice Cream Parlor",
-    "deliveryTime": "30-50",
-    "shipping": 7.00
+    "deliveryTime": {
+      "min": 35,
+      "max": 55
+    },
+    "shippingCost": 7,
+    "contact": {
+      "phone": "+55 (11) 97030-5304",
+      "email": "contato@delighticecreamshop.com"
+    },
+    "rating": {
+      "average": 4.4,
+      "count": 1364
+    },
+    "paymentMethods": ["Pix", "Crédito"],
+    "services": ["Entrega", "Retirada"]
   },
   {
     "_id": "664263e9a61e5ddceac532f6",
@@ -213,10 +436,62 @@
     "name": "Burger King",
     "openingHours": [
       {
-        "openDays": [
-          "Every day"
-        ],
-        "hours": [
+        "day": "Monday",
+        "periods": [
+          {
+            "open": "11:00",
+            "close": "23:00"
+          }
+        ]
+      },
+      {
+        "day": "Tuesday",
+        "periods": [
+          {
+            "open": "11:00",
+            "close": "23:00"
+          }
+        ]
+      },
+      {
+        "day": "Wednesday",
+        "periods": [
+          {
+            "open": "11:00",
+            "close": "23:00"
+          }
+        ]
+      },
+      {
+        "day": "Thursday",
+        "periods": [
+          {
+            "open": "11:00",
+            "close": "23:00"
+          }
+        ]
+      },
+      {
+        "day": "Friday",
+        "periods": [
+          {
+            "open": "11:00",
+            "close": "23:00"
+          }
+        ]
+      },
+      {
+        "day": "Saturday",
+        "periods": [
+          {
+            "open": "11:00",
+            "close": "23:00"
+          }
+        ]
+      },
+      {
+        "day": "Sunday",
+        "periods": [
           {
             "open": "11:00",
             "close": "23:00"
@@ -236,8 +511,21 @@
       }
     ],
     "category": "Fast Food Restaurant",
-    "deliveryTime": "30-50",
-    "shipping": 0.00
+    "deliveryTime": {
+      "min": 25,
+      "max": 40
+    },
+    "shippingCost": 9,
+    "contact": {
+      "phone": "+55 (41) 98422-9652",
+      "email": "contato@burgerking.com"
+    },
+    "rating": {
+      "average": 4.5,
+      "count": 193
+    },
+    "paymentMethods": ["Crédito", "Pix", "Débito"],
+    "services": ["Entrega", "Drive-thru", "Retirada"]
   },
   {
     "_id": "664263e9a61e5ddceac532f8",
@@ -245,14 +533,8 @@
     "name": "The Cheesecake Factory",
     "openingHours": [
       {
-        "openDays": [
-          "Monday",
-          "Tuesday",
-          "Wednesday",
-          "Thursday",
-          "Friday"
-        ],
-        "hours": [
+        "day": "Monday",
+        "periods": [
           {
             "open": "11:00",
             "close": "22:00"
@@ -260,11 +542,53 @@
         ]
       },
       {
-        "openDays": [
-          "Saturday",
-          "Sunday"
-        ],
-        "hours": [
+        "day": "Tuesday",
+        "periods": [
+          {
+            "open": "11:00",
+            "close": "22:00"
+          }
+        ]
+      },
+      {
+        "day": "Wednesday",
+        "periods": [
+          {
+            "open": "11:00",
+            "close": "22:00"
+          }
+        ]
+      },
+      {
+        "day": "Thursday",
+        "periods": [
+          {
+            "open": "11:00",
+            "close": "22:00"
+          }
+        ]
+      },
+      {
+        "day": "Friday",
+        "periods": [
+          {
+            "open": "11:00",
+            "close": "22:00"
+          }
+        ]
+      },
+      {
+        "day": "Saturday",
+        "periods": [
+          {
+            "open": "10:00",
+            "close": "23:00"
+          }
+        ]
+      },
+      {
+        "day": "Sunday",
+        "periods": [
           {
             "open": "10:00",
             "close": "23:00"
@@ -284,8 +608,21 @@
       }
     ],
     "category": "Restaurant",
-    "deliveryTime": "40-60",
-    "shipping": 5.00
+    "deliveryTime": {
+      "min": 20,
+      "max": 30
+    },
+    "shippingCost": 9,
+    "contact": {
+      "phone": "+55 (11) 92998-4682",
+      "email": "contato@thecheesecakefactory.com"
+    },
+    "rating": {
+      "average": 3.9,
+      "count": 630
+    },
+    "paymentMethods": ["Pix", "Dinheiro"],
+    "services": ["Entrega", "Retirada"]
   },
   {
     "_id": "664263e9a61e5ddceac532f9",
@@ -293,10 +630,62 @@
     "name": "Starbucks Reserve",
     "openingHours": [
       {
-        "openDays": [
-          "Every day"
-        ],
-        "hours": [
+        "day": "Monday",
+        "periods": [
+          {
+            "open": "07:00",
+            "close": "21:00"
+          }
+        ]
+      },
+      {
+        "day": "Tuesday",
+        "periods": [
+          {
+            "open": "07:00",
+            "close": "21:00"
+          }
+        ]
+      },
+      {
+        "day": "Wednesday",
+        "periods": [
+          {
+            "open": "07:00",
+            "close": "21:00"
+          }
+        ]
+      },
+      {
+        "day": "Thursday",
+        "periods": [
+          {
+            "open": "07:00",
+            "close": "21:00"
+          }
+        ]
+      },
+      {
+        "day": "Friday",
+        "periods": [
+          {
+            "open": "07:00",
+            "close": "21:00"
+          }
+        ]
+      },
+      {
+        "day": "Saturday",
+        "periods": [
+          {
+            "open": "07:00",
+            "close": "21:00"
+          }
+        ]
+      },
+      {
+        "day": "Sunday",
+        "periods": [
           {
             "open": "07:00",
             "close": "21:00"
@@ -316,8 +705,21 @@
       }
     ],
     "category": "Coffee Shop",
-    "deliveryTime": "20-40",
-    "shipping": 12.00
+    "deliveryTime": {
+      "min": 30,
+      "max": 45
+    },
+    "shippingCost": 0,
+    "contact": {
+      "phone": "+55 (41) 96612-2954",
+      "email": "contato@starbucksreserve.com"
+    },
+    "rating": {
+      "average": 4.6,
+      "count": 820
+    },
+    "paymentMethods": ["Débito", "Crédito"],
+    "services": ["Entrega", "Retirada"]
   },
   {
     "_id": "664263e9a61e5ddceac532fa",
@@ -325,14 +727,8 @@
     "name": "Le Pain Quotidien",
     "openingHours": [
       {
-        "openDays": [
-          "Monday",
-          "Tuesday",
-          "Wednesday",
-          "Thursday",
-          "Friday"
-        ],
-        "hours": [
+        "day": "Monday",
+        "periods": [
           {
             "open": "08:00",
             "close": "18:00"
@@ -340,11 +736,53 @@
         ]
       },
       {
-        "openDays": [
-          "Saturday",
-          "Sunday"
-        ],
-        "hours": [
+        "day": "Tuesday",
+        "periods": [
+          {
+            "open": "08:00",
+            "close": "18:00"
+          }
+        ]
+      },
+      {
+        "day": "Wednesday",
+        "periods": [
+          {
+            "open": "08:00",
+            "close": "18:00"
+          }
+        ]
+      },
+      {
+        "day": "Thursday",
+        "periods": [
+          {
+            "open": "08:00",
+            "close": "18:00"
+          }
+        ]
+      },
+      {
+        "day": "Friday",
+        "periods": [
+          {
+            "open": "08:00",
+            "close": "18:00"
+          }
+        ]
+      },
+      {
+        "day": "Saturday",
+        "periods": [
+          {
+            "open": "09:00",
+            "close": "17:00"
+          }
+        ]
+      },
+      {
+        "day": "Sunday",
+        "periods": [
           {
             "open": "09:00",
             "close": "17:00"
@@ -364,8 +802,21 @@
       }
     ],
     "category": "Bakery",
-    "deliveryTime": "40-60",
-    "shipping": 6.00
+    "deliveryTime": {
+      "min": 35,
+      "max": 55
+    },
+    "shippingCost": 8,
+    "contact": {
+      "phone": "+55 (11) 91592-9383",
+      "email": "contato@lepainquotidien.com.br"
+    },
+    "rating": {
+      "average": 4.6,
+      "count": 1978
+    },
+    "paymentMethods": ["Dinheiro", "Débito", "Pix", "Crédito"],
+    "services": ["Entrega", "Retirada"]
   },
   {
     "_id": "664263e9a61e5ddceac533fb",
@@ -373,10 +824,62 @@
     "name": "Domino's Pizza",
     "openingHours": [
       {
-        "openDays": [
-          "Every day"
-        ],
-        "hours": [
+        "day": "Monday",
+        "periods": [
+          {
+            "open": "11:00",
+            "close": "00:00"
+          }
+        ]
+      },
+      {
+        "day": "Tuesday",
+        "periods": [
+          {
+            "open": "11:00",
+            "close": "00:00"
+          }
+        ]
+      },
+      {
+        "day": "Wednesday",
+        "periods": [
+          {
+            "open": "11:00",
+            "close": "00:00"
+          }
+        ]
+      },
+      {
+        "day": "Thursday",
+        "periods": [
+          {
+            "open": "11:00",
+            "close": "00:00"
+          }
+        ]
+      },
+      {
+        "day": "Friday",
+        "periods": [
+          {
+            "open": "11:00",
+            "close": "00:00"
+          }
+        ]
+      },
+      {
+        "day": "Saturday",
+        "periods": [
+          {
+            "open": "11:00",
+            "close": "00:00"
+          }
+        ]
+      },
+      {
+        "day": "Sunday",
+        "periods": [
           {
             "open": "11:00",
             "close": "00:00"
@@ -396,8 +899,21 @@
       }
     ],
     "category": "Pizza Place",
-    "deliveryTime": "30-50",
-    "shipping": 0.00
+    "deliveryTime": {
+      "min": 20,
+      "max": 30
+    },
+    "shippingCost": 10,
+    "contact": {
+      "phone": "+55 (21) 98984-5406",
+      "email": "contato@dominospizza.com"
+    },
+    "rating": {
+      "average": 3.7,
+      "count": 654
+    },
+    "paymentMethods": ["Crédito", "Dinheiro"],
+    "services": ["Entrega", "Retirada"]
   },
   {
     "_id": "664263e9a61e5ddceac532fc",
@@ -405,14 +921,8 @@
     "name": "Ben & Jerry's",
     "openingHours": [
       {
-        "openDays": [
-          "Monday",
-          "Tuesday",
-          "Wednesday",
-          "Thursday",
-          "Friday"
-        ],
-        "hours": [
+        "day": "Monday",
+        "periods": [
           {
             "open": "12:00",
             "close": "21:00"
@@ -420,11 +930,53 @@
         ]
       },
       {
-        "openDays": [
-          "Saturday",
-          "Sunday"
-        ],
-        "hours": [
+        "day": "Tuesday",
+        "periods": [
+          {
+            "open": "12:00",
+            "close": "21:00"
+          }
+        ]
+      },
+      {
+        "day": "Wednesday",
+        "periods": [
+          {
+            "open": "12:00",
+            "close": "21:00"
+          }
+        ]
+      },
+      {
+        "day": "Thursday",
+        "periods": [
+          {
+            "open": "12:00",
+            "close": "21:00"
+          }
+        ]
+      },
+      {
+        "day": "Friday",
+        "periods": [
+          {
+            "open": "12:00",
+            "close": "21:00"
+          }
+        ]
+      },
+      {
+        "day": "Saturday",
+        "periods": [
+          {
+            "open": "11:00",
+            "close": "22:00"
+          }
+        ]
+      },
+      {
+        "day": "Sunday",
+        "periods": [
           {
             "open": "11:00",
             "close": "22:00"
@@ -444,8 +996,21 @@
       }
     ],
     "category": "Ice Cream Shop",
-    "deliveryTime": "40-60",
-    "shipping": 5.00
+    "deliveryTime": {
+      "min": 25,
+      "max": 45
+    },
+    "shippingCost": 5,
+    "contact": {
+      "phone": "+55 (21) 95213-3540",
+      "email": "contato@benejerrys.com"
+    },
+    "rating": {
+      "average": 4.5,
+      "count": 1857
+    },
+    "paymentMethods": ["Crédito", "Débito", "Dinheiro"],
+    "services": ["Entrega", "Retirada"]
   },
   {
     "_id": "664263e9a61e5ddceac532fd",
@@ -453,10 +1018,62 @@
     "name": "McDonald's",
     "openingHours": [
       {
-        "openDays": [
-          "Every day"
-        ],
-        "hours": [
+        "day": "Monday",
+        "periods": [
+          {
+            "open": "06:00",
+            "close": "00:00"
+          }
+        ]
+      },
+      {
+        "day": "Tuesday",
+        "periods": [
+          {
+            "open": "06:00",
+            "close": "00:00"
+          }
+        ]
+      },
+      {
+        "day": "Wednesday",
+        "periods": [
+          {
+            "open": "06:00",
+            "close": "00:00"
+          }
+        ]
+      },
+      {
+        "day": "Thursday",
+        "periods": [
+          {
+            "open": "06:00",
+            "close": "00:00"
+          }
+        ]
+      },
+      {
+        "day": "Friday",
+        "periods": [
+          {
+            "open": "06:00",
+            "close": "00:00"
+          }
+        ]
+      },
+      {
+        "day": "Saturday",
+        "periods": [
+          {
+            "open": "06:00",
+            "close": "00:00"
+          }
+        ]
+      },
+      {
+        "day": "Sunday",
+        "periods": [
           {
             "open": "06:00",
             "close": "00:00"
@@ -476,8 +1093,21 @@
       }
     ],
     "category": "Fast Food Restaurant",
-    "deliveryTime": "20-40",
-    "shipping": 10.00
+    "deliveryTime": {
+      "min": 30,
+      "max": 50
+    },
+    "shippingCost": 0,
+    "contact": {
+      "phone": "+55 (31) 95782-3098",
+      "email": "contato@mcdonalds.com"
+    },
+    "rating": {
+      "average": 4.1,
+      "count": 280
+    },
+    "paymentMethods": ["Crédito", "Pix"],
+    "services": ["Entrega", "Drive-thru", "Retirada"]
   },
   {
     "_id": "664263e9a61e5ddceac532ff",
@@ -485,10 +1115,62 @@
     "name": "Subway",
     "openingHours": [
       {
-        "openDays": [
-          "Every day"
-        ],
-        "hours": [
+        "day": "Monday",
+        "periods": [
+          {
+            "open": "10:00",
+            "close": "21:00"
+          }
+        ]
+      },
+      {
+        "day": "Tuesday",
+        "periods": [
+          {
+            "open": "10:00",
+            "close": "21:00"
+          }
+        ]
+      },
+      {
+        "day": "Wednesday",
+        "periods": [
+          {
+            "open": "10:00",
+            "close": "21:00"
+          }
+        ]
+      },
+      {
+        "day": "Thursday",
+        "periods": [
+          {
+            "open": "10:00",
+            "close": "21:00"
+          }
+        ]
+      },
+      {
+        "day": "Friday",
+        "periods": [
+          {
+            "open": "10:00",
+            "close": "21:00"
+          }
+        ]
+      },
+      {
+        "day": "Saturday",
+        "periods": [
+          {
+            "open": "10:00",
+            "close": "21:00"
+          }
+        ]
+      },
+      {
+        "day": "Sunday",
+        "periods": [
           {
             "open": "10:00",
             "close": "21:00"
@@ -508,8 +1190,21 @@
       }
     ],
     "category": "Sandwich Shop",
-    "deliveryTime": "30-50",
-    "shipping": 8.00
+    "deliveryTime": {
+      "min": 25,
+      "max": 45
+    },
+    "shippingCost": 7,
+    "contact": {
+      "phone": "+55 (41) 98183-4736",
+      "email": "contato@subway.com"
+    },
+    "rating": {
+      "average": 4.6,
+      "count": 360
+    },
+    "paymentMethods": ["Débito", "Crédito", "Dinheiro"],
+    "services": ["Entrega", "Retirada"]
   },
   {
     "_id": "664263e9a61e5ddceac53300",
@@ -517,10 +1212,62 @@
     "name": "Whole Foods Market",
     "openingHours": [
       {
-        "openDays": [
-          "Every day"
-        ],
-        "hours": [
+        "day": "Monday",
+        "periods": [
+          {
+            "open": "08:00",
+            "close": "22:00"
+          }
+        ]
+      },
+      {
+        "day": "Tuesday",
+        "periods": [
+          {
+            "open": "08:00",
+            "close": "22:00"
+          }
+        ]
+      },
+      {
+        "day": "Wednesday",
+        "periods": [
+          {
+            "open": "08:00",
+            "close": "22:00"
+          }
+        ]
+      },
+      {
+        "day": "Thursday",
+        "periods": [
+          {
+            "open": "08:00",
+            "close": "22:00"
+          }
+        ]
+      },
+      {
+        "day": "Friday",
+        "periods": [
+          {
+            "open": "08:00",
+            "close": "22:00"
+          }
+        ]
+      },
+      {
+        "day": "Saturday",
+        "periods": [
+          {
+            "open": "08:00",
+            "close": "22:00"
+          }
+        ]
+      },
+      {
+        "day": "Sunday",
+        "periods": [
           {
             "open": "08:00",
             "close": "22:00"
@@ -540,8 +1287,21 @@
       }
     ],
     "category": "Grocery Store",
-    "deliveryTime": "20-40",
-    "shipping": 6.00
+    "deliveryTime": {
+      "min": 30,
+      "max": 45
+    },
+    "shippingCost": 7,
+    "contact": {
+      "phone": "+55 (41) 92061-8024",
+      "email": "contato@wholefoodsmarket.com.br"
+    },
+    "rating": {
+      "average": 3.9,
+      "count": 1328
+    },
+    "paymentMethods": ["Pix", "Dinheiro", "Crédito", "Débito"],
+    "services": ["Entrega", "Retirada"]
   },
   {
     "_id": "664263e9a61e5ddceac53301",
@@ -549,10 +1309,62 @@
     "name": "Taco Bell",
     "openingHours": [
       {
-        "openDays": [
-          "Every day"
-        ],
-        "hours": [
+        "day": "Monday",
+        "periods": [
+          {
+            "open": "10:00",
+            "close": "00:00"
+          }
+        ]
+      },
+      {
+        "day": "Tuesday",
+        "periods": [
+          {
+            "open": "10:00",
+            "close": "00:00"
+          }
+        ]
+      },
+      {
+        "day": "Wednesday",
+        "periods": [
+          {
+            "open": "10:00",
+            "close": "00:00"
+          }
+        ]
+      },
+      {
+        "day": "Thursday",
+        "periods": [
+          {
+            "open": "10:00",
+            "close": "00:00"
+          }
+        ]
+      },
+      {
+        "day": "Friday",
+        "periods": [
+          {
+            "open": "10:00",
+            "close": "00:00"
+          }
+        ]
+      },
+      {
+        "day": "Saturday",
+        "periods": [
+          {
+            "open": "10:00",
+            "close": "00:00"
+          }
+        ]
+      },
+      {
+        "day": "Sunday",
+        "periods": [
           {
             "open": "10:00",
             "close": "00:00"
@@ -572,8 +1384,21 @@
       }
     ],
     "category": "Mexican Restaurant",
-    "deliveryTime": "30-50",
-    "shipping": 9.00
+    "deliveryTime": {
+      "min": 25,
+      "max": 40
+    },
+    "shippingCost": 12,
+    "contact": {
+      "phone": "+55 (41) 93098-8075",
+      "email": "contato@tacobell.com.br"
+    },
+    "rating": {
+      "average": 4.7,
+      "count": 1071
+    },
+    "paymentMethods": ["Dinheiro", "Crédito", "Débito", "Pix"],
+    "services": ["Entrega", "Retirada"]
   },
   {
     "_id": "664263e9a61e5ddceac53302",
@@ -581,14 +1406,8 @@
     "name": "Panera Bread",
     "openingHours": [
       {
-        "openDays": [
-          "Monday",
-          "Tuesday",
-          "Wednesday",
-          "Thursday",
-          "Friday"
-        ],
-        "hours": [
+        "day": "Monday",
+        "periods": [
           {
             "open": "07:00",
             "close": "20:00"
@@ -596,11 +1415,53 @@
         ]
       },
       {
-        "openDays": [
-          "Saturday",
-          "Sunday"
-        ],
-        "hours": [
+        "day": "Tuesday",
+        "periods": [
+          {
+            "open": "07:00",
+            "close": "20:00"
+          }
+        ]
+      },
+      {
+        "day": "Wednesday",
+        "periods": [
+          {
+            "open": "07:00",
+            "close": "20:00"
+          }
+        ]
+      },
+      {
+        "day": "Thursday",
+        "periods": [
+          {
+            "open": "07:00",
+            "close": "20:00"
+          }
+        ]
+      },
+      {
+        "day": "Friday",
+        "periods": [
+          {
+            "open": "07:00",
+            "close": "20:00"
+          }
+        ]
+      },
+      {
+        "day": "Saturday",
+        "periods": [
+          {
+            "open": "08:00",
+            "close": "18:00"
+          }
+        ]
+      },
+      {
+        "day": "Sunday",
+        "periods": [
           {
             "open": "08:00",
             "close": "18:00"
@@ -620,8 +1481,21 @@
       }
     ],
     "category": "Bakery",
-    "deliveryTime": "40-60",
-    "shipping": 0.00
+    "deliveryTime": {
+      "min": 20,
+      "max": 35
+    },
+    "shippingCost": 7,
+    "contact": {
+      "phone": "+55 (51) 92989-8890",
+      "email": "contato@panerabread.com.br"
+    },
+    "rating": {
+      "average": 4.8,
+      "count": 839
+    },
+    "paymentMethods": ["Pix", "Débito", "Crédito"],
+    "services": ["Entrega", "Retirada"]
   },
   {
     "_id": "664263e9a61e5ddceac53303",
@@ -629,14 +1503,8 @@
     "name": "Chick-fil-A",
     "openingHours": [
       {
-        "openDays": [
-          "Monday",
-          "Tuesday",
-          "Wednesday",
-          "Thursday",
-          "Friday"
-        ],
-        "hours": [
+        "day": "Monday",
+        "periods": [
           {
             "open": "06:30",
             "close": "22:00"
@@ -644,10 +1512,8 @@
         ]
       },
       {
-        "openDays": [
-          "Saturday"
-        ],
-        "hours": [
+        "day": "Tuesday",
+        "periods": [
           {
             "open": "06:30",
             "close": "22:00"
@@ -655,13 +1521,47 @@
         ]
       },
       {
-        "openDays": [
-          "Sunday"
-        ],
-        "hours": [
+        "day": "Wednesday",
+        "periods": [
           {
-            "open": "Closed",
-            "close": "Closed"
+            "open": "06:30",
+            "close": "22:00"
+          }
+        ]
+      },
+      {
+        "day": "Thursday",
+        "periods": [
+          {
+            "open": "06:30",
+            "close": "22:00"
+          }
+        ]
+      },
+      {
+        "day": "Friday",
+        "periods": [
+          {
+            "open": "06:30",
+            "close": "22:00"
+          }
+        ]
+      },
+      {
+        "day": "Saturday",
+        "periods": [
+          {
+            "open": "06:30",
+            "close": "22:00"
+          }
+        ]
+      },
+      {
+        "day": "Sunday",
+        "periods": [
+          {
+            "open": "08:00",
+            "close": "20:00"
           }
         ]
       }
@@ -678,8 +1578,21 @@
       }
     ],
     "category": "Fast Food Restaurant",
-    "deliveryTime": "30-50",
-    "shipping": 5.00
+    "deliveryTime": {
+      "min": 30,
+      "max": 40
+    },
+    "shippingCost": 0,
+    "contact": {
+      "phone": "+55 (31) 91192-9474",
+      "email": "contato@chick-fil-a.com"
+    },
+    "rating": {
+      "average": 4.1,
+      "count": 119
+    },
+    "paymentMethods": ["Crédito", "Pix", "Débito", "Dinheiro"],
+    "services": ["Entrega", "Drive-thru", "Retirada"]
   },
   {
     "_id": "664263e9a61e5ddceac53304",
@@ -687,14 +1600,8 @@
     "name": "Dunkin' Donuts",
     "openingHours": [
       {
-        "openDays": [
-          "Monday",
-          "Tuesday",
-          "Wednesday",
-          "Thursday",
-          "Friday"
-        ],
-        "hours": [
+        "day": "Monday",
+        "periods": [
           {
             "open": "05:00",
             "close": "20:00"
@@ -702,11 +1609,53 @@
         ]
       },
       {
-        "openDays": [
-          "Saturday",
-          "Sunday"
-        ],
-        "hours": [
+        "day": "Tuesday",
+        "periods": [
+          {
+            "open": "05:00",
+            "close": "20:00"
+          }
+        ]
+      },
+      {
+        "day": "Wednesday",
+        "periods": [
+          {
+            "open": "05:00",
+            "close": "20:00"
+          }
+        ]
+      },
+      {
+        "day": "Thursday",
+        "periods": [
+          {
+            "open": "05:00",
+            "close": "20:00"
+          }
+        ]
+      },
+      {
+        "day": "Friday",
+        "periods": [
+          {
+            "open": "05:00",
+            "close": "20:00"
+          }
+        ]
+      },
+      {
+        "day": "Saturday",
+        "periods": [
+          {
+            "open": "06:00",
+            "close": "19:00"
+          }
+        ]
+      },
+      {
+        "day": "Sunday",
+        "periods": [
           {
             "open": "06:00",
             "close": "19:00"
@@ -726,7 +1675,3124 @@
       }
     ],
     "category": "Bakery",
-    "deliveryTime": "30-50",
-    "shipping": 10.00
+    "deliveryTime": {
+      "min": 35,
+      "max": 55
+    },
+    "shippingCost": 5,
+    "contact": {
+      "phone": "+55 (21) 91611-3922",
+      "email": "contato@dunkindonuts.com"
+    },
+    "rating": {
+      "average": 4.7,
+      "count": 469
+    },
+    "paymentMethods": ["Dinheiro", "Crédito"],
+    "services": ["Entrega", "Retirada"]
+  },
+  {
+    "_id": "68eea520f0bc911bd5bb0807",
+    "coverPhoto": "",
+    "name": "La Crème",
+    "openingHours": [
+      {
+        "day": "Monday",
+        "periods": [
+          {
+            "open": "11:00",
+            "close": "23:00"
+          }
+        ]
+      },
+      {
+        "day": "Tuesday",
+        "periods": [
+          {
+            "open": "11:00",
+            "close": "23:00"
+          }
+        ]
+      },
+      {
+        "day": "Wednesday",
+        "periods": [
+          {
+            "open": "11:00",
+            "close": "23:00"
+          }
+        ]
+      },
+      {
+        "day": "Thursday",
+        "periods": [
+          {
+            "open": "11:00",
+            "close": "23:00"
+          }
+        ]
+      },
+      {
+        "day": "Friday",
+        "periods": [
+          {
+            "open": "11:00",
+            "close": "23:00"
+          }
+        ]
+      },
+      {
+        "day": "Saturday",
+        "periods": [
+          {
+            "open": "11:00",
+            "close": "23:00"
+          }
+        ]
+      },
+      {
+        "day": "Sunday",
+        "periods": [
+          {
+            "open": "11:00",
+            "close": "23:00"
+          }
+        ]
+      }
+    ],
+    "address": [
+      {
+        "description": "Flagship",
+        "street": "888 Birch Blvd",
+        "number": "912",
+        "complement": "",
+        "neighborhood": "Suburbia",
+        "city": "Metropolis",
+        "state": "State"
+      }
+    ],
+    "category": "Ice Cream Shop",
+    "deliveryTime": {
+      "min": 30,
+      "max": 45
+    },
+    "shippingCost": 5,
+    "contact": {
+      "phone": "+55 (21) 93321-7743",
+      "email": "contato@lacrème.com.br"
+    },
+    "rating": {
+      "average": 3.8,
+      "count": 1704
+    },
+    "paymentMethods": ["Crédito", "Débito", "Dinheiro"],
+    "services": ["Entrega", "Retirada"]
+  },
+  {
+    "_id": "68eea520f0bc911bd5bb080b",
+    "coverPhoto": "",
+    "name": "Ocean View Seafood",
+    "openingHours": [
+      {
+        "day": "Monday",
+        "periods": [
+          {
+            "open": "10:00",
+            "close": "21:00"
+          }
+        ]
+      },
+      {
+        "day": "Tuesday",
+        "periods": [
+          {
+            "open": "10:00",
+            "close": "21:00"
+          }
+        ]
+      },
+      {
+        "day": "Wednesday",
+        "periods": [
+          {
+            "open": "10:00",
+            "close": "21:00"
+          }
+        ]
+      },
+      {
+        "day": "Thursday",
+        "periods": [
+          {
+            "open": "10:00",
+            "close": "21:00"
+          }
+        ]
+      },
+      {
+        "day": "Friday",
+        "periods": [
+          {
+            "open": "10:00",
+            "close": "21:00"
+          }
+        ]
+      },
+      {
+        "day": "Saturday",
+        "periods": [
+          {
+            "open": "10:00",
+            "close": "21:00"
+          }
+        ]
+      },
+      {
+        "day": "Sunday",
+        "periods": [
+          {
+            "open": "10:00",
+            "close": "21:00"
+          }
+        ]
+      }
+    ],
+    "address": [
+      {
+        "description": "Flagship",
+        "street": "554 Cedar St",
+        "number": "289",
+        "complement": "Loja 1",
+        "neighborhood": "Suburbia",
+        "city": "Metropolis",
+        "state": "State"
+      }
+    ],
+    "category": "Mexican Restaurant",
+    "deliveryTime": {
+      "min": 40,
+      "max": 50
+    },
+    "shippingCost": 5,
+    "contact": {
+      "phone": "+55 (21) 95439-4217",
+      "email": "contato@oceanviewseafood.com.br"
+    },
+    "rating": {
+      "average": 4.2,
+      "count": 1067
+    },
+    "paymentMethods": ["Dinheiro", "Pix"],
+    "services": ["Entrega", "Retirada"]
+  },
+  {
+    "_id": "68eea520f0bc911bd5bb080f",
+    "coverPhoto": "",
+    "name": "Juice Planet",
+    "openingHours": [
+      {
+        "day": "Monday",
+        "periods": [
+          {
+            "open": "10:00",
+            "close": "20:00"
+          }
+        ]
+      },
+      {
+        "day": "Tuesday",
+        "periods": [
+          {
+            "open": "10:00",
+            "close": "20:00"
+          }
+        ]
+      },
+      {
+        "day": "Wednesday",
+        "periods": [
+          {
+            "open": "10:00",
+            "close": "20:00"
+          }
+        ]
+      },
+      {
+        "day": "Thursday",
+        "periods": [
+          {
+            "open": "10:00",
+            "close": "20:00"
+          }
+        ]
+      },
+      {
+        "day": "Friday",
+        "periods": [
+          {
+            "open": "10:00",
+            "close": "20:00"
+          }
+        ]
+      },
+      {
+        "day": "Saturday",
+        "periods": [
+          {
+            "open": "10:00",
+            "close": "20:00"
+          }
+        ]
+      },
+      {
+        "day": "Sunday",
+        "periods": [
+          {
+            "open": "10:00",
+            "close": "20:00"
+          }
+        ]
+      }
+    ],
+    "address": [
+      {
+        "description": "Flagship",
+        "street": "326 Willow Rd",
+        "number": "653",
+        "complement": "",
+        "neighborhood": "Suburbia",
+        "city": "Smalltown",
+        "state": "State"
+      }
+    ],
+    "category": "Restaurant",
+    "deliveryTime": {
+      "min": 15,
+      "max": 30
+    },
+    "shippingCost": 10,
+    "contact": {
+      "phone": "+55 (21) 96782-4304",
+      "email": "contato@juiceplanet.com.br"
+    },
+    "rating": {
+      "average": 3.8,
+      "count": 1039
+    },
+    "paymentMethods": ["Crédito", "Pix", "Dinheiro", "Débito"],
+    "services": ["Entrega", "Retirada"]
+  },
+  {
+    "_id": "68eea520f0bc911bd5bb0813",
+    "coverPhoto": "",
+    "name": "Ocean View Seafood",
+    "openingHours": [
+      {
+        "day": "Monday",
+        "periods": [
+          {
+            "open": "08:00",
+            "close": "20:00"
+          }
+        ]
+      },
+      {
+        "day": "Tuesday",
+        "periods": [
+          {
+            "open": "08:00",
+            "close": "20:00"
+          }
+        ]
+      },
+      {
+        "day": "Wednesday",
+        "periods": [
+          {
+            "open": "08:00",
+            "close": "20:00"
+          }
+        ]
+      },
+      {
+        "day": "Thursday",
+        "periods": [
+          {
+            "open": "08:00",
+            "close": "20:00"
+          }
+        ]
+      },
+      {
+        "day": "Friday",
+        "periods": [
+          {
+            "open": "08:00",
+            "close": "20:00"
+          }
+        ]
+      },
+      {
+        "day": "Saturday",
+        "periods": [
+          {
+            "open": "08:00",
+            "close": "20:00"
+          }
+        ]
+      },
+      {
+        "day": "Sunday",
+        "periods": [
+          {
+            "open": "08:00",
+            "close": "20:00"
+          }
+        ]
+      }
+    ],
+    "address": [
+      {
+        "description": "Flagship",
+        "street": "395 Elm St",
+        "number": "860",
+        "complement": "Loja 1",
+        "neighborhood": "Downtown",
+        "city": "Cityville",
+        "state": "State"
+      }
+    ],
+    "category": "Cafeteria",
+    "deliveryTime": {
+      "min": 30,
+      "max": 45
+    },
+    "shippingCost": 8,
+    "contact": {
+      "phone": "+55 (31) 90898-6423",
+      "email": "contato@oceanviewseafood.com.br"
+    },
+    "rating": {
+      "average": 4.8,
+      "count": 741
+    },
+    "paymentMethods": ["Crédito", "Dinheiro"],
+    "services": ["Entrega", "Retirada"]
+  },
+  {
+    "_id": "68eea520f0bc911bd5bb0817",
+    "coverPhoto": "",
+    "name": "Golden Steak",
+    "openingHours": [
+      {
+        "day": "Monday",
+        "periods": [
+          {
+            "open": "07:00",
+            "close": "22:00"
+          }
+        ]
+      },
+      {
+        "day": "Tuesday",
+        "periods": [
+          {
+            "open": "07:00",
+            "close": "22:00"
+          }
+        ]
+      },
+      {
+        "day": "Wednesday",
+        "periods": [
+          {
+            "open": "07:00",
+            "close": "22:00"
+          }
+        ]
+      },
+      {
+        "day": "Thursday",
+        "periods": [
+          {
+            "open": "07:00",
+            "close": "22:00"
+          }
+        ]
+      },
+      {
+        "day": "Friday",
+        "periods": [
+          {
+            "open": "07:00",
+            "close": "22:00"
+          }
+        ]
+      },
+      {
+        "day": "Saturday",
+        "periods": [
+          {
+            "open": "07:00",
+            "close": "22:00"
+          }
+        ]
+      },
+      {
+        "day": "Sunday",
+        "periods": [
+          {
+            "open": "07:00",
+            "close": "22:00"
+          }
+        ]
+      }
+    ],
+    "address": [
+      {
+        "description": "Flagship",
+        "street": "519 Birch Blvd",
+        "number": "76",
+        "complement": "Piso Térreo",
+        "neighborhood": "Outskirts",
+        "city": "Countryville",
+        "state": "State"
+      }
+    ],
+    "category": "Pub",
+    "deliveryTime": {
+      "min": 35,
+      "max": 45
+    },
+    "shippingCost": 7,
+    "contact": {
+      "phone": "+55 (21) 94825-6437",
+      "email": "contato@goldensteak.com.br"
+    },
+    "rating": {
+      "average": 4.3,
+      "count": 647
+    },
+    "paymentMethods": ["Dinheiro", "Pix"],
+    "services": ["Entrega", "Retirada"]
+  },
+  {
+    "_id": "68eea520f0bc911bd5bb081b",
+    "coverPhoto": "",
+    "name": "The Vegan Spot",
+    "openingHours": [
+      {
+        "day": "Monday",
+        "periods": [
+          {
+            "open": "10:00",
+            "close": "18:00"
+          }
+        ]
+      },
+      {
+        "day": "Tuesday",
+        "periods": [
+          {
+            "open": "10:00",
+            "close": "18:00"
+          }
+        ]
+      },
+      {
+        "day": "Wednesday",
+        "periods": [
+          {
+            "open": "10:00",
+            "close": "18:00"
+          }
+        ]
+      },
+      {
+        "day": "Thursday",
+        "periods": [
+          {
+            "open": "10:00",
+            "close": "18:00"
+          }
+        ]
+      },
+      {
+        "day": "Friday",
+        "periods": [
+          {
+            "open": "10:00",
+            "close": "18:00"
+          }
+        ]
+      },
+      {
+        "day": "Saturday",
+        "periods": [
+          {
+            "open": "10:00",
+            "close": "18:00"
+          }
+        ]
+      },
+      {
+        "day": "Sunday",
+        "periods": [
+          {
+            "open": "10:00",
+            "close": "18:00"
+          }
+        ]
+      }
+    ],
+    "address": [
+      {
+        "description": "Flagship",
+        "street": "310 Oak Ave",
+        "number": "336",
+        "complement": "Piso Térreo",
+        "neighborhood": "Suburbia",
+        "city": "Smalltown",
+        "state": "State"
+      }
+    ],
+    "category": "Pub",
+    "deliveryTime": {
+      "min": 25,
+      "max": 35
+    },
+    "shippingCost": 8,
+    "contact": {
+      "phone": "+55 (41) 95221-1842",
+      "email": "contato@theveganspot.com.br"
+    },
+    "rating": {
+      "average": 3.7,
+      "count": 439
+    },
+    "paymentMethods": ["Crédito", "Dinheiro", "Débito", "Pix"],
+    "services": ["Entrega", "Retirada"]
+  },
+  {
+    "_id": "68eea520f0bc911bd5bb081f",
+    "coverPhoto": "",
+    "name": "Casa do Sabor",
+    "openingHours": [
+      {
+        "day": "Monday",
+        "periods": [
+          {
+            "open": "07:00",
+            "close": "21:00"
+          }
+        ]
+      },
+      {
+        "day": "Tuesday",
+        "periods": [
+          {
+            "open": "07:00",
+            "close": "21:00"
+          }
+        ]
+      },
+      {
+        "day": "Wednesday",
+        "periods": [
+          {
+            "open": "07:00",
+            "close": "21:00"
+          }
+        ]
+      },
+      {
+        "day": "Thursday",
+        "periods": [
+          {
+            "open": "07:00",
+            "close": "21:00"
+          }
+        ]
+      },
+      {
+        "day": "Friday",
+        "periods": [
+          {
+            "open": "07:00",
+            "close": "21:00"
+          }
+        ]
+      },
+      {
+        "day": "Saturday",
+        "periods": [
+          {
+            "open": "07:00",
+            "close": "21:00"
+          }
+        ]
+      },
+      {
+        "day": "Sunday",
+        "periods": [
+          {
+            "open": "07:00",
+            "close": "21:00"
+          }
+        ]
+      }
+    ],
+    "address": [
+      {
+        "description": "Flagship",
+        "street": "322 Maple St",
+        "number": "649",
+        "complement": "Piso Térreo",
+        "neighborhood": "Downtown",
+        "city": "Countryville",
+        "state": "State"
+      }
+    ],
+    "category": "Sushi Bar",
+    "deliveryTime": {
+      "min": 15,
+      "max": 30
+    },
+    "shippingCost": 9,
+    "contact": {
+      "phone": "+55 (21) 99053-1077",
+      "email": "contato@casadosabor.com"
+    },
+    "rating": {
+      "average": 4.8,
+      "count": 223
+    },
+    "paymentMethods": ["Débito", "Dinheiro", "Pix"],
+    "services": ["Entrega", "Retirada"]
+  },
+  {
+    "_id": "68eea520f0bc911bd5bb0823",
+    "coverPhoto": "",
+    "name": "Sabor Brasil",
+    "openingHours": [
+      {
+        "day": "Monday",
+        "periods": [
+          {
+            "open": "09:00",
+            "close": "21:00"
+          }
+        ]
+      },
+      {
+        "day": "Tuesday",
+        "periods": [
+          {
+            "open": "09:00",
+            "close": "21:00"
+          }
+        ]
+      },
+      {
+        "day": "Wednesday",
+        "periods": [
+          {
+            "open": "09:00",
+            "close": "21:00"
+          }
+        ]
+      },
+      {
+        "day": "Thursday",
+        "periods": [
+          {
+            "open": "09:00",
+            "close": "21:00"
+          }
+        ]
+      },
+      {
+        "day": "Friday",
+        "periods": [
+          {
+            "open": "09:00",
+            "close": "21:00"
+          }
+        ]
+      },
+      {
+        "day": "Saturday",
+        "periods": [
+          {
+            "open": "09:00",
+            "close": "21:00"
+          }
+        ]
+      },
+      {
+        "day": "Sunday",
+        "periods": [
+          {
+            "open": "09:00",
+            "close": "21:00"
+          }
+        ]
+      }
+    ],
+    "address": [
+      {
+        "description": "Flagship",
+        "street": "416 Cedar St",
+        "number": "634",
+        "complement": "Loja 1",
+        "neighborhood": "Suburbia",
+        "city": "Villagetown",
+        "state": "State"
+      }
+    ],
+    "category": "Sushi Bar",
+    "deliveryTime": {
+      "min": 20,
+      "max": 40
+    },
+    "shippingCost": 0,
+    "contact": {
+      "phone": "+55 (11) 91477-3324",
+      "email": "contato@saborbrasil.com.br"
+    },
+    "rating": {
+      "average": 4.1,
+      "count": 1922
+    },
+    "paymentMethods": ["Crédito", "Pix", "Débito", "Dinheiro"],
+    "services": ["Entrega", "Retirada"]
+  },
+  {
+    "_id": "68eea520f0bc911bd5bb0827",
+    "coverPhoto": "",
+    "name": "Juice Planet",
+    "openingHours": [
+      {
+        "day": "Monday",
+        "periods": [
+          {
+            "open": "10:00",
+            "close": "20:00"
+          }
+        ]
+      },
+      {
+        "day": "Tuesday",
+        "periods": [
+          {
+            "open": "10:00",
+            "close": "20:00"
+          }
+        ]
+      },
+      {
+        "day": "Wednesday",
+        "periods": [
+          {
+            "open": "10:00",
+            "close": "20:00"
+          }
+        ]
+      },
+      {
+        "day": "Thursday",
+        "periods": [
+          {
+            "open": "10:00",
+            "close": "20:00"
+          }
+        ]
+      },
+      {
+        "day": "Friday",
+        "periods": [
+          {
+            "open": "10:00",
+            "close": "20:00"
+          }
+        ]
+      },
+      {
+        "day": "Saturday",
+        "periods": [
+          {
+            "open": "10:00",
+            "close": "20:00"
+          }
+        ]
+      },
+      {
+        "day": "Sunday",
+        "periods": [
+          {
+            "open": "10:00",
+            "close": "20:00"
+          }
+        ]
+      }
+    ],
+    "address": [
+      {
+        "description": "Flagship",
+        "street": "149 Pine St",
+        "number": "781",
+        "complement": "Sala 2",
+        "neighborhood": "Uptown",
+        "city": "Countryville",
+        "state": "State"
+      }
+    ],
+    "category": "Restaurant",
+    "deliveryTime": {
+      "min": 30,
+      "max": 45
+    },
+    "shippingCost": 12,
+    "contact": {
+      "phone": "+55 (21) 99693-5545",
+      "email": "contato@juiceplanet.com"
+    },
+    "rating": {
+      "average": 4.3,
+      "count": 353
+    },
+    "paymentMethods": ["Dinheiro", "Crédito", "Débito"],
+    "services": ["Entrega", "Retirada"]
+  },
+  {
+    "_id": "68eea520f0bc911bd5bb082b",
+    "coverPhoto": "",
+    "name": "Burger Point",
+    "openingHours": [
+      {
+        "day": "Monday",
+        "periods": [
+          {
+            "open": "11:00",
+            "close": "20:00"
+          }
+        ]
+      },
+      {
+        "day": "Tuesday",
+        "periods": [
+          {
+            "open": "11:00",
+            "close": "20:00"
+          }
+        ]
+      },
+      {
+        "day": "Wednesday",
+        "periods": [
+          {
+            "open": "11:00",
+            "close": "20:00"
+          }
+        ]
+      },
+      {
+        "day": "Thursday",
+        "periods": [
+          {
+            "open": "11:00",
+            "close": "20:00"
+          }
+        ]
+      },
+      {
+        "day": "Friday",
+        "periods": [
+          {
+            "open": "11:00",
+            "close": "20:00"
+          }
+        ]
+      },
+      {
+        "day": "Saturday",
+        "periods": [
+          {
+            "open": "11:00",
+            "close": "20:00"
+          }
+        ]
+      },
+      {
+        "day": "Sunday",
+        "periods": [
+          {
+            "open": "11:00",
+            "close": "20:00"
+          }
+        ]
+      }
+    ],
+    "address": [
+      {
+        "description": "Flagship",
+        "street": "131 Oak Ave",
+        "number": "730",
+        "complement": "",
+        "neighborhood": "Outskirts",
+        "city": "Villagetown",
+        "state": "State"
+      }
+    ],
+    "category": "Vegan Restaurant",
+    "deliveryTime": {
+      "min": 25,
+      "max": 40
+    },
+    "shippingCost": 7,
+    "contact": {
+      "phone": "+55 (41) 98972-1075",
+      "email": "contato@burgerpoint.com"
+    },
+    "rating": {
+      "average": 4.2,
+      "count": 1490
+    },
+    "paymentMethods": ["Débito", "Dinheiro", "Pix"],
+    "services": ["Entrega", "Retirada"]
+  },
+  {
+    "_id": "68eea520f0bc911bd5bb082f",
+    "coverPhoto": "",
+    "name": "Sunrise Bakery",
+    "openingHours": [
+      {
+        "day": "Monday",
+        "periods": [
+          {
+            "open": "07:00",
+            "close": "20:00"
+          }
+        ]
+      },
+      {
+        "day": "Tuesday",
+        "periods": [
+          {
+            "open": "07:00",
+            "close": "20:00"
+          }
+        ]
+      },
+      {
+        "day": "Wednesday",
+        "periods": [
+          {
+            "open": "07:00",
+            "close": "20:00"
+          }
+        ]
+      },
+      {
+        "day": "Thursday",
+        "periods": [
+          {
+            "open": "07:00",
+            "close": "20:00"
+          }
+        ]
+      },
+      {
+        "day": "Friday",
+        "periods": [
+          {
+            "open": "07:00",
+            "close": "20:00"
+          }
+        ]
+      },
+      {
+        "day": "Saturday",
+        "periods": [
+          {
+            "open": "07:00",
+            "close": "20:00"
+          }
+        ]
+      },
+      {
+        "day": "Sunday",
+        "periods": [
+          {
+            "open": "07:00",
+            "close": "20:00"
+          }
+        ]
+      }
+    ],
+    "address": [
+      {
+        "description": "Flagship",
+        "street": "195 Elm St",
+        "number": "783",
+        "complement": "Piso Térreo",
+        "neighborhood": "Outskirts",
+        "city": "Smalltown",
+        "state": "State"
+      }
+    ],
+    "category": "Bistro",
+    "deliveryTime": {
+      "min": 40,
+      "max": 50
+    },
+    "shippingCost": 9,
+    "contact": {
+      "phone": "+55 (21) 92865-7746",
+      "email": "contato@sunrisebakery.com.br"
+    },
+    "rating": {
+      "average": 4.8,
+      "count": 1710
+    },
+    "paymentMethods": ["Débito", "Dinheiro"],
+    "services": ["Entrega", "Retirada"]
+  },
+  {
+    "_id": "68eea520f0bc911bd5bb0833",
+    "coverPhoto": "",
+    "name": "Espresso Corner",
+    "openingHours": [
+      {
+        "day": "Monday",
+        "periods": [
+          {
+            "open": "09:00",
+            "close": "23:00"
+          }
+        ]
+      },
+      {
+        "day": "Tuesday",
+        "periods": [
+          {
+            "open": "09:00",
+            "close": "23:00"
+          }
+        ]
+      },
+      {
+        "day": "Wednesday",
+        "periods": [
+          {
+            "open": "09:00",
+            "close": "23:00"
+          }
+        ]
+      },
+      {
+        "day": "Thursday",
+        "periods": [
+          {
+            "open": "09:00",
+            "close": "23:00"
+          }
+        ]
+      },
+      {
+        "day": "Friday",
+        "periods": [
+          {
+            "open": "09:00",
+            "close": "23:00"
+          }
+        ]
+      },
+      {
+        "day": "Saturday",
+        "periods": [
+          {
+            "open": "09:00",
+            "close": "23:00"
+          }
+        ]
+      },
+      {
+        "day": "Sunday",
+        "periods": [
+          {
+            "open": "09:00",
+            "close": "23:00"
+          }
+        ]
+      }
+    ],
+    "address": [
+      {
+        "description": "Flagship",
+        "street": "303 Maple St",
+        "number": "748",
+        "complement": "Piso Térreo",
+        "neighborhood": "Downtown",
+        "city": "Metropolis",
+        "state": "State"
+      }
+    ],
+    "category": "Pub",
+    "deliveryTime": {
+      "min": 20,
+      "max": 35
+    },
+    "shippingCost": 12,
+    "contact": {
+      "phone": "+55 (51) 94836-3691",
+      "email": "contato@espressocorner.com"
+    },
+    "rating": {
+      "average": 3.7,
+      "count": 98
+    },
+    "paymentMethods": ["Débito", "Crédito", "Dinheiro", "Pix"],
+    "services": ["Entrega", "Retirada"]
+  },
+  {
+    "_id": "68eea520f0bc911bd5bb0837",
+    "coverPhoto": "",
+    "name": "The Fish House",
+    "openingHours": [
+      {
+        "day": "Monday",
+        "periods": [
+          {
+            "open": "07:00",
+            "close": "21:00"
+          }
+        ]
+      },
+      {
+        "day": "Tuesday",
+        "periods": [
+          {
+            "open": "07:00",
+            "close": "21:00"
+          }
+        ]
+      },
+      {
+        "day": "Wednesday",
+        "periods": [
+          {
+            "open": "07:00",
+            "close": "21:00"
+          }
+        ]
+      },
+      {
+        "day": "Thursday",
+        "periods": [
+          {
+            "open": "07:00",
+            "close": "21:00"
+          }
+        ]
+      },
+      {
+        "day": "Friday",
+        "periods": [
+          {
+            "open": "07:00",
+            "close": "21:00"
+          }
+        ]
+      },
+      {
+        "day": "Saturday",
+        "periods": [
+          {
+            "open": "07:00",
+            "close": "21:00"
+          }
+        ]
+      },
+      {
+        "day": "Sunday",
+        "periods": [
+          {
+            "open": "07:00",
+            "close": "21:00"
+          }
+        ]
+      }
+    ],
+    "address": [
+      {
+        "description": "Flagship",
+        "street": "744 Oak Ave",
+        "number": "970",
+        "complement": "Sala 2",
+        "neighborhood": "Outskirts",
+        "city": "Cityville",
+        "state": "State"
+      }
+    ],
+    "category": "Pub",
+    "deliveryTime": {
+      "min": 40,
+      "max": 50
+    },
+    "shippingCost": 6,
+    "contact": {
+      "phone": "+55 (11) 97288-5472",
+      "email": "contato@thefishhouse.com.br"
+    },
+    "rating": {
+      "average": 4,
+      "count": 1735
+    },
+    "paymentMethods": ["Débito", "Pix", "Dinheiro", "Crédito"],
+    "services": ["Entrega", "Retirada"]
+  },
+  {
+    "_id": "68eea520f0bc911bd5bb083b",
+    "coverPhoto": "",
+    "name": "Juice Planet",
+    "openingHours": [
+      {
+        "day": "Monday",
+        "periods": [
+          {
+            "open": "07:00",
+            "close": "18:00"
+          }
+        ]
+      },
+      {
+        "day": "Tuesday",
+        "periods": [
+          {
+            "open": "07:00",
+            "close": "18:00"
+          }
+        ]
+      },
+      {
+        "day": "Wednesday",
+        "periods": [
+          {
+            "open": "07:00",
+            "close": "18:00"
+          }
+        ]
+      },
+      {
+        "day": "Thursday",
+        "periods": [
+          {
+            "open": "07:00",
+            "close": "18:00"
+          }
+        ]
+      },
+      {
+        "day": "Friday",
+        "periods": [
+          {
+            "open": "07:00",
+            "close": "18:00"
+          }
+        ]
+      },
+      {
+        "day": "Saturday",
+        "periods": [
+          {
+            "open": "07:00",
+            "close": "18:00"
+          }
+        ]
+      },
+      {
+        "day": "Sunday",
+        "periods": [
+          {
+            "open": "07:00",
+            "close": "18:00"
+          }
+        ]
+      }
+    ],
+    "address": [
+      {
+        "description": "Flagship",
+        "street": "470 Willow Rd",
+        "number": "367",
+        "complement": "Sala 2",
+        "neighborhood": "Hillside",
+        "city": "Smalltown",
+        "state": "State"
+      }
+    ],
+    "category": "Bakery",
+    "deliveryTime": {
+      "min": 35,
+      "max": 55
+    },
+    "shippingCost": 5,
+    "contact": {
+      "phone": "+55 (11) 94813-6379",
+      "email": "contato@juiceplanet.com.br"
+    },
+    "rating": {
+      "average": 4,
+      "count": 369
+    },
+    "paymentMethods": ["Pix", "Dinheiro"],
+    "services": ["Entrega", "Retirada"]
+  },
+  {
+    "_id": "68eea520f0bc911bd5bb083f",
+    "coverPhoto": "",
+    "name": "Mama Mia Pizzeria",
+    "openingHours": [
+      {
+        "day": "Monday",
+        "periods": [
+          {
+            "open": "10:00",
+            "close": "23:00"
+          }
+        ]
+      },
+      {
+        "day": "Tuesday",
+        "periods": [
+          {
+            "open": "10:00",
+            "close": "23:00"
+          }
+        ]
+      },
+      {
+        "day": "Wednesday",
+        "periods": [
+          {
+            "open": "10:00",
+            "close": "23:00"
+          }
+        ]
+      },
+      {
+        "day": "Thursday",
+        "periods": [
+          {
+            "open": "10:00",
+            "close": "23:00"
+          }
+        ]
+      },
+      {
+        "day": "Friday",
+        "periods": [
+          {
+            "open": "10:00",
+            "close": "23:00"
+          }
+        ]
+      },
+      {
+        "day": "Saturday",
+        "periods": [
+          {
+            "open": "10:00",
+            "close": "23:00"
+          }
+        ]
+      },
+      {
+        "day": "Sunday",
+        "periods": [
+          {
+            "open": "10:00",
+            "close": "23:00"
+          }
+        ]
+      }
+    ],
+    "address": [
+      {
+        "description": "Flagship",
+        "street": "408 Oak Ave",
+        "number": "297",
+        "complement": "Loja 1",
+        "neighborhood": "Downtown",
+        "city": "Cityville",
+        "state": "State"
+      }
+    ],
+    "category": "Food Truck",
+    "deliveryTime": {
+      "min": 35,
+      "max": 55
+    },
+    "shippingCost": 5,
+    "contact": {
+      "phone": "+55 (41) 99321-3761",
+      "email": "contato@mamamiapizzeria.com"
+    },
+    "rating": {
+      "average": 4.7,
+      "count": 1457
+    },
+    "paymentMethods": ["Pix", "Crédito"],
+    "services": ["Entrega", "Retirada"]
+  },
+  {
+    "_id": "68eea520f0bc911bd5bb0843",
+    "coverPhoto": "",
+    "name": "Chill Bar",
+    "openingHours": [
+      {
+        "day": "Monday",
+        "periods": [
+          {
+            "open": "11:00",
+            "close": "23:00"
+          }
+        ]
+      },
+      {
+        "day": "Tuesday",
+        "periods": [
+          {
+            "open": "11:00",
+            "close": "23:00"
+          }
+        ]
+      },
+      {
+        "day": "Wednesday",
+        "periods": [
+          {
+            "open": "11:00",
+            "close": "23:00"
+          }
+        ]
+      },
+      {
+        "day": "Thursday",
+        "periods": [
+          {
+            "open": "11:00",
+            "close": "23:00"
+          }
+        ]
+      },
+      {
+        "day": "Friday",
+        "periods": [
+          {
+            "open": "11:00",
+            "close": "23:00"
+          }
+        ]
+      },
+      {
+        "day": "Saturday",
+        "periods": [
+          {
+            "open": "11:00",
+            "close": "23:00"
+          }
+        ]
+      },
+      {
+        "day": "Sunday",
+        "periods": [
+          {
+            "open": "11:00",
+            "close": "23:00"
+          }
+        ]
+      }
+    ],
+    "address": [
+      {
+        "description": "Flagship",
+        "street": "824 Cedar St",
+        "number": "507",
+        "complement": "Sala 2",
+        "neighborhood": "Suburbia",
+        "city": "Cityville",
+        "state": "State"
+      }
+    ],
+    "category": "Vegan Restaurant",
+    "deliveryTime": {
+      "min": 20,
+      "max": 30
+    },
+    "shippingCost": 5,
+    "contact": {
+      "phone": "+55 (41) 98496-8972",
+      "email": "contato@chillbar.com.br"
+    },
+    "rating": {
+      "average": 4.1,
+      "count": 828
+    },
+    "paymentMethods": ["Pix", "Débito"],
+    "services": ["Entrega", "Retirada"]
+  },
+  {
+    "_id": "68eea520f0bc911bd5bb0847",
+    "coverPhoto": "",
+    "name": "Downtown Pub",
+    "openingHours": [
+      {
+        "day": "Monday",
+        "periods": [
+          {
+            "open": "11:00",
+            "close": "22:00"
+          }
+        ]
+      },
+      {
+        "day": "Tuesday",
+        "periods": [
+          {
+            "open": "11:00",
+            "close": "22:00"
+          }
+        ]
+      },
+      {
+        "day": "Wednesday",
+        "periods": [
+          {
+            "open": "11:00",
+            "close": "22:00"
+          }
+        ]
+      },
+      {
+        "day": "Thursday",
+        "periods": [
+          {
+            "open": "11:00",
+            "close": "22:00"
+          }
+        ]
+      },
+      {
+        "day": "Friday",
+        "periods": [
+          {
+            "open": "11:00",
+            "close": "22:00"
+          }
+        ]
+      },
+      {
+        "day": "Saturday",
+        "periods": [
+          {
+            "open": "11:00",
+            "close": "22:00"
+          }
+        ]
+      },
+      {
+        "day": "Sunday",
+        "periods": [
+          {
+            "open": "11:00",
+            "close": "22:00"
+          }
+        ]
+      }
+    ],
+    "address": [
+      {
+        "description": "Flagship",
+        "street": "248 Willow Rd",
+        "number": "160",
+        "complement": "Loja 1",
+        "neighborhood": "Suburbia",
+        "city": "Countryville",
+        "state": "State"
+      }
+    ],
+    "category": "Seafood Restaurant",
+    "deliveryTime": {
+      "min": 15,
+      "max": 25
+    },
+    "shippingCost": 7,
+    "contact": {
+      "phone": "+55 (41) 92620-2532",
+      "email": "contato@downtownpub.com"
+    },
+    "rating": {
+      "average": 4.3,
+      "count": 1522
+    },
+    "paymentMethods": ["Pix", "Dinheiro", "Débito"],
+    "services": ["Entrega", "Retirada"]
+  },
+  {
+    "_id": "68eea520f0bc911bd5bb084b",
+    "coverPhoto": "",
+    "name": "Tropical Grill",
+    "openingHours": [
+      {
+        "day": "Monday",
+        "periods": [
+          {
+            "open": "09:00",
+            "close": "23:00"
+          }
+        ]
+      },
+      {
+        "day": "Tuesday",
+        "periods": [
+          {
+            "open": "09:00",
+            "close": "23:00"
+          }
+        ]
+      },
+      {
+        "day": "Wednesday",
+        "periods": [
+          {
+            "open": "09:00",
+            "close": "23:00"
+          }
+        ]
+      },
+      {
+        "day": "Thursday",
+        "periods": [
+          {
+            "open": "09:00",
+            "close": "23:00"
+          }
+        ]
+      },
+      {
+        "day": "Friday",
+        "periods": [
+          {
+            "open": "09:00",
+            "close": "23:00"
+          }
+        ]
+      },
+      {
+        "day": "Saturday",
+        "periods": [
+          {
+            "open": "09:00",
+            "close": "23:00"
+          }
+        ]
+      },
+      {
+        "day": "Sunday",
+        "periods": [
+          {
+            "open": "09:00",
+            "close": "23:00"
+          }
+        ]
+      }
+    ],
+    "address": [
+      {
+        "description": "Flagship",
+        "street": "487 Elm St",
+        "number": "613",
+        "complement": "",
+        "neighborhood": "Downtown",
+        "city": "Countryville",
+        "state": "State"
+      }
+    ],
+    "category": "Steakhouse",
+    "deliveryTime": {
+      "min": 20,
+      "max": 30
+    },
+    "shippingCost": 12,
+    "contact": {
+      "phone": "+55 (31) 90478-7958",
+      "email": "contato@tropicalgrill.com"
+    },
+    "rating": {
+      "average": 4.2,
+      "count": 1304
+    },
+    "paymentMethods": ["Pix", "Dinheiro", "Débito", "Crédito"],
+    "services": ["Entrega", "Retirada"]
+  },
+  {
+    "_id": "68eea520f0bc911bd5bb084f",
+    "coverPhoto": "",
+    "name": "Tropical Grill",
+    "openingHours": [
+      {
+        "day": "Monday",
+        "periods": [
+          {
+            "open": "11:00",
+            "close": "22:00"
+          }
+        ]
+      },
+      {
+        "day": "Tuesday",
+        "periods": [
+          {
+            "open": "11:00",
+            "close": "22:00"
+          }
+        ]
+      },
+      {
+        "day": "Wednesday",
+        "periods": [
+          {
+            "open": "11:00",
+            "close": "22:00"
+          }
+        ]
+      },
+      {
+        "day": "Thursday",
+        "periods": [
+          {
+            "open": "11:00",
+            "close": "22:00"
+          }
+        ]
+      },
+      {
+        "day": "Friday",
+        "periods": [
+          {
+            "open": "11:00",
+            "close": "22:00"
+          }
+        ]
+      },
+      {
+        "day": "Saturday",
+        "periods": [
+          {
+            "open": "11:00",
+            "close": "22:00"
+          }
+        ]
+      },
+      {
+        "day": "Sunday",
+        "periods": [
+          {
+            "open": "11:00",
+            "close": "22:00"
+          }
+        ]
+      }
+    ],
+    "address": [
+      {
+        "description": "Flagship",
+        "street": "654 Birch Blvd",
+        "number": "130",
+        "complement": "Sala 2",
+        "neighborhood": "Outskirts",
+        "city": "Countryville",
+        "state": "State"
+      }
+    ],
+    "category": "Ice Cream Shop",
+    "deliveryTime": {
+      "min": 35,
+      "max": 45
+    },
+    "shippingCost": 6,
+    "contact": {
+      "phone": "+55 (11) 94608-6891",
+      "email": "contato@tropicalgrill.com"
+    },
+    "rating": {
+      "average": 4.3,
+      "count": 960
+    },
+    "paymentMethods": ["Crédito", "Débito", "Pix"],
+    "services": ["Entrega", "Retirada"]
+  },
+  {
+    "_id": "68eea520f0bc911bd5bb0853",
+    "coverPhoto": "",
+    "name": "Downtown Pub",
+    "openingHours": [
+      {
+        "day": "Monday",
+        "periods": [
+          {
+            "open": "08:00",
+            "close": "18:00"
+          }
+        ]
+      },
+      {
+        "day": "Tuesday",
+        "periods": [
+          {
+            "open": "08:00",
+            "close": "18:00"
+          }
+        ]
+      },
+      {
+        "day": "Wednesday",
+        "periods": [
+          {
+            "open": "08:00",
+            "close": "18:00"
+          }
+        ]
+      },
+      {
+        "day": "Thursday",
+        "periods": [
+          {
+            "open": "08:00",
+            "close": "18:00"
+          }
+        ]
+      },
+      {
+        "day": "Friday",
+        "periods": [
+          {
+            "open": "08:00",
+            "close": "18:00"
+          }
+        ]
+      },
+      {
+        "day": "Saturday",
+        "periods": [
+          {
+            "open": "08:00",
+            "close": "18:00"
+          }
+        ]
+      },
+      {
+        "day": "Sunday",
+        "periods": [
+          {
+            "open": "08:00",
+            "close": "18:00"
+          }
+        ]
+      }
+    ],
+    "address": [
+      {
+        "description": "Flagship",
+        "street": "655 Birch Blvd",
+        "number": "503",
+        "complement": "Piso Térreo",
+        "neighborhood": "Suburbia",
+        "city": "Countryville",
+        "state": "State"
+      }
+    ],
+    "category": "Cafeteria",
+    "deliveryTime": {
+      "min": 15,
+      "max": 35
+    },
+    "shippingCost": 8,
+    "contact": {
+      "phone": "+55 (31) 94643-8457",
+      "email": "contato@downtownpub.com.br"
+    },
+    "rating": {
+      "average": 4.2,
+      "count": 1884
+    },
+    "paymentMethods": ["Débito", "Dinheiro"],
+    "services": ["Entrega", "Retirada"]
+  },
+  {
+    "_id": "68eea520f0bc911bd5bb0857",
+    "coverPhoto": "",
+    "name": "Casa do Sabor",
+    "openingHours": [
+      {
+        "day": "Monday",
+        "periods": [
+          {
+            "open": "10:00",
+            "close": "21:00"
+          }
+        ]
+      },
+      {
+        "day": "Tuesday",
+        "periods": [
+          {
+            "open": "10:00",
+            "close": "21:00"
+          }
+        ]
+      },
+      {
+        "day": "Wednesday",
+        "periods": [
+          {
+            "open": "10:00",
+            "close": "21:00"
+          }
+        ]
+      },
+      {
+        "day": "Thursday",
+        "periods": [
+          {
+            "open": "10:00",
+            "close": "21:00"
+          }
+        ]
+      },
+      {
+        "day": "Friday",
+        "periods": [
+          {
+            "open": "10:00",
+            "close": "21:00"
+          }
+        ]
+      },
+      {
+        "day": "Saturday",
+        "periods": [
+          {
+            "open": "10:00",
+            "close": "21:00"
+          }
+        ]
+      },
+      {
+        "day": "Sunday",
+        "periods": [
+          {
+            "open": "10:00",
+            "close": "21:00"
+          }
+        ]
+      }
+    ],
+    "address": [
+      {
+        "description": "Flagship",
+        "street": "612 Elm St",
+        "number": "120",
+        "complement": "Sala 2",
+        "neighborhood": "Hillside",
+        "city": "Countryville",
+        "state": "State"
+      }
+    ],
+    "category": "Pub",
+    "deliveryTime": {
+      "min": 20,
+      "max": 35
+    },
+    "shippingCost": 0,
+    "contact": {
+      "phone": "+55 (21) 90303-2734",
+      "email": "contato@casadosabor.com.br"
+    },
+    "rating": {
+      "average": 4.1,
+      "count": 924
+    },
+    "paymentMethods": ["Pix", "Dinheiro"],
+    "services": ["Entrega", "Retirada"]
+  },
+  {
+    "_id": "68eea520f0bc911bd5bb085b",
+    "coverPhoto": "",
+    "name": "Green Bowl",
+    "openingHours": [
+      {
+        "day": "Monday",
+        "periods": [
+          {
+            "open": "10:00",
+            "close": "20:00"
+          }
+        ]
+      },
+      {
+        "day": "Tuesday",
+        "periods": [
+          {
+            "open": "10:00",
+            "close": "20:00"
+          }
+        ]
+      },
+      {
+        "day": "Wednesday",
+        "periods": [
+          {
+            "open": "10:00",
+            "close": "20:00"
+          }
+        ]
+      },
+      {
+        "day": "Thursday",
+        "periods": [
+          {
+            "open": "10:00",
+            "close": "20:00"
+          }
+        ]
+      },
+      {
+        "day": "Friday",
+        "periods": [
+          {
+            "open": "10:00",
+            "close": "20:00"
+          }
+        ]
+      },
+      {
+        "day": "Saturday",
+        "periods": [
+          {
+            "open": "10:00",
+            "close": "20:00"
+          }
+        ]
+      },
+      {
+        "day": "Sunday",
+        "periods": [
+          {
+            "open": "10:00",
+            "close": "20:00"
+          }
+        ]
+      }
+    ],
+    "address": [
+      {
+        "description": "Flagship",
+        "street": "316 Elm St",
+        "number": "725",
+        "complement": "Piso Térreo",
+        "neighborhood": "Downtown",
+        "city": "Smalltown",
+        "state": "State"
+      }
+    ],
+    "category": "Pizzeria",
+    "deliveryTime": {
+      "min": 20,
+      "max": 40
+    },
+    "shippingCost": 9,
+    "contact": {
+      "phone": "+55 (21) 91535-7929",
+      "email": "contato@greenbowl.com.br"
+    },
+    "rating": {
+      "average": 4.1,
+      "count": 878
+    },
+    "paymentMethods": ["Pix", "Débito"],
+    "services": ["Entrega", "Retirada"]
+  },
+  {
+    "_id": "68eea520f0bc911bd5bb085f",
+    "coverPhoto": "",
+    "name": "Tropical Grill",
+    "openingHours": [
+      {
+        "day": "Monday",
+        "periods": [
+          {
+            "open": "09:00",
+            "close": "23:00"
+          }
+        ]
+      },
+      {
+        "day": "Tuesday",
+        "periods": [
+          {
+            "open": "09:00",
+            "close": "23:00"
+          }
+        ]
+      },
+      {
+        "day": "Wednesday",
+        "periods": [
+          {
+            "open": "09:00",
+            "close": "23:00"
+          }
+        ]
+      },
+      {
+        "day": "Thursday",
+        "periods": [
+          {
+            "open": "09:00",
+            "close": "23:00"
+          }
+        ]
+      },
+      {
+        "day": "Friday",
+        "periods": [
+          {
+            "open": "09:00",
+            "close": "23:00"
+          }
+        ]
+      },
+      {
+        "day": "Saturday",
+        "periods": [
+          {
+            "open": "09:00",
+            "close": "23:00"
+          }
+        ]
+      },
+      {
+        "day": "Sunday",
+        "periods": [
+          {
+            "open": "09:00",
+            "close": "23:00"
+          }
+        ]
+      }
+    ],
+    "address": [
+      {
+        "description": "Flagship",
+        "street": "584 Pine St",
+        "number": "144",
+        "complement": "Piso Térreo",
+        "neighborhood": "Downtown",
+        "city": "Metropolis",
+        "state": "State"
+      }
+    ],
+    "category": "Coffee Shop",
+    "deliveryTime": {
+      "min": 30,
+      "max": 45
+    },
+    "shippingCost": 6,
+    "contact": {
+      "phone": "+55 (51) 99842-5215",
+      "email": "contato@tropicalgrill.com"
+    },
+    "rating": {
+      "average": 3.8,
+      "count": 1043
+    },
+    "paymentMethods": ["Débito", "Pix", "Crédito", "Dinheiro"],
+    "services": ["Entrega", "Retirada"]
+  },
+  {
+    "_id": "68eea520f0bc911bd5bb0863",
+    "coverPhoto": "",
+    "name": "Tropical Grill",
+    "openingHours": [
+      {
+        "day": "Monday",
+        "periods": [
+          {
+            "open": "09:00",
+            "close": "21:00"
+          }
+        ]
+      },
+      {
+        "day": "Tuesday",
+        "periods": [
+          {
+            "open": "09:00",
+            "close": "21:00"
+          }
+        ]
+      },
+      {
+        "day": "Wednesday",
+        "periods": [
+          {
+            "open": "09:00",
+            "close": "21:00"
+          }
+        ]
+      },
+      {
+        "day": "Thursday",
+        "periods": [
+          {
+            "open": "09:00",
+            "close": "21:00"
+          }
+        ]
+      },
+      {
+        "day": "Friday",
+        "periods": [
+          {
+            "open": "09:00",
+            "close": "21:00"
+          }
+        ]
+      },
+      {
+        "day": "Saturday",
+        "periods": [
+          {
+            "open": "09:00",
+            "close": "21:00"
+          }
+        ]
+      },
+      {
+        "day": "Sunday",
+        "periods": [
+          {
+            "open": "09:00",
+            "close": "21:00"
+          }
+        ]
+      }
+    ],
+    "address": [
+      {
+        "description": "Flagship",
+        "street": "852 Elm St",
+        "number": "992",
+        "complement": "",
+        "neighborhood": "Suburbia",
+        "city": "Villagetown",
+        "state": "State"
+      }
+    ],
+    "category": "Pizzeria",
+    "deliveryTime": {
+      "min": 30,
+      "max": 45
+    },
+    "shippingCost": 0,
+    "contact": {
+      "phone": "+55 (11) 97007-6795",
+      "email": "contato@tropicalgrill.com.br"
+    },
+    "rating": {
+      "average": 3.9,
+      "count": 151
+    },
+    "paymentMethods": ["Pix", "Crédito"],
+    "services": ["Entrega", "Retirada"]
+  },
+  {
+    "_id": "68eea520f0bc911bd5bb0867",
+    "coverPhoto": "",
+    "name": "Sunrise Bakery",
+    "openingHours": [
+      {
+        "day": "Monday",
+        "periods": [
+          {
+            "open": "11:00",
+            "close": "23:00"
+          }
+        ]
+      },
+      {
+        "day": "Tuesday",
+        "periods": [
+          {
+            "open": "11:00",
+            "close": "23:00"
+          }
+        ]
+      },
+      {
+        "day": "Wednesday",
+        "periods": [
+          {
+            "open": "11:00",
+            "close": "23:00"
+          }
+        ]
+      },
+      {
+        "day": "Thursday",
+        "periods": [
+          {
+            "open": "11:00",
+            "close": "23:00"
+          }
+        ]
+      },
+      {
+        "day": "Friday",
+        "periods": [
+          {
+            "open": "11:00",
+            "close": "23:00"
+          }
+        ]
+      },
+      {
+        "day": "Saturday",
+        "periods": [
+          {
+            "open": "11:00",
+            "close": "23:00"
+          }
+        ]
+      },
+      {
+        "day": "Sunday",
+        "periods": [
+          {
+            "open": "11:00",
+            "close": "23:00"
+          }
+        ]
+      }
+    ],
+    "address": [
+      {
+        "description": "Flagship",
+        "street": "229 Birch Blvd",
+        "number": "848",
+        "complement": "Piso Térreo",
+        "neighborhood": "Suburbia",
+        "city": "Countryville",
+        "state": "State"
+      }
+    ],
+    "category": "Bakery",
+    "deliveryTime": {
+      "min": 15,
+      "max": 35
+    },
+    "shippingCost": 12,
+    "contact": {
+      "phone": "+55 (51) 97959-1729",
+      "email": "contato@sunrisebakery.com.br"
+    },
+    "rating": {
+      "average": 3.9,
+      "count": 166
+    },
+    "paymentMethods": ["Crédito", "Dinheiro"],
+    "services": ["Entrega", "Retirada"]
+  },
+  {
+    "_id": "68eea520f0bc911bd5bb086b",
+    "coverPhoto": "",
+    "name": "Espresso Corner",
+    "openingHours": [
+      {
+        "day": "Monday",
+        "periods": [
+          {
+            "open": "09:00",
+            "close": "20:00"
+          }
+        ]
+      },
+      {
+        "day": "Tuesday",
+        "periods": [
+          {
+            "open": "09:00",
+            "close": "20:00"
+          }
+        ]
+      },
+      {
+        "day": "Wednesday",
+        "periods": [
+          {
+            "open": "09:00",
+            "close": "20:00"
+          }
+        ]
+      },
+      {
+        "day": "Thursday",
+        "periods": [
+          {
+            "open": "09:00",
+            "close": "20:00"
+          }
+        ]
+      },
+      {
+        "day": "Friday",
+        "periods": [
+          {
+            "open": "09:00",
+            "close": "20:00"
+          }
+        ]
+      },
+      {
+        "day": "Saturday",
+        "periods": [
+          {
+            "open": "09:00",
+            "close": "20:00"
+          }
+        ]
+      },
+      {
+        "day": "Sunday",
+        "periods": [
+          {
+            "open": "09:00",
+            "close": "20:00"
+          }
+        ]
+      }
+    ],
+    "address": [
+      {
+        "description": "Flagship",
+        "street": "947 Oak Ave",
+        "number": "896",
+        "complement": "Sala 2",
+        "neighborhood": "Hillside",
+        "city": "Smalltown",
+        "state": "State"
+      }
+    ],
+    "category": "Bar",
+    "deliveryTime": {
+      "min": 35,
+      "max": 55
+    },
+    "shippingCost": 12,
+    "contact": {
+      "phone": "+55 (11) 93731-4036",
+      "email": "contato@espressocorner.com"
+    },
+    "rating": {
+      "average": 3.9,
+      "count": 1532
+    },
+    "paymentMethods": ["Pix", "Débito", "Crédito", "Dinheiro"],
+    "services": ["Entrega", "Retirada"]
+  },
+  {
+    "_id": "68eea520f0bc911bd5bb086f",
+    "coverPhoto": "",
+    "name": "Sabor Brasil",
+    "openingHours": [
+      {
+        "day": "Monday",
+        "periods": [
+          {
+            "open": "09:00",
+            "close": "21:00"
+          }
+        ]
+      },
+      {
+        "day": "Tuesday",
+        "periods": [
+          {
+            "open": "09:00",
+            "close": "21:00"
+          }
+        ]
+      },
+      {
+        "day": "Wednesday",
+        "periods": [
+          {
+            "open": "09:00",
+            "close": "21:00"
+          }
+        ]
+      },
+      {
+        "day": "Thursday",
+        "periods": [
+          {
+            "open": "09:00",
+            "close": "21:00"
+          }
+        ]
+      },
+      {
+        "day": "Friday",
+        "periods": [
+          {
+            "open": "09:00",
+            "close": "21:00"
+          }
+        ]
+      },
+      {
+        "day": "Saturday",
+        "periods": [
+          {
+            "open": "09:00",
+            "close": "21:00"
+          }
+        ]
+      },
+      {
+        "day": "Sunday",
+        "periods": [
+          {
+            "open": "09:00",
+            "close": "21:00"
+          }
+        ]
+      }
+    ],
+    "address": [
+      {
+        "description": "Flagship",
+        "street": "364 Elm St",
+        "number": "67",
+        "complement": "",
+        "neighborhood": "Uptown",
+        "city": "Metropolis",
+        "state": "State"
+      }
+    ],
+    "category": "Healthy Food",
+    "deliveryTime": {
+      "min": 35,
+      "max": 45
+    },
+    "shippingCost": 8,
+    "contact": {
+      "phone": "+55 (11) 95485-5575",
+      "email": "contato@saborbrasil.com"
+    },
+    "rating": {
+      "average": 4,
+      "count": 92
+    },
+    "paymentMethods": ["Débito", "Dinheiro"],
+    "services": ["Entrega", "Retirada"]
+  },
+  {
+    "_id": "68eea520f0bc911bd5bb0873",
+    "coverPhoto": "",
+    "name": "Green Bowl",
+    "openingHours": [
+      {
+        "day": "Monday",
+        "periods": [
+          {
+            "open": "07:00",
+            "close": "21:00"
+          }
+        ]
+      },
+      {
+        "day": "Tuesday",
+        "periods": [
+          {
+            "open": "07:00",
+            "close": "21:00"
+          }
+        ]
+      },
+      {
+        "day": "Wednesday",
+        "periods": [
+          {
+            "open": "07:00",
+            "close": "21:00"
+          }
+        ]
+      },
+      {
+        "day": "Thursday",
+        "periods": [
+          {
+            "open": "07:00",
+            "close": "21:00"
+          }
+        ]
+      },
+      {
+        "day": "Friday",
+        "periods": [
+          {
+            "open": "07:00",
+            "close": "21:00"
+          }
+        ]
+      },
+      {
+        "day": "Saturday",
+        "periods": [
+          {
+            "open": "07:00",
+            "close": "21:00"
+          }
+        ]
+      },
+      {
+        "day": "Sunday",
+        "periods": [
+          {
+            "open": "07:00",
+            "close": "21:00"
+          }
+        ]
+      }
+    ],
+    "address": [
+      {
+        "description": "Flagship",
+        "street": "202 Birch Blvd",
+        "number": "299",
+        "complement": "Sala 2",
+        "neighborhood": "Uptown",
+        "city": "Metropolis",
+        "state": "State"
+      }
+    ],
+    "category": "Bistro",
+    "deliveryTime": {
+      "min": 15,
+      "max": 35
+    },
+    "shippingCost": 0,
+    "contact": {
+      "phone": "+55 (21) 91235-6580",
+      "email": "contato@greenbowl.com"
+    },
+    "rating": {
+      "average": 4.7,
+      "count": 493
+    },
+    "paymentMethods": ["Débito", "Pix"],
+    "services": ["Entrega", "Retirada"]
+  },
+  {
+    "_id": "68eea520f0bc911bd5bb0877",
+    "coverPhoto": "",
+    "name": "The Fish House",
+    "openingHours": [
+      {
+        "day": "Monday",
+        "periods": [
+          {
+            "open": "10:00",
+            "close": "22:00"
+          }
+        ]
+      },
+      {
+        "day": "Tuesday",
+        "periods": [
+          {
+            "open": "10:00",
+            "close": "22:00"
+          }
+        ]
+      },
+      {
+        "day": "Wednesday",
+        "periods": [
+          {
+            "open": "10:00",
+            "close": "22:00"
+          }
+        ]
+      },
+      {
+        "day": "Thursday",
+        "periods": [
+          {
+            "open": "10:00",
+            "close": "22:00"
+          }
+        ]
+      },
+      {
+        "day": "Friday",
+        "periods": [
+          {
+            "open": "10:00",
+            "close": "22:00"
+          }
+        ]
+      },
+      {
+        "day": "Saturday",
+        "periods": [
+          {
+            "open": "10:00",
+            "close": "22:00"
+          }
+        ]
+      },
+      {
+        "day": "Sunday",
+        "periods": [
+          {
+            "open": "10:00",
+            "close": "22:00"
+          }
+        ]
+      }
+    ],
+    "address": [
+      {
+        "description": "Flagship",
+        "street": "731 Maple St",
+        "number": "254",
+        "complement": "Sala 2",
+        "neighborhood": "Downtown",
+        "city": "Cityville",
+        "state": "State"
+      }
+    ],
+    "category": "Mexican Restaurant",
+    "deliveryTime": {
+      "min": 20,
+      "max": 40
+    },
+    "shippingCost": 10,
+    "contact": {
+      "phone": "+55 (31) 93501-9785",
+      "email": "contato@thefishhouse.com"
+    },
+    "rating": {
+      "average": 3.6,
+      "count": 1064
+    },
+    "paymentMethods": ["Pix", "Débito", "Dinheiro", "Crédito"],
+    "services": ["Entrega", "Retirada"]
+  },
+  {
+    "_id": "68eea520f0bc911bd5bb087b",
+    "coverPhoto": "",
+    "name": "Downtown Pub",
+    "openingHours": [
+      {
+        "day": "Monday",
+        "periods": [
+          {
+            "open": "07:00",
+            "close": "18:00"
+          }
+        ]
+      },
+      {
+        "day": "Tuesday",
+        "periods": [
+          {
+            "open": "07:00",
+            "close": "18:00"
+          }
+        ]
+      },
+      {
+        "day": "Wednesday",
+        "periods": [
+          {
+            "open": "07:00",
+            "close": "18:00"
+          }
+        ]
+      },
+      {
+        "day": "Thursday",
+        "periods": [
+          {
+            "open": "07:00",
+            "close": "18:00"
+          }
+        ]
+      },
+      {
+        "day": "Friday",
+        "periods": [
+          {
+            "open": "07:00",
+            "close": "18:00"
+          }
+        ]
+      },
+      {
+        "day": "Saturday",
+        "periods": [
+          {
+            "open": "07:00",
+            "close": "18:00"
+          }
+        ]
+      },
+      {
+        "day": "Sunday",
+        "periods": [
+          {
+            "open": "07:00",
+            "close": "18:00"
+          }
+        ]
+      }
+    ],
+    "address": [
+      {
+        "description": "Flagship",
+        "street": "783 Cedar St",
+        "number": "364",
+        "complement": "Piso Térreo",
+        "neighborhood": "Outskirts",
+        "city": "Smalltown",
+        "state": "State"
+      }
+    ],
+    "category": "Healthy Food",
+    "deliveryTime": {
+      "min": 35,
+      "max": 50
+    },
+    "shippingCost": 5,
+    "contact": {
+      "phone": "+55 (41) 99474-6554",
+      "email": "contato@downtownpub.com"
+    },
+    "rating": {
+      "average": 4.1,
+      "count": 911
+    },
+    "paymentMethods": ["Débito", "Pix", "Dinheiro"],
+    "services": ["Entrega", "Retirada"]
+  },
+  {
+    "_id": "68eea520f0bc911bd5bb087f",
+    "coverPhoto": "",
+    "name": "Tropical Grill",
+    "openingHours": [
+      {
+        "day": "Monday",
+        "periods": [
+          {
+            "open": "11:00",
+            "close": "23:00"
+          }
+        ]
+      },
+      {
+        "day": "Tuesday",
+        "periods": [
+          {
+            "open": "11:00",
+            "close": "23:00"
+          }
+        ]
+      },
+      {
+        "day": "Wednesday",
+        "periods": [
+          {
+            "open": "11:00",
+            "close": "23:00"
+          }
+        ]
+      },
+      {
+        "day": "Thursday",
+        "periods": [
+          {
+            "open": "11:00",
+            "close": "23:00"
+          }
+        ]
+      },
+      {
+        "day": "Friday",
+        "periods": [
+          {
+            "open": "11:00",
+            "close": "23:00"
+          }
+        ]
+      },
+      {
+        "day": "Saturday",
+        "periods": [
+          {
+            "open": "11:00",
+            "close": "23:00"
+          }
+        ]
+      },
+      {
+        "day": "Sunday",
+        "periods": [
+          {
+            "open": "11:00",
+            "close": "23:00"
+          }
+        ]
+      }
+    ],
+    "address": [
+      {
+        "description": "Flagship",
+        "street": "832 Willow Rd",
+        "number": "580",
+        "complement": "",
+        "neighborhood": "Hillside",
+        "city": "Metropolis",
+        "state": "State"
+      }
+    ],
+    "category": "Food Truck",
+    "deliveryTime": {
+      "min": 35,
+      "max": 45
+    },
+    "shippingCost": 7,
+    "contact": {
+      "phone": "+55 (51) 96010-9120",
+      "email": "contato@tropicalgrill.com.br"
+    },
+    "rating": {
+      "average": 4.9,
+      "count": 715
+    },
+    "paymentMethods": ["Dinheiro", "Pix", "Débito"],
+    "services": ["Entrega", "Retirada"]
+  },
+  {
+    "_id": "68eea520f0bc911bd5bb0883",
+    "coverPhoto": "",
+    "name": "Street Bites",
+    "openingHours": [
+      {
+        "day": "Monday",
+        "periods": [
+          {
+            "open": "11:00",
+            "close": "21:00"
+          }
+        ]
+      },
+      {
+        "day": "Tuesday",
+        "periods": [
+          {
+            "open": "11:00",
+            "close": "21:00"
+          }
+        ]
+      },
+      {
+        "day": "Wednesday",
+        "periods": [
+          {
+            "open": "11:00",
+            "close": "21:00"
+          }
+        ]
+      },
+      {
+        "day": "Thursday",
+        "periods": [
+          {
+            "open": "11:00",
+            "close": "21:00"
+          }
+        ]
+      },
+      {
+        "day": "Friday",
+        "periods": [
+          {
+            "open": "11:00",
+            "close": "21:00"
+          }
+        ]
+      },
+      {
+        "day": "Saturday",
+        "periods": [
+          {
+            "open": "11:00",
+            "close": "21:00"
+          }
+        ]
+      },
+      {
+        "day": "Sunday",
+        "periods": [
+          {
+            "open": "11:00",
+            "close": "21:00"
+          }
+        ]
+      }
+    ],
+    "address": [
+      {
+        "description": "Flagship",
+        "street": "424 Birch Blvd",
+        "number": "560",
+        "complement": "Sala 2",
+        "neighborhood": "Outskirts",
+        "city": "Metropolis",
+        "state": "State"
+      }
+    ],
+    "category": "Juice Bar",
+    "deliveryTime": {
+      "min": 35,
+      "max": 55
+    },
+    "shippingCost": 0,
+    "contact": {
+      "phone": "+55 (21) 90714-2567",
+      "email": "contato@streetbites.com"
+    },
+    "rating": {
+      "average": 4.5,
+      "count": 1405
+    },
+    "paymentMethods": ["Pix", "Débito"],
+    "services": ["Entrega", "Retirada"]
   }
 ]
