@@ -21,10 +21,10 @@ export interface TopProduct {
 // Define the product schema to be used for creating the Mongoose model
 export const productSchema = new Schema<IProduct>(
   {
-    productImage: { type: String },
-    thumbnail: { type: String },
+    productImage: { type: String, default: '' },
+    thumbnail: { type: String, default: '' },
     name: { type: String, required: true },
-    description: { type: String },
+    description: { type: String, default: '' },
     price: { type: Number, required: true },
     establishment: {
       type: Schema.Types.ObjectId,

@@ -15,8 +15,8 @@
     "price": 36.0,
     "category": "Pizzeria",
     "establishment": "664263e9a61e5ddceac532f4",
-    "thumbnail": "",
-    "productImage": "images/veggie_pizza.jpg"
+    "productImage": "",
+    "thumbnail": ""
   },
   {
     "_id": "589780c97e162ccbb8b83f4b",
@@ -25,8 +25,8 @@
     "price": 40.0,
     "category": "Pizzeria",
     "establishment": "664263e9a61e5ddceac532f4",
-    "thumbnail": "",
-    "productImage": "images/four_cheese_pizza.jpg"
+    "productImage": "",
+    "thumbnail": ""
   },
   {
     "_id": "70e3fe978ad0c9a7034ff2ad",
@@ -35,8 +35,8 @@
     "price": 35.0,
     "category": "Pizzeria",
     "establishment": "664263e9a61e5ddceac532f4",
-    "thumbnail": "",
-    "productImage": "images/margherita_pizza.jpg"
+    "productImage": "",
+    "thumbnail": ""
   },
   {
     "_id": "66436318bea46df5e1bc8bd3",
@@ -117,8 +117,8 @@
     "price": 5.0,
     "category": "Bakery",
     "establishment": "664263e9a61e5ddceac532f5",
-    "thumbnail": "",
-    "productImage": "images/baguette.jpg"
+    "productImage": "",
+    "thumbnail": ""
   },
   {
     "_id": "66436318bea46df5e1bc8be0",
@@ -136,8 +136,8 @@
     "price": 30.0,
     "category": "Steakhouse",
     "establishment": "664263e9a61e5ddceac532f6",
-    "thumbnail": "",
-    "productImage": "images/caesar_salad.jpg"
+    "productImage": "",
+    "thumbnail": ""
   },
   {
     "_id": "398389bdff9a388f941a784a",
@@ -146,8 +146,8 @@
     "price": 60.0,
     "category": "Steakhouse",
     "establishment": "664263e9a61e5ddceac532f6",
-    "thumbnail": "",
-    "productImage": "images/beef_steak.jpg"
+    "productImage": "",
+    "thumbnail": ""
   },
   {
     "_id": "6a901b26235a14329a0d8b73",
@@ -156,8 +156,8 @@
     "price": 60.0,
     "category": "Steakhouse",
     "establishment": "664263e9a61e5ddceac532f6",
-    "thumbnail": "",
-    "productImage": "images/beef_steak.jpg"
+    "productImage": "",
+    "thumbnail": ""
   },
   {
     "_id": "66436318bea46df5e1bc8be4",
@@ -229,8 +229,8 @@
     "price": 8.0,
     "category": "Coffee Shop",
     "establishment": "664263e9a61e5ddceac532f9",
-    "thumbnail": "",
-    "productImage": "images/iced_latte.jpg"
+    "productImage": "",
+    "thumbnail": ""
   },
   {
     "_id": "61cc49136f3e0cf82cd70ebd",
@@ -239,8 +239,8 @@
     "price": 7.0,
     "category": "Coffee Shop",
     "establishment": "664263e9a61e5ddceac532f9",
-    "thumbnail": "",
-    "productImage": "images/cappuccino.jpg"
+    "productImage": "",
+    "thumbnail": ""
   },
   {
     "_id": "fc3bc97d990220c7a0036461",
@@ -249,8 +249,8 @@
     "price": 5.0,
     "category": "Coffee Shop",
     "establishment": "664263e9a61e5ddceac532f9",
-    "thumbnail": "",
-    "productImage": "images/espresso.jpg"
+    "productImage": "",
+    "thumbnail": ""
   },
   {
     "_id": "66436318bea46df5e1bc8bf1",
@@ -268,8 +268,8 @@
     "price": 6.5,
     "category": "Bakery",
     "establishment": "664263e9a61e5ddceac532fa",
-    "thumbnail": "",
-    "productImage": "images/cupcake.jpg"
+    "productImage": "",
+    "thumbnail": ""
   },
   {
     "_id": "c5f0b856d8629fbef3c75e03",
@@ -278,8 +278,8 @@
     "price": 6.0,
     "category": "Bakery",
     "establishment": "664263e9a61e5ddceac532fa",
-    "thumbnail": "",
-    "productImage": "images/croissant.jpg"
+    "productImage": "",
+    "thumbnail": ""
   },
   {
     "_id": "81f6e33c6c37250c369e0c56",
@@ -288,8 +288,8 @@
     "price": 8.0,
     "category": "Bakery",
     "establishment": "664263e9a61e5ddceac532fa",
-    "thumbnail": "",
-    "productImage": "images/chocolate_cake.jpg"
+    "productImage": "",
+    "thumbnail": ""
   },
   {
     "_id": "66436318bea46df5e1bc8bf3",
@@ -379,8 +379,8 @@
     "price": 12.0,
     "category": "Ice Cream Shop",
     "establishment": "664263e9a61e5ddceac532fc",
-    "thumbnail": "",
-    "productImage": "images/banana_split.jpg"
+    "productImage": "",
+    "thumbnail": ""
   },
   {
     "_id": "66436318bea46df5e1bc8bfd",
@@ -407,8 +407,8 @@
     "price": 48.0,
     "category": "Food Truck",
     "establishment": "664263e9a61e5ddceac532fd",
-    "thumbnail": "",
-    "productImage": "images/chicken_alfredo_pasta.jpg"
+    "productImage": "",
+    "thumbnail": ""
   },
   {
     "_id": "af8b3a1604207eccf897d110",
@@ -417,8 +417,8 @@
     "price": 55.0,
     "category": "Food Truck",
     "establishment": "664263e9a61e5ddceac532fd",
-    "thumbnail": "",
-    "productImage": "images/grilled_salmon.jpg"
+    "productImage": "",
+    "thumbnail": ""
   },
   {
     "_id": "66436318bea46df5e1bc8c0d",
@@ -436,8 +436,8 @@
     "price": 60.0,
     "category": "Italian Restaurant",
     "establishment": "664263e9a61e5ddceac532ff",
-    "thumbnail": "",
-    "productImage": "images/beef_steak.jpg"
+    "productImage": "",
+    "thumbnail": ""
   },
   {
     "_id": "f9d54f996a357f6ed40eb294",
@@ -446,8 +446,8 @@
     "price": 60.0,
     "category": "Italian Restaurant",
     "establishment": "664263e9a61e5ddceac532ff",
-    "thumbnail": "",
-    "productImage": "images/beef_steak.jpg"
+    "productImage": "",
+    "thumbnail": ""
   },
   {
     "_id": "9f95fefb054e710243bedc52",
@@ -456,8 +456,8 @@
     "price": 60.0,
     "category": "Italian Restaurant",
     "establishment": "664263e9a61e5ddceac532ff",
-    "thumbnail": "",
-    "productImage": "images/beef_steak.jpg"
+    "productImage": "",
+    "thumbnail": ""
   },
   {
     "_id": "66436318bea46df5e1bc8c0f",
@@ -475,8 +475,8 @@
     "price": 40.0,
     "category": "Pizzeria",
     "establishment": "664263e9a61e5ddceac53300",
-    "thumbnail": "",
-    "productImage": "images/four_cheese_pizza.jpg"
+    "productImage": "",
+    "thumbnail": ""
   },
   {
     "_id": "fb33eb3b8af5b9a219fe61c2",
@@ -485,8 +485,8 @@
     "price": 40.0,
     "category": "Pizzeria",
     "establishment": "664263e9a61e5ddceac53300",
-    "thumbnail": "",
-    "productImage": "images/four_cheese_pizza.jpg"
+    "productImage": "",
+    "thumbnail": ""
   },
   {
     "_id": "9d76780e44a585c517a0051f",
@@ -495,8 +495,8 @@
     "price": 40.0,
     "category": "Pizzeria",
     "establishment": "664263e9a61e5ddceac53300",
-    "thumbnail": "",
-    "productImage": "images/four_cheese_pizza.jpg"
+    "productImage": "",
+    "thumbnail": ""
   },
   {
     "_id": "66436318bea46df5e1bc8c10",
@@ -514,8 +514,8 @@
     "price": 60.0,
     "category": "Mexican Restaurant",
     "establishment": "664263e9a61e5ddceac53301",
-    "thumbnail": "",
-    "productImage": "images/beef_steak.jpg"
+    "productImage": "",
+    "thumbnail": ""
   },
   {
     "_id": "92a89d7934f0a705ef6c7b08",
@@ -524,8 +524,8 @@
     "price": 30.0,
     "category": "Mexican Restaurant",
     "establishment": "664263e9a61e5ddceac53301",
-    "thumbnail": "",
-    "productImage": "images/caesar_salad.jpg"
+    "productImage": "",
+    "thumbnail": ""
   },
   {
     "_id": "733276b5ce3efee0e373bfe9",
@@ -534,8 +534,8 @@
     "price": 60.0,
     "category": "Mexican Restaurant",
     "establishment": "664263e9a61e5ddceac53301",
-    "thumbnail": "",
-    "productImage": "images/beef_steak.jpg"
+    "productImage": "",
+    "thumbnail": ""
   },
   {
     "_id": "66436318bea46df5e1bc8c14",
@@ -598,8 +598,8 @@
     "price": 6.5,
     "category": "Bakery",
     "establishment": "664263e9a61e5ddceac53304",
-    "thumbnail": "",
-    "productImage": "images/cupcake.jpg"
+    "productImage": "",
+    "thumbnail": ""
   },
   {
     "_id": "64e2effd8db728118b2dd239",
@@ -608,8 +608,8 @@
     "price": 6.5,
     "category": "Bakery",
     "establishment": "664263e9a61e5ddceac53304",
-    "thumbnail": "",
-    "productImage": "images/cupcake.jpg"
+    "productImage": "",
+    "thumbnail": ""
   },
   {
     "_id": "66436318bea46df5e1bc8c1c",
@@ -636,8 +636,8 @@
     "price": 60.0,
     "category": "Sushi Bar",
     "establishment": "664263e9a61e5ddceac53303",
-    "thumbnail": "",
-    "productImage": "images/beef_steak.jpg"
+    "productImage": "",
+    "thumbnail": ""
   },
   {
     "_id": "ac72b8937841ae8ec9fbd4eb",
@@ -646,8 +646,8 @@
     "price": 60.0,
     "category": "Sushi Bar",
     "establishment": "664263e9a61e5ddceac53303",
-    "thumbnail": "",
-    "productImage": "images/beef_steak.jpg"
+    "productImage": "",
+    "thumbnail": ""
   },
   {
     "_id": "e1a995866085acb7c86b8f31",
@@ -656,8 +656,8 @@
     "price": 30.0,
     "category": "Restaurant",
     "establishment": "664263e9a61e5ddceac532f1",
-    "thumbnail": "",
-    "productImage": "images/caesar_salad.jpg"
+    "productImage": "",
+    "thumbnail": ""
   },
   {
     "_id": "f50adb1c88489a671839e924",
@@ -666,8 +666,8 @@
     "price": 30.0,
     "category": "Restaurant",
     "establishment": "664263e9a61e5ddceac532f1",
-    "thumbnail": "",
-    "productImage": "images/caesar_salad.jpg"
+    "productImage": "",
+    "thumbnail": ""
   },
   {
     "_id": "0769cdbf4d1da10252506725",
@@ -676,8 +676,8 @@
     "price": 30.0,
     "category": "Restaurant",
     "establishment": "664263e9a61e5ddceac532f1",
-    "thumbnail": "",
-    "productImage": "images/caesar_salad.jpg"
+    "productImage": "",
+    "thumbnail": ""
   },
   {
     "_id": "6d32ae09fb7e24274858e152",
@@ -686,8 +686,8 @@
     "price": 55.0,
     "category": "Restaurant",
     "establishment": "664263e9a61e5ddceac532f1",
-    "thumbnail": "",
-    "productImage": "images/grilled_salmon.jpg"
+    "productImage": "",
+    "thumbnail": ""
   },
   {
     "_id": "6467bb3fae559b39a817e1c7",
@@ -696,8 +696,8 @@
     "price": 36.0,
     "category": "Pizzeria",
     "establishment": "664263e9a61e5ddceac532f2",
-    "thumbnail": "",
-    "productImage": "images/veggie_pizza.jpg"
+    "productImage": "",
+    "thumbnail": ""
   },
   {
     "_id": "3b8d017f0e7aad234a998a74",
@@ -706,8 +706,8 @@
     "price": 40.0,
     "category": "Pizzeria",
     "establishment": "664263e9a61e5ddceac532f2",
-    "thumbnail": "",
-    "productImage": "images/four_cheese_pizza.jpg"
+    "productImage": "",
+    "thumbnail": ""
   },
   {
     "_id": "7b6c4ad8d71bf4158eec1a12",
@@ -716,8 +716,8 @@
     "price": 40.0,
     "category": "Pizzeria",
     "establishment": "664263e9a61e5ddceac532f2",
-    "thumbnail": "",
-    "productImage": "images/four_cheese_pizza.jpg"
+    "productImage": "",
+    "thumbnail": ""
   },
   {
     "_id": "18cb18503d09ef3afdb6b29b",
@@ -726,8 +726,8 @@
     "price": 40.0,
     "category": "Pizzeria",
     "establishment": "664263e9a61e5ddceac532f2",
-    "thumbnail": "",
-    "productImage": "images/four_cheese_pizza.jpg"
+    "productImage": "",
+    "thumbnail": ""
   },
   {
     "_id": "120ba3d2cbe4d9f518e532e8",
@@ -736,8 +736,8 @@
     "price": 12.0,
     "category": "Ice Cream Shop",
     "establishment": "68eea520f0bc911bd5bb0807",
-    "thumbnail": "",
-    "productImage": "images/banana_split.jpg"
+    "productImage": "",
+    "thumbnail": ""
   },
   {
     "_id": "cd756d2e6175f7f84ac919a3",
@@ -746,8 +746,8 @@
     "price": 8.0,
     "category": "Ice Cream Shop",
     "establishment": "68eea520f0bc911bd5bb0807",
-    "thumbnail": "",
-    "productImage": "images/strawberry_sundae.jpg"
+    "productImage": "",
+    "thumbnail": ""
   },
   {
     "_id": "f4309ae04c869b69a1fa4bbc",
@@ -756,8 +756,8 @@
     "price": 7.0,
     "category": "Ice Cream Shop",
     "establishment": "68eea520f0bc911bd5bb0807",
-    "thumbnail": "",
-    "productImage": "images/chocolate_ice_cream.jpg"
+    "productImage": "",
+    "thumbnail": ""
   },
   {
     "_id": "319a5fe4a7d01a81f3261e90",
@@ -766,8 +766,8 @@
     "price": 7.0,
     "category": "Ice Cream Shop",
     "establishment": "68eea520f0bc911bd5bb0807",
-    "thumbnail": "",
-    "productImage": "images/vanilla_ice_cream.jpg"
+    "productImage": "",
+    "thumbnail": ""
   },
   {
     "_id": "09b420af3c9758f727058656",
@@ -776,8 +776,8 @@
     "price": 30.0,
     "category": "Mexican Restaurant",
     "establishment": "68eea520f0bc911bd5bb080b",
-    "thumbnail": "",
-    "productImage": "images/caesar_salad.jpg"
+    "productImage": "",
+    "thumbnail": ""
   },
   {
     "_id": "44e7a62ad02a15e7f5a7ae94",
@@ -786,8 +786,8 @@
     "price": 48.0,
     "category": "Mexican Restaurant",
     "establishment": "68eea520f0bc911bd5bb080b",
-    "thumbnail": "",
-    "productImage": "images/chicken_alfredo_pasta.jpg"
+    "productImage": "",
+    "thumbnail": ""
   },
   {
     "_id": "ed1d19ac40d5fa650761372c",
@@ -796,8 +796,8 @@
     "price": 55.0,
     "category": "Mexican Restaurant",
     "establishment": "68eea520f0bc911bd5bb080b",
-    "thumbnail": "",
-    "productImage": "images/grilled_salmon.jpg"
+    "productImage": "",
+    "thumbnail": ""
   },
   {
     "_id": "42624bdae130d98f8bea4df9",
@@ -806,8 +806,8 @@
     "price": 55.0,
     "category": "Mexican Restaurant",
     "establishment": "68eea520f0bc911bd5bb080b",
-    "thumbnail": "",
-    "productImage": "images/grilled_salmon.jpg"
+    "productImage": "",
+    "thumbnail": ""
   },
   {
     "_id": "ecf24320fe3c916ef6bc5300",
@@ -816,8 +816,8 @@
     "price": 48.0,
     "category": "Restaurant",
     "establishment": "68eea520f0bc911bd5bb080f",
-    "thumbnail": "",
-    "productImage": "images/chicken_alfredo_pasta.jpg"
+    "productImage": "",
+    "thumbnail": ""
   },
   {
     "_id": "2e9ea59961f9553be53095bb",
@@ -826,8 +826,8 @@
     "price": 48.0,
     "category": "Restaurant",
     "establishment": "68eea520f0bc911bd5bb080f",
-    "thumbnail": "",
-    "productImage": "images/chicken_alfredo_pasta.jpg"
+    "productImage": "",
+    "thumbnail": ""
   },
   {
     "_id": "b70f5c0cc92a5b39de078a65",
@@ -836,8 +836,8 @@
     "price": 55.0,
     "category": "Restaurant",
     "establishment": "68eea520f0bc911bd5bb080f",
-    "thumbnail": "",
-    "productImage": "images/grilled_salmon.jpg"
+    "productImage": "",
+    "thumbnail": ""
   },
   {
     "_id": "65d32443a082ea3270d964f5",
@@ -846,8 +846,8 @@
     "price": 30.0,
     "category": "Restaurant",
     "establishment": "68eea520f0bc911bd5bb080f",
-    "thumbnail": "",
-    "productImage": "images/caesar_salad.jpg"
+    "productImage": "",
+    "thumbnail": ""
   },
   {
     "_id": "36b9634e79fc839f8971401c",
@@ -856,8 +856,8 @@
     "price": 60.0,
     "category": "Healthy Food",
     "establishment": "68eea520f0bc911bd5bb0813",
-    "thumbnail": "",
-    "productImage": "images/beef_steak.jpg"
+    "productImage": "",
+    "thumbnail": ""
   },
   {
     "_id": "91e437a7707bdb8742ac9402",
@@ -866,8 +866,8 @@
     "price": 55.0,
     "category": "Healthy Food",
     "establishment": "68eea520f0bc911bd5bb0813",
-    "thumbnail": "",
-    "productImage": "images/grilled_salmon.jpg"
+    "productImage": "",
+    "thumbnail": ""
   },
   {
     "_id": "6407134a16b6978d132f52f2",
@@ -876,8 +876,8 @@
     "price": 48.0,
     "category": "Healthy Food",
     "establishment": "68eea520f0bc911bd5bb0813",
-    "thumbnail": "",
-    "productImage": "images/chicken_alfredo_pasta.jpg"
+    "productImage": "",
+    "thumbnail": ""
   },
   {
     "_id": "55072a7f7917b1f3f9848dbf",
@@ -886,8 +886,8 @@
     "price": 48.0,
     "category": "Healthy Food",
     "establishment": "68eea520f0bc911bd5bb0813",
-    "thumbnail": "",
-    "productImage": "images/chicken_alfredo_pasta.jpg"
+    "productImage": "",
+    "thumbnail": ""
   },
   {
     "_id": "4be4f20381309f568345adb0",
@@ -896,8 +896,8 @@
     "price": 6.5,
     "category": "Bakery",
     "establishment": "68eea520f0bc911bd5bb0817",
-    "thumbnail": "",
-    "productImage": "images/cupcake.jpg"
+    "productImage": "",
+    "thumbnail": ""
   },
   {
     "_id": "a249c861d2690ed373770d5a",
@@ -906,8 +906,8 @@
     "price": 6.5,
     "category": "Bakery",
     "establishment": "68eea520f0bc911bd5bb0817",
-    "thumbnail": "",
-    "productImage": "images/cupcake.jpg"
+    "productImage": "",
+    "thumbnail": ""
   },
   {
     "_id": "4d6a0dd43a57a98cf9f8a470",
@@ -916,8 +916,8 @@
     "price": 6.0,
     "category": "Bakery",
     "establishment": "68eea520f0bc911bd5bb0817",
-    "thumbnail": "",
-    "productImage": "images/croissant.jpg"
+    "productImage": "",
+    "thumbnail": ""
   },
   {
     "_id": "51143cdf1a57c4ca7c9316bc",
@@ -926,8 +926,8 @@
     "price": 5.0,
     "category": "Bakery",
     "establishment": "68eea520f0bc911bd5bb0817",
-    "thumbnail": "",
-    "productImage": "images/baguette.jpg"
+    "productImage": "",
+    "thumbnail": ""
   },
   {
     "_id": "e05a051366ca54e32febff9e",
@@ -936,8 +936,8 @@
     "price": 30.0,
     "category": "Steakhouse",
     "establishment": "68eea520f0bc911bd5bb081b",
-    "thumbnail": "",
-    "productImage": "images/caesar_salad.jpg"
+    "productImage": "",
+    "thumbnail": ""
   },
   {
     "_id": "2555deea7170593a2cc1e7c9",
@@ -946,8 +946,8 @@
     "price": 60.0,
     "category": "Steakhouse",
     "establishment": "68eea520f0bc911bd5bb081b",
-    "thumbnail": "",
-    "productImage": "images/beef_steak.jpg"
+    "productImage": "",
+    "thumbnail": ""
   },
   {
     "_id": "4b994d9e8a8e34fbe1276bce",
@@ -956,8 +956,8 @@
     "price": 60.0,
     "category": "Steakhouse",
     "establishment": "68eea520f0bc911bd5bb081b",
-    "thumbnail": "",
-    "productImage": "images/beef_steak.jpg"
+    "productImage": "",
+    "thumbnail": ""
   },
   {
     "_id": "feb715c722f1ce1c24e14036",
@@ -966,8 +966,8 @@
     "price": 60.0,
     "category": "Steakhouse",
     "establishment": "68eea520f0bc911bd5bb081b",
-    "thumbnail": "",
-    "productImage": "images/beef_steak.jpg"
+    "productImage": "",
+    "thumbnail": ""
   },
   {
     "_id": "f1c664a6a7452b08d767aa84",
@@ -976,8 +976,8 @@
     "price": 48.0,
     "category": "Sushi Bar",
     "establishment": "68eea520f0bc911bd5bb081f",
-    "thumbnail": "",
-    "productImage": "images/chicken_alfredo_pasta.jpg"
+    "productImage": "",
+    "thumbnail": ""
   },
   {
     "_id": "a1ec9d0de3488b160b9b9f74",
@@ -986,8 +986,8 @@
     "price": 60.0,
     "category": "Sushi Bar",
     "establishment": "68eea520f0bc911bd5bb081f",
-    "thumbnail": "",
-    "productImage": "images/beef_steak.jpg"
+    "productImage": "",
+    "thumbnail": ""
   },
   {
     "_id": "50cf53f974902133193a06e1",
@@ -996,8 +996,8 @@
     "price": 55.0,
     "category": "Sushi Bar",
     "establishment": "68eea520f0bc911bd5bb081f",
-    "thumbnail": "",
-    "productImage": "images/grilled_salmon.jpg"
+    "productImage": "",
+    "thumbnail": ""
   },
   {
     "_id": "dc240dade347453ac0ec6adf",
@@ -1006,8 +1006,8 @@
     "price": 60.0,
     "category": "Sushi Bar",
     "establishment": "68eea520f0bc911bd5bb081f",
-    "thumbnail": "",
-    "productImage": "images/beef_steak.jpg"
+    "productImage": "",
+    "thumbnail": ""
   },
   {
     "_id": "c20ba764b77e897d07f8e73f",
@@ -1016,8 +1016,8 @@
     "price": 55.0,
     "category": "Sushi Bar",
     "establishment": "68eea520f0bc911bd5bb0823",
-    "thumbnail": "",
-    "productImage": "images/grilled_salmon.jpg"
+    "productImage": "",
+    "thumbnail": ""
   },
   {
     "_id": "04892bacb20f4899293805bd",
@@ -1026,8 +1026,8 @@
     "price": 30.0,
     "category": "Sushi Bar",
     "establishment": "68eea520f0bc911bd5bb0823",
-    "thumbnail": "",
-    "productImage": "images/caesar_salad.jpg"
+    "productImage": "",
+    "thumbnail": ""
   },
   {
     "_id": "769a4f3ed4c9cebfb78c63e8",
@@ -1036,8 +1036,8 @@
     "price": 48.0,
     "category": "Sushi Bar",
     "establishment": "68eea520f0bc911bd5bb0823",
-    "thumbnail": "",
-    "productImage": "images/chicken_alfredo_pasta.jpg"
+    "productImage": "",
+    "thumbnail": ""
   },
   {
     "_id": "61bac7fd2a7d9bdd9e347f55",
@@ -1046,8 +1046,8 @@
     "price": 55.0,
     "category": "Sushi Bar",
     "establishment": "68eea520f0bc911bd5bb0823",
-    "thumbnail": "",
-    "productImage": "images/grilled_salmon.jpg"
+    "productImage": "",
+    "thumbnail": ""
   },
   {
     "_id": "ca9c94807e4764cfc0809c52",
@@ -1056,8 +1056,8 @@
     "price": 48.0,
     "category": "Restaurant",
     "establishment": "68eea520f0bc911bd5bb0827",
-    "thumbnail": "",
-    "productImage": "images/chicken_alfredo_pasta.jpg"
+    "productImage": "",
+    "thumbnail": ""
   },
   {
     "_id": "2a9b87ca07a9e63da1c11176",
@@ -1066,8 +1066,8 @@
     "price": 30.0,
     "category": "Restaurant",
     "establishment": "68eea520f0bc911bd5bb0827",
-    "thumbnail": "",
-    "productImage": "images/caesar_salad.jpg"
+    "productImage": "",
+    "thumbnail": ""
   },
   {
     "_id": "42215228801d348b515cb333",
@@ -1076,8 +1076,8 @@
     "price": 48.0,
     "category": "Restaurant",
     "establishment": "68eea520f0bc911bd5bb0827",
-    "thumbnail": "",
-    "productImage": "images/chicken_alfredo_pasta.jpg"
+    "productImage": "",
+    "thumbnail": ""
   },
   {
     "_id": "0aef56ce29156c6bc92d32c6",
@@ -1086,8 +1086,8 @@
     "price": 30.0,
     "category": "Restaurant",
     "establishment": "68eea520f0bc911bd5bb0827",
-    "thumbnail": "",
-    "productImage": "images/caesar_salad.jpg"
+    "productImage": "",
+    "thumbnail": ""
   },
   {
     "_id": "cd1c84269ccb4a5b0889b471",
@@ -1096,8 +1096,8 @@
     "price": 60.0,
     "category": "Vegan Restaurant",
     "establishment": "68eea520f0bc911bd5bb082b",
-    "thumbnail": "",
-    "productImage": "images/beef_steak.jpg"
+    "productImage": "",
+    "thumbnail": ""
   },
   {
     "_id": "d4921714400f647a3d8744b3",
@@ -1106,8 +1106,8 @@
     "price": 48.0,
     "category": "Vegan Restaurant",
     "establishment": "68eea520f0bc911bd5bb082b",
-    "thumbnail": "",
-    "productImage": "images/chicken_alfredo_pasta.jpg"
+    "productImage": "",
+    "thumbnail": ""
   },
   {
     "_id": "f7f711cc03b677e1f0dc4f9f",
@@ -1116,8 +1116,8 @@
     "price": 30.0,
     "category": "Vegan Restaurant",
     "establishment": "68eea520f0bc911bd5bb082b",
-    "thumbnail": "",
-    "productImage": "images/caesar_salad.jpg"
+    "productImage": "",
+    "thumbnail": ""
   },
   {
     "_id": "b403295fb43d21d49dcbb8fe",
@@ -1126,8 +1126,8 @@
     "price": 48.0,
     "category": "Vegan Restaurant",
     "establishment": "68eea520f0bc911bd5bb082b",
-    "thumbnail": "",
-    "productImage": "images/chicken_alfredo_pasta.jpg"
+    "productImage": "",
+    "thumbnail": ""
   },
   {
     "_id": "7528480a45182e3cd08ae2e8",
@@ -1136,8 +1136,8 @@
     "price": 30.0,
     "category": "Bistro",
     "establishment": "68eea520f0bc911bd5bb082f",
-    "thumbnail": "",
-    "productImage": "images/caesar_salad.jpg"
+    "productImage": "",
+    "thumbnail": ""
   },
   {
     "_id": "ebe43128e4398b610c064fed",
@@ -1146,8 +1146,8 @@
     "price": 30.0,
     "category": "Bistro",
     "establishment": "68eea520f0bc911bd5bb082f",
-    "thumbnail": "",
-    "productImage": "images/caesar_salad.jpg"
+    "productImage": "",
+    "thumbnail": ""
   },
   {
     "_id": "35031dd57e4446664a8dbcb7",
@@ -1156,8 +1156,8 @@
     "price": 30.0,
     "category": "Bistro",
     "establishment": "68eea520f0bc911bd5bb082f",
-    "thumbnail": "",
-    "productImage": "images/caesar_salad.jpg"
+    "productImage": "",
+    "thumbnail": ""
   },
   {
     "_id": "d15f9fb38d90283f473b7b08",
@@ -1166,8 +1166,8 @@
     "price": 48.0,
     "category": "Bistro",
     "establishment": "68eea520f0bc911bd5bb082f",
-    "thumbnail": "",
-    "productImage": "images/chicken_alfredo_pasta.jpg"
+    "productImage": "",
+    "thumbnail": ""
   },
   {
     "_id": "83d058ed06375c001450fbea",
@@ -1176,8 +1176,8 @@
     "price": 60.0,
     "category": "Dessert Shop",
     "establishment": "68eea520f0bc911bd5bb0833",
-    "thumbnail": "",
-    "productImage": "images/beef_steak.jpg"
+    "productImage": "",
+    "thumbnail": ""
   },
   {
     "_id": "450aef214c0cd09ab3fdcade",
@@ -1186,8 +1186,8 @@
     "price": 48.0,
     "category": "Dessert Shop",
     "establishment": "68eea520f0bc911bd5bb0833",
-    "thumbnail": "",
-    "productImage": "images/chicken_alfredo_pasta.jpg"
+    "productImage": "",
+    "thumbnail": ""
   },
   {
     "_id": "ff53acbf3c1992f035f61ee2",
@@ -1196,8 +1196,8 @@
     "price": 55.0,
     "category": "Dessert Shop",
     "establishment": "68eea520f0bc911bd5bb0833",
-    "thumbnail": "",
-    "productImage": "images/grilled_salmon.jpg"
+    "productImage": "",
+    "thumbnail": ""
   },
   {
     "_id": "5e2cbe10afa73c332ada3f11",
@@ -1206,8 +1206,8 @@
     "price": 30.0,
     "category": "Dessert Shop",
     "establishment": "68eea520f0bc911bd5bb0833",
-    "thumbnail": "",
-    "productImage": "images/caesar_salad.jpg"
+    "productImage": "",
+    "thumbnail": ""
   },
   {
     "_id": "13c8cf8db741cd95805abe4a",
@@ -1216,8 +1216,8 @@
     "price": 48.0,
     "category": "Food Truck",
     "establishment": "68eea520f0bc911bd5bb0837",
-    "thumbnail": "",
-    "productImage": "images/chicken_alfredo_pasta.jpg"
+    "productImage": "",
+    "thumbnail": ""
   },
   {
     "_id": "b0990902f3cd02b55faee4a8",
@@ -1226,8 +1226,8 @@
     "price": 60.0,
     "category": "Food Truck",
     "establishment": "68eea520f0bc911bd5bb0837",
-    "thumbnail": "",
-    "productImage": "images/beef_steak.jpg"
+    "productImage": "",
+    "thumbnail": ""
   },
   {
     "_id": "c00937c679d6aedbfc011af7",
@@ -1236,8 +1236,8 @@
     "price": 48.0,
     "category": "Food Truck",
     "establishment": "68eea520f0bc911bd5bb0837",
-    "thumbnail": "",
-    "productImage": "images/chicken_alfredo_pasta.jpg"
+    "productImage": "",
+    "thumbnail": ""
   },
   {
     "_id": "48c9e19f5bf072f9d7dca467",
@@ -1246,8 +1246,8 @@
     "price": 60.0,
     "category": "Food Truck",
     "establishment": "68eea520f0bc911bd5bb0837",
-    "thumbnail": "",
-    "productImage": "images/beef_steak.jpg"
+    "productImage": "",
+    "thumbnail": ""
   },
   {
     "_id": "d014eb3bfd185d6ac85d0596",
@@ -1256,8 +1256,8 @@
     "price": 6.0,
     "category": "Bakery",
     "establishment": "68eea520f0bc911bd5bb083b",
-    "thumbnail": "",
-    "productImage": "images/croissant.jpg"
+    "productImage": "",
+    "thumbnail": ""
   },
   {
     "_id": "2846a4737905e9fe59f0430d",
@@ -1266,8 +1266,8 @@
     "price": 8.0,
     "category": "Bakery",
     "establishment": "68eea520f0bc911bd5bb083b",
-    "thumbnail": "",
-    "productImage": "images/chocolate_cake.jpg"
+    "productImage": "",
+    "thumbnail": ""
   },
   {
     "_id": "ac6fd3a366fc46d05a7ab312",
@@ -1276,8 +1276,8 @@
     "price": 5.0,
     "category": "Bakery",
     "establishment": "68eea520f0bc911bd5bb083b",
-    "thumbnail": "",
-    "productImage": "images/baguette.jpg"
+    "productImage": "",
+    "thumbnail": ""
   },
   {
     "_id": "94608265b2be70f1e13b9f4c",
@@ -1286,8 +1286,8 @@
     "price": 6.0,
     "category": "Bakery",
     "establishment": "68eea520f0bc911bd5bb083b",
-    "thumbnail": "",
-    "productImage": "images/croissant.jpg"
+    "productImage": "",
+    "thumbnail": ""
   },
   {
     "_id": "b488b74cd6209cdcd49a93c1",
@@ -1296,8 +1296,8 @@
     "price": 30.0,
     "category": "Food Truck",
     "establishment": "68eea520f0bc911bd5bb083f",
-    "thumbnail": "",
-    "productImage": "images/caesar_salad.jpg"
+    "productImage": "",
+    "thumbnail": ""
   },
   {
     "_id": "0dc55a47e40ebbc82a411f48",
@@ -1306,8 +1306,8 @@
     "price": 48.0,
     "category": "Food Truck",
     "establishment": "68eea520f0bc911bd5bb083f",
-    "thumbnail": "",
-    "productImage": "images/chicken_alfredo_pasta.jpg"
+    "productImage": "",
+    "thumbnail": ""
   },
   {
     "_id": "af4be22ac4c4005a7599eb5e",
@@ -1316,8 +1316,8 @@
     "price": 60.0,
     "category": "Food Truck",
     "establishment": "68eea520f0bc911bd5bb083f",
-    "thumbnail": "",
-    "productImage": "images/beef_steak.jpg"
+    "productImage": "",
+    "thumbnail": ""
   },
   {
     "_id": "654419df82ad827f4458749b",
@@ -1326,8 +1326,8 @@
     "price": 55.0,
     "category": "Food Truck",
     "establishment": "68eea520f0bc911bd5bb083f",
-    "thumbnail": "",
-    "productImage": "images/grilled_salmon.jpg"
+    "productImage": "",
+    "thumbnail": ""
   },
   {
     "_id": "0713fbc5b1007a59bffa2908",
@@ -1336,8 +1336,8 @@
     "price": 60.0,
     "category": "Vegan Restaurant",
     "establishment": "68eea520f0bc911bd5bb0843",
-    "thumbnail": "",
-    "productImage": "images/beef_steak.jpg"
+    "productImage": "",
+    "thumbnail": ""
   },
   {
     "_id": "387e4aaaa5b1db0fa5343e17",
@@ -1346,8 +1346,8 @@
     "price": 30.0,
     "category": "Vegan Restaurant",
     "establishment": "68eea520f0bc911bd5bb0843",
-    "thumbnail": "",
-    "productImage": "images/caesar_salad.jpg"
+    "productImage": "",
+    "thumbnail": ""
   },
   {
     "_id": "109969716b362028d33f4ffe",
@@ -1356,8 +1356,8 @@
     "price": 60.0,
     "category": "Vegan Restaurant",
     "establishment": "68eea520f0bc911bd5bb0843",
-    "thumbnail": "",
-    "productImage": "images/beef_steak.jpg"
+    "productImage": "",
+    "thumbnail": ""
   },
   {
     "_id": "2e49a18ee4628ef8aea80d30",
@@ -1366,8 +1366,8 @@
     "price": 55.0,
     "category": "Vegan Restaurant",
     "establishment": "68eea520f0bc911bd5bb0843",
-    "thumbnail": "",
-    "productImage": "images/grilled_salmon.jpg"
+    "productImage": "",
+    "thumbnail": ""
   },
   {
     "_id": "90dc6dd282cd21ab117222ec",
@@ -1376,8 +1376,8 @@
     "price": 48.0,
     "category": "Seafood Restaurant",
     "establishment": "68eea520f0bc911bd5bb0847",
-    "thumbnail": "",
-    "productImage": "images/chicken_alfredo_pasta.jpg"
+    "productImage": "",
+    "thumbnail": ""
   },
   {
     "_id": "68fecf6e3eb08341fb9ad8ba",
@@ -1386,8 +1386,8 @@
     "price": 55.0,
     "category": "Seafood Restaurant",
     "establishment": "68eea520f0bc911bd5bb0847",
-    "thumbnail": "",
-    "productImage": "images/grilled_salmon.jpg"
+    "productImage": "",
+    "thumbnail": ""
   },
   {
     "_id": "b2efd2f663c2d54f58b7b260",
@@ -1396,8 +1396,8 @@
     "price": 30.0,
     "category": "Seafood Restaurant",
     "establishment": "68eea520f0bc911bd5bb0847",
-    "thumbnail": "",
-    "productImage": "images/caesar_salad.jpg"
+    "productImage": "",
+    "thumbnail": ""
   },
   {
     "_id": "dd85c0d215713fa49dfe7747",
@@ -1406,8 +1406,8 @@
     "price": 60.0,
     "category": "Seafood Restaurant",
     "establishment": "68eea520f0bc911bd5bb0847",
-    "thumbnail": "",
-    "productImage": "images/beef_steak.jpg"
+    "productImage": "",
+    "thumbnail": ""
   },
   {
     "_id": "113fdfb50158d8e52ad64533",
@@ -1416,8 +1416,8 @@
     "price": 30.0,
     "category": "Steakhouse",
     "establishment": "68eea520f0bc911bd5bb084b",
-    "thumbnail": "",
-    "productImage": "images/caesar_salad.jpg"
+    "productImage": "",
+    "thumbnail": ""
   },
   {
     "_id": "12bec36329d7ada238bc3e04",
@@ -1426,8 +1426,8 @@
     "price": 48.0,
     "category": "Steakhouse",
     "establishment": "68eea520f0bc911bd5bb084b",
-    "thumbnail": "",
-    "productImage": "images/chicken_alfredo_pasta.jpg"
+    "productImage": "",
+    "thumbnail": ""
   },
   {
     "_id": "ea288702447634674db98637",
@@ -1436,8 +1436,8 @@
     "price": 30.0,
     "category": "Steakhouse",
     "establishment": "68eea520f0bc911bd5bb084b",
-    "thumbnail": "",
-    "productImage": "images/caesar_salad.jpg"
+    "productImage": "",
+    "thumbnail": ""
   },
   {
     "_id": "e1af9d9405e51ae41db0a671",
@@ -1446,8 +1446,8 @@
     "price": 48.0,
     "category": "Steakhouse",
     "establishment": "68eea520f0bc911bd5bb084b",
-    "thumbnail": "",
-    "productImage": "images/chicken_alfredo_pasta.jpg"
+    "productImage": "",
+    "thumbnail": ""
   },
   {
     "_id": "ef0a41498d8b55c846a5380f",
@@ -1456,8 +1456,8 @@
     "price": 8.0,
     "category": "Ice Cream Shop",
     "establishment": "68eea520f0bc911bd5bb084f",
-    "thumbnail": "",
-    "productImage": "images/strawberry_sundae.jpg"
+    "productImage": "",
+    "thumbnail": ""
   },
   {
     "_id": "4f00678bba0d5020eaa30a52",
@@ -1466,8 +1466,8 @@
     "price": 7.0,
     "category": "Ice Cream Shop",
     "establishment": "68eea520f0bc911bd5bb084f",
-    "thumbnail": "",
-    "productImage": "images/vanilla_ice_cream.jpg"
+    "productImage": "",
+    "thumbnail": ""
   },
   {
     "_id": "b09edf26d4c03a2bb006ef98",
@@ -1476,8 +1476,8 @@
     "price": 8.0,
     "category": "Ice Cream Shop",
     "establishment": "68eea520f0bc911bd5bb084f",
-    "thumbnail": "",
-    "productImage": "images/strawberry_sundae.jpg"
+    "productImage": "",
+    "thumbnail": ""
   },
   {
     "_id": "a854783b9f034f90b3af3096",
@@ -1486,8 +1486,8 @@
     "price": 12.0,
     "category": "Ice Cream Shop",
     "establishment": "68eea520f0bc911bd5bb084f",
-    "thumbnail": "",
-    "productImage": "images/banana_split.jpg"
+    "productImage": "",
+    "thumbnail": ""
   },
   {
     "_id": "71195cd69ca0670913f1db27",
@@ -1496,8 +1496,8 @@
     "price": 48.0,
     "category": "Steakhouse",
     "establishment": "68eea520f0bc911bd5bb0853",
-    "thumbnail": "",
-    "productImage": "images/chicken_alfredo_pasta.jpg"
+    "productImage": "",
+    "thumbnail": ""
   },
   {
     "_id": "31cc4544e0756617a65a280d",
@@ -1506,8 +1506,8 @@
     "price": 30.0,
     "category": "Steakhouse",
     "establishment": "68eea520f0bc911bd5bb0853",
-    "thumbnail": "",
-    "productImage": "images/caesar_salad.jpg"
+    "productImage": "",
+    "thumbnail": ""
   },
   {
     "_id": "765e58a213e42300f6ba51da",
@@ -1516,8 +1516,8 @@
     "price": 30.0,
     "category": "Steakhouse",
     "establishment": "68eea520f0bc911bd5bb0853",
-    "thumbnail": "",
-    "productImage": "images/caesar_salad.jpg"
+    "productImage": "",
+    "thumbnail": ""
   },
   {
     "_id": "de3a0341c4e0e274fd6a14c2",
@@ -1526,8 +1526,8 @@
     "price": 55.0,
     "category": "Steakhouse",
     "establishment": "68eea520f0bc911bd5bb0853",
-    "thumbnail": "",
-    "productImage": "images/grilled_salmon.jpg"
+    "productImage": "",
+    "thumbnail": ""
   },
   {
     "_id": "f7219ede1ce61941873ae024",
@@ -1536,8 +1536,8 @@
     "price": 30.0,
     "category": "Italian Restaurant",
     "establishment": "68eea520f0bc911bd5bb0857",
-    "thumbnail": "",
-    "productImage": "images/caesar_salad.jpg"
+    "productImage": "",
+    "thumbnail": ""
   },
   {
     "_id": "e9f7dc1dfa40016e74586a54",
@@ -1546,8 +1546,8 @@
     "price": 55.0,
     "category": "Italian Restaurant",
     "establishment": "68eea520f0bc911bd5bb0857",
-    "thumbnail": "",
-    "productImage": "images/grilled_salmon.jpg"
+    "productImage": "",
+    "thumbnail": ""
   },
   {
     "_id": "5236f9fdb63fce42105e19e5",
@@ -1556,8 +1556,8 @@
     "price": 30.0,
     "category": "Italian Restaurant",
     "establishment": "68eea520f0bc911bd5bb0857",
-    "thumbnail": "",
-    "productImage": "images/caesar_salad.jpg"
+    "productImage": "",
+    "thumbnail": ""
   },
   {
     "_id": "72396104a6c56fe008ac49b5",
@@ -1566,8 +1566,8 @@
     "price": 60.0,
     "category": "Italian Restaurant",
     "establishment": "68eea520f0bc911bd5bb0857",
-    "thumbnail": "",
-    "productImage": "images/beef_steak.jpg"
+    "productImage": "",
+    "thumbnail": ""
   },
   {
     "_id": "f8ce0b6c6c01d2a64446e054",
@@ -1576,8 +1576,8 @@
     "price": 40.0,
     "category": "Pizzeria",
     "establishment": "68eea520f0bc911bd5bb085b",
-    "thumbnail": "",
-    "productImage": "images/four_cheese_pizza.jpg"
+    "productImage": "",
+    "thumbnail": ""
   },
   {
     "_id": "2511eac964363e286ee6e2e9",
@@ -1586,8 +1586,8 @@
     "price": 35.0,
     "category": "Pizzeria",
     "establishment": "68eea520f0bc911bd5bb085b",
-    "thumbnail": "",
-    "productImage": "images/margherita_pizza.jpg"
+    "productImage": "",
+    "thumbnail": ""
   },
   {
     "_id": "4fc442fc992fad99e3876da5",
@@ -1596,8 +1596,8 @@
     "price": 40.0,
     "category": "Pizzeria",
     "establishment": "68eea520f0bc911bd5bb085b",
-    "thumbnail": "",
-    "productImage": "images/four_cheese_pizza.jpg"
+    "productImage": "",
+    "thumbnail": ""
   },
   {
     "_id": "b4190a30367e24bb2d275264",
@@ -1606,8 +1606,8 @@
     "price": 38.0,
     "category": "Pizzeria",
     "establishment": "68eea520f0bc911bd5bb085b",
-    "thumbnail": "",
-    "productImage": "images/pepperoni_pizza.jpg"
+    "productImage": "",
+    "thumbnail": ""
   },
   {
     "_id": "b2d72a95d16872d1ca8fd1eb",
@@ -1616,8 +1616,8 @@
     "price": 7.0,
     "category": "Coffee Shop",
     "establishment": "68eea520f0bc911bd5bb085f",
-    "thumbnail": "",
-    "productImage": "images/cappuccino.jpg"
+    "productImage": "",
+    "thumbnail": ""
   },
   {
     "_id": "03bde1026dbdf60050c81d64",
@@ -1626,8 +1626,8 @@
     "price": 7.0,
     "category": "Coffee Shop",
     "establishment": "68eea520f0bc911bd5bb085f",
-    "thumbnail": "",
-    "productImage": "images/cappuccino.jpg"
+    "productImage": "",
+    "thumbnail": ""
   },
   {
     "_id": "96997427b20fe52dc39e5664",
@@ -1636,8 +1636,8 @@
     "price": 5.0,
     "category": "Coffee Shop",
     "establishment": "68eea520f0bc911bd5bb085f",
-    "thumbnail": "",
-    "productImage": "images/espresso.jpg"
+    "productImage": "",
+    "thumbnail": ""
   },
   {
     "_id": "c7380e71fd0527dc0a10cc21",
@@ -1646,8 +1646,8 @@
     "price": 5.0,
     "category": "Coffee Shop",
     "establishment": "68eea520f0bc911bd5bb085f",
-    "thumbnail": "",
-    "productImage": "images/espresso.jpg"
+    "productImage": "",
+    "thumbnail": ""
   },
   {
     "_id": "9a43c6eafca07e190b1ff3b6",
@@ -1656,8 +1656,8 @@
     "price": 38.0,
     "category": "Pizzeria",
     "establishment": "68eea520f0bc911bd5bb0863",
-    "thumbnail": "",
-    "productImage": "images/pepperoni_pizza.jpg"
+    "productImage": "",
+    "thumbnail": ""
   },
   {
     "_id": "eaa1df77760d5ecc969f88c2",
@@ -1666,8 +1666,8 @@
     "price": 36.0,
     "category": "Pizzeria",
     "establishment": "68eea520f0bc911bd5bb0863",
-    "thumbnail": "",
-    "productImage": "images/veggie_pizza.jpg"
+    "productImage": "",
+    "thumbnail": ""
   },
   {
     "_id": "6a089ff96881bad2b1521ccc",
@@ -1676,8 +1676,8 @@
     "price": 40.0,
     "category": "Pizzeria",
     "establishment": "68eea520f0bc911bd5bb0863",
-    "thumbnail": "",
-    "productImage": "images/four_cheese_pizza.jpg"
+    "productImage": "",
+    "thumbnail": ""
   },
   {
     "_id": "2313fce4a23222a3bfca2e4a",
@@ -1686,8 +1686,8 @@
     "price": 36.0,
     "category": "Pizzeria",
     "establishment": "68eea520f0bc911bd5bb0863",
-    "thumbnail": "",
-    "productImage": "images/veggie_pizza.jpg"
+    "productImage": "",
+    "thumbnail": ""
   },
   {
     "_id": "ca756521f115cd6488b06e96",
@@ -1696,8 +1696,8 @@
     "price": 6.5,
     "category": "Bakery",
     "establishment": "68eea520f0bc911bd5bb0867",
-    "thumbnail": "",
-    "productImage": "images/cupcake.jpg"
+    "productImage": "",
+    "thumbnail": ""
   },
   {
     "_id": "bb939b1467f5e0bb374242eb",
@@ -1706,8 +1706,8 @@
     "price": 8.0,
     "category": "Bakery",
     "establishment": "68eea520f0bc911bd5bb0867",
-    "thumbnail": "",
-    "productImage": "images/chocolate_cake.jpg"
+    "productImage": "",
+    "thumbnail": ""
   },
   {
     "_id": "55e6248a6837040a33c8d078",
@@ -1716,8 +1716,8 @@
     "price": 6.0,
     "category": "Bakery",
     "establishment": "68eea520f0bc911bd5bb0867",
-    "thumbnail": "",
-    "productImage": "images/croissant.jpg"
+    "productImage": "",
+    "thumbnail": ""
   },
   {
     "_id": "2be853138d8528efe5e6bb39",
@@ -1726,8 +1726,8 @@
     "price": 6.0,
     "category": "Bakery",
     "establishment": "68eea520f0bc911bd5bb0867",
-    "thumbnail": "",
-    "productImage": "images/croissant.jpg"
+    "productImage": "",
+    "thumbnail": ""
   },
   {
     "_id": "9e671f62a269989c20809f63",
@@ -1736,8 +1736,8 @@
     "price": 20.0,
     "category": "Bar",
     "establishment": "68eea520f0bc911bd5bb086b",
-    "thumbnail": "",
-    "productImage": "images/mojito.jpg"
+    "productImage": "",
+    "thumbnail": ""
   },
   {
     "_id": "d73384e7e6d0826bbd6856f0",
@@ -1746,8 +1746,8 @@
     "price": 20.0,
     "category": "Bar",
     "establishment": "68eea520f0bc911bd5bb086b",
-    "thumbnail": "",
-    "productImage": "images/mojito.jpg"
+    "productImage": "",
+    "thumbnail": ""
   },
   {
     "_id": "db1feec8bfe639a2c1ebdd64",
@@ -1756,8 +1756,8 @@
     "price": 22.0,
     "category": "Bar",
     "establishment": "68eea520f0bc911bd5bb086b",
-    "thumbnail": "",
-    "productImage": "images/whiskey_sour.jpg"
+    "productImage": "",
+    "thumbnail": ""
   },
   {
     "_id": "1efec7a7886e7a07fb1199d0",
@@ -1766,8 +1766,8 @@
     "price": 18.0,
     "category": "Bar",
     "establishment": "68eea520f0bc911bd5bb086b",
-    "thumbnail": "",
-    "productImage": "images/nachos.jpg"
+    "productImage": "",
+    "thumbnail": ""
   },
   {
     "_id": "aa461013137631748fa33be5",
@@ -1776,8 +1776,8 @@
     "price": 30.0,
     "category": "Healthy Food",
     "establishment": "68eea520f0bc911bd5bb086f",
-    "thumbnail": "",
-    "productImage": "images/caesar_salad.jpg"
+    "productImage": "",
+    "thumbnail": ""
   },
   {
     "_id": "e3aa3845a5363e9ec0633739",
@@ -1786,8 +1786,8 @@
     "price": 30.0,
     "category": "Healthy Food",
     "establishment": "68eea520f0bc911bd5bb086f",
-    "thumbnail": "",
-    "productImage": "images/caesar_salad.jpg"
+    "productImage": "",
+    "thumbnail": ""
   },
   {
     "_id": "e6a50200337946266dc17c51",
@@ -1796,8 +1796,8 @@
     "price": 60.0,
     "category": "Healthy Food",
     "establishment": "68eea520f0bc911bd5bb086f",
-    "thumbnail": "",
-    "productImage": "images/beef_steak.jpg"
+    "productImage": "",
+    "thumbnail": ""
   },
   {
     "_id": "1893ade53cf6a6b1b06c9dd8",
@@ -1806,8 +1806,8 @@
     "price": 60.0,
     "category": "Healthy Food",
     "establishment": "68eea520f0bc911bd5bb086f",
-    "thumbnail": "",
-    "productImage": "images/beef_steak.jpg"
+    "productImage": "",
+    "thumbnail": ""
   },
   {
     "_id": "ad4ee25aa0fccb2f5ea652fd",
@@ -1816,8 +1816,8 @@
     "price": 55.0,
     "category": "Bistro",
     "establishment": "68eea520f0bc911bd5bb0873",
-    "thumbnail": "",
-    "productImage": "images/grilled_salmon.jpg"
+    "productImage": "",
+    "thumbnail": ""
   },
   {
     "_id": "52f83bc1daf837ca7741f792",
@@ -1826,8 +1826,8 @@
     "price": 48.0,
     "category": "Bistro",
     "establishment": "68eea520f0bc911bd5bb0873",
-    "thumbnail": "",
-    "productImage": "images/chicken_alfredo_pasta.jpg"
+    "productImage": "",
+    "thumbnail": ""
   },
   {
     "_id": "153f1d0cd7a963aca856e351",
@@ -1836,8 +1836,8 @@
     "price": 48.0,
     "category": "Bistro",
     "establishment": "68eea520f0bc911bd5bb0873",
-    "thumbnail": "",
-    "productImage": "images/chicken_alfredo_pasta.jpg"
+    "productImage": "",
+    "thumbnail": ""
   },
   {
     "_id": "9f26e8fdc8ce32bb51e1ac93",
@@ -1846,8 +1846,8 @@
     "price": 30.0,
     "category": "Bistro",
     "establishment": "68eea520f0bc911bd5bb0873",
-    "thumbnail": "",
-    "productImage": "images/caesar_salad.jpg"
+    "productImage": "",
+    "thumbnail": ""
   },
   {
     "_id": "2fce2702acaf3620d4ff5b15",
@@ -1856,8 +1856,8 @@
     "price": 60.0,
     "category": "Mexican Restaurant",
     "establishment": "68eea520f0bc911bd5bb0877",
-    "thumbnail": "",
-    "productImage": "images/beef_steak.jpg"
+    "productImage": "",
+    "thumbnail": ""
   },
   {
     "_id": "0a975b83ad92093a350201cb",
@@ -1866,8 +1866,8 @@
     "price": 30.0,
     "category": "Mexican Restaurant",
     "establishment": "68eea520f0bc911bd5bb0877",
-    "thumbnail": "",
-    "productImage": "images/caesar_salad.jpg"
+    "productImage": "",
+    "thumbnail": ""
   },
   {
     "_id": "5855a3dc9e2eadeb7b76db28",
@@ -1876,8 +1876,8 @@
     "price": 55.0,
     "category": "Mexican Restaurant",
     "establishment": "68eea520f0bc911bd5bb0877",
-    "thumbnail": "",
-    "productImage": "images/grilled_salmon.jpg"
+    "productImage": "",
+    "thumbnail": ""
   },
   {
     "_id": "9606fce5cef6a47ccd9a554a",
@@ -1886,8 +1886,8 @@
     "price": 48.0,
     "category": "Mexican Restaurant",
     "establishment": "68eea520f0bc911bd5bb0877",
-    "thumbnail": "",
-    "productImage": "images/chicken_alfredo_pasta.jpg"
+    "productImage": "",
+    "thumbnail": ""
   },
   {
     "_id": "8815894ffaafbf4bb9ad9219",
@@ -1896,8 +1896,8 @@
     "price": 60.0,
     "category": "Healthy Food",
     "establishment": "68eea520f0bc911bd5bb087b",
-    "thumbnail": "",
-    "productImage": "images/beef_steak.jpg"
+    "productImage": "",
+    "thumbnail": ""
   },
   {
     "_id": "3cc3ab3b4998dac3c51c10e5",
@@ -1906,8 +1906,8 @@
     "price": 60.0,
     "category": "Healthy Food",
     "establishment": "68eea520f0bc911bd5bb087b",
-    "thumbnail": "",
-    "productImage": "images/beef_steak.jpg"
+    "productImage": "",
+    "thumbnail": ""
   },
   {
     "_id": "b2cb9c3cca4cea8f277344f2",
@@ -1916,8 +1916,8 @@
     "price": 30.0,
     "category": "Healthy Food",
     "establishment": "68eea520f0bc911bd5bb087b",
-    "thumbnail": "",
-    "productImage": "images/caesar_salad.jpg"
+    "productImage": "",
+    "thumbnail": ""
   },
   {
     "_id": "5ad8b6c74200ab6d5e66b544",
@@ -1926,8 +1926,8 @@
     "price": 60.0,
     "category": "Healthy Food",
     "establishment": "68eea520f0bc911bd5bb087b",
-    "thumbnail": "",
-    "productImage": "images/beef_steak.jpg"
+    "productImage": "",
+    "thumbnail": ""
   },
   {
     "_id": "2a703a9612bff338a8aa6125",
@@ -1936,8 +1936,8 @@
     "price": 48.0,
     "category": "Food Truck",
     "establishment": "68eea520f0bc911bd5bb087f",
-    "thumbnail": "",
-    "productImage": "images/chicken_alfredo_pasta.jpg"
+    "productImage": "",
+    "thumbnail": ""
   },
   {
     "_id": "4da5d93c80677edd820fd6af",
@@ -1946,8 +1946,8 @@
     "price": 55.0,
     "category": "Food Truck",
     "establishment": "68eea520f0bc911bd5bb087f",
-    "thumbnail": "",
-    "productImage": "images/grilled_salmon.jpg"
+    "productImage": "",
+    "thumbnail": ""
   },
   {
     "_id": "a175bc13f21c124a1ce1f8e0",
@@ -1956,8 +1956,8 @@
     "price": 48.0,
     "category": "Food Truck",
     "establishment": "68eea520f0bc911bd5bb087f",
-    "thumbnail": "",
-    "productImage": "images/chicken_alfredo_pasta.jpg"
+    "productImage": "",
+    "thumbnail": ""
   },
   {
     "_id": "68d062a671e03f4c472ba5cd",
@@ -1966,8 +1966,8 @@
     "price": 60.0,
     "category": "Food Truck",
     "establishment": "68eea520f0bc911bd5bb087f",
-    "thumbnail": "",
-    "productImage": "images/beef_steak.jpg"
+    "productImage": "",
+    "thumbnail": ""
   },
   {
     "_id": "fd02fc150c46a6cb7140b95e",
@@ -1976,8 +1976,8 @@
     "price": 60.0,
     "category": "Mexican Restaurant",
     "establishment": "68eea520f0bc911bd5bb0883",
-    "thumbnail": "",
-    "productImage": "images/beef_steak.jpg"
+    "productImage": "",
+    "thumbnail": ""
   },
   {
     "_id": "938f9a492c043bc6c2fd9c39",
@@ -1986,8 +1986,8 @@
     "price": 60.0,
     "category": "Mexican Restaurant",
     "establishment": "68eea520f0bc911bd5bb0883",
-    "thumbnail": "",
-    "productImage": "images/beef_steak.jpg"
+    "productImage": "",
+    "thumbnail": ""
   },
   {
     "_id": "ebca5bc3ebb0d8b0515e35e8",
@@ -1996,8 +1996,8 @@
     "price": 60.0,
     "category": "Mexican Restaurant",
     "establishment": "68eea520f0bc911bd5bb0883",
-    "thumbnail": "",
-    "productImage": "images/beef_steak.jpg"
+    "productImage": "",
+    "thumbnail": ""
   },
   {
     "_id": "b140e0a6d679dbd59bde34a0",
@@ -2006,7 +2006,7 @@
     "price": 48.0,
     "category": "Mexican Restaurant",
     "establishment": "68eea520f0bc911bd5bb0883",
-    "thumbnail": "",
-    "productImage": "images/chicken_alfredo_pasta.jpg"
+    "productImage": "",
+    "thumbnail": ""
   }
 ]
