@@ -56,7 +56,6 @@ interface IRating {
 enum Category {
   Bakery = 'Bakery',
   Bar = 'Bar',
-  Cafeteria = 'Cafeteria',
   CoffeeShop = 'Coffee Shop',
   ElectronicsStore = 'Electronics Store',
   FastFoodRestaurant = 'Fast Food Restaurant',
@@ -65,6 +64,8 @@ enum Category {
   HealthyFood = 'Healthy Food',
   IceCreamParlor = 'Ice Cream Parlor',
   IceCreamShop = 'Ice Cream Shop',
+  ItalianRestaurant = 'Italian Restaurant',
+  DessertShop = 'Dessert Shop',
   JuiceBar = 'Juice Bar',
   MexicanRestaurant = 'Mexican Restaurant',
   PizzaPlace = 'Pizza Place',
@@ -85,7 +86,8 @@ enum Category {
  * Defines all fields stored in the MongoDB collection.
  */
 interface IEstablishment extends mongoose.Document {
-  coverPhoto?: string;
+  logo?: string;
+  coverImage?: string;
   name: string;
   openingHours: IOpeningHour[];
   address: IAddress[];
@@ -219,7 +221,8 @@ const ratingSchema = new mongoose.Schema(
 
 const establishmentSchema = new mongoose.Schema(
   {
-    coverPhoto: { type: String, default: '' },
+    logo: { type: String, default: '' },
+    coverImage: { type: String, default: '' },
     name: { type: String, required: [true, 'Establishment name is required'] },
     openingHours: {
       type: [openingHourSchema],

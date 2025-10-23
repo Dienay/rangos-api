@@ -1,5 +1,6 @@
 import { createClient } from 'redis';
-import Order, { TopProduct } from 'src/models/Order';
+import Order from 'src/models/Order';
+import { TopProduct } from 'src/models/Product';
 import mongoose from 'mongoose';
 import env from './env';
 import logger from './logger';
@@ -66,7 +67,7 @@ export async function fetchTopProductsFromMongo(): Promise<TopProduct[]> {
           _id: '$product._id',
           name: '$product.name',
           price: '$product.price',
-          coverPhoto: '$product.coverPhoto',
+          productImage: '$product.productImage',
           totalSales: 1
         }
       }

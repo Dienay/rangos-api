@@ -19,12 +19,12 @@ const {
 } = EstablishmentController;
 
 // Defining routes for establishments
-establishmentRouter.post('/establishments', establishmentsUpload.single('coverPhoto'), createEstablishment);
+establishmentRouter.post('/establishments', establishmentsUpload.single('logo'), createEstablishment);
 establishmentRouter.get('/establishments', getEstablishments);
 establishmentRouter.get('/establishments/search', filterEstablishment);
 establishmentRouter.get('/establishments/:id/products', getEstablishmentWithProducts);
 establishmentRouter.get('/establishments/:id', getEstablishmentById);
-establishmentRouter.put('/establishments/:id', establishmentsUpload.single('coverPhoto'), updateEstablishment);
+establishmentRouter.put('/establishments/:id', establishmentsUpload.single('logo'), updateEstablishment);
 establishmentRouter.delete('/establishments/:id', deleteEstablishment);
 
 // Use addressRouter for address-related routes
