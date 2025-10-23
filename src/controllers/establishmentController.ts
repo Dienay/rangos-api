@@ -23,7 +23,7 @@ class EstablishmentController {
 
       // If a cover photo is provided, save it to the uploads directory
       if (req.file) {
-        body.coverPhoto = req.file.filename;
+        body.logo = req.file.filename;
       }
       // Create a new establishment object based on the request body
       const newEstablishment = await Establishment.create(body);
@@ -50,7 +50,7 @@ class EstablishmentController {
 
       const establishmentsWithPhotoURL = establishmentList.map((establishment) => ({
         ...establishment.toObject(),
-        coverPhoto: `${req.protocol}://${req.get('host')}/uploads/establishments/${establishment.coverPhoto}`
+        logo: `${req.protocol}://${req.get('host')}/uploads/establishments/${establishment.logo}`
       }));
 
       // Respond with the list of establishments
@@ -73,7 +73,7 @@ class EstablishmentController {
       const foundEstablishment = await Establishment.findById(id);
 
       if (foundEstablishment) {
-        foundEstablishment.coverPhoto = `${req.protocol}://${req.get('host')}/uploads/establishments/${foundEstablishment.coverPhoto}`;
+        foundEstablishment.logo = `${req.protocol}://${req.get('host')}/uploads/establishments/${foundEstablishment.logo}`;
       }
 
       // If the establishment is found, respond with it; otherwise, throw a NotFound error
@@ -97,39 +97,39 @@ class EstablishmentController {
       const establishment = await Establishment.findById(id);
 
       if (establishment) {
-        establishment.coverPhoto = `${req.protocol}://${req.get('host')}/uploads/establishments/${establishment.coverPhoto}`;
+        establishment.logo = `${req.protocol}://${req.get('host')}/uploads/establishments/${establishment.logo}`;
 
         // If establishment is found, finding all products associated with the establishment
         const productList = await Product.find({ establishment: id }).lean();
 
-        const productWithCoverPhotoURL = productList.map((product) => ({
+        const productWithProductImageURL = productList.map((product) => ({
           // eslint-disable-next-line @typescript-eslint/no-unsafe-assignment, no-underscore-dangle
           id: product._id,
           name: product.name,
           description: product.description,
           price: product.price,
-          coverPhoto: `${req.protocol}://${req.get('host')}/uploads/products/${product.coverPhoto}`
+          productImage: `${req.protocol}://${req.get('host')}/uploads/products/${product.productImage}`
         }));
 
-        if (productWithCoverPhotoURL.length > 0) {
+        if (productWithProductImageURL.length > 0) {
           // If products are found, sending a success response with the list of products
           res.status(200).json({
             establishment: {
               // eslint-disable-next-line @typescript-eslint/no-unsafe-assignment, no-underscore-dangle
               id: establishment._id,
               name: establishment.name,
-              coverPhoto: establishment.coverPhoto,
+              logo: establishment.logo,
               category: establishment.category,
               deliveryTime: establishment.deliveryTime,
-              shipping: establishment.shipping,
+              shippingCost: establishment.shippingCost,
               address: establishment.address
             },
-            products: productWithCoverPhotoURL
+            products: productWithProductImageURL
           });
         } else {
           // If no products are found, passing a NotFound error to the error handling middleware
           res.status(200).json({
-            establishment: { name: establishment.name, coverPhoto: establishment.coverPhoto },
+            establishment: { name: establishment.name, logo: establishment.logo },
             products: []
           });
         }
@@ -157,19 +157,19 @@ class EstablishmentController {
       }
 
       if (req.file) {
-        if (foundEstablishment.coverPhoto) {
-          const coverPhotoPath = path.join(
+        if (foundEstablishment.logo) {
+          const logoPath = path.join(
             __dirname,
             '..',
             '..',
             'uploads',
             'establishments',
-            path.basename(foundEstablishment.coverPhoto)
+            path.basename(foundEstablishment.logo)
           );
 
-          if (fs.existsSync(coverPhotoPath)) {
+          if (fs.existsSync(logoPath)) {
             try {
-              fs.unlinkSync(coverPhotoPath);
+              fs.unlinkSync(logoPath);
             } catch (unlinkError) {
               logger.error(`Error deleting file: ${(unlinkError as Error).message}`);
               return next(new Error('Error deleting old image file.'));
@@ -177,7 +177,7 @@ class EstablishmentController {
           }
         }
 
-        newData.coverPhoto = req.file.filename;
+        newData.logo = req.file.filename;
       }
 
       // Validate the new data using Mongoose validation
@@ -215,19 +215,19 @@ class EstablishmentController {
       // Find the establishment by its ID
       const foundEstablishment = await Establishment.findById(id);
 
-      if (foundEstablishment?.coverPhoto) {
-        const coverPhotoPath = path.join(
+      if (foundEstablishment?.logo) {
+        const logoPath = path.join(
           __dirname,
           '..',
           '..',
           'uploads',
           'establishments',
-          path.basename(foundEstablishment.coverPhoto)
+          path.basename(foundEstablishment.logo)
         );
 
-        if (fs.existsSync(coverPhotoPath)) {
+        if (fs.existsSync(logoPath)) {
           try {
-            fs.unlinkSync(coverPhotoPath);
+            fs.unlinkSync(logoPath);
           } catch (unlinkError) {
             logger.error(`Error deleting file: ${(unlinkError as Error).message}`);
             return next(new Error('Error deleting associated image file.'));

@@ -1,79 +1,65 @@
 [
   {
-    "_id": "66436318bea46df5e1bc8bcf",
-    "coverPhoto": "cappuccino.jpg",
-    "name": "Cappuccino",
-    "description": "Smooth and creamy cappuccino made with freshly ground coffee beans and steamed milk.",
-    "price": 3.99,
-    "establishment": "664263e9a61e5ddceac532f2"
-  },
-  {
     "_id": "66436318bea46df5e1bc8bd0",
-    "coverPhoto": "hawaiian-pizza.jpg",
+    "thumbnail": "",
+    "productImage": "hawaiian-pizza.jpg",
     "name": "Hawaiian Pizza",
     "description": "Classic Hawaiian pizza topped with ham, pineapple, and mozzarella cheese.",
     "price": 14.99,
     "establishment": "664263e9a61e5ddceac532f4"
   },
   {
-    "_id": "66436318bea46df5e1bc8bd1",
-    "coverPhoto": "baguette.jpg",
-    "name": "Baguette",
-    "description": "Freshly baked French baguette with a crispy crust and soft interior.",
-    "price": 2.49,
-    "establishment": "664263e9a61e5ddceac532f3"
+    "_id": "b64756364eacbbd722fb9779",
+    "name": "Veggie Pizza",
+    "description": "Topped with mushrooms, peppers, and olives.",
+    "price": 36.0,
+    "category": "Pizzeria",
+    "establishment": "664263e9a61e5ddceac532f4",
+    "thumbnail": "",
+    "productImage": "images/veggie_pizza.jpg"
   },
   {
-    "_id": "66436318bea46df5e1bc8bd2",
-    "coverPhoto": "croissant.jpg",
-    "name": "Croissant",
-    "description": "Flaky and buttery croissant made with layers of dough, perfect for breakfast.",
-    "price": 1.99,
-    "establishment": "664263e9a61e5ddceac532f3"
+    "_id": "589780c97e162ccbb8b83f4b",
+    "name": "Four Cheese Pizza",
+    "description": "A blend of mozzarella, parmesan, provolone, and gorgonzola.",
+    "price": 40.0,
+    "category": "Pizzeria",
+    "establishment": "664263e9a61e5ddceac532f4",
+    "thumbnail": "",
+    "productImage": "images/four_cheese_pizza.jpg"
+  },
+  {
+    "_id": "70e3fe978ad0c9a7034ff2ad",
+    "name": "Margherita Pizza",
+    "description": "Classic pizza with tomato sauce, mozzarella, and fresh basil.",
+    "price": 35.0,
+    "category": "Pizzeria",
+    "establishment": "664263e9a61e5ddceac532f4",
+    "thumbnail": "",
+    "productImage": "images/margherita_pizza.jpg"
   },
   {
     "_id": "66436318bea46df5e1bc8bd3",
-    "coverPhoto": "chocolate-chip-cookie.jpg",
+    "thumbnail": "",
+    "productImage": "chocolate-chip-cookie.jpg",
     "name": "Chocolate Chip Cookie",
     "description": "Homemade chocolate chip cookie baked to perfection, chewy on the inside and crispy on the outside.",
     "price": 1.49,
     "establishment": "664263e9a61e5ddceac532f3"
   },
   {
-    "_id": "66436318bea46df5e1bc8bd4",
-    "coverPhoto": "blueberry-muffin.jpg",
-    "name": "Blueberry Muffin",
-    "description": "Moist and flavorful blueberry muffin, bursting with juicy blueberries in every bite.",
-    "price": 2.99,
-    "establishment": "664263e9a61e5ddceac532f3"
-  },
-  {
-    "_id": "66436318bea46df5e1bc8bd5",
-    "coverPhoto": "cinnamon-roll.jpg",
-    "name": "Cinnamon Roll",
-    "description": "Irresistible cinnamon roll swirled with cinnamon sugar and topped with a sweet glaze.",
-    "price": 3.49,
-    "establishment": "664263e9a61e5ddceac532f3"
-  },
-  {
     "_id": "66436318bea46df5e1bc8bd6",
-    "coverPhoto": "apple-pie.jpg",
+    "thumbnail": "",
+    "productImage": "apple-pie.jpg",
     "name": "Apple Pie",
     "description": "Classic apple pie with a flaky crust and tender apples, served warm with a scoop of vanilla ice cream.",
     "price": 4.99,
     "establishment": "664263e9a61e5ddceac532f3"
   },
   {
-    "_id": "66436318bea46df5e1bc8bd7",
-    "coverPhoto": "chocolate-eclair.jpg",
-    "name": "Chocolate Eclair",
-    "description": "Decadent chocolate eclair filled with creamy custard and topped with rich chocolate ganache.",
-    "price": 3.99,
-    "establishment": "664263e9a61e5ddceac532f3"
-  },
-  {
     "_id": "66436318bea46df5e1bc8bd8",
-    "coverPhoto": "sourdough-bread.jpg",
+    "thumbnail": "",
+    "productImage": "sourdough-bread.jpg",
     "name": "Sourdough Bread",
     "description": "Artisanal sourdough bread with a chewy crust and tangy flavor, perfect for sandwiches or toast.",
     "price": 3.79,
@@ -81,7 +67,8 @@
   },
   {
     "_id": "66436318bea46df5e1bc8bd9",
-    "coverPhoto": "pecan-pie.jpg",
+    "thumbnail": "",
+    "productImage": "pecan-pie.jpg",
     "name": "Pecan Pie",
     "description": "Southern-style pecan pie with a buttery crust and a gooey, caramelized filling packed with pecans.",
     "price": 5.49,
@@ -89,7 +76,8 @@
   },
   {
     "_id": "66436318bea46df5e1bc8bda",
-    "coverPhoto": "strawberry-shortcake.jpg",
+    "thumbnail": "",
+    "productImage": "strawberry-shortcake.jpg",
     "name": "Strawberry Shortcake",
     "description": "Delicious strawberry shortcake layered with fresh strawberries and whipped cream, served with a drizzle of strawberry sauce.",
     "price": 4.49,
@@ -97,7 +85,8 @@
   },
   {
     "_id": "66436318bea46df5e1bc8bdb",
-    "coverPhoto": "vanilla-ice-cream.jpg",
+    "thumbnail": "",
+    "productImage": "vanilla-ice-cream.jpg",
     "name": "Vanilla Ice Cream",
     "description": "Creamy and smooth vanilla ice cream made with real vanilla beans.",
     "price": 3.49,
@@ -105,71 +94,75 @@
   },
   {
     "_id": "66436318bea46df5e1bc8bdc",
-    "coverPhoto": "chocolate-ice-cream.jpg",
+    "thumbnail": "",
+    "productImage": "chocolate-ice-cream.jpg",
     "name": "Chocolate Ice Cream",
     "description": "Rich and indulgent chocolate ice cream made with premium cocoa for a deep, chocolatey flavor.",
     "price": 3.99,
     "establishment": "664263e9a61e5ddceac532f5"
   },
   {
-    "_id": "66436318bea46df5e1bc8bdd",
-    "coverPhoto": "strawberry-sorbet.jpg",
-    "name": "Strawberry Sorbet",
-    "description": "Refreshing strawberry sorbet made with ripe strawberries for a burst of fruity flavor.",
-    "price": 2.99,
-    "establishment": "664263e9a61e5ddceac532f5"
-  },
-  {
     "_id": "66436318bea46df5e1bc8bde",
-    "coverPhoto": "mint-chocolate-chip-ice-cream.jpg",
+    "thumbnail": "",
+    "productImage": "mint-chocolate-chip-ice-cream.jpg",
     "name": "Mint Chocolate Chip Ice Cream",
     "description": "Cool and refreshing mint ice cream loaded with rich chocolate chips for the perfect balance of flavors.",
     "price": 4.49,
     "establishment": "664263e9a61e5ddceac532f5"
   },
   {
-    "_id": "66436318bea46df5e1bc8bdf",
-    "coverPhoto": "",
-    "name": "Whopper",
-    "description": "Flame-grilled beef patty topped with juicy tomatoes, fresh lettuce, creamy mayonnaise, ketchup, crunchy pickles, and sliced onions on a toasted sesame seed bun.",
-    "price": 4.99,
-    "establishment": "664263e9a61e5ddceac532f6"
+    "_id": "e4ab29db9cf34a5528148620",
+    "name": "Baguette",
+    "description": "Traditional French-style bread.",
+    "price": 5.0,
+    "category": "Bakery",
+    "establishment": "664263e9a61e5ddceac532f5",
+    "thumbnail": "",
+    "productImage": "images/baguette.jpg"
   },
   {
     "_id": "66436318bea46df5e1bc8be0",
-    "coverPhoto": "",
+    "thumbnail": "",
+    "productImage": "",
     "name": "Chicken Fries",
     "description": "Golden and crispy chicken fries seasoned to perfection, served with your choice of dipping sauce.",
     "price": 3.49,
     "establishment": "664263e9a61e5ddceac532f6"
   },
   {
-    "_id": "66436318bea46df5e1bc8be1",
-    "coverPhoto": "",
-    "name": "BK® Café Mocha",
-    "description": "Rich espresso combined with steamed milk and chocolate syrup, topped with whipped cream for a decadent treat.",
-    "price": 2.99,
-    "establishment": "664263e9a61e5ddceac532f6"
+    "_id": "73d98472e0f5628f18ba748c",
+    "name": "Caesar Salad",
+    "description": "Crisp lettuce, parmesan, and croutons.",
+    "price": 30.0,
+    "category": "Steakhouse",
+    "establishment": "664263e9a61e5ddceac532f6",
+    "thumbnail": "",
+    "productImage": "images/caesar_salad.jpg"
   },
   {
-    "_id": "66436318bea46df5e1bc8be2",
-    "coverPhoto": "",
-    "name": "Smartphone",
-    "description": "Cutting-edge smartphone with advanced features such as a high-resolution camera, fast processor, and long-lasting battery.",
-    "price": 699.99,
-    "establishment": "664263e9a61e5ddceac532f7"
+    "_id": "398389bdff9a388f941a784a",
+    "name": "Beef Steak",
+    "description": "Juicy grilled beef steak with herbs.",
+    "price": 60.0,
+    "category": "Steakhouse",
+    "establishment": "664263e9a61e5ddceac532f6",
+    "thumbnail": "",
+    "productImage": "images/beef_steak.jpg"
   },
   {
-    "_id": "66436318bea46df5e1bc8be3",
-    "coverPhoto": "",
-    "name": "Laptop",
-    "description": "Powerful laptop with a sleek design, vibrant display, and fast performance, perfect for work or entertainment.",
-    "price": 999.99,
-    "establishment": "664263e9a61e5ddceac532f7"
+    "_id": "6a901b26235a14329a0d8b73",
+    "name": "Beef Steak",
+    "description": "Juicy grilled beef steak with herbs.",
+    "price": 60.0,
+    "category": "Steakhouse",
+    "establishment": "664263e9a61e5ddceac532f6",
+    "thumbnail": "",
+    "productImage": "images/beef_steak.jpg"
   },
   {
     "_id": "66436318bea46df5e1bc8be4",
-    "coverPhoto": "",
+    "thumbnail": "",
+    "productImage": "",
     "name": "Original Cheesecake",
     "description": "Creamy and smooth cheesecake made with a graham cracker crust, perfect for any occasion.",
     "price": 7.99,
@@ -177,7 +170,8 @@
   },
   {
     "_id": "66436318bea46df5e1bc8be5",
-    "coverPhoto": "",
+    "thumbnail": "",
+    "productImage": "",
     "name": "Chocolate Hazelnut Crunch Cheesecake",
     "description": "Decadent chocolate cheesecake with a hazelnut spread and crunchy hazelnut crust, topped with chocolate ganache and whipped cream.",
     "price": 8.99,
@@ -185,7 +179,8 @@
   },
   {
     "_id": "66436318bea46df5e1bc8be6",
-    "coverPhoto": "",
+    "thumbnail": "",
+    "productImage": "",
     "name": "Fresh Strawberry Cheesecake",
     "description": "Delicious cheesecake topped with fresh strawberries and a sweet strawberry glaze, served with whipped cream.",
     "price": 9.99,
@@ -193,7 +188,8 @@
   },
   {
     "_id": "66436318bea46df5e1bc8be7",
-    "coverPhoto": "",
+    "thumbnail": "",
+    "productImage": "",
     "name": "Ultimate Red Velvet Cake Cheesecake™",
     "description": "Layers of red velvet cake and creamy cheesecake, finished with cream cheese frosting and chocolate shavings.",
     "price": 10.99,
@@ -201,7 +197,8 @@
   },
   {
     "_id": "66436318bea46df5e1bc8be8",
-    "coverPhoto": "",
+    "thumbnail": "",
+    "productImage": "",
     "name": "Lemon Raspberry Cream Cheesecake",
     "description": "Tangy lemon cheesecake swirled with raspberry preserves, topped with white chocolate mousse and whipped cream.",
     "price": 11.99,
@@ -209,7 +206,8 @@
   },
   {
     "_id": "66436318bea46df5e1bc8be9",
-    "coverPhoto": "",
+    "thumbnail": "",
+    "productImage": "",
     "name": "Key Lime Cheesecake",
     "description": "Refreshing key lime cheesecake with a graham cracker crust, topped with whipped cream and lime zest.",
     "price": 10.49,
@@ -217,79 +215,86 @@
   },
   {
     "_id": "66436318bea46df5e1bc8bea",
-    "coverPhoto": "",
+    "thumbnail": "",
+    "productImage": "",
     "name": "Cold Brew Coffee",
     "description": "Smooth and refreshing cold brew coffee made with premium coffee beans, served over ice.",
     "price": 4.49,
     "establishment": "664263e9a61e5ddceac532f9"
   },
   {
-    "_id": "66436318bea46df5e1bc8beb",
-    "coverPhoto": "",
-    "name": "Caramel Macchiato",
-    "description": "Creamy and indulgent caramel macchiato with espresso, steamed milk, and caramel syrup.",
-    "price": 5.49,
-    "establishment": "664263e9a61e5ddceac532f9"
+    "_id": "dd7e6dc28d00256e8716dd5c",
+    "name": "Iced Latte",
+    "description": "Chilled milk coffee served with ice.",
+    "price": 8.0,
+    "category": "Coffee Shop",
+    "establishment": "664263e9a61e5ddceac532f9",
+    "thumbnail": "",
+    "productImage": "images/iced_latte.jpg"
   },
   {
-    "_id": "66436318bea46df5e1bc8bec",
-    "coverPhoto": "",
-    "name": "Nitro Cold Brew",
-    "description": "Velvety-smooth nitro cold brew coffee infused with nitrogen for a creamy texture and rich flavor.",
-    "price": 4.99,
-    "establishment": "664263e9a61e5ddceac532f9"
+    "_id": "61cc49136f3e0cf82cd70ebd",
+    "name": "Cappuccino",
+    "description": "Espresso with steamed milk and foam.",
+    "price": 7.0,
+    "category": "Coffee Shop",
+    "establishment": "664263e9a61e5ddceac532f9",
+    "thumbnail": "",
+    "productImage": "images/cappuccino.jpg"
   },
   {
-    "_id": "66436318bea46df5e1bc8bed",
-    "coverPhoto": "",
-    "name": "Matcha Green Tea Latte",
-    "description": "Vibrant and earthy matcha green tea latte made with finely ground green tea powder and steamed milk.",
-    "price": 5.99,
-    "establishment": "664263e9a61e5ddceac532f9"
-  },
-  {
-    "_id": "66436318bea46df5e1bc8bee",
-    "coverPhoto": "",
-    "name": "Espresso Con Panna",
-    "description": "Intense espresso topped with a dollop of whipped cream, perfect for espresso lovers.",
-    "price": 3.99,
-    "establishment": "664263e9a61e5ddceac532f9"
-  },
-  {
-    "_id": "66436318bea46df5e1bc8bef",
-    "coverPhoto": "",
-    "name": "Avocado Toast",
-    "description": "Sliced avocado served on toasted whole grain bread, topped with cherry tomatoes, feta cheese, and a drizzle of olive oil.",
-    "price": 8.99,
-    "establishment": "664263e9a61e5ddceac532fa"
-  },
-  {
-    "_id": "66436318bea46df5e1bc8bf0",
-    "coverPhoto": "",
-    "name": "Quiche Lorraine",
-    "description": "Classic quiche filled with bacon, Gruyere cheese, and a savory custard, baked in a buttery pastry crust.",
-    "price": 9.49,
-    "establishment": "664263e9a61e5ddceac532fa"
+    "_id": "fc3bc97d990220c7a0036461",
+    "name": "Espresso",
+    "description": "Strong and aromatic Italian coffee.",
+    "price": 5.0,
+    "category": "Coffee Shop",
+    "establishment": "664263e9a61e5ddceac532f9",
+    "thumbnail": "",
+    "productImage": "images/espresso.jpg"
   },
   {
     "_id": "66436318bea46df5e1bc8bf1",
-    "coverPhoto": "",
+    "thumbnail": "",
+    "productImage": "",
     "name": "French Onion Soup",
     "description": "Rich and flavorful French onion soup topped with toasted baguette slices and melted Gruyere cheese.",
     "price": 7.99,
     "establishment": "664263e9a61e5ddceac532fa"
   },
   {
-    "_id": "66436318bea46df5e1bc8bf2",
-    "coverPhoto": "",
-    "name": "Pain au Chocolat",
-    "description": "Buttery and flaky croissant pastry filled with rich chocolate, perfect for breakfast or as a snack.",
-    "price": 3.99,
-    "establishment": "664263e9a61e5ddceac532fa"
+    "_id": "50e9d3a9592fd9668727e11f",
+    "name": "Cupcake",
+    "description": "Small frosted cake with creamy topping.",
+    "price": 6.5,
+    "category": "Bakery",
+    "establishment": "664263e9a61e5ddceac532fa",
+    "thumbnail": "",
+    "productImage": "images/cupcake.jpg"
+  },
+  {
+    "_id": "c5f0b856d8629fbef3c75e03",
+    "name": "Croissant",
+    "description": "Flaky and buttery French pastry.",
+    "price": 6.0,
+    "category": "Bakery",
+    "establishment": "664263e9a61e5ddceac532fa",
+    "thumbnail": "",
+    "productImage": "images/croissant.jpg"
+  },
+  {
+    "_id": "81f6e33c6c37250c369e0c56",
+    "name": "Chocolate Cake",
+    "description": "Moist cake topped with chocolate ganache.",
+    "price": 8.0,
+    "category": "Bakery",
+    "establishment": "664263e9a61e5ddceac532fa",
+    "thumbnail": "",
+    "productImage": "images/chocolate_cake.jpg"
   },
   {
     "_id": "66436318bea46df5e1bc8bf3",
-    "coverPhoto": "",
+    "thumbnail": "",
+    "productImage": "",
     "name": "Pepperoni Pizza",
     "description": "Classic pepperoni pizza topped with melted mozzarella cheese and zesty tomato sauce.",
     "price": 12.99,
@@ -297,7 +302,8 @@
   },
   {
     "_id": "66436318bea46df5e1bc8bf4",
-    "coverPhoto": "",
+    "thumbnail": "",
+    "productImage": "",
     "name": "Margherita Pizza",
     "description": "Traditional margherita pizza topped with fresh mozzarella cheese, ripe tomatoes, and basil leaves.",
     "price": 11.99,
@@ -305,7 +311,8 @@
   },
   {
     "_id": "66436318bea46df5e1bc8bf5",
-    "coverPhoto": "",
+    "thumbnail": "",
+    "productImage": "",
     "name": "Meat Lovers Pizza",
     "description": "Hearty meat lovers pizza loaded with pepperoni, sausage, bacon, and ham, topped with mozzarella cheese.",
     "price": 14.99,
@@ -313,7 +320,8 @@
   },
   {
     "_id": "66436318bea46df5e1bc8bf6",
-    "coverPhoto": "",
+    "thumbnail": "",
+    "productImage": "",
     "name": "Vegetarian Pizza",
     "description": "Delicious vegetarian pizza topped with mushrooms, bell peppers, onions, black olives, and mozzarella cheese.",
     "price": 13.99,
@@ -321,7 +329,8 @@
   },
   {
     "_id": "66436318bea46df5e1bc8bf7",
-    "coverPhoto": "",
+    "thumbnail": "",
+    "productImage": "",
     "name": "BBQ Chicken Pizza",
     "description": "Savory BBQ chicken pizza topped with grilled chicken, red onions, cilantro, and mozzarella cheese.",
     "price": 13.49,
@@ -329,7 +338,8 @@
   },
   {
     "_id": "66436318bea46df5e1bc8bf8",
-    "coverPhoto": "",
+    "thumbnail": "",
+    "productImage": "",
     "name": "Supreme Pizza",
     "description": "Ultimate supreme pizza loaded with pepperoni, sausage, bell peppers, onions, black olives, and mushrooms.",
     "price": 15.49,
@@ -337,7 +347,8 @@
   },
   {
     "_id": "66436318bea46df5e1bc8bf9",
-    "coverPhoto": "",
+    "thumbnail": "",
+    "productImage": "",
     "name": "Chocolate Fudge Brownie Ice Cream",
     "description": "Decadent chocolate fudge brownie ice cream with chunks of chewy brownie mixed in.",
     "price": 6.99,
@@ -345,7 +356,8 @@
   },
   {
     "_id": "66436318bea46df5e1bc8bfa",
-    "coverPhoto": "",
+    "thumbnail": "",
+    "productImage": "",
     "name": "Cookie Dough Ice Cream",
     "description": "Classic cookie dough ice cream loaded with chunks of chocolate chip cookie dough and swirls of fudge.",
     "price": 7.49,
@@ -353,207 +365,182 @@
   },
   {
     "_id": "66436318bea46df5e1bc8bfb",
-    "coverPhoto": "",
+    "thumbnail": "",
+    "productImage": "",
     "name": "Cherry Garcia Ice Cream",
     "description": "Cherry Garcia ice cream with cherries and chunks of dark chocolate, a beloved classic flavor.",
     "price": 6.79,
     "establishment": "664263e9a61e5ddceac532fc"
   },
   {
-    "_id": "66436318bea46df5e1bc8bfc",
-    "coverPhoto": "",
-    "name": "Big Mac",
-    "description": "Iconic burger featuring two all-beef patties, special sauce, lettuce, cheese, pickles, onions on a sesame seed bun.",
-    "price": 4.99,
-    "establishment": "664263e9a61e5ddceac532fd"
+    "_id": "63865de250f4e8c1e8a77591",
+    "name": "Banana Split",
+    "description": "Ice cream with bananas, chocolate, and whipped cream.",
+    "price": 12.0,
+    "category": "Ice Cream Shop",
+    "establishment": "664263e9a61e5ddceac532fc",
+    "thumbnail": "",
+    "productImage": "images/banana_split.jpg"
   },
   {
     "_id": "66436318bea46df5e1bc8bfd",
-    "coverPhoto": "",
+    "thumbnail": "",
+    "productImage": "",
     "name": "McChicken",
     "description": "Satisfying chicken sandwich made with a crispy, seasoned chicken patty, mayonnaise, and lettuce on a toasted bun.",
     "price": 3.49,
     "establishment": "664263e9a61e5ddceac532fd"
   },
   {
-    "_id": "66436318bea46df5e1bc8bfe",
-    "coverPhoto": "",
-    "name": "McFlurry",
-    "description": "Indulgent dessert featuring creamy vanilla soft serve mixed with your choice of delicious toppings, like M&M's or Oreo cookies.",
-    "price": 2.99,
-    "establishment": "664263e9a61e5ddceac532fd"
-  },
-  {
-    "_id": "66436318bea46df5e1bc8bff",
-    "coverPhoto": "",
-    "name": "Egg McMuffin",
-    "description": "Classic breakfast sandwich made with a freshly cracked Grade A egg, Canadian bacon, and melted American cheese on a toasted English muffin.",
-    "price": 3.79,
-    "establishment": "664263e9a61e5ddceac532fd"
-  },
-  {
-    "_id": "66436318bea46df5e1bc8c00",
-    "coverPhoto": "",
-    "name": "French Fries",
-    "description": "Golden, crispy French fries made from premium potatoes, seasoned to perfection and served hot.",
-    "price": 1.89,
-    "establishment": "664263e9a61e5ddceac532fd"
-  },
-  {
-    "_id": "66436318bea46df5e1bc8c01",
-    "coverPhoto": "",
-    "name": "Big Mac",
-    "description": "Iconic double-decker burger with two beef patties, special sauce, lettuce, cheese, pickles, and onions, served on a sesame seed bun.",
-    "price": 4.99,
-    "establishment": "664263e9a61e5ddceac532fd"
-  },
-  {
     "_id": "66436318bea46df5e1bc8c02",
-    "coverPhoto": "",
+    "thumbnail": "",
+    "productImage": "",
     "name": "McChicken",
     "description": "Delicious crispy chicken sandwich with shredded lettuce and mayonnaise, served on a toasted bun.",
     "price": 3.49,
     "establishment": "664263e9a61e5ddceac532fd"
   },
   {
-    "_id": "66436318bea46df5e1bc8c03",
-    "coverPhoto": "",
-    "name": "iPhone 13 Pro",
-    "description": "The latest iPhone model with ProMotion display, A15 Bionic chip, and advanced camera system.",
-    "price": 999,
-    "establishment": "664263e9a61e5ddceac532fe"
+    "_id": "ca5f4e1f68409ebf03d27502",
+    "name": "Chicken Alfredo Pasta",
+    "description": "Creamy pasta with grilled chicken.",
+    "price": 48.0,
+    "category": "Food Truck",
+    "establishment": "664263e9a61e5ddceac532fd",
+    "thumbnail": "",
+    "productImage": "images/chicken_alfredo_pasta.jpg"
   },
   {
-    "_id": "66436318bea46df5e1bc8c04",
-    "coverPhoto": "",
-    "name": "MacBook Pro",
-    "description": "Powerful laptop with M1 Pro or M1 Max chip, stunning Liquid Retina XDR display, and up to 64GB of unified memory.",
-    "price": 1999,
-    "establishment": "664263e9a61e5ddceac532fe"
-  },
-  {
-    "_id": "66436318bea46df5e1bc8c05",
-    "coverPhoto": "",
-    "name": "iPad Air",
-    "description": "Versatile tablet with stunning 10.9-inch Liquid Retina display, A14 Bionic chip, and support for Apple Pencil 2nd generation.",
-    "price": 599,
-    "establishment": "664263e9a61e5ddceac532fe"
-  },
-  {
-    "_id": "66436318bea46df5e1bc8c06",
-    "coverPhoto": "",
-    "name": "Apple Watch Series 7",
-    "description": "Advanced smartwatch with larger, always-on Retina display, enhanced durability, and new health features.",
-    "price": 399,
-    "establishment": "664263e9a61e5ddceac532fe"
-  },
-  {
-    "_id": "66436318bea46df5e1bc8c07",
-    "coverPhoto": "",
-    "name": "AirPods Pro",
-    "description": "Immersive sound and active noise cancellation in a sleek, wireless design, with customizable fit and transparency mode.",
-    "price": 249,
-    "establishment": "664263e9a61e5ddceac532fe"
-  },
-  {
-    "_id": "66436318bea46df5e1bc8c08",
-    "coverPhoto": "",
-    "name": "HomePod mini",
-    "description": "Compact smart speaker with powerful sound and built-in Siri, perfect for enjoying music and controlling your smart home.",
-    "price": 99,
-    "establishment": "664263e9a61e5ddceac532fe"
-  },
-  {
-    "_id": "66436318bea46df5e1bc8c09",
-    "coverPhoto": "",
-    "name": "Turkey Breast Sub",
-    "description": "Freshly sliced turkey breast served on freshly baked bread, topped with your choice of vegetables and sauces.",
-    "price": 6.49,
-    "establishment": "664263e9a61e5ddceac532ff"
-  },
-  {
-    "_id": "66436318bea46df5e1bc8c0a",
-    "coverPhoto": "",
-    "name": "Italian BMT Sub",
-    "description": "Classic Italian sub with Genoa salami, pepperoni, and ham, topped with your choice of vegetables and sauces.",
-    "price": 7.49,
-    "establishment": "664263e9a61e5ddceac532ff"
-  },
-  {
-    "_id": "66436318bea46df5e1bc8c0b",
-    "coverPhoto": "",
-    "name": "Veggie Delight Sub",
-    "description": "Delicious vegetarian sub with your choice of fresh vegetables and sauces, served on freshly baked bread.",
-    "price": 5.99,
-    "establishment": "664263e9a61e5ddceac532ff"
-  },
-  {
-    "_id": "66436318bea46df5e1bc8c0c",
-    "coverPhoto": "",
-    "name": "Meatball Marinara Sub",
-    "description": "Savory meatballs in marinara sauce, served on freshly baked bread and topped with melted cheese.",
-    "price": 6.99,
-    "establishment": "664263e9a61e5ddceac532ff"
+    "_id": "af8b3a1604207eccf897d110",
+    "name": "Grilled Salmon",
+    "description": "Fresh salmon fillet served with lemon butter sauce.",
+    "price": 55.0,
+    "category": "Food Truck",
+    "establishment": "664263e9a61e5ddceac532fd",
+    "thumbnail": "",
+    "productImage": "images/grilled_salmon.jpg"
   },
   {
     "_id": "66436318bea46df5e1bc8c0d",
-    "coverPhoto": "",
+    "thumbnail": "",
+    "productImage": "",
     "name": "Chicken Teriyaki Sub",
     "description": "Grilled chicken strips marinated in teriyaki sauce, served on freshly baked bread with your choice of vegetables and sauces.",
     "price": 7.99,
     "establishment": "664263e9a61e5ddceac532ff"
   },
   {
-    "_id": "66436318bea46df5e1bc8c0e",
-    "coverPhoto": "",
-    "name": "Organic Avocado",
-    "description": "Fresh organic avocado, rich in healthy fats and nutrients, perfect for salads, sandwiches, and dips.",
-    "price": 1.99,
-    "establishment": "664263e9a61e5ddceac53300"
+    "_id": "e1632514f19bcd88b7f72a8c",
+    "name": "Beef Steak",
+    "description": "Juicy grilled beef steak with herbs.",
+    "price": 60.0,
+    "category": "Italian Restaurant",
+    "establishment": "664263e9a61e5ddceac532ff",
+    "thumbnail": "",
+    "productImage": "images/beef_steak.jpg"
+  },
+  {
+    "_id": "f9d54f996a357f6ed40eb294",
+    "name": "Beef Steak",
+    "description": "Juicy grilled beef steak with herbs.",
+    "price": 60.0,
+    "category": "Italian Restaurant",
+    "establishment": "664263e9a61e5ddceac532ff",
+    "thumbnail": "",
+    "productImage": "images/beef_steak.jpg"
+  },
+  {
+    "_id": "9f95fefb054e710243bedc52",
+    "name": "Beef Steak",
+    "description": "Juicy grilled beef steak with herbs.",
+    "price": 60.0,
+    "category": "Italian Restaurant",
+    "establishment": "664263e9a61e5ddceac532ff",
+    "thumbnail": "",
+    "productImage": "images/beef_steak.jpg"
   },
   {
     "_id": "66436318bea46df5e1bc8c0f",
-    "coverPhoto": "",
+    "thumbnail": "",
+    "productImage": "",
     "name": "Grass-Fed Ribeye Steak",
     "description": "Premium grass-fed ribeye steak, tender and juicy, perfect for grilling or pan-searing.",
     "price": 19.99,
     "establishment": "664263e9a61e5ddceac53300"
   },
   {
+    "_id": "7a36eec338b9f8b8b1641a31",
+    "name": "Four Cheese Pizza",
+    "description": "A blend of mozzarella, parmesan, provolone, and gorgonzola.",
+    "price": 40.0,
+    "category": "Pizzeria",
+    "establishment": "664263e9a61e5ddceac53300",
+    "thumbnail": "",
+    "productImage": "images/four_cheese_pizza.jpg"
+  },
+  {
+    "_id": "fb33eb3b8af5b9a219fe61c2",
+    "name": "Four Cheese Pizza",
+    "description": "A blend of mozzarella, parmesan, provolone, and gorgonzola.",
+    "price": 40.0,
+    "category": "Pizzeria",
+    "establishment": "664263e9a61e5ddceac53300",
+    "thumbnail": "",
+    "productImage": "images/four_cheese_pizza.jpg"
+  },
+  {
+    "_id": "9d76780e44a585c517a0051f",
+    "name": "Four Cheese Pizza",
+    "description": "A blend of mozzarella, parmesan, provolone, and gorgonzola.",
+    "price": 40.0,
+    "category": "Pizzeria",
+    "establishment": "664263e9a61e5ddceac53300",
+    "thumbnail": "",
+    "productImage": "images/four_cheese_pizza.jpg"
+  },
+  {
     "_id": "66436318bea46df5e1bc8c10",
-    "coverPhoto": "",
+    "thumbnail": "",
+    "productImage": "",
     "name": "Crunchy Taco",
     "description": "Classic crunchy taco with seasoned beef, lettuce, and cheddar cheese, all wrapped in a crispy corn shell.",
     "price": 1.19,
     "establishment": "664263e9a61e5ddceac53301"
   },
   {
-    "_id": "66436318bea46df5e1bc8c11",
-    "coverPhoto": "",
-    "name": "Bean Burrito",
-    "description": "Hearty bean burrito filled with seasoned refried beans, cheddar cheese, and tangy red sauce, wrapped in a warm flour tortilla.",
-    "price": 1.29,
-    "establishment": "664263e9a61e5ddceac53301"
+    "_id": "43893a36f41c7e1dcfc67ca7",
+    "name": "Beef Steak",
+    "description": "Juicy grilled beef steak with herbs.",
+    "price": 60.0,
+    "category": "Mexican Restaurant",
+    "establishment": "664263e9a61e5ddceac53301",
+    "thumbnail": "",
+    "productImage": "images/beef_steak.jpg"
   },
   {
-    "_id": "66436318bea46df5e1bc8c12",
-    "coverPhoto": "",
-    "name": "Quesarito",
-    "description": "Innovative quesarito featuring seasoned beef, rice, nacho cheese, sour cream, and chipotle sauce, all wrapped in a grilled quesadilla.",
-    "price": 2.99,
-    "establishment": "664263e9a61e5ddceac53301"
+    "_id": "92a89d7934f0a705ef6c7b08",
+    "name": "Caesar Salad",
+    "description": "Crisp lettuce, parmesan, and croutons.",
+    "price": 30.0,
+    "category": "Mexican Restaurant",
+    "establishment": "664263e9a61e5ddceac53301",
+    "thumbnail": "",
+    "productImage": "images/caesar_salad.jpg"
   },
   {
-    "_id": "66436318bea46df5e1bc8c13",
-    "coverPhoto": "",
-    "name": "Cinnamon Twists",
-    "description": "Irresistible cinnamon twists, crispy on the outside and soft on the inside, coated with sweet cinnamon sugar.",
-    "price": 1.09,
-    "establishment": "664263e9a61e5ddceac53301"
+    "_id": "733276b5ce3efee0e373bfe9",
+    "name": "Beef Steak",
+    "description": "Juicy grilled beef steak with herbs.",
+    "price": 60.0,
+    "category": "Mexican Restaurant",
+    "establishment": "664263e9a61e5ddceac53301",
+    "thumbnail": "",
+    "productImage": "images/beef_steak.jpg"
   },
   {
     "_id": "66436318bea46df5e1bc8c14",
-    "coverPhoto": "",
+    "thumbnail": "",
+    "productImage": "",
     "name": "Broccoli Cheddar Soup",
     "description": "Creamy soup made with tender broccoli florets, rich cheddar cheese, and savory seasonings.",
     "price": 5.99,
@@ -561,39 +548,26 @@
   },
   {
     "_id": "66436318bea46df5e1bc8c15",
-    "coverPhoto": "",
+    "thumbnail": "",
+    "productImage": "",
     "name": "Turkey Avocado BLT Sandwich",
     "description": "Satisfying sandwich with roasted turkey, creamy avocado, crispy bacon, lettuce, tomato, and mayonnaise, served on freshly baked bread.",
     "price": 8.49,
     "establishment": "664263e9a61e5ddceac53302"
   },
   {
-    "_id": "66436318bea46df5e1bc8c16",
-    "coverPhoto": "",
-    "name": "Classic Grilled Cheese",
-    "description": "Comforting grilled cheese sandwich made with melted cheddar and American cheeses on grilled bread.",
-    "price": 6.29,
-    "establishment": "664263e9a61e5ddceac53302"
-  },
-  {
     "_id": "66436318bea46df5e1bc8c17",
-    "coverPhoto": "",
+    "thumbnail": "",
+    "productImage": "",
     "name": "Caesar Salad",
     "description": "Classic Caesar salad with crisp romaine lettuce, garlic croutons, Parmesan cheese, and Caesar dressing.",
     "price": 7.99,
     "establishment": "664263e9a61e5ddceac53302"
   },
   {
-    "_id": "66436318bea46df5e1bc8c18",
-    "coverPhoto": "",
-    "name": "Cinnamon Crunch Bagel",
-    "description": "Delicious bagel topped with cinnamon sugar and crunchy cinnamon streusel, perfect for breakfast or a snack.",
-    "price": 2.49,
-    "establishment": "664263e9a61e5ddceac53302"
-  },
-  {
     "_id": "66436318bea46df5e1bc8c19",
-    "coverPhoto": "",
+    "thumbnail": "",
+    "productImage": "",
     "name": "Broccoli Turkey Cheddar Sandwich",
     "description": "Savory sandwich featuring tender broccoli, roasted turkey, and melted cheddar cheese, served on freshly baked bread.",
     "price": 8.99,
@@ -601,7 +575,8 @@
   },
   {
     "_id": "66436318bea46df5e1bc8c1a",
-    "coverPhoto": "",
+    "thumbnail": "",
+    "productImage": "",
     "name": "Glazed Donut",
     "description": "Classic glazed donut, light and fluffy with a sweet, sugary glaze, perfect for a morning treat.",
     "price": 0.99,
@@ -609,34 +584,1429 @@
   },
   {
     "_id": "66436318bea46df5e1bc8c1b",
-    "coverPhoto": "",
+    "thumbnail": "",
+    "productImage": "",
     "name": "Iced Coffee",
     "description": "Refreshing iced coffee made with premium roasted beans and served over ice, customizable with your choice of flavors and cream.",
     "price": 2.49,
     "establishment": "664263e9a61e5ddceac53304"
   },
   {
+    "_id": "90e24cee4d1cf98932a9a943",
+    "name": "Cupcake",
+    "description": "Small frosted cake with creamy topping.",
+    "price": 6.5,
+    "category": "Bakery",
+    "establishment": "664263e9a61e5ddceac53304",
+    "thumbnail": "",
+    "productImage": "images/cupcake.jpg"
+  },
+  {
+    "_id": "64e2effd8db728118b2dd239",
+    "name": "Cupcake",
+    "description": "Small frosted cake with creamy topping.",
+    "price": 6.5,
+    "category": "Bakery",
+    "establishment": "664263e9a61e5ddceac53304",
+    "thumbnail": "",
+    "productImage": "images/cupcake.jpg"
+  },
+  {
     "_id": "66436318bea46df5e1bc8c1c",
-    "coverPhoto": "",
+    "thumbnail": "",
+    "productImage": "",
     "name": "Chick-fil-A Sandwich",
     "description": "Signature chicken sandwich featuring a tender, juicy chicken breast seasoned to perfection and served on a toasted buttered bun with pickles.",
     "price": 4.29,
     "establishment": "664263e9a61e5ddceac53303"
   },
   {
-    "_id": "66436318bea46df5e1bc8c1d",
-    "coverPhoto": "",
-    "name": "Waffle Potato Fries",
-    "description": "Crispy waffle-cut potato fries cooked to golden perfection and seasoned with a touch of sea salt.",
-    "price": 2.19,
-    "establishment": "664263e9a61e5ddceac53303"
-  },
-  {
     "_id": "66436318bea46df5e1bc8c1e",
-    "coverPhoto": "",
+    "thumbnail": "",
+    "productImage": "",
     "name": "Spicy Chicken Sandwich",
     "description": "Satisfying chicken sandwich with a spicy kick, featuring a hand-breaded chicken breast seasoned with a blend of fiery spices, served on a toasted buttered bun with pickles.",
     "price": 4.69,
     "establishment": "664263e9a61e5ddceac53303"
+  },
+  {
+    "_id": "c916da14540f2cb71d435e30",
+    "name": "Beef Steak",
+    "description": "Juicy grilled beef steak with herbs.",
+    "price": 60.0,
+    "category": "Sushi Bar",
+    "establishment": "664263e9a61e5ddceac53303",
+    "thumbnail": "",
+    "productImage": "images/beef_steak.jpg"
+  },
+  {
+    "_id": "ac72b8937841ae8ec9fbd4eb",
+    "name": "Beef Steak",
+    "description": "Juicy grilled beef steak with herbs.",
+    "price": 60.0,
+    "category": "Sushi Bar",
+    "establishment": "664263e9a61e5ddceac53303",
+    "thumbnail": "",
+    "productImage": "images/beef_steak.jpg"
+  },
+  {
+    "_id": "e1a995866085acb7c86b8f31",
+    "name": "Caesar Salad",
+    "description": "Crisp lettuce, parmesan, and croutons.",
+    "price": 30.0,
+    "category": "Restaurant",
+    "establishment": "664263e9a61e5ddceac532f1",
+    "thumbnail": "",
+    "productImage": "images/caesar_salad.jpg"
+  },
+  {
+    "_id": "f50adb1c88489a671839e924",
+    "name": "Caesar Salad",
+    "description": "Crisp lettuce, parmesan, and croutons.",
+    "price": 30.0,
+    "category": "Restaurant",
+    "establishment": "664263e9a61e5ddceac532f1",
+    "thumbnail": "",
+    "productImage": "images/caesar_salad.jpg"
+  },
+  {
+    "_id": "0769cdbf4d1da10252506725",
+    "name": "Caesar Salad",
+    "description": "Crisp lettuce, parmesan, and croutons.",
+    "price": 30.0,
+    "category": "Restaurant",
+    "establishment": "664263e9a61e5ddceac532f1",
+    "thumbnail": "",
+    "productImage": "images/caesar_salad.jpg"
+  },
+  {
+    "_id": "6d32ae09fb7e24274858e152",
+    "name": "Grilled Salmon",
+    "description": "Fresh salmon fillet served with lemon butter sauce.",
+    "price": 55.0,
+    "category": "Restaurant",
+    "establishment": "664263e9a61e5ddceac532f1",
+    "thumbnail": "",
+    "productImage": "images/grilled_salmon.jpg"
+  },
+  {
+    "_id": "6467bb3fae559b39a817e1c7",
+    "name": "Veggie Pizza",
+    "description": "Topped with mushrooms, peppers, and olives.",
+    "price": 36.0,
+    "category": "Pizzeria",
+    "establishment": "664263e9a61e5ddceac532f2",
+    "thumbnail": "",
+    "productImage": "images/veggie_pizza.jpg"
+  },
+  {
+    "_id": "3b8d017f0e7aad234a998a74",
+    "name": "Four Cheese Pizza",
+    "description": "A blend of mozzarella, parmesan, provolone, and gorgonzola.",
+    "price": 40.0,
+    "category": "Pizzeria",
+    "establishment": "664263e9a61e5ddceac532f2",
+    "thumbnail": "",
+    "productImage": "images/four_cheese_pizza.jpg"
+  },
+  {
+    "_id": "7b6c4ad8d71bf4158eec1a12",
+    "name": "Four Cheese Pizza",
+    "description": "A blend of mozzarella, parmesan, provolone, and gorgonzola.",
+    "price": 40.0,
+    "category": "Pizzeria",
+    "establishment": "664263e9a61e5ddceac532f2",
+    "thumbnail": "",
+    "productImage": "images/four_cheese_pizza.jpg"
+  },
+  {
+    "_id": "18cb18503d09ef3afdb6b29b",
+    "name": "Four Cheese Pizza",
+    "description": "A blend of mozzarella, parmesan, provolone, and gorgonzola.",
+    "price": 40.0,
+    "category": "Pizzeria",
+    "establishment": "664263e9a61e5ddceac532f2",
+    "thumbnail": "",
+    "productImage": "images/four_cheese_pizza.jpg"
+  },
+  {
+    "_id": "120ba3d2cbe4d9f518e532e8",
+    "name": "Banana Split",
+    "description": "Ice cream with bananas, chocolate, and whipped cream.",
+    "price": 12.0,
+    "category": "Ice Cream Shop",
+    "establishment": "68eea520f0bc911bd5bb0807",
+    "thumbnail": "",
+    "productImage": "images/banana_split.jpg"
+  },
+  {
+    "_id": "cd756d2e6175f7f84ac919a3",
+    "name": "Strawberry Sundae",
+    "description": "Ice cream with fresh strawberries and syrup.",
+    "price": 8.0,
+    "category": "Ice Cream Shop",
+    "establishment": "68eea520f0bc911bd5bb0807",
+    "thumbnail": "",
+    "productImage": "images/strawberry_sundae.jpg"
+  },
+  {
+    "_id": "f4309ae04c869b69a1fa4bbc",
+    "name": "Chocolate Ice Cream",
+    "description": "Rich and smooth chocolate delight.",
+    "price": 7.0,
+    "category": "Ice Cream Shop",
+    "establishment": "68eea520f0bc911bd5bb0807",
+    "thumbnail": "",
+    "productImage": "images/chocolate_ice_cream.jpg"
+  },
+  {
+    "_id": "319a5fe4a7d01a81f3261e90",
+    "name": "Vanilla Ice Cream",
+    "description": "Classic creamy vanilla flavor.",
+    "price": 7.0,
+    "category": "Ice Cream Shop",
+    "establishment": "68eea520f0bc911bd5bb0807",
+    "thumbnail": "",
+    "productImage": "images/vanilla_ice_cream.jpg"
+  },
+  {
+    "_id": "09b420af3c9758f727058656",
+    "name": "Caesar Salad",
+    "description": "Crisp lettuce, parmesan, and croutons.",
+    "price": 30.0,
+    "category": "Mexican Restaurant",
+    "establishment": "68eea520f0bc911bd5bb080b",
+    "thumbnail": "",
+    "productImage": "images/caesar_salad.jpg"
+  },
+  {
+    "_id": "44e7a62ad02a15e7f5a7ae94",
+    "name": "Chicken Alfredo Pasta",
+    "description": "Creamy pasta with grilled chicken.",
+    "price": 48.0,
+    "category": "Mexican Restaurant",
+    "establishment": "68eea520f0bc911bd5bb080b",
+    "thumbnail": "",
+    "productImage": "images/chicken_alfredo_pasta.jpg"
+  },
+  {
+    "_id": "ed1d19ac40d5fa650761372c",
+    "name": "Grilled Salmon",
+    "description": "Fresh salmon fillet served with lemon butter sauce.",
+    "price": 55.0,
+    "category": "Mexican Restaurant",
+    "establishment": "68eea520f0bc911bd5bb080b",
+    "thumbnail": "",
+    "productImage": "images/grilled_salmon.jpg"
+  },
+  {
+    "_id": "42624bdae130d98f8bea4df9",
+    "name": "Grilled Salmon",
+    "description": "Fresh salmon fillet served with lemon butter sauce.",
+    "price": 55.0,
+    "category": "Mexican Restaurant",
+    "establishment": "68eea520f0bc911bd5bb080b",
+    "thumbnail": "",
+    "productImage": "images/grilled_salmon.jpg"
+  },
+  {
+    "_id": "ecf24320fe3c916ef6bc5300",
+    "name": "Chicken Alfredo Pasta",
+    "description": "Creamy pasta with grilled chicken.",
+    "price": 48.0,
+    "category": "Restaurant",
+    "establishment": "68eea520f0bc911bd5bb080f",
+    "thumbnail": "",
+    "productImage": "images/chicken_alfredo_pasta.jpg"
+  },
+  {
+    "_id": "2e9ea59961f9553be53095bb",
+    "name": "Chicken Alfredo Pasta",
+    "description": "Creamy pasta with grilled chicken.",
+    "price": 48.0,
+    "category": "Restaurant",
+    "establishment": "68eea520f0bc911bd5bb080f",
+    "thumbnail": "",
+    "productImage": "images/chicken_alfredo_pasta.jpg"
+  },
+  {
+    "_id": "b70f5c0cc92a5b39de078a65",
+    "name": "Grilled Salmon",
+    "description": "Fresh salmon fillet served with lemon butter sauce.",
+    "price": 55.0,
+    "category": "Restaurant",
+    "establishment": "68eea520f0bc911bd5bb080f",
+    "thumbnail": "",
+    "productImage": "images/grilled_salmon.jpg"
+  },
+  {
+    "_id": "65d32443a082ea3270d964f5",
+    "name": "Caesar Salad",
+    "description": "Crisp lettuce, parmesan, and croutons.",
+    "price": 30.0,
+    "category": "Restaurant",
+    "establishment": "68eea520f0bc911bd5bb080f",
+    "thumbnail": "",
+    "productImage": "images/caesar_salad.jpg"
+  },
+  {
+    "_id": "36b9634e79fc839f8971401c",
+    "name": "Beef Steak",
+    "description": "Juicy grilled beef steak with herbs.",
+    "price": 60.0,
+    "category": "Healthy Food",
+    "establishment": "68eea520f0bc911bd5bb0813",
+    "thumbnail": "",
+    "productImage": "images/beef_steak.jpg"
+  },
+  {
+    "_id": "91e437a7707bdb8742ac9402",
+    "name": "Grilled Salmon",
+    "description": "Fresh salmon fillet served with lemon butter sauce.",
+    "price": 55.0,
+    "category": "Healthy Food",
+    "establishment": "68eea520f0bc911bd5bb0813",
+    "thumbnail": "",
+    "productImage": "images/grilled_salmon.jpg"
+  },
+  {
+    "_id": "6407134a16b6978d132f52f2",
+    "name": "Chicken Alfredo Pasta",
+    "description": "Creamy pasta with grilled chicken.",
+    "price": 48.0,
+    "category": "Healthy Food",
+    "establishment": "68eea520f0bc911bd5bb0813",
+    "thumbnail": "",
+    "productImage": "images/chicken_alfredo_pasta.jpg"
+  },
+  {
+    "_id": "55072a7f7917b1f3f9848dbf",
+    "name": "Chicken Alfredo Pasta",
+    "description": "Creamy pasta with grilled chicken.",
+    "price": 48.0,
+    "category": "Healthy Food",
+    "establishment": "68eea520f0bc911bd5bb0813",
+    "thumbnail": "",
+    "productImage": "images/chicken_alfredo_pasta.jpg"
+  },
+  {
+    "_id": "4be4f20381309f568345adb0",
+    "name": "Cupcake",
+    "description": "Small frosted cake with creamy topping.",
+    "price": 6.5,
+    "category": "Bakery",
+    "establishment": "68eea520f0bc911bd5bb0817",
+    "thumbnail": "",
+    "productImage": "images/cupcake.jpg"
+  },
+  {
+    "_id": "a249c861d2690ed373770d5a",
+    "name": "Cupcake",
+    "description": "Small frosted cake with creamy topping.",
+    "price": 6.5,
+    "category": "Bakery",
+    "establishment": "68eea520f0bc911bd5bb0817",
+    "thumbnail": "",
+    "productImage": "images/cupcake.jpg"
+  },
+  {
+    "_id": "4d6a0dd43a57a98cf9f8a470",
+    "name": "Croissant",
+    "description": "Flaky and buttery French pastry.",
+    "price": 6.0,
+    "category": "Bakery",
+    "establishment": "68eea520f0bc911bd5bb0817",
+    "thumbnail": "",
+    "productImage": "images/croissant.jpg"
+  },
+  {
+    "_id": "51143cdf1a57c4ca7c9316bc",
+    "name": "Baguette",
+    "description": "Traditional French-style bread.",
+    "price": 5.0,
+    "category": "Bakery",
+    "establishment": "68eea520f0bc911bd5bb0817",
+    "thumbnail": "",
+    "productImage": "images/baguette.jpg"
+  },
+  {
+    "_id": "e05a051366ca54e32febff9e",
+    "name": "Caesar Salad",
+    "description": "Crisp lettuce, parmesan, and croutons.",
+    "price": 30.0,
+    "category": "Steakhouse",
+    "establishment": "68eea520f0bc911bd5bb081b",
+    "thumbnail": "",
+    "productImage": "images/caesar_salad.jpg"
+  },
+  {
+    "_id": "2555deea7170593a2cc1e7c9",
+    "name": "Beef Steak",
+    "description": "Juicy grilled beef steak with herbs.",
+    "price": 60.0,
+    "category": "Steakhouse",
+    "establishment": "68eea520f0bc911bd5bb081b",
+    "thumbnail": "",
+    "productImage": "images/beef_steak.jpg"
+  },
+  {
+    "_id": "4b994d9e8a8e34fbe1276bce",
+    "name": "Beef Steak",
+    "description": "Juicy grilled beef steak with herbs.",
+    "price": 60.0,
+    "category": "Steakhouse",
+    "establishment": "68eea520f0bc911bd5bb081b",
+    "thumbnail": "",
+    "productImage": "images/beef_steak.jpg"
+  },
+  {
+    "_id": "feb715c722f1ce1c24e14036",
+    "name": "Beef Steak",
+    "description": "Juicy grilled beef steak with herbs.",
+    "price": 60.0,
+    "category": "Steakhouse",
+    "establishment": "68eea520f0bc911bd5bb081b",
+    "thumbnail": "",
+    "productImage": "images/beef_steak.jpg"
+  },
+  {
+    "_id": "f1c664a6a7452b08d767aa84",
+    "name": "Chicken Alfredo Pasta",
+    "description": "Creamy pasta with grilled chicken.",
+    "price": 48.0,
+    "category": "Sushi Bar",
+    "establishment": "68eea520f0bc911bd5bb081f",
+    "thumbnail": "",
+    "productImage": "images/chicken_alfredo_pasta.jpg"
+  },
+  {
+    "_id": "a1ec9d0de3488b160b9b9f74",
+    "name": "Beef Steak",
+    "description": "Juicy grilled beef steak with herbs.",
+    "price": 60.0,
+    "category": "Sushi Bar",
+    "establishment": "68eea520f0bc911bd5bb081f",
+    "thumbnail": "",
+    "productImage": "images/beef_steak.jpg"
+  },
+  {
+    "_id": "50cf53f974902133193a06e1",
+    "name": "Grilled Salmon",
+    "description": "Fresh salmon fillet served with lemon butter sauce.",
+    "price": 55.0,
+    "category": "Sushi Bar",
+    "establishment": "68eea520f0bc911bd5bb081f",
+    "thumbnail": "",
+    "productImage": "images/grilled_salmon.jpg"
+  },
+  {
+    "_id": "dc240dade347453ac0ec6adf",
+    "name": "Beef Steak",
+    "description": "Juicy grilled beef steak with herbs.",
+    "price": 60.0,
+    "category": "Sushi Bar",
+    "establishment": "68eea520f0bc911bd5bb081f",
+    "thumbnail": "",
+    "productImage": "images/beef_steak.jpg"
+  },
+  {
+    "_id": "c20ba764b77e897d07f8e73f",
+    "name": "Grilled Salmon",
+    "description": "Fresh salmon fillet served with lemon butter sauce.",
+    "price": 55.0,
+    "category": "Sushi Bar",
+    "establishment": "68eea520f0bc911bd5bb0823",
+    "thumbnail": "",
+    "productImage": "images/grilled_salmon.jpg"
+  },
+  {
+    "_id": "04892bacb20f4899293805bd",
+    "name": "Caesar Salad",
+    "description": "Crisp lettuce, parmesan, and croutons.",
+    "price": 30.0,
+    "category": "Sushi Bar",
+    "establishment": "68eea520f0bc911bd5bb0823",
+    "thumbnail": "",
+    "productImage": "images/caesar_salad.jpg"
+  },
+  {
+    "_id": "769a4f3ed4c9cebfb78c63e8",
+    "name": "Chicken Alfredo Pasta",
+    "description": "Creamy pasta with grilled chicken.",
+    "price": 48.0,
+    "category": "Sushi Bar",
+    "establishment": "68eea520f0bc911bd5bb0823",
+    "thumbnail": "",
+    "productImage": "images/chicken_alfredo_pasta.jpg"
+  },
+  {
+    "_id": "61bac7fd2a7d9bdd9e347f55",
+    "name": "Grilled Salmon",
+    "description": "Fresh salmon fillet served with lemon butter sauce.",
+    "price": 55.0,
+    "category": "Sushi Bar",
+    "establishment": "68eea520f0bc911bd5bb0823",
+    "thumbnail": "",
+    "productImage": "images/grilled_salmon.jpg"
+  },
+  {
+    "_id": "ca9c94807e4764cfc0809c52",
+    "name": "Chicken Alfredo Pasta",
+    "description": "Creamy pasta with grilled chicken.",
+    "price": 48.0,
+    "category": "Restaurant",
+    "establishment": "68eea520f0bc911bd5bb0827",
+    "thumbnail": "",
+    "productImage": "images/chicken_alfredo_pasta.jpg"
+  },
+  {
+    "_id": "2a9b87ca07a9e63da1c11176",
+    "name": "Caesar Salad",
+    "description": "Crisp lettuce, parmesan, and croutons.",
+    "price": 30.0,
+    "category": "Restaurant",
+    "establishment": "68eea520f0bc911bd5bb0827",
+    "thumbnail": "",
+    "productImage": "images/caesar_salad.jpg"
+  },
+  {
+    "_id": "42215228801d348b515cb333",
+    "name": "Chicken Alfredo Pasta",
+    "description": "Creamy pasta with grilled chicken.",
+    "price": 48.0,
+    "category": "Restaurant",
+    "establishment": "68eea520f0bc911bd5bb0827",
+    "thumbnail": "",
+    "productImage": "images/chicken_alfredo_pasta.jpg"
+  },
+  {
+    "_id": "0aef56ce29156c6bc92d32c6",
+    "name": "Caesar Salad",
+    "description": "Crisp lettuce, parmesan, and croutons.",
+    "price": 30.0,
+    "category": "Restaurant",
+    "establishment": "68eea520f0bc911bd5bb0827",
+    "thumbnail": "",
+    "productImage": "images/caesar_salad.jpg"
+  },
+  {
+    "_id": "cd1c84269ccb4a5b0889b471",
+    "name": "Beef Steak",
+    "description": "Juicy grilled beef steak with herbs.",
+    "price": 60.0,
+    "category": "Vegan Restaurant",
+    "establishment": "68eea520f0bc911bd5bb082b",
+    "thumbnail": "",
+    "productImage": "images/beef_steak.jpg"
+  },
+  {
+    "_id": "d4921714400f647a3d8744b3",
+    "name": "Chicken Alfredo Pasta",
+    "description": "Creamy pasta with grilled chicken.",
+    "price": 48.0,
+    "category": "Vegan Restaurant",
+    "establishment": "68eea520f0bc911bd5bb082b",
+    "thumbnail": "",
+    "productImage": "images/chicken_alfredo_pasta.jpg"
+  },
+  {
+    "_id": "f7f711cc03b677e1f0dc4f9f",
+    "name": "Caesar Salad",
+    "description": "Crisp lettuce, parmesan, and croutons.",
+    "price": 30.0,
+    "category": "Vegan Restaurant",
+    "establishment": "68eea520f0bc911bd5bb082b",
+    "thumbnail": "",
+    "productImage": "images/caesar_salad.jpg"
+  },
+  {
+    "_id": "b403295fb43d21d49dcbb8fe",
+    "name": "Chicken Alfredo Pasta",
+    "description": "Creamy pasta with grilled chicken.",
+    "price": 48.0,
+    "category": "Vegan Restaurant",
+    "establishment": "68eea520f0bc911bd5bb082b",
+    "thumbnail": "",
+    "productImage": "images/chicken_alfredo_pasta.jpg"
+  },
+  {
+    "_id": "7528480a45182e3cd08ae2e8",
+    "name": "Caesar Salad",
+    "description": "Crisp lettuce, parmesan, and croutons.",
+    "price": 30.0,
+    "category": "Bistro",
+    "establishment": "68eea520f0bc911bd5bb082f",
+    "thumbnail": "",
+    "productImage": "images/caesar_salad.jpg"
+  },
+  {
+    "_id": "ebe43128e4398b610c064fed",
+    "name": "Caesar Salad",
+    "description": "Crisp lettuce, parmesan, and croutons.",
+    "price": 30.0,
+    "category": "Bistro",
+    "establishment": "68eea520f0bc911bd5bb082f",
+    "thumbnail": "",
+    "productImage": "images/caesar_salad.jpg"
+  },
+  {
+    "_id": "35031dd57e4446664a8dbcb7",
+    "name": "Caesar Salad",
+    "description": "Crisp lettuce, parmesan, and croutons.",
+    "price": 30.0,
+    "category": "Bistro",
+    "establishment": "68eea520f0bc911bd5bb082f",
+    "thumbnail": "",
+    "productImage": "images/caesar_salad.jpg"
+  },
+  {
+    "_id": "d15f9fb38d90283f473b7b08",
+    "name": "Chicken Alfredo Pasta",
+    "description": "Creamy pasta with grilled chicken.",
+    "price": 48.0,
+    "category": "Bistro",
+    "establishment": "68eea520f0bc911bd5bb082f",
+    "thumbnail": "",
+    "productImage": "images/chicken_alfredo_pasta.jpg"
+  },
+  {
+    "_id": "83d058ed06375c001450fbea",
+    "name": "Beef Steak",
+    "description": "Juicy grilled beef steak with herbs.",
+    "price": 60.0,
+    "category": "Dessert Shop",
+    "establishment": "68eea520f0bc911bd5bb0833",
+    "thumbnail": "",
+    "productImage": "images/beef_steak.jpg"
+  },
+  {
+    "_id": "450aef214c0cd09ab3fdcade",
+    "name": "Chicken Alfredo Pasta",
+    "description": "Creamy pasta with grilled chicken.",
+    "price": 48.0,
+    "category": "Dessert Shop",
+    "establishment": "68eea520f0bc911bd5bb0833",
+    "thumbnail": "",
+    "productImage": "images/chicken_alfredo_pasta.jpg"
+  },
+  {
+    "_id": "ff53acbf3c1992f035f61ee2",
+    "name": "Grilled Salmon",
+    "description": "Fresh salmon fillet served with lemon butter sauce.",
+    "price": 55.0,
+    "category": "Dessert Shop",
+    "establishment": "68eea520f0bc911bd5bb0833",
+    "thumbnail": "",
+    "productImage": "images/grilled_salmon.jpg"
+  },
+  {
+    "_id": "5e2cbe10afa73c332ada3f11",
+    "name": "Caesar Salad",
+    "description": "Crisp lettuce, parmesan, and croutons.",
+    "price": 30.0,
+    "category": "Dessert Shop",
+    "establishment": "68eea520f0bc911bd5bb0833",
+    "thumbnail": "",
+    "productImage": "images/caesar_salad.jpg"
+  },
+  {
+    "_id": "13c8cf8db741cd95805abe4a",
+    "name": "Chicken Alfredo Pasta",
+    "description": "Creamy pasta with grilled chicken.",
+    "price": 48.0,
+    "category": "Food Truck",
+    "establishment": "68eea520f0bc911bd5bb0837",
+    "thumbnail": "",
+    "productImage": "images/chicken_alfredo_pasta.jpg"
+  },
+  {
+    "_id": "b0990902f3cd02b55faee4a8",
+    "name": "Beef Steak",
+    "description": "Juicy grilled beef steak with herbs.",
+    "price": 60.0,
+    "category": "Food Truck",
+    "establishment": "68eea520f0bc911bd5bb0837",
+    "thumbnail": "",
+    "productImage": "images/beef_steak.jpg"
+  },
+  {
+    "_id": "c00937c679d6aedbfc011af7",
+    "name": "Chicken Alfredo Pasta",
+    "description": "Creamy pasta with grilled chicken.",
+    "price": 48.0,
+    "category": "Food Truck",
+    "establishment": "68eea520f0bc911bd5bb0837",
+    "thumbnail": "",
+    "productImage": "images/chicken_alfredo_pasta.jpg"
+  },
+  {
+    "_id": "48c9e19f5bf072f9d7dca467",
+    "name": "Beef Steak",
+    "description": "Juicy grilled beef steak with herbs.",
+    "price": 60.0,
+    "category": "Food Truck",
+    "establishment": "68eea520f0bc911bd5bb0837",
+    "thumbnail": "",
+    "productImage": "images/beef_steak.jpg"
+  },
+  {
+    "_id": "d014eb3bfd185d6ac85d0596",
+    "name": "Croissant",
+    "description": "Flaky and buttery French pastry.",
+    "price": 6.0,
+    "category": "Bakery",
+    "establishment": "68eea520f0bc911bd5bb083b",
+    "thumbnail": "",
+    "productImage": "images/croissant.jpg"
+  },
+  {
+    "_id": "2846a4737905e9fe59f0430d",
+    "name": "Chocolate Cake",
+    "description": "Moist cake topped with chocolate ganache.",
+    "price": 8.0,
+    "category": "Bakery",
+    "establishment": "68eea520f0bc911bd5bb083b",
+    "thumbnail": "",
+    "productImage": "images/chocolate_cake.jpg"
+  },
+  {
+    "_id": "ac6fd3a366fc46d05a7ab312",
+    "name": "Baguette",
+    "description": "Traditional French-style bread.",
+    "price": 5.0,
+    "category": "Bakery",
+    "establishment": "68eea520f0bc911bd5bb083b",
+    "thumbnail": "",
+    "productImage": "images/baguette.jpg"
+  },
+  {
+    "_id": "94608265b2be70f1e13b9f4c",
+    "name": "Croissant",
+    "description": "Flaky and buttery French pastry.",
+    "price": 6.0,
+    "category": "Bakery",
+    "establishment": "68eea520f0bc911bd5bb083b",
+    "thumbnail": "",
+    "productImage": "images/croissant.jpg"
+  },
+  {
+    "_id": "b488b74cd6209cdcd49a93c1",
+    "name": "Caesar Salad",
+    "description": "Crisp lettuce, parmesan, and croutons.",
+    "price": 30.0,
+    "category": "Food Truck",
+    "establishment": "68eea520f0bc911bd5bb083f",
+    "thumbnail": "",
+    "productImage": "images/caesar_salad.jpg"
+  },
+  {
+    "_id": "0dc55a47e40ebbc82a411f48",
+    "name": "Chicken Alfredo Pasta",
+    "description": "Creamy pasta with grilled chicken.",
+    "price": 48.0,
+    "category": "Food Truck",
+    "establishment": "68eea520f0bc911bd5bb083f",
+    "thumbnail": "",
+    "productImage": "images/chicken_alfredo_pasta.jpg"
+  },
+  {
+    "_id": "af4be22ac4c4005a7599eb5e",
+    "name": "Beef Steak",
+    "description": "Juicy grilled beef steak with herbs.",
+    "price": 60.0,
+    "category": "Food Truck",
+    "establishment": "68eea520f0bc911bd5bb083f",
+    "thumbnail": "",
+    "productImage": "images/beef_steak.jpg"
+  },
+  {
+    "_id": "654419df82ad827f4458749b",
+    "name": "Grilled Salmon",
+    "description": "Fresh salmon fillet served with lemon butter sauce.",
+    "price": 55.0,
+    "category": "Food Truck",
+    "establishment": "68eea520f0bc911bd5bb083f",
+    "thumbnail": "",
+    "productImage": "images/grilled_salmon.jpg"
+  },
+  {
+    "_id": "0713fbc5b1007a59bffa2908",
+    "name": "Beef Steak",
+    "description": "Juicy grilled beef steak with herbs.",
+    "price": 60.0,
+    "category": "Vegan Restaurant",
+    "establishment": "68eea520f0bc911bd5bb0843",
+    "thumbnail": "",
+    "productImage": "images/beef_steak.jpg"
+  },
+  {
+    "_id": "387e4aaaa5b1db0fa5343e17",
+    "name": "Caesar Salad",
+    "description": "Crisp lettuce, parmesan, and croutons.",
+    "price": 30.0,
+    "category": "Vegan Restaurant",
+    "establishment": "68eea520f0bc911bd5bb0843",
+    "thumbnail": "",
+    "productImage": "images/caesar_salad.jpg"
+  },
+  {
+    "_id": "109969716b362028d33f4ffe",
+    "name": "Beef Steak",
+    "description": "Juicy grilled beef steak with herbs.",
+    "price": 60.0,
+    "category": "Vegan Restaurant",
+    "establishment": "68eea520f0bc911bd5bb0843",
+    "thumbnail": "",
+    "productImage": "images/beef_steak.jpg"
+  },
+  {
+    "_id": "2e49a18ee4628ef8aea80d30",
+    "name": "Grilled Salmon",
+    "description": "Fresh salmon fillet served with lemon butter sauce.",
+    "price": 55.0,
+    "category": "Vegan Restaurant",
+    "establishment": "68eea520f0bc911bd5bb0843",
+    "thumbnail": "",
+    "productImage": "images/grilled_salmon.jpg"
+  },
+  {
+    "_id": "90dc6dd282cd21ab117222ec",
+    "name": "Chicken Alfredo Pasta",
+    "description": "Creamy pasta with grilled chicken.",
+    "price": 48.0,
+    "category": "Seafood Restaurant",
+    "establishment": "68eea520f0bc911bd5bb0847",
+    "thumbnail": "",
+    "productImage": "images/chicken_alfredo_pasta.jpg"
+  },
+  {
+    "_id": "68fecf6e3eb08341fb9ad8ba",
+    "name": "Grilled Salmon",
+    "description": "Fresh salmon fillet served with lemon butter sauce.",
+    "price": 55.0,
+    "category": "Seafood Restaurant",
+    "establishment": "68eea520f0bc911bd5bb0847",
+    "thumbnail": "",
+    "productImage": "images/grilled_salmon.jpg"
+  },
+  {
+    "_id": "b2efd2f663c2d54f58b7b260",
+    "name": "Caesar Salad",
+    "description": "Crisp lettuce, parmesan, and croutons.",
+    "price": 30.0,
+    "category": "Seafood Restaurant",
+    "establishment": "68eea520f0bc911bd5bb0847",
+    "thumbnail": "",
+    "productImage": "images/caesar_salad.jpg"
+  },
+  {
+    "_id": "dd85c0d215713fa49dfe7747",
+    "name": "Beef Steak",
+    "description": "Juicy grilled beef steak with herbs.",
+    "price": 60.0,
+    "category": "Seafood Restaurant",
+    "establishment": "68eea520f0bc911bd5bb0847",
+    "thumbnail": "",
+    "productImage": "images/beef_steak.jpg"
+  },
+  {
+    "_id": "113fdfb50158d8e52ad64533",
+    "name": "Caesar Salad",
+    "description": "Crisp lettuce, parmesan, and croutons.",
+    "price": 30.0,
+    "category": "Steakhouse",
+    "establishment": "68eea520f0bc911bd5bb084b",
+    "thumbnail": "",
+    "productImage": "images/caesar_salad.jpg"
+  },
+  {
+    "_id": "12bec36329d7ada238bc3e04",
+    "name": "Chicken Alfredo Pasta",
+    "description": "Creamy pasta with grilled chicken.",
+    "price": 48.0,
+    "category": "Steakhouse",
+    "establishment": "68eea520f0bc911bd5bb084b",
+    "thumbnail": "",
+    "productImage": "images/chicken_alfredo_pasta.jpg"
+  },
+  {
+    "_id": "ea288702447634674db98637",
+    "name": "Caesar Salad",
+    "description": "Crisp lettuce, parmesan, and croutons.",
+    "price": 30.0,
+    "category": "Steakhouse",
+    "establishment": "68eea520f0bc911bd5bb084b",
+    "thumbnail": "",
+    "productImage": "images/caesar_salad.jpg"
+  },
+  {
+    "_id": "e1af9d9405e51ae41db0a671",
+    "name": "Chicken Alfredo Pasta",
+    "description": "Creamy pasta with grilled chicken.",
+    "price": 48.0,
+    "category": "Steakhouse",
+    "establishment": "68eea520f0bc911bd5bb084b",
+    "thumbnail": "",
+    "productImage": "images/chicken_alfredo_pasta.jpg"
+  },
+  {
+    "_id": "ef0a41498d8b55c846a5380f",
+    "name": "Strawberry Sundae",
+    "description": "Ice cream with fresh strawberries and syrup.",
+    "price": 8.0,
+    "category": "Ice Cream Shop",
+    "establishment": "68eea520f0bc911bd5bb084f",
+    "thumbnail": "",
+    "productImage": "images/strawberry_sundae.jpg"
+  },
+  {
+    "_id": "4f00678bba0d5020eaa30a52",
+    "name": "Vanilla Ice Cream",
+    "description": "Classic creamy vanilla flavor.",
+    "price": 7.0,
+    "category": "Ice Cream Shop",
+    "establishment": "68eea520f0bc911bd5bb084f",
+    "thumbnail": "",
+    "productImage": "images/vanilla_ice_cream.jpg"
+  },
+  {
+    "_id": "b09edf26d4c03a2bb006ef98",
+    "name": "Strawberry Sundae",
+    "description": "Ice cream with fresh strawberries and syrup.",
+    "price": 8.0,
+    "category": "Ice Cream Shop",
+    "establishment": "68eea520f0bc911bd5bb084f",
+    "thumbnail": "",
+    "productImage": "images/strawberry_sundae.jpg"
+  },
+  {
+    "_id": "a854783b9f034f90b3af3096",
+    "name": "Banana Split",
+    "description": "Ice cream with bananas, chocolate, and whipped cream.",
+    "price": 12.0,
+    "category": "Ice Cream Shop",
+    "establishment": "68eea520f0bc911bd5bb084f",
+    "thumbnail": "",
+    "productImage": "images/banana_split.jpg"
+  },
+  {
+    "_id": "71195cd69ca0670913f1db27",
+    "name": "Chicken Alfredo Pasta",
+    "description": "Creamy pasta with grilled chicken.",
+    "price": 48.0,
+    "category": "Steakhouse",
+    "establishment": "68eea520f0bc911bd5bb0853",
+    "thumbnail": "",
+    "productImage": "images/chicken_alfredo_pasta.jpg"
+  },
+  {
+    "_id": "31cc4544e0756617a65a280d",
+    "name": "Caesar Salad",
+    "description": "Crisp lettuce, parmesan, and croutons.",
+    "price": 30.0,
+    "category": "Steakhouse",
+    "establishment": "68eea520f0bc911bd5bb0853",
+    "thumbnail": "",
+    "productImage": "images/caesar_salad.jpg"
+  },
+  {
+    "_id": "765e58a213e42300f6ba51da",
+    "name": "Caesar Salad",
+    "description": "Crisp lettuce, parmesan, and croutons.",
+    "price": 30.0,
+    "category": "Steakhouse",
+    "establishment": "68eea520f0bc911bd5bb0853",
+    "thumbnail": "",
+    "productImage": "images/caesar_salad.jpg"
+  },
+  {
+    "_id": "de3a0341c4e0e274fd6a14c2",
+    "name": "Grilled Salmon",
+    "description": "Fresh salmon fillet served with lemon butter sauce.",
+    "price": 55.0,
+    "category": "Steakhouse",
+    "establishment": "68eea520f0bc911bd5bb0853",
+    "thumbnail": "",
+    "productImage": "images/grilled_salmon.jpg"
+  },
+  {
+    "_id": "f7219ede1ce61941873ae024",
+    "name": "Caesar Salad",
+    "description": "Crisp lettuce, parmesan, and croutons.",
+    "price": 30.0,
+    "category": "Italian Restaurant",
+    "establishment": "68eea520f0bc911bd5bb0857",
+    "thumbnail": "",
+    "productImage": "images/caesar_salad.jpg"
+  },
+  {
+    "_id": "e9f7dc1dfa40016e74586a54",
+    "name": "Grilled Salmon",
+    "description": "Fresh salmon fillet served with lemon butter sauce.",
+    "price": 55.0,
+    "category": "Italian Restaurant",
+    "establishment": "68eea520f0bc911bd5bb0857",
+    "thumbnail": "",
+    "productImage": "images/grilled_salmon.jpg"
+  },
+  {
+    "_id": "5236f9fdb63fce42105e19e5",
+    "name": "Caesar Salad",
+    "description": "Crisp lettuce, parmesan, and croutons.",
+    "price": 30.0,
+    "category": "Italian Restaurant",
+    "establishment": "68eea520f0bc911bd5bb0857",
+    "thumbnail": "",
+    "productImage": "images/caesar_salad.jpg"
+  },
+  {
+    "_id": "72396104a6c56fe008ac49b5",
+    "name": "Beef Steak",
+    "description": "Juicy grilled beef steak with herbs.",
+    "price": 60.0,
+    "category": "Italian Restaurant",
+    "establishment": "68eea520f0bc911bd5bb0857",
+    "thumbnail": "",
+    "productImage": "images/beef_steak.jpg"
+  },
+  {
+    "_id": "f8ce0b6c6c01d2a64446e054",
+    "name": "Four Cheese Pizza",
+    "description": "A blend of mozzarella, parmesan, provolone, and gorgonzola.",
+    "price": 40.0,
+    "category": "Pizzeria",
+    "establishment": "68eea520f0bc911bd5bb085b",
+    "thumbnail": "",
+    "productImage": "images/four_cheese_pizza.jpg"
+  },
+  {
+    "_id": "2511eac964363e286ee6e2e9",
+    "name": "Margherita Pizza",
+    "description": "Classic pizza with tomato sauce, mozzarella, and fresh basil.",
+    "price": 35.0,
+    "category": "Pizzeria",
+    "establishment": "68eea520f0bc911bd5bb085b",
+    "thumbnail": "",
+    "productImage": "images/margherita_pizza.jpg"
+  },
+  {
+    "_id": "4fc442fc992fad99e3876da5",
+    "name": "Four Cheese Pizza",
+    "description": "A blend of mozzarella, parmesan, provolone, and gorgonzola.",
+    "price": 40.0,
+    "category": "Pizzeria",
+    "establishment": "68eea520f0bc911bd5bb085b",
+    "thumbnail": "",
+    "productImage": "images/four_cheese_pizza.jpg"
+  },
+  {
+    "_id": "b4190a30367e24bb2d275264",
+    "name": "Pepperoni Pizza",
+    "description": "Crispy pepperoni slices over melted cheese.",
+    "price": 38.0,
+    "category": "Pizzeria",
+    "establishment": "68eea520f0bc911bd5bb085b",
+    "thumbnail": "",
+    "productImage": "images/pepperoni_pizza.jpg"
+  },
+  {
+    "_id": "b2d72a95d16872d1ca8fd1eb",
+    "name": "Cappuccino",
+    "description": "Espresso with steamed milk and foam.",
+    "price": 7.0,
+    "category": "Coffee Shop",
+    "establishment": "68eea520f0bc911bd5bb085f",
+    "thumbnail": "",
+    "productImage": "images/cappuccino.jpg"
+  },
+  {
+    "_id": "03bde1026dbdf60050c81d64",
+    "name": "Cappuccino",
+    "description": "Espresso with steamed milk and foam.",
+    "price": 7.0,
+    "category": "Coffee Shop",
+    "establishment": "68eea520f0bc911bd5bb085f",
+    "thumbnail": "",
+    "productImage": "images/cappuccino.jpg"
+  },
+  {
+    "_id": "96997427b20fe52dc39e5664",
+    "name": "Espresso",
+    "description": "Strong and aromatic Italian coffee.",
+    "price": 5.0,
+    "category": "Coffee Shop",
+    "establishment": "68eea520f0bc911bd5bb085f",
+    "thumbnail": "",
+    "productImage": "images/espresso.jpg"
+  },
+  {
+    "_id": "c7380e71fd0527dc0a10cc21",
+    "name": "Espresso",
+    "description": "Strong and aromatic Italian coffee.",
+    "price": 5.0,
+    "category": "Coffee Shop",
+    "establishment": "68eea520f0bc911bd5bb085f",
+    "thumbnail": "",
+    "productImage": "images/espresso.jpg"
+  },
+  {
+    "_id": "9a43c6eafca07e190b1ff3b6",
+    "name": "Pepperoni Pizza",
+    "description": "Crispy pepperoni slices over melted cheese.",
+    "price": 38.0,
+    "category": "Pizzeria",
+    "establishment": "68eea520f0bc911bd5bb0863",
+    "thumbnail": "",
+    "productImage": "images/pepperoni_pizza.jpg"
+  },
+  {
+    "_id": "eaa1df77760d5ecc969f88c2",
+    "name": "Veggie Pizza",
+    "description": "Topped with mushrooms, peppers, and olives.",
+    "price": 36.0,
+    "category": "Pizzeria",
+    "establishment": "68eea520f0bc911bd5bb0863",
+    "thumbnail": "",
+    "productImage": "images/veggie_pizza.jpg"
+  },
+  {
+    "_id": "6a089ff96881bad2b1521ccc",
+    "name": "Four Cheese Pizza",
+    "description": "A blend of mozzarella, parmesan, provolone, and gorgonzola.",
+    "price": 40.0,
+    "category": "Pizzeria",
+    "establishment": "68eea520f0bc911bd5bb0863",
+    "thumbnail": "",
+    "productImage": "images/four_cheese_pizza.jpg"
+  },
+  {
+    "_id": "2313fce4a23222a3bfca2e4a",
+    "name": "Veggie Pizza",
+    "description": "Topped with mushrooms, peppers, and olives.",
+    "price": 36.0,
+    "category": "Pizzeria",
+    "establishment": "68eea520f0bc911bd5bb0863",
+    "thumbnail": "",
+    "productImage": "images/veggie_pizza.jpg"
+  },
+  {
+    "_id": "ca756521f115cd6488b06e96",
+    "name": "Cupcake",
+    "description": "Small frosted cake with creamy topping.",
+    "price": 6.5,
+    "category": "Bakery",
+    "establishment": "68eea520f0bc911bd5bb0867",
+    "thumbnail": "",
+    "productImage": "images/cupcake.jpg"
+  },
+  {
+    "_id": "bb939b1467f5e0bb374242eb",
+    "name": "Chocolate Cake",
+    "description": "Moist cake topped with chocolate ganache.",
+    "price": 8.0,
+    "category": "Bakery",
+    "establishment": "68eea520f0bc911bd5bb0867",
+    "thumbnail": "",
+    "productImage": "images/chocolate_cake.jpg"
+  },
+  {
+    "_id": "55e6248a6837040a33c8d078",
+    "name": "Croissant",
+    "description": "Flaky and buttery French pastry.",
+    "price": 6.0,
+    "category": "Bakery",
+    "establishment": "68eea520f0bc911bd5bb0867",
+    "thumbnail": "",
+    "productImage": "images/croissant.jpg"
+  },
+  {
+    "_id": "2be853138d8528efe5e6bb39",
+    "name": "Croissant",
+    "description": "Flaky and buttery French pastry.",
+    "price": 6.0,
+    "category": "Bakery",
+    "establishment": "68eea520f0bc911bd5bb0867",
+    "thumbnail": "",
+    "productImage": "images/croissant.jpg"
+  },
+  {
+    "_id": "9e671f62a269989c20809f63",
+    "name": "Mojito",
+    "description": "Refreshing cocktail with rum, mint, and lime.",
+    "price": 20.0,
+    "category": "Bar",
+    "establishment": "68eea520f0bc911bd5bb086b",
+    "thumbnail": "",
+    "productImage": "images/mojito.jpg"
+  },
+  {
+    "_id": "d73384e7e6d0826bbd6856f0",
+    "name": "Mojito",
+    "description": "Refreshing cocktail with rum, mint, and lime.",
+    "price": 20.0,
+    "category": "Bar",
+    "establishment": "68eea520f0bc911bd5bb086b",
+    "thumbnail": "",
+    "productImage": "images/mojito.jpg"
+  },
+  {
+    "_id": "db1feec8bfe639a2c1ebdd64",
+    "name": "Whiskey Sour",
+    "description": "Whiskey cocktail with lemon juice and sugar.",
+    "price": 22.0,
+    "category": "Bar",
+    "establishment": "68eea520f0bc911bd5bb086b",
+    "thumbnail": "",
+    "productImage": "images/whiskey_sour.jpg"
+  },
+  {
+    "_id": "1efec7a7886e7a07fb1199d0",
+    "name": "Nachos",
+    "description": "Crispy tortilla chips with cheese sauce.",
+    "price": 18.0,
+    "category": "Bar",
+    "establishment": "68eea520f0bc911bd5bb086b",
+    "thumbnail": "",
+    "productImage": "images/nachos.jpg"
+  },
+  {
+    "_id": "aa461013137631748fa33be5",
+    "name": "Caesar Salad",
+    "description": "Crisp lettuce, parmesan, and croutons.",
+    "price": 30.0,
+    "category": "Healthy Food",
+    "establishment": "68eea520f0bc911bd5bb086f",
+    "thumbnail": "",
+    "productImage": "images/caesar_salad.jpg"
+  },
+  {
+    "_id": "e3aa3845a5363e9ec0633739",
+    "name": "Caesar Salad",
+    "description": "Crisp lettuce, parmesan, and croutons.",
+    "price": 30.0,
+    "category": "Healthy Food",
+    "establishment": "68eea520f0bc911bd5bb086f",
+    "thumbnail": "",
+    "productImage": "images/caesar_salad.jpg"
+  },
+  {
+    "_id": "e6a50200337946266dc17c51",
+    "name": "Beef Steak",
+    "description": "Juicy grilled beef steak with herbs.",
+    "price": 60.0,
+    "category": "Healthy Food",
+    "establishment": "68eea520f0bc911bd5bb086f",
+    "thumbnail": "",
+    "productImage": "images/beef_steak.jpg"
+  },
+  {
+    "_id": "1893ade53cf6a6b1b06c9dd8",
+    "name": "Beef Steak",
+    "description": "Juicy grilled beef steak with herbs.",
+    "price": 60.0,
+    "category": "Healthy Food",
+    "establishment": "68eea520f0bc911bd5bb086f",
+    "thumbnail": "",
+    "productImage": "images/beef_steak.jpg"
+  },
+  {
+    "_id": "ad4ee25aa0fccb2f5ea652fd",
+    "name": "Grilled Salmon",
+    "description": "Fresh salmon fillet served with lemon butter sauce.",
+    "price": 55.0,
+    "category": "Bistro",
+    "establishment": "68eea520f0bc911bd5bb0873",
+    "thumbnail": "",
+    "productImage": "images/grilled_salmon.jpg"
+  },
+  {
+    "_id": "52f83bc1daf837ca7741f792",
+    "name": "Chicken Alfredo Pasta",
+    "description": "Creamy pasta with grilled chicken.",
+    "price": 48.0,
+    "category": "Bistro",
+    "establishment": "68eea520f0bc911bd5bb0873",
+    "thumbnail": "",
+    "productImage": "images/chicken_alfredo_pasta.jpg"
+  },
+  {
+    "_id": "153f1d0cd7a963aca856e351",
+    "name": "Chicken Alfredo Pasta",
+    "description": "Creamy pasta with grilled chicken.",
+    "price": 48.0,
+    "category": "Bistro",
+    "establishment": "68eea520f0bc911bd5bb0873",
+    "thumbnail": "",
+    "productImage": "images/chicken_alfredo_pasta.jpg"
+  },
+  {
+    "_id": "9f26e8fdc8ce32bb51e1ac93",
+    "name": "Caesar Salad",
+    "description": "Crisp lettuce, parmesan, and croutons.",
+    "price": 30.0,
+    "category": "Bistro",
+    "establishment": "68eea520f0bc911bd5bb0873",
+    "thumbnail": "",
+    "productImage": "images/caesar_salad.jpg"
+  },
+  {
+    "_id": "2fce2702acaf3620d4ff5b15",
+    "name": "Beef Steak",
+    "description": "Juicy grilled beef steak with herbs.",
+    "price": 60.0,
+    "category": "Mexican Restaurant",
+    "establishment": "68eea520f0bc911bd5bb0877",
+    "thumbnail": "",
+    "productImage": "images/beef_steak.jpg"
+  },
+  {
+    "_id": "0a975b83ad92093a350201cb",
+    "name": "Caesar Salad",
+    "description": "Crisp lettuce, parmesan, and croutons.",
+    "price": 30.0,
+    "category": "Mexican Restaurant",
+    "establishment": "68eea520f0bc911bd5bb0877",
+    "thumbnail": "",
+    "productImage": "images/caesar_salad.jpg"
+  },
+  {
+    "_id": "5855a3dc9e2eadeb7b76db28",
+    "name": "Grilled Salmon",
+    "description": "Fresh salmon fillet served with lemon butter sauce.",
+    "price": 55.0,
+    "category": "Mexican Restaurant",
+    "establishment": "68eea520f0bc911bd5bb0877",
+    "thumbnail": "",
+    "productImage": "images/grilled_salmon.jpg"
+  },
+  {
+    "_id": "9606fce5cef6a47ccd9a554a",
+    "name": "Chicken Alfredo Pasta",
+    "description": "Creamy pasta with grilled chicken.",
+    "price": 48.0,
+    "category": "Mexican Restaurant",
+    "establishment": "68eea520f0bc911bd5bb0877",
+    "thumbnail": "",
+    "productImage": "images/chicken_alfredo_pasta.jpg"
+  },
+  {
+    "_id": "8815894ffaafbf4bb9ad9219",
+    "name": "Beef Steak",
+    "description": "Juicy grilled beef steak with herbs.",
+    "price": 60.0,
+    "category": "Healthy Food",
+    "establishment": "68eea520f0bc911bd5bb087b",
+    "thumbnail": "",
+    "productImage": "images/beef_steak.jpg"
+  },
+  {
+    "_id": "3cc3ab3b4998dac3c51c10e5",
+    "name": "Beef Steak",
+    "description": "Juicy grilled beef steak with herbs.",
+    "price": 60.0,
+    "category": "Healthy Food",
+    "establishment": "68eea520f0bc911bd5bb087b",
+    "thumbnail": "",
+    "productImage": "images/beef_steak.jpg"
+  },
+  {
+    "_id": "b2cb9c3cca4cea8f277344f2",
+    "name": "Caesar Salad",
+    "description": "Crisp lettuce, parmesan, and croutons.",
+    "price": 30.0,
+    "category": "Healthy Food",
+    "establishment": "68eea520f0bc911bd5bb087b",
+    "thumbnail": "",
+    "productImage": "images/caesar_salad.jpg"
+  },
+  {
+    "_id": "5ad8b6c74200ab6d5e66b544",
+    "name": "Beef Steak",
+    "description": "Juicy grilled beef steak with herbs.",
+    "price": 60.0,
+    "category": "Healthy Food",
+    "establishment": "68eea520f0bc911bd5bb087b",
+    "thumbnail": "",
+    "productImage": "images/beef_steak.jpg"
+  },
+  {
+    "_id": "2a703a9612bff338a8aa6125",
+    "name": "Chicken Alfredo Pasta",
+    "description": "Creamy pasta with grilled chicken.",
+    "price": 48.0,
+    "category": "Food Truck",
+    "establishment": "68eea520f0bc911bd5bb087f",
+    "thumbnail": "",
+    "productImage": "images/chicken_alfredo_pasta.jpg"
+  },
+  {
+    "_id": "4da5d93c80677edd820fd6af",
+    "name": "Grilled Salmon",
+    "description": "Fresh salmon fillet served with lemon butter sauce.",
+    "price": 55.0,
+    "category": "Food Truck",
+    "establishment": "68eea520f0bc911bd5bb087f",
+    "thumbnail": "",
+    "productImage": "images/grilled_salmon.jpg"
+  },
+  {
+    "_id": "a175bc13f21c124a1ce1f8e0",
+    "name": "Chicken Alfredo Pasta",
+    "description": "Creamy pasta with grilled chicken.",
+    "price": 48.0,
+    "category": "Food Truck",
+    "establishment": "68eea520f0bc911bd5bb087f",
+    "thumbnail": "",
+    "productImage": "images/chicken_alfredo_pasta.jpg"
+  },
+  {
+    "_id": "68d062a671e03f4c472ba5cd",
+    "name": "Beef Steak",
+    "description": "Juicy grilled beef steak with herbs.",
+    "price": 60.0,
+    "category": "Food Truck",
+    "establishment": "68eea520f0bc911bd5bb087f",
+    "thumbnail": "",
+    "productImage": "images/beef_steak.jpg"
+  },
+  {
+    "_id": "fd02fc150c46a6cb7140b95e",
+    "name": "Beef Steak",
+    "description": "Juicy grilled beef steak with herbs.",
+    "price": 60.0,
+    "category": "Mexican Restaurant",
+    "establishment": "68eea520f0bc911bd5bb0883",
+    "thumbnail": "",
+    "productImage": "images/beef_steak.jpg"
+  },
+  {
+    "_id": "938f9a492c043bc6c2fd9c39",
+    "name": "Beef Steak",
+    "description": "Juicy grilled beef steak with herbs.",
+    "price": 60.0,
+    "category": "Mexican Restaurant",
+    "establishment": "68eea520f0bc911bd5bb0883",
+    "thumbnail": "",
+    "productImage": "images/beef_steak.jpg"
+  },
+  {
+    "_id": "ebca5bc3ebb0d8b0515e35e8",
+    "name": "Beef Steak",
+    "description": "Juicy grilled beef steak with herbs.",
+    "price": 60.0,
+    "category": "Mexican Restaurant",
+    "establishment": "68eea520f0bc911bd5bb0883",
+    "thumbnail": "",
+    "productImage": "images/beef_steak.jpg"
+  },
+  {
+    "_id": "b140e0a6d679dbd59bde34a0",
+    "name": "Chicken Alfredo Pasta",
+    "description": "Creamy pasta with grilled chicken.",
+    "price": 48.0,
+    "category": "Mexican Restaurant",
+    "establishment": "68eea520f0bc911bd5bb0883",
+    "thumbnail": "",
+    "productImage": "images/chicken_alfredo_pasta.jpg"
   }
 ]

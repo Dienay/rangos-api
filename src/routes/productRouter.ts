@@ -10,10 +10,10 @@ const { createProduct, getProducts, getTopProducts, getProductById, updateProduc
   ProductsController;
 
 // Defining routes for products
-productsRouter.post('/products', productsUpload.single('coverPhoto'), createProduct);
+productsRouter.post('/products', productsUpload.single('productImage'), createProduct);
 productsRouter.get('/products', getProducts);
 productsRouter.get('/products/top', getTopProducts);
 productsRouter.get('/products/search', filterProduct);
 productsRouter.get('/products/:id', getProductById);
-productsRouter.put('/products/:id', productsUpload.single('coverPhoto'), updateProduct);
+productsRouter.put('/products/:id', productsUpload.single('productImage'), updateProduct);
 productsRouter.delete('/products/:id', deleteProduct);

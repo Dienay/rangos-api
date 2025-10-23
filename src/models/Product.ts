@@ -2,8 +2,8 @@ import mongoose, { Schema, Types, Model } from 'mongoose';
 
 // Define the IProduct interface extending mongoose.Document, representing a product structure
 export interface IProduct {
-  _id: Types.ObjectId;
-  coverPhoto?: string;
+  productImage?: string;
+  thumbnail?: string;
   name: string;
   description?: string;
   price: number;
@@ -13,7 +13,8 @@ export interface IProduct {
 // Define the product schema to be used for creating the Mongoose model
 export const productSchema = new Schema<IProduct>(
   {
-    coverPhoto: { type: String },
+    productImage: { type: String },
+    thumbnail: { type: String },
     name: { type: String, required: true },
     description: { type: String },
     price: { type: Number, required: true },
