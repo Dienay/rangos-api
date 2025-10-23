@@ -41,6 +41,35 @@ export async function initRedis() {
   }
 }
 
+async function clearRedisCacheOnExit() {
+  if (redisAvailable && redisClient && redisClient.isOpen) {
+    try {
+      await redisClient.del('top-products'); // Limpa o cache do top-products
+      logger.info('Cache Redis limpo antes da parada.');
+    } catch (err) {
+      logger.error('Erro ao limpar cache Redis:', err);
+    }
+  }
+}
+
+// Registrando eventos do processo para limpar cache e encerrar
+process.on('exit', async () => {
+  await clearRedisCacheOnExit();
+});
+process.on('SIGINT', async () => {
+  await clearRedisCacheOnExit();
+  process.exit(0);
+});
+process.on('SIGTERM', async () => {
+  await clearRedisCacheOnExit();
+  process.exit(0);
+});
+process.on('uncaughtException', async (err) => {
+  logger.error('Uncaught exception:', err);
+  await clearRedisCacheOnExit();
+  process.exit(1);
+});
+
 export async function fetchTopProductsFromMongo(): Promise<TopProduct[]> {
   try {
     const pipeline: mongoose.PipelineStage[] = [
