@@ -10,6 +10,14 @@ export interface IProduct {
   establishment: Types.ObjectId;
 }
 
+export interface TopProduct {
+  _id: string;
+  name: string;
+  price: number;
+  productImage: string;
+  totalSales: number;
+}
+
 // Define the product schema to be used for creating the Mongoose model
 export const productSchema = new Schema<IProduct>(
   {

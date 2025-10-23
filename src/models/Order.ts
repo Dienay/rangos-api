@@ -28,14 +28,6 @@ interface IOrder extends mongoose.Document {
   totalPrice: number;
 }
 
-interface TopProduct {
-  _id: string;
-  name: string;
-  price: number;
-  coverPhoto: string;
-  totalSales: number;
-}
-
 const orderSchema = new mongoose.Schema(
   {
     id: { type: mongoose.Schema.Types.ObjectId },
@@ -79,4 +71,4 @@ const orderSchema = new mongoose.Schema(
 const Order = mongoose.model<IOrder>('order', orderSchema);
 
 export default Order;
-export { IOrder, IProductOrder, TopProduct };
+export { IOrder, IProductOrder };
