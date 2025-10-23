@@ -80,7 +80,14 @@ class ProductsController {
   static getTopProducts = async (req: RequestProps, res: ResponseProps, next: NextFunctionProps) => {
     try {
       const topProducts = await getTopProducts();
-      return res.status(200).json({ topProducts });
+      const baseUrl = `${req.protocol}://${req.get('host')}/uploads/products/`;
+
+      const topProductsWithFullImageURL = topProducts.map((product) => ({
+        ...product,
+        productImage: baseUrl + product.productImage
+      }));
+
+      return res.status(200).json({ topProducts: topProductsWithFullImageURL });
     } catch (error) {
       return next(error);
     }
