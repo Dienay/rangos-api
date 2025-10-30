@@ -27,7 +27,7 @@ export async function initRedis() {
     });
 
     redisClient.on('error', (error: Error) => {
-      logger.error('Redis error:', error.message);
+      logger.debug('Redis error:', error.message);
       redisAvailable = false;
     });
 

@@ -9,7 +9,7 @@ import { IEstablishment } from '../models/Establishment';
 import { IProduct } from '../models/Product';
 import { Establishment, Product } from '../models/index';
 import User, { IUser } from '../models/User';
-import Order, { IOrder } from '../models/Order';
+import { Order, IOrder } from '../models/Order';
 
 // Function to read JSON data from a file
 const getJsonData = <T>(fileName: string): T[] => {
