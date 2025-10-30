@@ -7,7 +7,7 @@ export interface IProduct {
   name: string;
   description?: string;
   price: number;
-  establishment: Types.ObjectId;
+  establishmentId: Types.ObjectId;
 }
 
 export interface TopProduct {
@@ -26,7 +26,7 @@ export const productSchema = new Schema<IProduct>(
     name: { type: String, required: true },
     description: { type: String, default: '' },
     price: { type: Number, required: true },
-    establishment: {
+    establishmentId: {
       type: Schema.Types.ObjectId,
       // Reference to the 'establishment' model in MongoDB
       ref: 'establishment',
