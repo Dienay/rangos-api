@@ -100,7 +100,7 @@ class EstablishmentController {
         establishment.logo = `${req.protocol}://${req.get('host')}/uploads/establishments/${establishment.logo}`;
 
         // If establishment is found, finding all products associated with the establishment
-        const productList = await Product.find({ establishment: id }).lean();
+        const productList = await Product.find({ establishmentId: id }).lean();
 
         const productWithProductImageURL = productList.map((product) => ({
           // eslint-disable-next-line @typescript-eslint/no-unsafe-assignment, no-underscore-dangle
