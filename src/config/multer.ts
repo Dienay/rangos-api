@@ -1,7 +1,8 @@
-import multer from 'multer';
-import path from 'path';
+import multer = require('multer');
+import * as path from 'path';
+import { Request } from 'express';
 
-const storage = (directory: string) =>
+const storage = (directory: string): multer.StorageEngine =>
   multer.diskStorage({
     destination: (req, file, cb) => {
       cb(null, path.join(__dirname, '..', '..', 'uploads', directory));
@@ -11,17 +12,13 @@ const storage = (directory: string) =>
     }
   });
 
-const fileFilter = (req: Express.Request, file: Express.Multer.File, cb: multer.FileFilterCallback) => {
+const fileFilter: multer.Options['fileFilter'] = (req: Request, file, cb) => {
   const mimeType = ['image/png', 'image/jpeg', 'image/gif', 'image/jpg', 'image/svg+xml'];
 
-  if (!mimeType.includes(file.mimetype)) {
-    cb(null, false);
-  } else {
-    cb(null, true);
-  }
+  cb(null, mimeType.includes(file.mimetype));
 };
 
-const limits = {
+const limits: multer.Options['limits'] = {
   fileSize: 1024 * 1024 * 8
 };
 
