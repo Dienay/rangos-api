@@ -1,7 +1,7 @@
 import { createClient } from 'redis';
-import Order from 'src/models/Order';
-import { TopProduct } from 'src/models/Product';
 import mongoose from 'mongoose';
+import { TopProduct } from '@/models/Product';
+import Order from '@/models/Order';
 import env from './env';
 import logger from './logger';
 
@@ -102,7 +102,7 @@ export async function fetchTopProductsFromMongo(): Promise<TopProduct[]> {
       }
     ];
 
-    const topProducts: TopProduct[] = await Order.aggregate<TopProduct>(pipeline);
+    const topProducts = (await Order.aggregate(pipeline)) as TopProduct[];
 
     return topProducts;
   } catch (error) {
