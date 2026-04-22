@@ -1,0 +1,1460 @@
+{
+  "info": {
+    "_postman_id": "6a12626f-7847-43af-bb47-50b463d8453b",
+    "name": "Rangos",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "11881792"
+  },
+  "item": [
+    {
+      "name": "Establishments",
+      "item": [
+        {
+          "name": "Create Establishment",
+          "request": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "formdata",
+              "formdata": [
+                {
+                  "key": "coverPhoto",
+                  "type": "file",
+                  "fileNotInWorkingDirectoryWarning": "This file isn't in your working directory. Teammates you share this request with won't be able to use this file. To make collaboration easier you can setup your working directory in Settings.",
+                  "filesNotInWorkingDirectory": [
+                    "/home/dienay/Imagens/IMG20220807091057.jpg"
+                  ],
+                  "src": "/home/dienay/Imagens/IMG20220807091057.jpg"
+                },
+                {
+                  "key": "name",
+                  "value": "João's Restaufrantd",
+                  "type": "text"
+                },
+                {
+                  "key": "openingHours",
+                  "value": "[\n  {\n    \"openDays\": [\"Monday\", \"Wednesday\", \"Friday\"],\n    \"hours\": [\n      {\n        \"open\": \"11:00\",\n        \"close\": \"15:00\"\n      }\n    ]\n  },\n  {\n    \"openDays\": [\"Saturday\", \"Sunday\"],\n    \"hours\": [\n      {\n        \"open\": \"18:00\",\n        \"close\": \"22:00\"\n      }\n    ]\n  }\n]",
+                  "type": "text"
+                },
+                {
+                  "key": "address",
+                  "value": "[\n  {\n    \"description\": \"Flagship\",\n    \"street\": \"333 Oak Ave\",\n    \"number\": \"101\",\n    \"complement\": \"Downtown\",\n    \"neighborhood\": \"Downtown\",\n    \"city\": \"Cityville\",\n    \"state\": \"State\"\n  },\n{\n    \"description\": \"Flagship\",\n    \"street\": \"333 Oak Ave\",\n    \"number\": \"101\",\n    \"complement\": \"Downtown\",\n    \"neighborhood\": \"Downtown\",\n    \"city\": \"Cityville\",\n    \"state\": \"State\"\n  }\n]",
+                  "type": "text"
+                },
+                {
+                  "key": "category",
+                  "value": "Restaurant",
+                  "type": "text"
+                },
+                {
+                  "key": "deliveryTime",
+                  "value": "20-40",
+                  "type": "text"
+                },
+                {
+                  "key": "shipping",
+                  "value": "8.0",
+                  "type": "text"
+                }
+              ]
+            },
+            "url": {
+              "raw": "{{URL}}/establishments",
+              "host": [
+                "{{URL}}"
+              ],
+              "path": [
+                "establishments"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Get Establishment List",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "method": "GET",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": ""
+            },
+            "url": {
+              "raw": "{{URL}}/establishments",
+              "host": [
+                "{{URL}}"
+              ],
+              "path": [
+                "establishments"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Get Establishment Search",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "method": "GET",
+            "header": [],
+            "body": {
+              "mode": "formdata",
+              "formdata": []
+            },
+            "url": {
+              "raw": "{{URL}}/establishments/search?name=star",
+              "host": [
+                "{{URL}}"
+              ],
+              "path": [
+                "establishments",
+                "search"
+              ],
+              "query": [
+                {
+                  "key": "name",
+                  "value": "star"
+                }
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Get Establishment by Id",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "method": "GET",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{URL}}/establishments/:id",
+              "host": [
+                "{{URL}}"
+              ],
+              "path": [
+                "establishments",
+                ":id"
+              ],
+              "variable": [
+                {
+                  "key": "id",
+                  "value": "664263e9a61e5ddceac532f2"
+                }
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Get Establishment by Id with products",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "method": "GET",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{URL}}/establishments/:id/products",
+              "host": [
+                "{{URL}}"
+              ],
+              "path": [
+                "establishments",
+                ":id",
+                "products"
+              ],
+              "variable": [
+                {
+                  "key": "id",
+                  "value": "664263e9a61e5ddceac532f3"
+                }
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Update Establishment",
+          "request": {
+            "method": "PUT",
+            "header": [],
+            "body": {
+              "mode": "formdata",
+              "formdata": [
+                {
+                  "key": "coverPhoto",
+                  "type": "file",
+                  "fileNotInWorkingDirectoryWarning": "This file isn't in your working directory. Teammates you share this request with won't be able to use this file. To make collaboration easier you can setup your working directory in Settings.",
+                  "filesNotInWorkingDirectory": [
+                    "/home/dienay/Dev/Rappi-backend/src/config/data/establishments.json"
+                  ],
+                  "value": null
+                },
+                {
+                  "key": "name",
+                  "value": "João's Restaurant",
+                  "type": "text"
+                }
+              ]
+            },
+            "url": {
+              "raw": "{{URL}}/establishments/:id",
+              "host": [
+                "{{URL}}"
+              ],
+              "path": [
+                "establishments",
+                ":id"
+              ],
+              "variable": [
+                {
+                  "key": "id",
+                  "value": "664263e9a61e5ddceac532f1"
+                }
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Delete Establishment",
+          "request": {
+            "method": "DELETE",
+            "header": [],
+            "url": {
+              "raw": "{{URL}}/establishments/:id",
+              "host": [
+                "{{URL}}"
+              ],
+              "path": [
+                "establishments",
+                ":id"
+              ],
+              "variable": [
+                {
+                  "key": "id",
+                  "value": "6666130fdf166d0902f070f5"
+                }
+              ]
+            }
+          },
+          "response": []
+        }
+      ]
+    },
+    {
+      "name": "Establishiment Address",
+      "item": [
+        {
+          "name": "Add Establishment Address",
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "{{TOKEN}}",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "POST",
+            "header": [
+              {
+                "key": "",
+                "value": "",
+                "disabled": true
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n    \"description\": \"Work\",\n    \"street\": \"231 Oak Ave\",\n    \"number\": \"2020\",\n    \"complement\": \"\",\n    \"neighborhood\": \"Hillside\",\n    \"city\": \"Countyville\",\n    \"state\": \"State\"\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{URL}}/establishments/:entityId/address",
+              "host": [
+                "{{URL}}"
+              ],
+              "path": [
+                "establishments",
+                ":entityId",
+                "address"
+              ],
+              "variable": [
+                {
+                  "key": "entityId",
+                  "value": "664263e9a61e5ddceac532f2"
+                }
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Get Establishment Address",
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "{{TOKEN}}",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "GET",
+            "header": [
+              {
+                "key": "",
+                "value": "",
+                "disabled": true
+              }
+            ],
+            "url": {
+              "raw": "{{URL}}/establishments/:entityId/address",
+              "host": [
+                "{{URL}}"
+              ],
+              "path": [
+                "establishments",
+                ":entityId",
+                "address"
+              ],
+              "variable": [
+                {
+                  "key": "entityId",
+                  "value": "664263e9a61e5ddceac532f2"
+                }
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Edit Establishment Address",
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "{{TOKEN}}",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "PUT",
+            "header": [
+              {
+                "key": "",
+                "value": "",
+                "disabled": true
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n    \"description\": \"Flagship\",\n    \"street\": \"123 Main St\",\n    \"number\": \"202\",\n    \"complement\": \"perto\",\n    \"neighborhood\": \"Uptown\",\n    \"city\": \"Metropolis\",\n    \"state\": \"State\"\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{URL}}/establishments/:entityId/address/:addressId",
+              "host": [
+                "{{URL}}"
+              ],
+              "path": [
+                "establishments",
+                ":entityId",
+                "address",
+                ":addressId"
+              ],
+              "variable": [
+                {
+                  "key": "entityId",
+                  "value": "664263e9a61e5ddceac532f2"
+                },
+                {
+                  "key": "addressId",
+                  "value": "6669f85829081454c624dba0"
+                }
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Delete Establishment Address",
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "{{TOKEN}}",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "DELETE",
+            "header": [
+              {
+                "key": "",
+                "value": "",
+                "disabled": true
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n    \"description\": \"Work\",\n    \"street\": \"231 Oak Ave\",\n    \"number\": \"2020\",\n    \"complement\": \"aqui\",\n    \"neighborhood\": \"Hillside\",\n    \"city\": \"Countyville\",\n    \"state\": \"State\"\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{URL}}/establishments/:entityId/address/:addressId",
+              "host": [
+                "{{URL}}"
+              ],
+              "path": [
+                "establishments",
+                ":entityId",
+                "address",
+                ":addressId"
+              ],
+              "variable": [
+                {
+                  "key": "entityId",
+                  "value": "664263e9a61e5ddceac532f2"
+                },
+                {
+                  "key": "addressId",
+                  "value": "6669e8b7c5f385da853d2f52"
+                }
+              ]
+            }
+          },
+          "response": []
+        }
+      ]
+    },
+    {
+      "name": "Establishment Order",
+      "item": [
+        {
+          "name": "Create Establishment Order",
+          "request": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"userId\": \"667038c8d23b11fd040e86f5\",\n  \"establishmentId\": \"664263e9a61e5ddceac532f3\",\n  \"date\": \"2024-06-07T12:34:56Z\",\n  \"status\": \"Cart\",\n  \"products\": [\n    {\n      \"productId\": \"66436318bea46df5e1bc8bd1\",\n      \"quantity\": 2\n    },\n    {\n      \"productId\": \"66436318bea46df5e1bc8bd2\",\n      \"quantity\": 1\n    }\n  ],\n  \"shipping\": 2.50,\n  \"totalPrice\": 9.47,\n  \"deliveryAddress\": {\n    \"description\": \"Work\",\n    \"street\": \"231 Oak Ave\",\n    \"number\": \"2020\",\n    \"complement\": \"\",\n    \"neighborhood\": \"Hillside\",\n    \"city\": \"Countryville\",\n    \"state\": \"State\"\n  },\n  \"paymentMethod\": \"Credit Card\"\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{URL}}/establishments/:entityId/orders",
+              "host": [
+                "{{URL}}"
+              ],
+              "path": [
+                "establishments",
+                ":entityId",
+                "orders"
+              ],
+              "variable": [
+                {
+                  "key": "entityId",
+                  "value": "664263e9a61e5ddceac532f3"
+                }
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Get Establishment Orders",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{URL}}/establishments/:entityId/orders",
+              "host": [
+                "{{URL}}"
+              ],
+              "path": [
+                "establishments",
+                ":entityId",
+                "orders"
+              ],
+              "variable": [
+                {
+                  "key": "entityId",
+                  "value": "664263e9a61e5ddceac532f3"
+                }
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Get Establishment Order By Id",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "method": "GET",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n            \"userId\": \"666752ed4c7c92c6a643959b\",\n            \"date\": \"2024-06-07T12:34:56.000Z\",\n            \"status\": \"done\",\n            \"paymentMethod\": \"Credit Card\",\n            \"products\": [\n                {\n                    \"quantity\": 2,\n                    \"price\": 3.99,\n                    \"_id\": \"666c747c3fc010fef669d16e\"\n                },\n                {\n                    \"quantity\": 1,\n                    \"price\": 14.99,\n                    \"_id\": \"666c747c3fc010fef669d16f\"\n                }\n            ],\n            \"deliveryAddress\": {\n                \"description\": \"Work\",\n                \"street\": \"231 Oak Ave\",\n                \"number\": \"2020\",\n                \"complement\": \"\",\n                \"neighborhood\": \"Hillside\",\n                \"city\": \"Countryville\",\n                \"state\": \"State\",\n                \"_id\": \"666c747c3fc010fef669d170\"\n            },\n            \"shipping\": 2.5,\n            \"totalPrice\": 21.48\n        }",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{URL}}/establishments/:entityId/orders/:orderId",
+              "host": [
+                "{{URL}}"
+              ],
+              "path": [
+                "establishments",
+                ":entityId",
+                "orders",
+                ":orderId"
+              ],
+              "variable": [
+                {
+                  "key": "entityId",
+                  "value": "664263e9a61e5ddceac532f3"
+                },
+                {
+                  "key": "orderId",
+                  "value": "6671d82c46502dd7e292ec85"
+                }
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Update Establishment Order",
+          "request": {
+            "method": "PUT",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"userId\": \"667038c8d23b11fd040e86f5\",\n  \"establishmentId\": \"664263e9a61e5ddceac532f3\",\n  \"date\": \"2024-06-07T12:34:56Z\",\n  \"status\": \"Delivered\",\n  \"products\": [\n    {\n      \"productId\": \"66436318bea46df5e1bc8bd1\",\n      \"quantity\": 2\n    },\n    {\n      \"productId\": \"66436318bea46df5e1bc8bd2\",\n      \"quantity\": 1\n    }\n  ],\n  \"shipping\": 2.50,\n  \"totalPrice\": 9.47,\n  \"deliveryAddress\": {\n    \"description\": \"Work\",\n    \"street\": \"231 Oak Ave\",\n    \"number\": \"2020\",\n    \"complement\": \"\",\n    \"neighborhood\": \"Hillside\",\n    \"city\": \"Countryville\",\n    \"state\": \"State\"\n  },\n  \"paymentMethod\": \"Credit Card\"\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{URL}}/establishments/:entityId/orders/:orderId",
+              "host": [
+                "{{URL}}"
+              ],
+              "path": [
+                "establishments",
+                ":entityId",
+                "orders",
+                ":orderId"
+              ],
+              "variable": [
+                {
+                  "key": "entityId",
+                  "value": "664263e9a61e5ddceac532f3"
+                },
+                {
+                  "key": "orderId",
+                  "value": "6671d82c46502dd7e292ec85"
+                }
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Delete Establishment Order",
+          "request": {
+            "method": "DELETE",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{URL}}/establishments/:entityId/orders/:orderId",
+              "host": [
+                "{{URL}}"
+              ],
+              "path": [
+                "establishments",
+                ":entityId",
+                "orders",
+                ":orderId"
+              ],
+              "variable": [
+                {
+                  "key": "entityId",
+                  "value": "664263e9a61e5ddceac532f2"
+                },
+                {
+                  "key": "orderId",
+                  "value": "66741bf9e35f9c35355d3d72"
+                }
+              ]
+            }
+          },
+          "response": []
+        }
+      ]
+    },
+    {
+      "name": "Products",
+      "item": [
+        {
+          "name": "Create Product",
+          "request": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n    \"coverPhoto\": \"\",\n    \"name\": \"coiso\",\n    \"description\": \"Hamburguer grelhado com queijo, alface, tomate e molho especial.\",\n    \"price\": 15.50,\n    \"establishment\": \"664263e9a61e5ddceac532f1\"\n}\n ",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{URL}}/products",
+              "host": [
+                "{{URL}}"
+              ],
+              "path": [
+                "products"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Get Product List",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{URL}}/products",
+              "host": [
+                "{{URL}}"
+              ],
+              "path": [
+                "products"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Get Product by Id",
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "{{TOKEN}}",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{URL}}/products/:id",
+              "host": [
+                "{{URL}}"
+              ],
+              "path": [
+                "products",
+                ":id"
+              ],
+              "variable": [
+                {
+                  "key": "id",
+                  "value": "66436318bea46df5e1bc8bcf"
+                }
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Update Product",
+          "request": {
+            "method": "PUT",
+            "header": [],
+            "body": {
+              "mode": "formdata",
+              "formdata": [
+                {
+                  "key": "coverPhoto",
+                  "type": "file",
+                  "fileNotInWorkingDirectoryWarning": "This file isn't in your working directory. Teammates you share this request with won't be able to use this file. To make collaboration easier you can setup your working directory in Settings.",
+                  "filesNotInWorkingDirectory": [
+                    "/home/dienay/Imagens/download.png"
+                  ],
+                  "src": "/home/dienay/Imagens/download.png"
+                },
+                {
+                  "key": "name",
+                  "value": "Whopper",
+                  "type": "text"
+                },
+                {
+                  "key": "price",
+                  "value": "4.99",
+                  "type": "text"
+                }
+              ]
+            },
+            "url": {
+              "raw": "{{URL}}/products/:id",
+              "host": [
+                "{{URL}}"
+              ],
+              "path": [
+                "products",
+                ":id"
+              ],
+              "variable": [
+                {
+                  "key": "id",
+                  "value": "66436318bea46df5e1bc8bdf"
+                }
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Delete Product",
+          "request": {
+            "method": "DELETE",
+            "header": [],
+            "url": {
+              "raw": "{{URL}}/products/:id",
+              "host": [
+                "{{URL}}"
+              ],
+              "path": [
+                "products",
+                ":id"
+              ],
+              "variable": [
+                {
+                  "key": "id",
+                  "value": "66436318bea46df5e1bc8bdf"
+                }
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Get Product Search",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{URL}}/products/search?name=cap",
+              "host": [
+                "{{URL}}"
+              ],
+              "path": [
+                "products",
+                "search"
+              ],
+              "query": [
+                {
+                  "key": null,
+                  "value": "",
+                  "disabled": true
+                },
+                {
+                  "key": "name",
+                  "value": "cap"
+                }
+              ]
+            }
+          },
+          "response": []
+        }
+      ]
+    },
+    {
+      "name": "User",
+      "item": [
+        {
+          "name": "Signup",
+          "request": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n    \"avatar\": \"user.jpg\",\n    \"name\": \"Dienay Lima\",\n    \"email\": \"dienayl@email.com\",\n    \"phone\": \"986986868686\",\n    \"password\": \"86986868686\"\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{URL}}/signup",
+              "host": [
+                "{{URL}}"
+              ],
+              "path": [
+                "signup"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Login",
+          "request": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"email\": \"dienay@email.com\",\n  \"password\": \"86986868686\"\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{URL}}/login",
+              "host": [
+                "{{URL}}"
+              ],
+              "path": [
+                "login"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Get User by Id",
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "{{TOKEN}}",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "GET",
+            "header": [
+              {
+                "key": "",
+                "value": "",
+                "disabled": true
+              }
+            ],
+            "url": {
+              "raw": "{{URL}}/user/:id",
+              "host": [
+                "{{URL}}"
+              ],
+              "path": [
+                "user",
+                ":id"
+              ],
+              "variable": [
+                {
+                  "key": "id",
+                  "value": "667038c8d23b11fd040e86f5"
+                }
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Update User",
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "{{TOKEN}}",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "PUT",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{URL}}/user/:id",
+              "host": [
+                "{{URL}}"
+              ],
+              "path": [
+                "user",
+                ":id"
+              ],
+              "variable": [
+                {
+                  "key": "id",
+                  "value": "666752ed4c7c92c6a643959b"
+                }
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Delete User",
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "{{TOKEN}}",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "DELETE",
+            "header": [],
+            "url": {
+              "raw": "{{URL}}/user/:id",
+              "host": [
+                "{{URL}}"
+              ],
+              "path": [
+                "user",
+                ":id"
+              ],
+              "variable": [
+                {
+                  "key": "id",
+                  "value": "66533bed7ce6a6529d521189"
+                }
+              ]
+            }
+          },
+          "response": []
+        }
+      ]
+    },
+    {
+      "name": "Use Address",
+      "item": [
+        {
+          "name": "Add User Address",
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "{{TOKEN}}",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "POST",
+            "header": [
+              {
+                "key": "",
+                "value": "",
+                "disabled": true
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n    \"description\": \"Work\",\n    \"street\": \"231 Oak Ave\",\n    \"number\": \"2020\",\n    \"complement\": \"\",\n    \"neighborhood\": \"Hillside\",\n    \"city\": \"Countyville\",\n    \"state\": \"State\"\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{URL}}/user/:entityId/address",
+              "host": [
+                "{{URL}}"
+              ],
+              "path": [
+                "user",
+                ":entityId",
+                "address"
+              ],
+              "variable": [
+                {
+                  "key": "entityId",
+                  "value": "666752ed4c7c92c6a643959b"
+                }
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Get User Address",
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "{{TOKEN}}",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "GET",
+            "header": [
+              {
+                "key": "",
+                "value": "",
+                "disabled": true
+              }
+            ],
+            "url": {
+              "raw": "{{URL}}/user/:entityId/address",
+              "host": [
+                "{{URL}}"
+              ],
+              "path": [
+                "user",
+                ":entityId",
+                "address"
+              ],
+              "variable": [
+                {
+                  "key": "entityId",
+                  "value": "666752ed4c7c92c6a643959b"
+                }
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Edit User Address",
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "{{TOKEN}}",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "PUT",
+            "header": [
+              {
+                "key": "",
+                "value": "",
+                "disabled": true
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n    \"description\": \"Flagship\",\n    \"street\": \"123 Main St\",\n    \"number\": \"20\",\n    \"complement\": \"perto do coiso\",\n    \"neighborhood\": \"Uptown\",\n    \"city\": \"Metropolis\",\n    \"state\": \"State\"\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{URL}}/user/:entityId/address/:addressId",
+              "host": [
+                "{{URL}}"
+              ],
+              "path": [
+                "user",
+                ":entityId",
+                "address",
+                ":addressId"
+              ],
+              "variable": [
+                {
+                  "key": "entityId",
+                  "value": "666752ed4c7c92c6a643959b"
+                },
+                {
+                  "key": "addressId",
+                  "value": "6669dd3c6f1c085ad18a26da"
+                }
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Delete User Address",
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "{{TOKEN}}",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "DELETE",
+            "header": [
+              {
+                "key": "",
+                "value": "",
+                "disabled": true
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n    \"description\": \"Flagship\",\n    \"street\": \"123 Main St\",\n    \"number\": \"20\",\n    \"complement\": \"perto do coiso\",\n    \"neighborhood\": \"Uptown\",\n    \"city\": \"Metropolis\",\n    \"state\": \"State\"\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{URL}}/user/:entityId/address/:addressId",
+              "host": [
+                "{{URL}}"
+              ],
+              "path": [
+                "user",
+                ":entityId",
+                "address",
+                ":addressId"
+              ],
+              "variable": [
+                {
+                  "key": "entityId",
+                  "value": "666752ed4c7c92c6a643959b"
+                },
+                {
+                  "key": "addressId",
+                  "value": "6669d5485e9f22f8b12ad403"
+                }
+              ]
+            }
+          },
+          "response": []
+        }
+      ]
+    },
+    {
+      "name": "User Order",
+      "item": [
+        {
+          "name": "Create User Order",
+          "request": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"userId\": \"667038c8d23b11fd040e86f5\",\n  \"establishmentId\": \"664263e9a61e5ddceac532f3\",\n  \"status\": \"Cart\",\n  \"products\": [\n    {\n      \"productId\": \"66436318bea46df5e1bc8bd1\",\n      \"quantity\": 2\n    },\n    {\n      \"productId\": \"66436318bea46df5e1bc8bd2\",\n      \"quantity\": 1\n    }\n  ],\n  \"shipping\": 2.50,\n  \"totalPrice\": 9.47,\n  \"deliveryAddress\": {\n    \"description\": \"Work\",\n    \"street\": \"231 Oak Ave\",\n    \"number\": \"2020\",\n    \"complement\": \"\",\n    \"neighborhood\": \"Hillside\",\n    \"city\": \"Countryville\",\n    \"state\": \"State\"\n  },\n  \"paymentMethod\": \"Credit Card\"\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{URL}}/user/:entityId/orders",
+              "host": [
+                "{{URL}}"
+              ],
+              "path": [
+                "user",
+                ":entityId",
+                "orders"
+              ],
+              "variable": [
+                {
+                  "key": "entityId",
+                  "value": "667038c8d23b11fd040e86f5"
+                }
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Get User Orders",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{URL}}/:entityId/orders",
+              "host": [
+                "{{URL}}"
+              ],
+              "path": [
+                ":entityId",
+                "orders"
+              ],
+              "variable": [
+                {
+                  "key": "entityId",
+                  "value": "667038c8d23b11fd040e86f5"
+                }
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Update User Order",
+          "request": {
+            "method": "PUT",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n            \"userId\": \"666752ed4c7c92c6a643959b\",\n            \"date\": \"2024-06-07T12:34:56.000Z\",\n            \"status\": \"Open\",\n            \"paymentMethod\": \"Credit Card\",\n            \"products\": [\n                {\n                    \"quantity\": 2,\n                    \"price\": 3.99,\n                    \"_id\": \"666c747c3fc010fef669d16e\"\n                },\n                {\n                    \"quantity\": 1,\n                    \"price\": 14.99,\n                    \"_id\": \"666c747c3fc010fef669d16f\"\n                }\n            ],\n            \"deliveryAddress\": {\n                \"description\": \"Work\",\n                \"street\": \"231 Oak Ave\",\n                \"number\": \"2020\",\n                \"complement\": \"\",\n                \"neighborhood\": \"Hillside\",\n                \"city\": \"Countryville\",\n                \"state\": \"State\",\n                \"_id\": \"666c747c3fc010fef669d170\"\n            },\n            \"shipping\": 2.5,\n            \"totalPrice\": 21.48\n        }",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{URL}}/user/orders/:id",
+              "host": [
+                "{{URL}}"
+              ],
+              "path": [
+                "user",
+                "orders",
+                ":id"
+              ],
+              "variable": [
+                {
+                  "key": "id",
+                  "value": "666c747c3fc010fef669d16d"
+                }
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Add Product in User Order",
+          "request": {
+            "method": "PUT",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n    \"quantity\": 3,\n    \"price\": 3.99,\n    \"_id\": \"66436318bea46df5e1bc8bd2\"\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{URL}}/user/orders/:id/products",
+              "host": [
+                "{{URL}}"
+              ],
+              "path": [
+                "user",
+                "orders",
+                ":id",
+                "products"
+              ],
+              "variable": [
+                {
+                  "key": "id",
+                  "value": "666c747c3fc010fef669d16d"
+                }
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Delete User Order",
+          "request": {
+            "method": "DELETE",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{URL}}/user/orders/:id",
+              "host": [
+                "{{URL}}"
+              ],
+              "path": [
+                "user",
+                "orders",
+                ":id"
+              ],
+              "variable": [
+                {
+                  "key": "id",
+                  "value": "666c7eb9faa1106425976a5b"
+                }
+              ]
+            }
+          },
+          "response": []
+        }
+      ]
+    },
+    {
+      "name": "Root",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "{{URL}}",
+          "host": [
+            "{{URL}}"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Root Copy",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "{{URL}}",
+          "host": [
+            "{{URL}}"
+          ]
+        }
+      },
+      "response": []
+    }
+  ],
+  "auth": {
+    "type": "bearer"
+  },
+  "event": [
+    {
+      "listen": "prerequest",
+      "script": {
+        "type": "text/javascript",
+        "packages": {},
+        "requests": {},
+        "exec": [
+          ""
+        ]
+      }
+    },
+    {
+      "listen": "test",
+      "script": {
+        "type": "text/javascript",
+        "packages": {},
+        "requests": {},
+        "exec": [
+          ""
+        ]
+      }
+    }
+  ],
+  "variable": [
+    {
+      "key": "URL",
+      "value": "http://localhost:3003"
+    },
+    {
+      "key": "URL",
+      "value": "http://192.168.18.20:3003",
+      "disabled": true
+    },
+    {
+      "key": "TOKEN",
+      "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2NzAzOGM4ZDIzYjExZmQwNDBlODZmNSIsImlhdCI6MTcxOTE0ODQzNX0.8qp3fdNKolrq34814k1QuBXQ-T1EzyoWc-R2NUtvlRA"
+    }
+  ]
+}
