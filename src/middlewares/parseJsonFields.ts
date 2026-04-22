@@ -1,4 +1,4 @@
-import { NextFunctionProps, RequestProps, ResponseProps } from '../config';
+import { NextFunction, Request, Response } from 'express';
 
 interface ParsedRequestBody {
   openingHours?: unknown;
@@ -18,7 +18,7 @@ const isValidJson = (value: unknown): value is string => {
   }
 };
 
-const parseJsonFields = (req: RequestProps, res: ResponseProps, next: NextFunctionProps) => {
+const parseJsonFields = (req: Request, res: Response, next: NextFunction) => {
   const fieldsToParse: Array<keyof ParsedRequestBody> = ['openingHours', 'address'];
 
   fieldsToParse.forEach((field) => {

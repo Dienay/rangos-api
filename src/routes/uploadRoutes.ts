@@ -1,11 +1,11 @@
 import { Router } from 'express';
 import { Multer } from 'multer';
 import { establishmentsUpload, productsUpload, usersUpload } from '../config/multer';
-import { RequestProps, ResponseProps } from '../config';
+import { Request, Response } from '../config';
 
 const uploadRouter = Router();
 
-const handleFileUpload = (upload: Multer) => (req: RequestProps, res: ResponseProps) => {
+const handleFileUpload = (upload: Multer) => (req: Request, res: Response) => {
   upload.single('file')(req, res, (error) => {
     if (error) {
       return res.status(400).json({ error: 'File upload failed.', details: (error as Error).message });

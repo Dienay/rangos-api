@@ -1,8 +1,9 @@
 import jwt from 'jsonwebtoken';
-import { RequestProps, ResponseProps, NextFunctionProps, env } from '../config';
+import { Request, Response, NextFunction } from 'express';
+import { env } from '../config';
 import { Establishment, User } from '../models';
 
-const checkToken = async (req: RequestProps, res: ResponseProps, next: NextFunctionProps) => {
+const checkToken = async (req: Request, res: Response, next: NextFunction) => {
   const authHeader = req.headers.authorization;
   const token = authHeader && authHeader.split(' ')[1];
 

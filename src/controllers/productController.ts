@@ -1,14 +1,15 @@
 import path from 'path';
 import fs from 'fs';
-import { getTopProducts } from 'src/config/redis';
-import { RequestProps, ResponseProps, NextFunctionProps, logger } from '../config';
+import { getTopProducts } from '@/config/redis';
+import { Request, Response, NextFunction } from 'express';
+import { logger } from '../config';
 import NotFound from '../errors/NotFound';
 import { IProduct } from '../models/Product';
 import { Product } from '../models/index';
 
 class ProductsController {
   // Method to create a new product
-  static createProduct = async (req: RequestProps, res: ResponseProps, next: NextFunctionProps) => {
+  static createProduct = async (req: Request, res: Response, next: NextFunction) => {
     try {
       const body = req.body as IProduct;
 
@@ -34,7 +35,7 @@ class ProductsController {
   };
 
   // Method to get all products
-  static getProducts = async (req: RequestProps, res: ResponseProps, next: NextFunctionProps) => {
+  static getProducts = async (req: Request, res: Response, next: NextFunction) => {
     try {
       // Finding all products
       const productList = await Product.find({}).populate({ path: 'establishmentId', select: 'name logo' });
@@ -53,7 +54,7 @@ class ProductsController {
   };
 
   // Method to get a product by its ID
-  static getProductById = async (req: RequestProps, res: ResponseProps, next: NextFunctionProps) => {
+  static getProductById = async (req: Request, res: Response, next: NextFunction) => {
     try {
       // Extracting product ID from request parameters
       const { id } = req.params;
@@ -77,7 +78,7 @@ class ProductsController {
     }
   };
 
-  static getTopProducts = async (req: RequestProps, res: ResponseProps, next: NextFunctionProps) => {
+  static getTopProducts = async (req: Request, res: Response, next: NextFunction) => {
     try {
       const topProducts = await getTopProducts();
       const baseUrl = `${req.protocol}://${req.get('host')}/uploads/products/`;
@@ -94,7 +95,7 @@ class ProductsController {
   };
 
   // Method to update a product
-  static updateProduct = async (req: RequestProps, res: ResponseProps, next: NextFunctionProps) => {
+  static updateProduct = async (req: Request, res: Response, next: NextFunction) => {
     try {
       // Extracting product ID from request parameters
       const { id } = req.params;
@@ -158,7 +159,7 @@ class ProductsController {
   };
 
   // Method to delete a product
-  static deleteProduct = async (req: RequestProps, res: ResponseProps, next: NextFunctionProps) => {
+  static deleteProduct = async (req: Request, res: Response, next: NextFunction) => {
     try {
       // Extracting product ID from request parameters
       const { id } = req.params;
@@ -205,7 +206,7 @@ class ProductsController {
     return undefined;
   };
 
-  static filterProduct = async (req: RequestProps, res: ResponseProps, next: NextFunctionProps) => {
+  static filterProduct = async (req: Request, res: Response, next: NextFunction) => {
     try {
       const { name } = req.query;
 

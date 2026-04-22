@@ -1,15 +1,14 @@
-import express from 'express';
-import path from 'path';
-import { RouterProps, RequestProps, ResponseProps } from '../config';
+import express, { Router, Request, Response } from 'express';
+import * as path from 'path';
 import { establishmentRouter } from './establishmentRouter';
 import { productsRouter } from './productRouter';
 import { userRouter } from './userRouter';
 import { orderRouter } from './OrderRouter';
 
 // Function to define API routes
-const routes = (app: RouterProps) => {
+const routes = (app: Router) => {
   // Route for the root endpoint '/'
-  app.route('/').get((req: RequestProps, res: ResponseProps) => {
+  app.route('/').get((req: Request, res: Response) => {
     res.status(200).json({
       // Sending a welcome message as JSON response
       message: 'Welcome to the Rangos API.'

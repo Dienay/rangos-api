@@ -1,15 +1,16 @@
 import bcrypt from 'bcrypt';
 import jwt from 'jsonwebtoken';
 import path from 'path';
+import { Request, Response, NextFunction } from 'express';
 import fs from 'fs';
-import { RequestProps, ResponseProps, NextFunctionProps, env, logger } from '../config';
+import { env, logger } from '../config';
 import { IUser } from '../models/User';
 import NotFound from '../errors/NotFound';
 import { User } from '../models/index';
 
 class UserController {
   // Method for user signup
-  static signup = async (req: RequestProps, res: ResponseProps, next: NextFunctionProps) => {
+  static signup = async (req: Request, res: Response, next: NextFunction) => {
     try {
       const body = req.body as IUser;
 
@@ -85,7 +86,7 @@ class UserController {
   };
 
   // Method for user login
-  static login = async (req: RequestProps, res: ResponseProps, next: NextFunctionProps) => {
+  static login = async (req: Request, res: Response, next: NextFunction) => {
     const { email, password } = req.body as { email: string; password: string };
 
     // Check if both email and password are provided
@@ -139,7 +140,7 @@ class UserController {
 
   // Method to get user by ID
   // eslint-disable-next-line @typescript-eslint/no-unused-vars
-  static getUserById = async (req: RequestProps, res: ResponseProps, next: NextFunctionProps) => {
+  static getUserById = async (req: Request, res: Response, next: NextFunction) => {
     try {
       const { id } = req.params;
 
@@ -166,7 +167,7 @@ class UserController {
   };
 
   // Method to update user
-  static updateUser = async (req: RequestProps, res: ResponseProps, next: NextFunctionProps) => {
+  static updateUser = async (req: Request, res: Response, next: NextFunction) => {
     try {
       const { id } = req.params;
       const newData = req.body as Partial<IUser>;
@@ -223,7 +224,7 @@ class UserController {
   };
 
   // Method to delete user
-  static deleteUser = async (req: RequestProps, res: ResponseProps, next: NextFunctionProps) => {
+  static deleteUser = async (req: Request, res: Response, next: NextFunction) => {
     try {
       const { id } = req.params;
       // Find and delete the user by ID, excluding the password field
