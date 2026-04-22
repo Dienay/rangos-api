@@ -1,9 +1,9 @@
-import { NextFunctionProps, RequestProps, ResponseProps } from '../config';
+import { NextFunction, Request, Response } from 'express';
 import { User, Establishment } from '../models';
 import { IAddress } from '../models/Address';
 
 class AddressController {
-  static addAddress = async (req: RequestProps, res: ResponseProps, next: NextFunctionProps) => {
+  static addAddress = async (req: Request, res: Response, next: NextFunction) => {
     try {
       const { entityId } = req.params;
       const address = req.body as IAddress;
@@ -59,7 +59,7 @@ class AddressController {
     }
   };
 
-  static getAddress = async (req: RequestProps, res: ResponseProps, next: NextFunctionProps) => {
+  static getAddress = async (req: Request, res: Response, next: NextFunction) => {
     try {
       const { entityId } = req.params;
 
@@ -79,7 +79,7 @@ class AddressController {
     }
   };
 
-  static editAddress = async (req: RequestProps, res: ResponseProps, next: NextFunctionProps) => {
+  static editAddress = async (req: Request, res: Response, next: NextFunction) => {
     try {
       const { entityId, addressId } = req.params;
       const updateData = req.body as Partial<IAddress>;
@@ -113,7 +113,7 @@ class AddressController {
     }
   };
 
-  static deleteAddress = async (req: RequestProps, res: ResponseProps, next: NextFunctionProps) => {
+  static deleteAddress = async (req: Request, res: Response, next: NextFunction) => {
     try {
       const { entityId, addressId } = req.params;
 
