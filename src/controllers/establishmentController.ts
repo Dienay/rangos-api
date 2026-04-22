@@ -1,6 +1,7 @@
 import fs from 'fs';
 import path from 'path';
-import { RequestProps, ResponseProps, NextFunctionProps, logger } from '../config';
+import { Request, Response, NextFunction } from 'express';
+import { logger } from '../config';
 import NotFound from '../errors/NotFound';
 import { IEstablishment } from '../models/Establishment';
 import Product from '../models/Product';
@@ -8,7 +9,7 @@ import { Establishment } from '../models/index';
 
 class EstablishmentController {
   // Create a new establishment
-  static createEstablishment = async (req: RequestProps, res: ResponseProps, next: NextFunctionProps) => {
+  static createEstablishment = async (req: Request, res: Response, next: NextFunction) => {
     try {
       const body = req.body as IEstablishment;
 
@@ -43,7 +44,7 @@ class EstablishmentController {
   };
 
   // Get a list of all establishments
-  static getEstablishments = async (req: RequestProps, res: ResponseProps, next: NextFunctionProps) => {
+  static getEstablishments = async (req: Request, res: Response, next: NextFunction) => {
     try {
       // Fetch all establishments from the database
       const establishmentList = await Establishment.find({});
@@ -64,7 +65,7 @@ class EstablishmentController {
   };
 
   // Get an establishment by ID
-  static getEstablishmentById = async (req: RequestProps, res: ResponseProps, next: NextFunctionProps) => {
+  static getEstablishmentById = async (req: Request, res: Response, next: NextFunction) => {
     try {
       // Extract the ID from the request parameters
       const { id } = req.params;
@@ -88,7 +89,7 @@ class EstablishmentController {
     }
   };
 
-  static getEstablishmentWithProducts = async (req: RequestProps, res: ResponseProps, next: NextFunctionProps) => {
+  static getEstablishmentWithProducts = async (req: Request, res: Response, next: NextFunction) => {
     try {
       // Extracting establishment ID from request parameters
       const { id } = req.params;
@@ -144,7 +145,7 @@ class EstablishmentController {
   };
 
   // Update an establishment
-  static updateEstablishment = async (req: RequestProps, res: ResponseProps, next: NextFunctionProps) => {
+  static updateEstablishment = async (req: Request, res: Response, next: NextFunction) => {
     try {
       // Extract the ID from the request parameters and new data from the request body
       const { id } = req.params;
@@ -207,7 +208,7 @@ class EstablishmentController {
   };
 
   // Delete an establishment
-  static deleteEstablishment = async (req: RequestProps, res: ResponseProps, next: NextFunctionProps) => {
+  static deleteEstablishment = async (req: Request, res: Response, next: NextFunction) => {
     try {
       // Extract the ID from the request parameters
       const { id } = req.params;
@@ -254,7 +255,7 @@ class EstablishmentController {
     return undefined;
   };
 
-  static filterEstablishment = async (req: RequestProps, res: ResponseProps, next: NextFunctionProps) => {
+  static filterEstablishment = async (req: Request, res: Response, next: NextFunction) => {
     try {
       const { name } = req.query;
       const search: { [key: string]: unknown } = {};
