@@ -1,4 +1,4 @@
-import mongoose from 'mongoose';
+import mongoose, { HydratedDocument, Model } from 'mongoose';
 import { IAddress, addressSchema } from './Address';
 
 /**
@@ -43,12 +43,12 @@ export interface IPaymentInfo {
 }
 
 // Main Order interface
-export interface IOrder extends mongoose.Document {
+export interface IOrder {
   userId: mongoose.Types.ObjectId; // Buyer (User reference)
   establishmentId: mongoose.Types.ObjectId; // Seller (Establishment reference)
   orderNumber: string; // Unique, human-readable order ID
   status: OrderStatus; // Current state of the order
-  products: [IOrderedProduct]; // List of purchased items
+  products: IOrderedProduct[]; // List of purchased items
   shipping: number; // Delivery/shipping cost
   subtotal: number; // Sum of item subtotals
   totalPrice: number; // subtotal + shipping
@@ -58,6 +58,8 @@ export interface IOrder extends mongoose.Document {
   createdAt: Date; // Auto-generated timestamp
   updatedAt: Date; // Auto-generated timestamp
 }
+
+export type OrderDocument = HydratedDocument<IOrder>;
 
 // -----------------------------
 // SCHEMAS
@@ -89,7 +91,7 @@ const paymentSchema = new mongoose.Schema(
   { _id: false } // Avoid nested _id inside payment object
 );
 
-const orderSchema = new mongoose.Schema(
+const orderSchema = new mongoose.Schema<IOrder>(
   {
     userId: {
       type: mongoose.Schema.Types.ObjectId,
@@ -135,5 +137,5 @@ orderSchema.index({ establishmentId: 1 });
 orderSchema.index({ status: 1 });
 orderSchema.index({ createdAt: -1 });
 
-export const Order = mongoose.model<IOrder>('order', orderSchema);
+const Order: Model<IOrder> = mongoose.model<IOrder>('order', orderSchema);
 export default Order;
