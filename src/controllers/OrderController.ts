@@ -1,6 +1,6 @@
-import { NextFunctionProps, RequestProps, ResponseProps } from '../config';
+import { NextFunction, Request, Response } from 'express';
 import { Establishment, User } from '../models';
-import { Order, IOrder, OrderStatus } from '../models/Order';
+import Order, { IOrder, OrderStatus } from '../models/Order';
 
 /**
  * OrderController
@@ -15,7 +15,7 @@ class OrderController {
    * Create a new order
    * Only users (customers) can create orders, not establishments
    */
-  static createOrder = async (req: RequestProps, res: ResponseProps, next: NextFunctionProps) => {
+  static createOrder = async (req: Request, res: Response, next: NextFunction) => {
     try {
       const { entityId } = req.params;
       const entity = (await User.findById(entityId)) || (await Establishment.findById(entityId));
@@ -48,7 +48,7 @@ class OrderController {
   /**
    * Get all orders (for admin/debug purposes)
    */
-  static getAllOrders = async (req: RequestProps, res: ResponseProps, next: NextFunctionProps) => {
+  static getAllOrders = async (req: Request, res: Response, next: NextFunction) => {
     try {
       const orders = await Order.find({});
 
@@ -64,7 +64,7 @@ class OrderController {
   /**
    * Get all orders related to a specific user or establishment
    */
-  static getOrdersByEntity = async (req: RequestProps, res: ResponseProps, next: NextFunctionProps) => {
+  static getOrdersByEntity = async (req: Request, res: Response, next: NextFunction) => {
     try {
       const { entityId } = req.params;
       const entity = (await User.findById(entityId)) || (await Establishment.findById(entityId));
@@ -106,7 +106,7 @@ class OrderController {
   /**
    * Retrieve a single order by its ID
    */
-  static getOrderById = async (req: RequestProps, res: ResponseProps, next: NextFunctionProps) => {
+  static getOrderById = async (req: Request, res: Response, next: NextFunction) => {
     try {
       const { entityId, orderId } = req.params;
       const entity = (await User.findById(entityId)) || (await Establishment.findById(entityId));
@@ -142,7 +142,7 @@ class OrderController {
   /**
    * Update order status or details
    */
-  static updateOrder = async (req: RequestProps, res: ResponseProps, next: NextFunctionProps) => {
+  static updateOrder = async (req: Request, res: Response, next: NextFunction) => {
     try {
       const { entityId, orderId } = req.params;
       const updateData = req.body as Partial<IOrder>;
@@ -185,7 +185,7 @@ class OrderController {
   /**
    * Delete an order (only users can delete their pending orders)
    */
-  static deleteOrder = async (req: RequestProps, res: ResponseProps, next: NextFunctionProps) => {
+  static deleteOrder = async (req: Request, res: Response, next: NextFunction) => {
     try {
       const { entityId, orderId } = req.params;
       const entity = (await User.findById(entityId)) || (await Establishment.findById(entityId));
