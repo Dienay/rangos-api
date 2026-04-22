@@ -1,5 +1,5 @@
 import logger from './logger';
 import env from './env';
-import { app, RouterProps, RequestProps, ResponseProps, NextFunctionProps } from './http';
+import { app } from './http';
 
-export { logger, env, app, RouterProps, RequestProps, ResponseProps, NextFunctionProps };
+export { logger, env, app };
