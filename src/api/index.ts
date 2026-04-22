@@ -1,9 +1,9 @@
-import { initRedis } from '../config/redis';
-import { app, logger } from '../config';
-import routes from '../routes';
-import run from '../config/dbConnect';
-import handlesErrors from '../middlewares/handlesErrors';
-import error404 from '../middlewares/handlesError404';
+import { initRedis } from '@/config/redis';
+import { app, logger } from '@/config';
+import routes from '@/routes';
+import run from '@/config/dbConnect';
+import handlesErrors from '@/middlewares/handlesErrors';
+import error404 from '@/middlewares/handlesError404';
 
 routes(app);
 
