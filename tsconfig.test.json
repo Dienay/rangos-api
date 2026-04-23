@@ -4,9 +4,10 @@
     "rootDir": ".",
     "types": [
       "node",
-      "express",
-      "jest"
-    ]
+      "jest",
+      "express"
+    ],
+    "outDir": "./dist-tests"
   },
   "include": [
     "src",

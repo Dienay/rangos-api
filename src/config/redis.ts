@@ -102,12 +102,12 @@ export async function fetchTopProductsFromMongo(): Promise<TopProduct[]> {
       }
     ];
 
-    const topProducts = (await Order.aggregate(pipeline)) as TopProduct[];
+    const topProducts = await Order.aggregate<TopProduct>(pipeline);
 
     return topProducts;
   } catch (error) {
     logger.error('Error fetching top products from Mongo:', error);
-    return [];
+    return [] as TopProduct[];
   }
 }
 

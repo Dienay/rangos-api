@@ -1,8 +1,8 @@
 // Importing necessary modules and configurations
 import { app } from './config';
 import routes from './routes';
-import handlesErrors from './middlewares/handlesErrors';
 import error404 from './middlewares/handlesError404';
+import handlesErrors from './middlewares/handlesErrors';
 
 // Setting up routes
 routes(app);
