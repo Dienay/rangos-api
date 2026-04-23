@@ -1,7 +1,6 @@
-import { Router } from 'express';
+import { Router, Request, Response } from 'express';
 import { Multer } from 'multer';
 import { establishmentsUpload, productsUpload, usersUpload } from '../config/multer';
-import { Request, Response } from '../config';
 
 const uploadRouter = Router();
 
