@@ -12,7 +12,9 @@
 
 ### QA & Testes
 
-![Jest](<img src="https://img.shields.io/badge/Jest-Testing-red?logo=jest" />) ![Supertest](<img src="https://img.shields.io/badge/Supertest-API-blue" />) ![Postman](<img src="https://img.shields.io/badge/Postman-API-orange?logo=postman" />)
+![Jest](https://img.shields.io/badge/Jest-Testing-red?logo=jest")
+![Supertest](https://img.shields.io/badge/Supertest-API-blue")
+![Postman](https://img.shields.io/badge/Postman-API-orange?logo=postman")
 
 ---
 
