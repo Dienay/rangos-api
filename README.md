@@ -6,15 +6,15 @@
 
 ### Backend
 
-![NodeJs](https://img.shields.io/badge/Node.js-18.x-green?logo=node.js)
-![TypeScript](https://img.shields.io/badge/TypeScript-5.x-blue?logo=typescript)
-![MongoDB](https://img.shields.io/badge/MongoDB-7.x-brightgreen?logo=mongodb)
+![NodeJs](<img src="https://img.shields.io/badge/Node.js-18.x-green" />)
+![TypeScript](<img src="https://img.shields.io/badge/TypeScript-5.x-green" />)
+![MongoDB](<img src="https://img.shields.io/badge/MongoDB-7.x-green" />)
 
 ### QA & Testes
 
-![Jest](https://img.shields.io/badge/Jest-Testing-red?logo=jest")
-![Supertest](https://img.shields.io/badge/Supertest-API-blue")
-![Postman](https://img.shields.io/badge/Postman-API-orange?logo=postman")
+![Jest](<img src="https://img.shields.io/badge/Jest-Testing-green" />)
+![Supertest](<img src="https://img.shields.io/badge/Supertest-API-green" />)
+![Postman](<img src="https://img.shields.io/badge/Postman-API-green" />)
 
 ---
 
