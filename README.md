@@ -6,7 +6,9 @@
 
 ### Backend
 
-![NodeJs](<img src="https://img.shields.io/badge/Node.js-18.x-green?logo=node.js" />) ![TypeScript](<img src="https://img.shields.io/badge/TypeScript-5.x-blue?logo=typescript" />) ![MOngoDB](<img src="https://img.shields.io/badge/MongoDB-7.x-brightgreen?logo=mongodb" />)
+![NodeJs](https://img.shields.io/badge/Node.js-18.x-green?logo=node.js)
+![TypeScript](https://img.shields.io/badge/TypeScript-5.x-blue?logo=typescript)
+![MongoDB](https://img.shields.io/badge/MongoDB-7.x-brightgreen?logo=mongodb)
 
 ### QA & Testes
 
