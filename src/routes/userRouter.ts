@@ -3,7 +3,7 @@ import checkToken from '../middlewares/checkToken';
 import { usersUpload } from '../config/multer';
 import UserController from '../controllers/userController';
 import { addressRouter } from './addressRouter';
-import { orderRouter } from './OrderRouter';
+import { orderRouter } from './orderRouter';
 
 // Create a new router instance
 export const userRouter = Router();
