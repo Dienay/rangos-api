@@ -1,3 +1,4 @@
+import 'module-alias/register';
 import { initRedis } from '@/config/redis';
 import { app, logger } from '@/config';
 import routes from '@/routes';
