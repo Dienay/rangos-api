@@ -1,6 +1,13 @@
 # 🚀 Rangos API
 
-> API de plataforma de delivery desenvolvida com foco em **qualidade de software (QA)**, cobrindo testes de integração, documentação de bugs e validação de fluxos críticos.
+## Sobre o projeto
+
+A Rangos API simula um ambiente de produção com autenticação JWT,
+múltiplas entidades relacionadas, upload de arquivos, cache Redis e
+logs estruturados. Esse contexto permitiu exercitar QA em cenários
+próximos do real — incluindo 11 bugs encontrados durante a análise
+do código, 3 deles críticos de segurança por ausência de autenticação
+em módulos inteiros.
 
 ---
 
@@ -22,18 +29,6 @@
 
 ---
 
-## 💡 Por que este projeto é relevante para QA?
-
-Esta API simula um ambiente de produção com **múltiplas entidades, autenticação JWT, uploads, cache, logs e banco de dados real**. Isso permite:
-
-- Criar cenários de teste complexos e completos
-- Validar fluxos críticos ponta a ponta
-- Documentar bugs reais encontrados durante o desenvolvimento
-- Aplicar testes automatizados de integração
-- Demonstrar pensamento analítico e visão de qualidade
-
----
-
 ## 🧠 Visão Geral
 
 O sistema simula uma plataforma de delivery completa, permitindo testar e validar:
@@ -52,16 +47,17 @@ O sistema simula uma plataforma de delivery completa, permitindo testar e valida
 
 Este projeto foi estruturado para demonstrar práticas reais de QA em uma API REST:
 
-| Prática                                     | Status          |
-| ------------------------------------------- | --------------- |
-| Testes de integração (Jest + Supertest)     | ✅ Implementado |
-| Banco isolado por teste (MongoMemoryServer) | ✅ Implementado |
-| Factories de dados de teste                 | ✅ Implementado |
-| Bug reports documentados                    | ✅ Implementado |
-| Casos de teste em markdown                  | ✅ Implementado |
-| Estratégia de testes definida               | ✅ Implementado |
-| Collection Postman                          | ✅ Implementado |
-| CI/CD (GitHub Actions)                      | 🔜 Em breve     |
+| Prática                                     | Status                   |
+| ------------------------------------------- | ------------------------ |
+| Testes de integração (Jest + Supertest)     | ✅ Auth completo         |
+| Banco isolado por teste (MongoMemoryServer) | ✅                       |
+| Factories de dados de teste                 | ✅                       |
+| Estratégia de testes documentada            | ✅                       |
+| Casos de teste documentados                 | ✅ 122 casos · 6 módulos |
+| Bug reports documentados                    | ✅ 11 bugs · 3 críticos  |
+| Collection Postman                          | ✅                       |
+| Testes dos demais módulos                   | 🔜 Em andamento          |
+| CI/CD (GitHub Actions)                      | 🔜 Planejado             |
 
 ---
 
@@ -109,45 +105,44 @@ postman/rangos_collection.json
 
 A documentação de qualidade está organizada em `docs/qa/`:
 
-| Documento                                                                | Descrição                             |
-| ------------------------------------------------------------------------ | ------------------------------------- |
-| [Estratégia de Testes](docs/qa/test-strategy.md)                         | Abordagem, tipos de teste e critérios |
-| [Casos de Teste — Auth](docs/qa/test-cases/auth.md)                      | Cenários de autenticação              |
-| [Bug Backlog](docs/qa/bug-backlog.md)                                    | Lista de bugs encontrados             |
-| [BUG-001 — Validação de Email](docs/qa/bugs/BUG-001-email-validation.md) | Bug report detalhado                  |
+| Documento                                                               | Descrição                          |
+| ----------------------------------------------------------------------- | ---------------------------------- |
+| [Estratégia de Testes](docs/qa/test-strategy.md)                        | Abordagem, ferramentas e critérios |
+| [Casos de Teste — Auth](docs/qa/test-cases/auth.md)                     | 22 cenários · 9 bugs encontrados   |
+| [Casos de Teste — Users](docs/qa/test-cases/users.md)                   | 15 cenários                        |
+| [Casos de Teste — Addresses](docs/qa/test-cases/addresses.md)           | 17 cenários                        |
+| [Casos de Teste — Establishments](docs/qa/test-cases/establishments.md) | 20 cenários                        |
+| [Casos de Teste — Products](docs/qa/test-cases/products.md)             | 21 cenários                        |
+| [Casos de Teste — Orders](docs/qa/test-cases/orders.md)                 | 27 cenários                        |
+| [Bug Backlog](docs/qa/bug-backlog.md)                                   | Índice de todos os bugs            |
 
 ---
 
 ## 📚 Documentação da API
 
-| Documento                              | Descrição                         |
-| -------------------------------------- | --------------------------------- |
-| [API Reference](docs/api/reference.md) | Referência completa dos endpoints |
-| [Auth Guide](docs/api/auth.md)         | Guia de autenticação JWT          |
-| [Models](docs/api/models.md)           | Schemas e modelos de dados        |
-| [Errors](docs/api/errors.md)           | Códigos de erro e descrições      |
-
----
-
-## ⚠️ Tratamento de Erros
-
-| Código | Descrição            |
-| ------ | -------------------- |
-| 400    | Requisição inválida  |
-| 401    | Não autorizado       |
-| 404    | Não encontrado       |
-| 413    | Payload muito grande |
-| 500    | Erro interno         |
+| Documento                                              | Descrição                                  |
+| ------------------------------------------------------ | ------------------------------------------ |
+| [Visão Geral](docs/api/overview.md)                    | Stack, arquitetura e limitações conhecidas |
+| [Modelos de Dados](docs/api/models.md)                 | Schemas de todas as entidades              |
+| [Auth](docs/api/endpoints/auth.md)                     | Signup, login e uso do token               |
+| [Users](docs/api/endpoints/users.md)                   | CRUD de usuários                           |
+| [Addresses](docs/api/endpoints/addresses.md)           | Endereços de usuários e estabelecimentos   |
+| [Establishments](docs/api/endpoints/establishments.md) | CRUD + busca + produtos                    |
+| [Products](docs/api/endpoints/products.md)             | CRUD + top produtos com cache Redis        |
+| [Orders](docs/api/endpoints/orders.md)                 | Fluxo completo com máquina de estados      |
 
 ---
 
 ## 🗺️ Roadmap QA
 
-- [x] Testes de autenticação (login e cadastro)
+- [x] Testes de integração — Auth
 - [x] Estratégia de testes
 - [x] Collection do Postman
 - [x] Backlog de bugs
+- [x] Casos de teste — todos os módulos (122 casos)
+- [x] Bug reports documentados (11 bugs)
 - [ ] Testes de integração dos demais módulos
+- [ ] Testes automatizados — demais módulos
 - [ ] Relatórios de cobertura
 - [ ] Pipeline de CI/CD
 - [ ] Testes de performance (k6)
