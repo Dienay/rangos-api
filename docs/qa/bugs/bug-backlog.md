@@ -12,7 +12,7 @@
 | [BUG-001](#bug-001) | Auth           | Email inválido aceito no cadastro        | Alta       | Alta       | 🟢 Corrigido |
 | [BUG-002](#bug-002) | Auth           | Senha sem mínimo de caracteres           | Alta       | Alta       | 🟢 Corrigido |
 | [BUG-003](#bug-003) | Auth           | Name sem limite de tamanho               | Baixa      | Baixa      | 🟢 Corrigido |
-| [BUG-004](#bug-004) | Auth           | Name com apenas espaços aceito           | Média      | Média      | 🔴 Aberto    |
+| [BUG-004](#bug-004) | Auth           | Name com apenas espaços aceito           | Média      | Média      | 🟢 Corrigido |
 | [BUG-005](#bug-005) | Global         | Campos obrigatórios retornam 500         | Crítica    | Alta       | 🔴 Aberto    |
 | [BUG-006](#bug-006) | Auth           | JWT sem expiração                        | Alta       | Alta       | 🔴 Aberto    |
 | [BUG-007](#bug-007) | Users          | Mensagem incorreta no updateUser         | Baixa      | Baixa      | 🔴 Aberto    |
@@ -118,7 +118,7 @@ O endpoint `/signup` aceita strings arbitrariamente longas no campo `name` sem a
 | ----------------- | --------------------------------------------------- |
 | **Módulo**        | Auth — `POST /signup`                               |
 | **Severidade**    | Média                                               |
-| **Status**        | 🔴 Aberto                                           |
+| **Status**        | 🟢 Corrigido                                        |
 | **Encontrado em** | TC-AUTH-015                                         |
 | **Report**        | [BUG-004-name-blank.md](bugs/BUG-004-name-blank.md) |
 
