@@ -10,7 +10,7 @@
 | ID                  | Módulo         | Descrição                                | Severidade | Prioridade | Status       |
 | ------------------- | -------------- | ---------------------------------------- | ---------- | ---------- | ------------ |
 | [BUG-001](#bug-001) | Auth           | Email inválido aceito no cadastro        | Alta       | Alta       | 🟢 Corrigido |
-| [BUG-002](#bug-002) | Auth           | Senha sem mínimo de caracteres           | Alta       | Alta       | 🔴 Aberto    |
+| [BUG-002](#bug-002) | Auth           | Senha sem mínimo de caracteres           | Alta       | Alta       | 🟢 Corrigido |
 | [BUG-003](#bug-003) | Auth           | Name sem limite de tamanho               | Baixa      | Baixa      | 🔴 Aberto    |
 | [BUG-004](#bug-004) | Auth           | Name com apenas espaços aceito           | Média      | Média      | 🔴 Aberto    |
 | [BUG-005](#bug-005) | Global         | Campos obrigatórios retornam 500         | Crítica    | Alta       | 🔴 Aberto    |
@@ -80,7 +80,7 @@ O endpoint `/signup` aceita emails em formato inválido (ex: `invalid-email`) e 
 | ----------------- | --------------------------------------------------------------------- |
 | **Módulo**        | Auth — `POST /signup`                                                 |
 | **Severidade**    | Alta                                                                  |
-| **Status**        | 🔴 Aberto                                                             |
+| **Status**        | 🟢 Corrigido                                                          |
 | **Encontrado em** | TC-AUTH-012                                                           |
 | **Report**        | [BUG-002-password-min-length.md](bugs/BUG-002-password-min-length.md) |
 
