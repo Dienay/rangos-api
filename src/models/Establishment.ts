@@ -1,58 +1,26 @@
-/**
- * models/Establishment.ts
- *
- * Mongoose model representing business establishments (restaurants, cafés, stores, etc.).
- * Fully aligned with the new JSON structure used in establishments_final.json.
- */
-
 import mongoose from 'mongoose';
 import { IAddress, addressSchema } from './Address';
 
-/* ============================================================
-  =============== INTERFACES & TYPE DEFINITIONS ===============
-   ============================================================ */
-
-/**
- * Represents a single open/close period during a day.
- * Example: { open: "08:00", close: "18:00" }
- */
 interface IPeriod {
-  open: string; // Exemplo: "06:30"
-  close: string; // Exemplo: "22:00"
+  open: string;
+  close: string;
 }
 
-/**
- * Represents the opening hours for a specific day.
- * Example:
- * { day: "Monday", periods: [{ open: "08:00", close: "18:00" }] }
- */
 interface IOpeningHour {
   day: string;
   periods: IPeriod[];
 }
 
-/**
- * Represents the estimated delivery time for the establishment.
- * Example: { min: 20, max: 40 }
- */
 interface IDeliveryTIme {
   min: number;
   max: number;
 }
 
-/**
- * Represents the establishment’s rating (average and total number of reviews).
- * Example: { average: 4.5, count: 230 }
- */
 interface IRating {
   average: number;
   count: number;
 }
 
-/**
- * Enum listing all valid establishment categories.
- * Helps maintain data consistency across the database.
- */
 enum Category {
   Bakery = 'Bakery',
   Bar = 'Bar',
@@ -81,10 +49,6 @@ enum Category {
   Bistro = 'Bistro'
 }
 
-/**
- * Main interface describing an establishment document.
- * Defines all fields stored in the MongoDB collection.
- */
 interface IEstablishment extends mongoose.Document {
   logo?: string;
   coverImage?: string;
@@ -101,33 +65,11 @@ interface IEstablishment extends mongoose.Document {
   services?: string[];
 }
 
-/* ============================================================
-  ================= VALIDATION & ENUMS ========================
-   ============================================================ */
-
-/**
- * Valid days of the week.
- * Used to validate the "day" field within openingHours.
- */
-
 const WeekDays = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'] as const;
 
-/**
- * Validates that a time string is in 24-hour format (HH:mm).
- */
 function validateHour(value: string) {
   return /^([01]\d|2[0-3]):([0-5]\d)$/.test(value);
 }
-
-/* ============================================================
-  ================== NESTED SCHEMAS ===========================
-   ============================================================ */
-
-/**
- * Sub-schema representing a single opening/closing period.
- * Example:
- * { open: "08:00", close: "18:00" }
- */
 
 const periodSchema = new mongoose.Schema(
   {
@@ -151,14 +93,6 @@ const periodSchema = new mongoose.Schema(
   { _id: false }
 );
 
-/**
- * Sub-schema representing the opening hours for a single day.
- * Example:
- * {
- *   day: "Monday",
- *   periods: [{ open: "08:00", close: "18:00" }]
- * }
- */
 const openingHourSchema = new mongoose.Schema(
   {
     day: {
@@ -171,11 +105,6 @@ const openingHourSchema = new mongoose.Schema(
   { _id: false }
 );
 
-/**
- * Sub-schema for estimated delivery time.
- * Example:
- * { min: 20, max: 40 }
- */
 const deliveryTimeSchema = new mongoose.Schema(
   {
     min: { type: Number, required: true, min: 0 },
@@ -184,11 +113,6 @@ const deliveryTimeSchema = new mongoose.Schema(
   { _id: false }
 );
 
-/**
- * Sub-schema for contact fields.
- * Example:
- * { phone: "+55 (21) 96561-2361", email: "contato@joaosrestaurant.com.br" }
- */
 const contactSchema = new mongoose.Schema(
   {
     phone: { type: String },
@@ -197,11 +121,6 @@ const contactSchema = new mongoose.Schema(
   { _id: false }
 );
 
-/**
- * Sub-schema for customer ratings.
- * Example:
- * { average: 4.6, count: 120 }
- */
 const ratingSchema = new mongoose.Schema(
   {
     average: { type: Number, default: 0, min: 0, max: 5 },
@@ -209,15 +128,6 @@ const ratingSchema = new mongoose.Schema(
   },
   { _id: false }
 );
-
-/* ============================================================
-  ===================== MAIN SCHEMA ===========================
-   ============================================================ */
-
-/**
- * Main Establishment schema.
- * Combines all nested schemas and defines field-level validation.
- */
 
 const establishmentSchema = new mongoose.Schema(
   {
@@ -233,7 +143,6 @@ const establishmentSchema = new mongoose.Schema(
     category: {
       type: String,
       enum: {
-        // Allowed values for categories
         values: Object.values(Category),
         message: `( {VALUE} ) is not a valid establishment category. Allowed categories are: ${Object.values(Category).join(', ')}`
       }
@@ -247,19 +156,9 @@ const establishmentSchema = new mongoose.Schema(
     services: { type: [String], default: [] }
   },
   {
-    // Remove the version key (__v) from the documents
     versionKey: false
   }
 );
-
-/* ============================================================
-  ====================== MODEL EXPORT =========================
-   ============================================================ */
-
-/**
- * Creates and exports the Mongoose model for Establishments.
- * The corresponding MongoDB collection name will be 'establishments'.
- */
 
 const Establishment = mongoose.model<IEstablishment>('establishment', establishmentSchema);
 

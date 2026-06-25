@@ -44,7 +44,7 @@ export async function initRedis() {
 async function clearRedisCacheOnExit() {
   if (redisAvailable && redisClient && redisClient.isOpen) {
     try {
-      await redisClient.del('top-products'); // Limpa o cache do top-products
+      await redisClient.del('top-products');
       logger.info('Cache Redis limpo antes da parada.');
     } catch (err) {
       logger.error('Erro ao limpar cache Redis:', err);
@@ -52,7 +52,6 @@ async function clearRedisCacheOnExit() {
   }
 }
 
-// Registrando eventos do processo para limpar cache e encerrar
 process.on('exit', async () => {
   await clearRedisCacheOnExit();
 });
