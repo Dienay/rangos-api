@@ -6,19 +6,14 @@ import { productsRouter } from './productRouter';
 import { userRouter } from './userRouter';
 import { orderRouter } from './orderRouter';
 
-// Function to define API routes
 const routes = (app: Router) => {
-  // Route for the root endpoint '/'
   app.route('/').get((req: Request, res: Response) => {
     res.status(200).json({
-      // Sending a welcome message as JSON response
       message: 'Welcome to the Rangos API.'
     });
   });
 
-  // Using the imported routers
   app.use(authRouter, establishmentRouter, productsRouter, userRouter, orderRouter);
-  // Serve static files from the uploads directory
   app.use('/uploads', express.static(path.join(__dirname, '..', '..', 'uploads')));
 };
 
