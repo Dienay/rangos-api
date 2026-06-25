@@ -13,8 +13,8 @@
 | [BUG-002](#bug-002) | Auth           | Senha sem mínimo de caracteres           | Alta       | Alta       | 🟢 Corrigido |
 | [BUG-003](#bug-003) | Auth           | Name sem limite de tamanho               | Baixa      | Baixa      | 🟢 Corrigido |
 | [BUG-004](#bug-004) | Auth           | Name com apenas espaços aceito           | Média      | Média      | 🟢 Corrigido |
-| [BUG-005](#bug-005) | Global         | Campos obrigatórios retornam 500         | Crítica    | Alta       | 🔴 Aberto    |
-| [BUG-006](#bug-006) | Auth           | JWT sem expiração                        | Alta       | Alta       | 🔴 Aberto    |
+| [BUG-005](#bug-005) | Global         | Campos obrigatórios retornam 500         | Crítica    | Alta       | 🟢 Corrigido |
+| [BUG-006](#bug-006) | Auth           | JWT sem expiração                        | Alta       | Alta       | 🟢 Corrigido |
 | [BUG-007](#bug-007) | Users          | Mensagem incorreta no updateUser         | Baixa      | Baixa      | 🔴 Aberto    |
 | [BUG-008](#bug-008) | Users          | Sem verificação de duplicidade no update | Alta       | Alta       | 🔴 Aberto    |
 | [BUG-009](#bug-009) | Addresses      | DELETE /address sem autenticação         | Alta       | Alta       | 🔴 Aberto    |
@@ -137,7 +137,7 @@ O endpoint `/signup` aceita o campo `name` preenchido apenas com espaços em bra
 | ----------------- | ------------------------------------------------------------------- |
 | **Módulo**        | Global — todos os endpoints de criação e atualização                |
 | **Severidade**    | Crítica                                                             |
-| **Status**        | 🔴 Aberto                                                           |
+| **Status**        | 🟢 Corrigido                                                        |
 | **Encontrado em** | TC-AUTH-007 · TC-AUTH-008 · TC-AUTH-009 · TC-AUTH-010 · TC-AUTH-013 |
 | **Report**        | [BUG-005-missing-fields-500.md](bugs/BUG-005-missing-fields-500.md) |
 
@@ -156,7 +156,7 @@ Campos obrigatórios ausentes ou valores inválidos em enums retornam `500` em v
 | ----------------- | ----------------------------------------------------------------- |
 | **Módulo**        | Auth — `POST /signup` · `POST /login`                             |
 | **Severidade**    | Alta                                                              |
-| **Status**        | 🔴 Aberto                                                         |
+| **Status**        | 🟢 Corrigido                                                      |
 | **Encontrado em** | Análise de código                                                 |
 | **Report**        | [BUG-006-jwt-no-expiration.md](bugs/BUG-006-jwt-no-expiration.md) |
 
