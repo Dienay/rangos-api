@@ -4,9 +4,7 @@
     "module": "commonjs",
     "baseUrl": ".",
     "paths": {
-      "@/*": [
-        "./src/*"
-      ]
+      "@/*": ["./src/*"]
     },
     "rootDir": "src",
     "outDir": "dist",
@@ -19,21 +17,11 @@
     "resolveJsonModule": true,
     "forceConsistentCasingInFileNames": true,
     "skipLibCheck": true,
-    "types": [
-      "node",
-      "express",
-      "jest"
-    ],
+    "types": ["node", "express", "jest"],
     "sourceMap": true,
     "removeComments": true,
-    "incremental": true,
+    "incremental": true
   },
-  "include": [
-    "src"
-  ],
-  "exclude": [
-    "node_modules",
-    "dist",
-    "tests"
-  ],
+  "include": ["src"],
+  "exclude": ["node_modules", "dist", "tests"]
 }
