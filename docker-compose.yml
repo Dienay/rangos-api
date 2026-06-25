@@ -21,6 +21,8 @@ services:
     depends_on:
       - mongo
     command: npm run populate
+    profiles:
+      - seed
 
   mongo:
     image: mongo:5
@@ -39,7 +41,7 @@ services:
 
   redis:
     image: redis:latest
-    container_name: rangos-redis-server
+    container_name: rangos-redis
     ports:
       - '6379:6379'
     restart: always
