@@ -7,17 +7,16 @@ beforeAll(async () => {
   mongo = await MongoMemoryServer.create();
   const uri = mongo.getUri();
 
-  await mongoose.connect(uri);
+  await mongoose.connect(uri, {
+    maxPoolSize: 10
+  });
 });
 
 afterEach(async () => {
-  const collections = Object.values(mongoose.connection.collections);
-
-  await Promise.all(collections.map((collection) => collection.deleteMany({})));
+  await mongoose.connection.db?.dropDatabase();
 });
 
 afterAll(async () => {
-  await mongoose.connection.dropDatabase();
   await mongoose.connection.close();
   await mongo.stop();
 });
