@@ -1,5 +1,6 @@
 import express, { Router, Request, Response } from 'express';
 import * as path from 'path';
+import { authRouter } from './authRouter';
 import { establishmentRouter } from './establishmentRouter';
 import { productsRouter } from './productRouter';
 import { userRouter } from './userRouter';
@@ -16,7 +17,7 @@ const routes = (app: Router) => {
   });
 
   // Using the imported routers
-  app.use(establishmentRouter, productsRouter, userRouter, orderRouter);
+  app.use(authRouter, establishmentRouter, productsRouter, userRouter, orderRouter);
   // Serve static files from the uploads directory
   app.use('/uploads', express.static(path.join(__dirname, '..', '..', 'uploads')));
 };
