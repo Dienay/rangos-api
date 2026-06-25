@@ -21,7 +21,12 @@ const userSchema = new mongoose.Schema(
   {
     avatar: { type: String },
     name: { type: String, required: [true, 'name is required'] },
-    email: { type: String, required: [true, 'email is required'], unique: true },
+    email: {
+      type: String,
+      required: [true, 'Email is required'],
+      unique: true,
+      match: [/^\S+@\S+\.\S+$/, 'Invalid email format.']
+    },
     phone: { type: String, unique: true },
     password: { type: String, required: [true, 'password is required'] },
     address: [addressSchema],
