@@ -7,21 +7,21 @@
 
 ## Resumo
 
-| ID                  | Módulo         | Descrição                                | Severidade | Prioridade | Status    |
-| ------------------- | -------------- | ---------------------------------------- | ---------- | ---------- | --------- |
-| [BUG-001](#bug-001) | Auth           | Email inválido aceito no cadastro        | Alta       | Alta       | 🔴 Aberto |
-| [BUG-002](#bug-002) | Auth           | Senha sem mínimo de caracteres           | Alta       | Alta       | 🔴 Aberto |
-| [BUG-003](#bug-003) | Auth           | Name sem limite de tamanho               | Baixa      | Baixa      | 🔴 Aberto |
-| [BUG-004](#bug-004) | Auth           | Name com apenas espaços aceito           | Média      | Média      | 🔴 Aberto |
-| [BUG-005](#bug-005) | Global         | Campos obrigatórios retornam 500         | Crítica    | Alta       | 🔴 Aberto |
-| [BUG-006](#bug-006) | Auth           | JWT sem expiração                        | Alta       | Alta       | 🔴 Aberto |
-| [BUG-007](#bug-007) | Users          | Mensagem incorreta no updateUser         | Baixa      | Baixa      | 🔴 Aberto |
-| [BUG-008](#bug-008) | Users          | Sem verificação de duplicidade no update | Alta       | Alta       | 🔴 Aberto |
-| [BUG-009](#bug-009) | Addresses      | DELETE /address sem autenticação         | Alta       | Alta       | 🔴 Aberto |
-| [BUG-010](#bug-010) | Establishments | Rotas de escrita sem autenticação        | Crítica    | Alta       | 🔴 Aberto |
-| [BUG-011](#bug-011) | Middleware     | parseJsonFields não interrompe execução  | Média      | Média      | 🔴 Aberto |
-| [BUG-012](#bug-012) | Products       | Rotas de escrita sem autenticação        | Crítica    | Alta       | 🔴 Aberto |
-| [BUG-013](#bug-013) | Orders         | Todas as rotas sem autenticação          | Crítica    | Alta       | 🔴 Aberto |
+| ID                  | Módulo         | Descrição                                | Severidade | Prioridade | Status       |
+| ------------------- | -------------- | ---------------------------------------- | ---------- | ---------- | ------------ |
+| [BUG-001](#bug-001) | Auth           | Email inválido aceito no cadastro        | Alta       | Alta       | 🟢 Corrigido |
+| [BUG-002](#bug-002) | Auth           | Senha sem mínimo de caracteres           | Alta       | Alta       | 🟢 Corrigido |
+| [BUG-003](#bug-003) | Auth           | Name sem limite de tamanho               | Baixa      | Baixa      | 🟢 Corrigido |
+| [BUG-004](#bug-004) | Auth           | Name com apenas espaços aceito           | Média      | Média      | 🟢 Corrigido |
+| [BUG-005](#bug-005) | Global         | Campos obrigatórios retornam 500         | Crítica    | Alta       | 🔴 Aberto    |
+| [BUG-006](#bug-006) | Auth           | JWT sem expiração                        | Alta       | Alta       | 🔴 Aberto    |
+| [BUG-007](#bug-007) | Users          | Mensagem incorreta no updateUser         | Baixa      | Baixa      | 🔴 Aberto    |
+| [BUG-008](#bug-008) | Users          | Sem verificação de duplicidade no update | Alta       | Alta       | 🔴 Aberto    |
+| [BUG-009](#bug-009) | Addresses      | DELETE /address sem autenticação         | Alta       | Alta       | 🔴 Aberto    |
+| [BUG-010](#bug-010) | Establishments | Rotas de escrita sem autenticação        | Crítica    | Alta       | 🔴 Aberto    |
+| [BUG-011](#bug-011) | Middleware     | parseJsonFields não interrompe execução  | Média      | Média      | 🔴 Aberto    |
+| [BUG-012](#bug-012) | Products       | Rotas de escrita sem autenticação        | Crítica    | Alta       | 🔴 Aberto    |
+| [BUG-013](#bug-013) | Orders         | Todas as rotas sem autenticação          | Crítica    | Alta       | 🔴 Aberto    |
 
 - **Total: 13 bugs · 4 críticos · 0 corrigidos · 13 abertos**
 
@@ -61,7 +61,7 @@
 | ----------------- | --------------------------------------------------------------- |
 | **Módulo**        | Auth — `POST /signup`                                           |
 | **Severidade**    | Alta                                                            |
-| **Status**        | 🔴 Aberto                                                       |
+| **Status**        | 🟢 Corrigido                                                    |
 | **Encontrado em** | TC-AUTH-011                                                     |
 | **Report**        | [BUG-001-email-validation.md](bugs/BUG-001-email-validation.md) |
 
@@ -80,7 +80,7 @@ O endpoint `/signup` aceita emails em formato inválido (ex: `invalid-email`) e 
 | ----------------- | --------------------------------------------------------------------- |
 | **Módulo**        | Auth — `POST /signup`                                                 |
 | **Severidade**    | Alta                                                                  |
-| **Status**        | 🔴 Aberto                                                             |
+| **Status**        | 🟢 Corrigido                                                          |
 | **Encontrado em** | TC-AUTH-012                                                           |
 | **Report**        | [BUG-002-password-min-length.md](bugs/BUG-002-password-min-length.md) |
 
@@ -99,7 +99,7 @@ O endpoint `/signup` aceita senhas com qualquer quantidade de caracteres, sem ap
 | ----------------- | ------------------------------------------------------------- |
 | **Módulo**        | Auth — `POST /signup`                                         |
 | **Severidade**    | Baixa                                                         |
-| **Status**        | 🔴 Aberto                                                     |
+| **Status**        | 🟢 Corrigido                                                  |
 | **Encontrado em** | TC-AUTH-014                                                   |
 | **Report**        | [BUG-003-name-max-length.md](bugs/BUG-003-name-max-length.md) |
 
@@ -118,7 +118,7 @@ O endpoint `/signup` aceita strings arbitrariamente longas no campo `name` sem a
 | ----------------- | --------------------------------------------------- |
 | **Módulo**        | Auth — `POST /signup`                               |
 | **Severidade**    | Média                                               |
-| **Status**        | 🔴 Aberto                                           |
+| **Status**        | 🟢 Corrigido                                        |
 | **Encontrado em** | TC-AUTH-015                                         |
 | **Report**        | [BUG-004-name-blank.md](bugs/BUG-004-name-blank.md) |
 

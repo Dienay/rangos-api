@@ -6,7 +6,7 @@
 | **Módulo**         | Auth — `POST /signup`                 |
 | **Severidade**     | Baixa                                 |
 | **Prioridade**     | Baixa                                 |
-| **Status**         | 🔴 Aberto                             |
+| **Status**         | 🟢 Corrigido                          |
 | **Encontrado em**  | TC-AUTH-014                           |
 | **Encontrado por** | Teste automatizado — `signup.test.ts` |
 
