@@ -20,7 +20,11 @@ interface IUser extends mongoose.Document {
 const userSchema = new mongoose.Schema(
   {
     avatar: { type: String },
-    name: { type: String, required: [true, 'name is required'] },
+    name: {
+      type: String,
+      required: [true, 'Name is required'],
+      maxlength: [100, 'Name must be at most 100 characters.'],
+    },
     email: {
       type: String,
       required: [true, 'Email is required'],
