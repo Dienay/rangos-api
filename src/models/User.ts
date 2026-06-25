@@ -5,7 +5,7 @@ enum TypeUser {
   Customer = 'Customer',
   Establishment = 'Establishment'
 }
-// Define the IUser interface extending mongoose.Document to ensure correct typing for Mongoose documents.
+
 interface IUser extends mongoose.Document {
   avatar: string;
   name: string;
@@ -16,7 +16,6 @@ interface IUser extends mongoose.Document {
   typeUser: TypeUser;
 }
 
-// Define the schema for the User model
 const userSchema = new mongoose.Schema(
   {
     avatar: { type: String },
@@ -49,12 +48,10 @@ const userSchema = new mongoose.Schema(
     }
   },
   {
-    // Remove the version key (__v) from the documents
     versionKey: false
   }
 );
 
-// Create the User model using the userSchema
 const User = mongoose.model<IUser>('user', userSchema);
 
 export default User;

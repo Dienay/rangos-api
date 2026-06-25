@@ -1,22 +1,6 @@
 import mongoose, { HydratedDocument, Model } from 'mongoose';
 import { IAddress, addressSchema } from './Address';
 
-/**
- * Order Schema
- * --------------------------------------------------
- * Represents a customer purchase within the Rangos system.
- * Each order links to a user and an establishment, and contains:
- * - Product list
- * - Payment info
- * - Delivery address snapshot
- * - Status tracking
- */
-
-// -----------------------------
-// ENUMS AND INTERFACES
-// -----------------------------
-
-// Enum for order lifecycle states
 export enum OrderStatus {
   Ordered = 'Ordered',
   Paid = 'Paid',
@@ -26,46 +10,38 @@ export enum OrderStatus {
   Canceled = 'Canceled'
 }
 
-// Product structure inside an order
 export interface IOrderedProduct {
-  productId: mongoose.Types.ObjectId; // Reference to the Product document
-  name: string; // Product name (snapshot at purchase time)
-  quantity: number; // Number of units purchased
-  price: number; // Price per unit (snapshot)
-  subtotal: number; // Calculated as quantity * price
+  productId: mongoose.Types.ObjectId;
+  name: string;
+  quantity: number;
+  price: number;
+  subtotal: number;
 }
 
-// Payment details for the order
 export interface IPaymentInfo {
-  method: string; // Payment method: Pix, CreditCard, etc.
-  status: string; // "Paid" or "Pending"
-  transactionId: string; // External or internal transaction reference
+  method: string;
+  status: string;
+  transactionId: string;
 }
 
-// Main Order interface
 export interface IOrder {
-  userId: mongoose.Types.ObjectId; // Buyer (User reference)
-  establishmentId: mongoose.Types.ObjectId; // Seller (Establishment reference)
-  orderNumber: string; // Unique, human-readable order ID
-  status: OrderStatus; // Current state of the order
-  products: IOrderedProduct[]; // List of purchased items
-  shipping: number; // Delivery/shipping cost
-  subtotal: number; // Sum of item subtotals
-  totalPrice: number; // subtotal + shipping
-  deliveryAddress: IAddress; // Delivery address snapshot
-  payment: IPaymentInfo; // Payment metadata
-  notes?: string; // Optional delivery notes
-  createdAt: Date; // Auto-generated timestamp
-  updatedAt: Date; // Auto-generated timestamp
+  userId: mongoose.Types.ObjectId;
+  establishmentId: mongoose.Types.ObjectId;
+  orderNumber: string;
+  status: OrderStatus;
+  products: IOrderedProduct[];
+  shipping: number;
+  subtotal: number;
+  totalPrice: number;
+  deliveryAddress: IAddress;
+  payment: IPaymentInfo;
+  notes?: string;
+  createdAt: Date;
+  updatedAt: Date;
 }
 
 export type OrderDocument = HydratedDocument<IOrder>;
 
-// -----------------------------
-// SCHEMAS
-// -----------------------------
-
-// Schema for ordered products (embedded in Order)
 const orderedProductSchema = new mongoose.Schema(
   {
     productId: {
@@ -78,17 +54,16 @@ const orderedProductSchema = new mongoose.Schema(
     price: { type: Number, required: true, min: 0 },
     subtotal: { type: Number, required: true, min: 0 }
   },
-  { _id: false } // Avoid nested _id inside products array
+  { _id: false }
 );
 
-// Schema for payment info (embedded in Order)
 const paymentSchema = new mongoose.Schema(
   {
     method: { type: String, required: true },
     status: { type: String, default: 'Pending' },
     transactionId: { type: String, required: true }
   },
-  { _id: false } // Avoid nested _id inside payment object
+  { _id: false }
 );
 
 const orderSchema = new mongoose.Schema<IOrder>(
@@ -121,16 +96,10 @@ const orderSchema = new mongoose.Schema<IOrder>(
     notes: { type: String }
   },
   {
-    timestamps: true, // Automatically generates createdAt and updatedAt
-    versionKey: false // Removes the __v version key from documents
+    timestamps: true,
+    versionKey: false
   }
 );
-
-// -----------------------------
-// INDEXES AND EXPORT
-// -----------------------------
-
-// Commonly queried fields for optimization
 
 orderSchema.index({ userId: 1 });
 orderSchema.index({ establishmentId: 1 });
