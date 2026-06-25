@@ -1,32 +1,20 @@
 import { Request, Response, NextFunction } from 'express';
 import mongoose from 'mongoose';
-import BaseError from '../errors/BaseError';
-import BadRequest from '../errors/BadRequest';
-import ValidateError from '../errors/ValidateError';
+import { BaseError, BadRequest, ValidateError } from '../errors';
 
-// Error handling middleware function
-// eslint-disable-next-line @typescript-eslint/no-unused-vars
-function handlesErrors(error: Error, req: Request, res: Response, next: NextFunction) {
-  // Handling CastError from Mongoose
+function handlesErrors(error: Error, _req: Request, res: Response, _next: NextFunction) {
   if (error instanceof mongoose.Error.CastError) {
-    // Sending a BadRequest response
-    new BadRequest().sendResponse(res);
+    return new BadRequest('Invalid ID format').sendResponse(res);
   }
-  // Handling ValidationError from Mongoose
-  else if (error instanceof mongoose.Error.ValidationError) {
-    // Sending a ValidateError response
-    new ValidateError(error).sendResponse(res);
+
+  if (error instanceof mongoose.Error.ValidationError) {
+    return new ValidateError(error).sendResponse(res);
   }
-  // Handling other custom errors that extend from BaseError
-  else if (error instanceof BaseError) {
-    // Sending the custom error response
-    error.sendResponse(res);
+
+  if (error instanceof BaseError) {
+    return error.sendResponse(res);
   }
-  // Fallback for unhandled errors
-  else {
-    // Sending a generic BaseError response
-    new BaseError().sendResponse(res);
-  }
+  return new BaseError().sendResponse(res);
 }
 
 export default handlesErrors;
