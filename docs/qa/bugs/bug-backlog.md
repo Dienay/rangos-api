@@ -15,7 +15,7 @@
 | [BUG-004](#bug-004) | Auth           | Name com apenas espaços aceito           | Média      | Média      | 🟢 Corrigido |
 | [BUG-005](#bug-005) | Global         | Campos obrigatórios retornam 500         | Crítica    | Alta       | 🟢 Corrigido |
 | [BUG-006](#bug-006) | Auth           | JWT sem expiração                        | Alta       | Alta       | 🟢 Corrigido |
-| [BUG-007](#bug-007) | Users          | Mensagem incorreta no updateUser         | Baixa      | Baixa      | 🔴 Aberto    |
+| [BUG-007](#bug-007) | Users          | Mensagem incorreta no updateUser         | Baixa      | Baixa      | 🟢 Corrigido |
 | [BUG-008](#bug-008) | Users          | Sem verificação de duplicidade no update | Alta       | Alta       | 🔴 Aberto    |
 | [BUG-009](#bug-009) | Addresses      | DELETE /address sem autenticação         | Alta       | Alta       | 🔴 Aberto    |
 | [BUG-010](#bug-010) | Establishments | Rotas de escrita sem autenticação        | Crítica    | Alta       | 🔴 Aberto    |
@@ -179,7 +179,7 @@ Tokens JWT gerados sem `expiresIn` — válidos indefinidamente mesmo após comp
 | ----------------- | --------------------------------------------------------------------------------- |
 | **Módulo**        | Users — `PUT /user/:id`                                                           |
 | **Severidade**    | Baixa                                                                             |
-| **Status**        | 🔴 Aberto                                                                         |
+| **Status**        | 🟢 Corrigido                                                                       |
 | **Encontrado em** | TC-USER-009                                                                       |
 | **Report**        | [BUG-007-update-user-wrong-message.md](bugs/BUG-007-update-user-wrong-message.md) |
 
