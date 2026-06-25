@@ -92,7 +92,6 @@ class AddressController {
         });
       }
 
-      // eslint-disable-next-line @typescript-eslint/no-unsafe-member-access
       const address = entity.address.find((addr: IAddress) => addr.id.toString() === addressId);
 
       if (!address) {
@@ -125,7 +124,6 @@ class AddressController {
         });
       }
 
-      // eslint-disable-next-line @typescript-eslint/no-unsafe-member-access
       const address = entity.address.findIndex((addr: IAddress) => addr.id.toString() === addressId);
 
       if (address === -1) {

@@ -2,19 +2,7 @@ import { NextFunction, Request, Response } from 'express';
 import { Establishment, User } from '../models';
 import Order, { IOrder, OrderStatus } from '../models/Order';
 
-/**
- * OrderController
- * --------------------------------------------------
- * Handles all order-related operations:
- * - Create, list, update, and delete orders
- * - Add/remove products in cart-like workflows
- * - Manage order status transitions
- */
 class OrderController {
-  /**
-   * Create a new order
-   * Only users (customers) can create orders, not establishments
-   */
   static createOrder = async (req: Request, res: Response, next: NextFunction) => {
     try {
       const { entityId } = req.params;
@@ -27,7 +15,6 @@ class OrderController {
 
       const body = req.body as IOrder;
 
-      // Ensure totals are correct
       const subtotal = body.products.reduce((acc, product) => acc + product.price * product.quantity, 0);
 
       const totalPrice = subtotal + (body.shipping ?? 0);
@@ -45,9 +32,6 @@ class OrderController {
     }
   };
 
-  /**
-   * Get all orders (for admin/debug purposes)
-   */
   static getAllOrders = async (req: Request, res: Response, next: NextFunction) => {
     try {
       const orders = await Order.find({});
@@ -61,9 +45,6 @@ class OrderController {
     }
   };
 
-  /**
-   * Get all orders related to a specific user or establishment
-   */
   static getOrdersByEntity = async (req: Request, res: Response, next: NextFunction) => {
     try {
       const { entityId } = req.params;
@@ -103,9 +84,6 @@ class OrderController {
     }
   };
 
-  /**
-   * Retrieve a single order by its ID
-   */
   static getOrderById = async (req: Request, res: Response, next: NextFunction) => {
     try {
       const { entityId, orderId } = req.params;
@@ -139,9 +117,6 @@ class OrderController {
     }
   };
 
-  /**
-   * Update order status or details
-   */
   static updateOrder = async (req: Request, res: Response, next: NextFunction) => {
     try {
       const { entityId, orderId } = req.params;
@@ -172,7 +147,6 @@ class OrderController {
           .json({ message: `Invalid status transition from ${order.status} to ${updateData.status}.` });
       }
 
-      // Apply updates
       Object.assign(order, updateData);
       await order.save();
 
@@ -182,9 +156,6 @@ class OrderController {
     }
   };
 
-  /**
-   * Delete an order (only users can delete their pending orders)
-   */
   static deleteOrder = async (req: Request, res: Response, next: NextFunction) => {
     try {
       const { entityId, orderId } = req.params;

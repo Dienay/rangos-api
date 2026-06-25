@@ -8,12 +8,10 @@ import Product from '../models/Product';
 import { Establishment } from '../models/index';
 
 class EstablishmentController {
-  // Create a new establishment
   static createEstablishment = async (req: Request, res: Response, next: NextFunction) => {
     try {
       const body = req.body as IEstablishment;
 
-      // Check if a establishment with the same name already exists
       const establishmentExists = await Establishment.findOne({ name: body.name });
 
       if (establishmentExists) {
@@ -22,31 +20,24 @@ class EstablishmentController {
         });
       }
 
-      // If a cover photo is provided, save it to the uploads directory
       if (req.file) {
         body.logo = req.file.filename;
       }
-      // Create a new establishment object based on the request body
       const newEstablishment = await Establishment.create(body);
 
-      // // Save the new establishment to the database
-      // await newEstablishment.save();
+      await newEstablishment.save();
 
-      // Respond with a success message and the created establishment data
       return res.status(201).json({
         message: 'Establishment created successfully.',
         data: newEstablishment
       });
     } catch (error) {
-      // Pass any errors to the error handling middleware
       return next(error);
     }
   };
 
-  // Get a list of all establishments
   static getEstablishments = async (req: Request, res: Response, next: NextFunction) => {
     try {
-      // Fetch all establishments from the database
       const establishmentList = await Establishment.find({});
 
       const establishmentsWithPhotoURL = establishmentList.map((establishment) => ({
@@ -54,57 +45,46 @@ class EstablishmentController {
         logo: `${req.protocol}://${req.get('host')}/uploads/establishments/${establishment.logo}`
       }));
 
-      // Respond with the list of establishments
       res.status(200).json({
         establishments: establishmentsWithPhotoURL
       });
     } catch (error) {
-      // Pass any errors to the error handling middleware
       next(error);
     }
   };
 
-  // Get an establishment by ID
   static getEstablishmentById = async (req: Request, res: Response, next: NextFunction) => {
     try {
-      // Extract the ID from the request parameters
       const { id } = req.params;
 
-      // Find the establishment by its ID
       const foundEstablishment = await Establishment.findById(id);
 
       if (foundEstablishment) {
         foundEstablishment.logo = `${req.protocol}://${req.get('host')}/uploads/establishments/${foundEstablishment.logo}`;
       }
 
-      // If the establishment is found, respond with it; otherwise, throw a NotFound error
       if (foundEstablishment !== null) {
         res.status(200).json(foundEstablishment);
       } else {
         next(new NotFound('Establishment Id not found.'));
       }
     } catch (error) {
-      // Pass any errors to the error handling middleware
       next(error);
     }
   };
 
   static getEstablishmentWithProducts = async (req: Request, res: Response, next: NextFunction) => {
     try {
-      // Extracting establishment ID from request parameters
       const { id } = req.params;
 
-      // Finding establishment by ID
       const establishment = await Establishment.findById(id);
 
       if (establishment) {
         establishment.logo = `${req.protocol}://${req.get('host')}/uploads/establishments/${establishment.logo}`;
 
-        // If establishment is found, finding all products associated with the establishment
         const productList = await Product.find({ establishmentId: id }).lean();
 
         const productWithProductImageURL = productList.map((product) => ({
-          // eslint-disable-next-line @typescript-eslint/no-unsafe-assignment, no-underscore-dangle
           id: product._id,
           name: product.name,
           description: product.description,
@@ -113,10 +93,8 @@ class EstablishmentController {
         }));
 
         if (productWithProductImageURL.length > 0) {
-          // If products are found, sending a success response with the list of products
           res.status(200).json({
             establishment: {
-              // eslint-disable-next-line @typescript-eslint/no-unsafe-assignment, no-underscore-dangle
               id: establishment._id,
               name: establishment.name,
               logo: establishment.logo,
@@ -128,26 +106,21 @@ class EstablishmentController {
             products: productWithProductImageURL
           });
         } else {
-          // If no products are found, passing a NotFound error to the error handling middleware
           res.status(200).json({
             establishment: { name: establishment.name, logo: establishment.logo },
             products: []
           });
         }
       } else {
-        // If establishment is not found, passing a NotFound error to the error handling middleware
         next(new NotFound('Establishment Id not found.'));
       }
     } catch (error) {
-      // Passing any error to the error handling middleware
       next(error);
     }
   };
 
-  // Update an establishment
   static updateEstablishment = async (req: Request, res: Response, next: NextFunction) => {
     try {
-      // Extract the ID from the request parameters and new data from the request body
       const { id } = req.params;
       const newData = req.body as Partial<IEstablishment>;
 
@@ -181,17 +154,13 @@ class EstablishmentController {
         newData.logo = req.file.filename;
       }
 
-      // Validate the new data using Mongoose validation
       const validationError = new Establishment(newData).validateSync();
       if (validationError) {
-        // If validation fails, pass the error to the error handling middleware
         return next(validationError);
       }
 
-      // Find and update the establishment by its ID
       const updatedEstablishment = await Establishment.findByIdAndUpdate(id, { $set: newData }, { new: true });
 
-      // If the establishment is updated successfully, respond with it; otherwise, throw a NotFound error
       if (updatedEstablishment !== null) {
         res.status(200).json({
           message: 'Establishment updated successfully',
@@ -201,19 +170,15 @@ class EstablishmentController {
         throw new NotFound('Establishment Id not found.');
       }
     } catch (error) {
-      // Pass any errors to the error handling middleware
       next(error);
     }
     return undefined;
   };
 
-  // Delete an establishment
   static deleteEstablishment = async (req: Request, res: Response, next: NextFunction) => {
     try {
-      // Extract the ID from the request parameters
       const { id } = req.params;
 
-      // Find the establishment by its ID
       const foundEstablishment = await Establishment.findById(id);
 
       if (foundEstablishment?.logo) {
@@ -236,10 +201,8 @@ class EstablishmentController {
         }
       }
 
-      // Find and delete the establishment by its ID
       const deletedEstablishment = await Establishment.findByIdAndDelete(id);
 
-      // If the establishment is deleted successfully, respond with it; otherwise, throw a NotFound error
       if (deletedEstablishment !== null) {
         res.status(200).json({
           message: 'Establishment deleted successfully',
@@ -249,7 +212,6 @@ class EstablishmentController {
         throw new NotFound('Establishment Id not found.');
       }
     } catch (error) {
-      // Pass any errors to the error handling middleware
       next(error);
     }
     return undefined;
