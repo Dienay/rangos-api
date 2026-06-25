@@ -6,7 +6,7 @@
 | **Módulo**         | Auth — `POST /signup` · `POST /login`   |
 | **Severidade**     | Alta                                    |
 | **Prioridade**     | Alta                                    |
-| **Status**         | 🔴 Aberto                               |
+| **Status**         | 🟢 Corrigido                            |
 | **Encontrado em**  | —                                       |
 | **Encontrado por** | Análise de código — `userController.ts` |
 
