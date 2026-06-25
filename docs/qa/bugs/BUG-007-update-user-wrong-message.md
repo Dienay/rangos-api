@@ -6,7 +6,7 @@
 | **Módulo**         | User — `PUT /user/:id`                  |
 | **Severidade**     | Baixa                                   |
 | **Prioridade**     | Baixa                                   |
-| **Status**         | 🔴 Aberto                               |
+| **Status**         | 🟢 Corrigido                            |
 | **Encontrado em**  | TC-USER-009                             |
 | **Encontrado por** | Análise de código — `userController.ts` |
 

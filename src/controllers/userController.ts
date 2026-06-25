@@ -66,7 +66,7 @@ class UserController {
       ).select('-password');
 
       if (!updatedUser) {
-        return next(new NotFound('Product Id not found.'));
+        return next(new NotFound('User not found.'));
       }
 
       return res.status(200).json({
