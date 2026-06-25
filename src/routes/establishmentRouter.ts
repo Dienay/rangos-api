@@ -4,10 +4,8 @@ import { establishmentsUpload } from '../config/multer';
 import { addressRouter } from './addressRouter';
 import { orderRouter } from './orderRouter';
 
-// Creating a new router instance
 export const establishmentRouter = Router();
 
-// Destructuring methods from EstablishmentController
 const {
   createEstablishment,
   getEstablishments,
@@ -18,7 +16,6 @@ const {
   filterEstablishment
 } = EstablishmentController;
 
-// Defining routes for establishments
 establishmentRouter.post('/establishments', establishmentsUpload.single('logo'), createEstablishment);
 establishmentRouter.get('/establishments', getEstablishments);
 establishmentRouter.get('/establishments/search', filterEstablishment);
@@ -27,7 +24,6 @@ establishmentRouter.get('/establishments/:id', getEstablishmentById);
 establishmentRouter.put('/establishments/:id', establishmentsUpload.single('logo'), updateEstablishment);
 establishmentRouter.delete('/establishments/:id', deleteEstablishment);
 
-// Use addressRouter for address-related routes
 establishmentRouter.use('/establishments', addressRouter);
 
 establishmentRouter.use('/establishments', orderRouter);
