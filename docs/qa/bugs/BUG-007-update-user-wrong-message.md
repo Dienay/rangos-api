@@ -1,4 +1,4 @@
-# BUG-006 — Mensagem incorreta ao atualizar usuário inexistente
+# BUG-007 — Mensagem incorreta ao atualizar usuário inexistente
 
 | Campo              | Detalhe                                 |
 | ------------------ | --------------------------------------- |

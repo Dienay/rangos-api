@@ -1,4 +1,4 @@
-# BUG-011 — Endpoints de Orders sem autenticação
+# BUG-013 — Endpoints de Orders sem autenticação
 
 |                    |                                      |
 | ------------------ | ------------------------------------ |

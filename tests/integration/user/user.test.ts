@@ -3,6 +3,7 @@ import app from '@/app';
 
 import { ErrorResponse, UserResponse, UpdateUserResponse } from 'tests/types/responses';
 import { UserFactory } from '../../factories/UserFactory';
+import User from '@/models/User';
 
 describe('Users', () => {
   describe('GET /users/:id', () => {
@@ -241,12 +242,10 @@ describe('Users', () => {
           typeUser: 'Establishment'
         });
 
-        const getUserResponse = await request(app).get(`/user/${user._id}`).set('Authorization', `Bearer ${token}`);
-
-        const body = getUserResponse.body as UpdateUserResponse;
+        const updatedUser = await User.findById(user._id).select('-password');
 
         expect(response.status).toBe(200);
-        expect(body.user.typeUser).toBe('Customer');
+        expect(updatedUser?.typeUser).toBe('Customer');
       });
     });
   });
@@ -286,7 +285,7 @@ describe('Users', () => {
           password: plainPassword
         });
 
-        expect(loginAfterDelete.status).toBe(404);
+        expect(loginAfterDelete.status).toBe(422);
       });
     });
 

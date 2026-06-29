@@ -1,7 +1,7 @@
 import path from 'path';
 import { Request, Response, NextFunction } from 'express';
 import fs from 'fs';
-import { NotFound } from '@/errors';
+import { ConflictError, NotFound } from '@/errors';
 import { logger } from '../config';
 import { IUser } from '../models/User';
 import { User } from '../models/index';
@@ -18,9 +18,7 @@ class UserController {
       }
 
       if (!user) {
-        return res.status(404).json({
-          message: 'User not found.'
-        });
+        return next(new NotFound('User not found.'));
       }
 
       return res.status(200).json({
@@ -40,6 +38,20 @@ class UserController {
 
       if (!userFound) {
         throw new NotFound('User not found.');
+      }
+
+      if (newData.email) {
+        const emailExists = await User.findOne({ email: newData.email, _id: { $ne: id } });
+        if (emailExists) {
+          throw new ConflictError('Email already exists.');
+        }
+      }
+
+      if (newData.phone) {
+        const phoneExists = await User.findOne({ phone: newData.phone, _id: { $ne: id } });
+        if (phoneExists) {
+          throw new ConflictError('Phone already exists.');
+        }
       }
 
       if (req.file) {
