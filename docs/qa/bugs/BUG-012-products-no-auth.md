@@ -1,4 +1,4 @@
-# BUG-010 — Endpoints de Products sem autenticação
+# BUG-012 — Endpoints de Products sem autenticação
 
 |                    |                                        |
 | ------------------ | -------------------------------------- |

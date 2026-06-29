@@ -1,4 +1,4 @@
-# BUG-009 — parseJsonFields não interrompe execução em JSON inválido
+# BUG-011 — parseJsonFields não interrompe execução em JSON inválido
 
 |                    |                                          |
 | ------------------ | ---------------------------------------- |

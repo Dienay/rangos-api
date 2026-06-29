@@ -1,6 +1,7 @@
 import jwt from 'jsonwebtoken';
 import { Request, Response, NextFunction } from 'express';
 import { env } from '../config';
+import { UnauthorizedError, NotFound } from '../errors';
 import { Establishment, User } from '../models';
 
 const checkToken = async (req: Request, res: Response, next: NextFunction) => {
@@ -8,9 +9,7 @@ const checkToken = async (req: Request, res: Response, next: NextFunction) => {
   const token = authHeader && authHeader.split(' ')[1];
 
   if (!token) {
-    return res.status(401).json({
-      message: 'Access denied. No token provided.'
-    });
+    return next(new UnauthorizedError('Access denied. No token provided.'));
   }
   try {
     const { secret } = env;
@@ -19,15 +18,13 @@ const checkToken = async (req: Request, res: Response, next: NextFunction) => {
     const entity = (await User.findById(decoded.id)) || (await Establishment.findById(decoded.id));
 
     if (!entity) {
-      return res.status(404).json({ message: 'Entity token error.' });
+      return next(new NotFound('Entity token error.'));
     }
 
     next();
   } catch (error) {
-    res.status(400).json({ message: 'Invalid token' });
+    return next(new UnauthorizedError('Invalid token'));
   }
-
-  return undefined;
 };
 
 export default checkToken;

@@ -1,4 +1,4 @@
-# BUG-008 — Endpoints de Establishments sem autenticação
+# BUG-010 — Endpoints de Establishments sem autenticação
 
 |                    |                                              |
 | ------------------ | -------------------------------------------- |

@@ -1,4 +1,4 @@
-# BUG-007 — Sem verificação de duplicidade ao atualizar email ou telefone
+# BUG-008 — Sem verificação de duplicidade ao atualizar email ou telefone
 
 | Campo              | Detalhe                                 |
 | ------------------ | --------------------------------------- |
@@ -6,7 +6,7 @@
 | **Módulo**         | User — `PUT /user/:id`                  |
 | **Severidade**     | Alta                                    |
 | **Prioridade**     | Alta                                    |
-| **Status**         | 🔴 Aberto                               |
+| **Status**         | 🟢 Corrigido                            |
 | **Encontrado em**  | TC-USER-009                             |
 | **Encontrado por** | Análise de código — `userController.ts` |
 

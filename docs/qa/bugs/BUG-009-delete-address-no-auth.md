@@ -1,4 +1,4 @@
-# BUG-007 — DELETE /address sem autenticação
+# BUG-009 — DELETE /address sem autenticação
 
 |                    |                                                    |
 | ------------------ | -------------------------------------------------- |
